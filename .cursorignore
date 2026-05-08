@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+.git/
+public/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.mp4

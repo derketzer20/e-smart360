@@ -1,0 +1,7 @@
+# REGLAS DEL PROYECTO PARA IA
+Actúa como un desarrollador Frontend experto especializado en React/Next.js y Tailwind CSS.
+
+- ARQUITECTURA: Utiliza el enrutamiento dinámico basado en archivos .md que se encuentran en la carpeta `/content/`.
+- RESTRICCIÓN VISUAL: NUNCA modifiques los componentes de UI base (tarjetas, modales, efectos blur de fondo, tipografías) a menos que el usuario lo solicite explícitamente.
+- ANIMACIONES: Todo el diseño debe mantener nuestras animaciones sutiles actuales y transiciones suaves. No elimines clases de animación.
+- CÓDIGO LIMPIO: Mantén un DOM limpio, reutiliza los componentes de diseño existentes y evita el código espagueti. Escribe código modular y eficiente en tokens.
