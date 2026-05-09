@@ -80,6 +80,10 @@ function DeployVisual() {
   );
 }
 
+function svgCoord(n: number) {
+  return n.toFixed(2);
+}
+
 function AIVisual() {
   return (
     <svg viewBox="0 0 200 160" className="w-full h-full">
@@ -92,14 +96,16 @@ function AIVisual() {
       {[0, 1, 2, 3, 4, 5].map((i) => {
         const angle = (i * 60) * (Math.PI / 180);
         const radius = 50;
+        const ox = 100 + Math.cos(angle) * radius;
+        const oy = 80 + Math.sin(angle) * radius;
         return (
           <g key={i}>
             {/* Connection line */}
             <line
               x1="100"
               y1="80"
-              x2={100 + Math.cos(angle) * radius}
-              y2={80 + Math.sin(angle) * radius}
+              x2={svgCoord(ox)}
+              y2={svgCoord(oy)}
               stroke="currentColor"
               strokeWidth="1"
               opacity="0.3"
@@ -115,8 +121,8 @@ function AIVisual() {
             
             {/* Outer node */}
             <circle
-              cx={100 + Math.cos(angle) * radius}
-              cy={80 + Math.sin(angle) * radius}
+              cx={svgCoord(ox)}
+              cy={svgCoord(oy)}
               r="6"
               fill="none"
               stroke="currentColor"

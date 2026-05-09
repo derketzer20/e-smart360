@@ -70,19 +70,27 @@ const featureItems = [
   { icon: Zap, label: "Webhooks e Integraciones", href: "#features" },
 ];
 
-const useCasesDept = [
-  { label: "Ventas", href: "#" },
-  { label: "Soporte al Cliente", href: "#" },
-  { label: "Marketing", href: "#" },
-  { label: "Recepción Virtual", href: "#" },
-];
+type CasoDeUso = { title: string; slug: string };
 
-const useCasesIndustry = [
-  { icon: HeartPulse, label: "Sector Médico", href: "#" },
-  { icon: ShoppingCart, label: "E-commerce", href: "#" },
-  { icon: GraduationCap, label: "Educación", href: "#" },
-  { icon: Building2, label: "Agencias Inmobiliarias", href: "#" },
-];
+/**
+ * Mapa slug → ícono para los casos de uso por industria. Los slugs no
+ * incluidos caen al ícono por defecto (`Building2`). Mantener este mapa aquí
+ * permite que el JSX siga consumiendo la misma forma `{ icon, label, href }`
+ * sin alterar el diseño base.
+ */
+const INDUSTRY_ICON_BY_SLUG: Record<
+  string,
+  React.ComponentType<{ className?: string }>
+> = {
+  "fitness-wellness": HeartPulse,
+  "retail-e-commerce": ShoppingCart,
+  "education-training": GraduationCap,
+  "real-estate": Building2,
+  "home-services": Building2,
+  "automotive-services": Building2,
+  "food-hospitality": Building2,
+  "professional-services": Building2,
+};
 
 const integrationItems = [
   { label: "WhatsApp / Meta", href: "#" },
@@ -117,12 +125,35 @@ function MegaDropdown({ children }: { children: React.ReactNode }) {
 /*  Navigation                                                         */
 /* ------------------------------------------------------------------ */
 
-export function Navigation() {
+export function Navigation({
+  casosDeUso = [],
+}: {
+  casosDeUso?: CasoDeUso[];
+}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [mobileSections, setMobileSections] = useState<Record<string, boolean>>({});
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Inyección de datos: los enlaces estáticos previos se reemplazan por
+  // metadatos extraídos en build-time desde `content/casos-de-uso/*.md`.
+  // Mantenemos las MISMAS formas (`{label, href}` y `{icon, label, href}`)
+  // para no alterar el JSX ni las clases Tailwind del diseño base.
+  const useCasesDept = casosDeUso
+    .filter((c) => c.slug.startsWith("ai-"))
+    .map((c) => ({
+      label: c.title,
+      href: `/casos-de-uso/${c.slug}`,
+    }));
+
+  const useCasesIndustry = casosDeUso
+    .filter((c) => !c.slug.startsWith("ai-"))
+    .map((c) => ({
+      icon: INDUSTRY_ICON_BY_SLUG[c.slug] ?? Building2,
+      label: c.title,
+      href: `/casos-de-uso/${c.slug}`,
+    }));
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
