@@ -11,11 +11,14 @@ import { TestimonialsSection } from "@/components/landing/testimonials-section";
 import { PricingSection } from "@/components/landing/pricing-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { FooterSection } from "@/components/landing/footer-section";
+import { getCasosDeUso } from "@/lib/casos-de-uso";
 
 export default function Home() {
+  const casosDeUso = getCasosDeUso();
+
   return (
     <main className="relative min-h-screen overflow-x-hidden noise-overlay">
-      <Navigation />
+      <Navigation casosDeUso={casosDeUso} />
       <HeroSection />
       <IntegrationsMarquee />
       <BentoGrid />

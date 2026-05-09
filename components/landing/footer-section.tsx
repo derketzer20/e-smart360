@@ -6,7 +6,7 @@ import { AnimatedWave } from "./animated-wave";
 const footerLinks = {
   Plataforma: [
     { name: "Chatbots Omnicanal", href: "#" },
-    { name: "Agentes de Voz IA", href: "#" },
+    { name: "Agentes de Voz IA", href: "/plataforma/agente-voz-ia" },
     { name: "Oficina Virtual", href: "#" },
     { name: "Tarjetas Digitales NFC", href: "#" },
     { name: "Precios", href: "#pricing" },

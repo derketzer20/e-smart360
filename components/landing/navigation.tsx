@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import {
   Menu,
   X,
@@ -42,7 +43,7 @@ const productItems = [
     icon: Phone,
     label: "Agentes de Voz IA",
     description: "Llamadas telefónicas inteligentes 24/7",
-    href: "#",
+    href: "/plataforma/agente-voz-ia",
     featured: true,
   },
   {
@@ -64,7 +65,7 @@ const productItems = [
 const featureItems = [
   { icon: Workflow, label: "Constructor de Flujos", href: "#features" },
   { icon: Inbox, label: "Bandeja Omnicanal Unificada", href: "#features" },
-  { icon: Phone, label: "Embudos de Voz IA", href: "#features" },
+  { icon: Phone, label: "Embudos de Voz IA", href: "/plataforma/agente-voz-ia" },
   { icon: Megaphone, label: "Campañas Masivas", href: "#features" },
   { icon: Layers, label: "Análisis IQ con IA", href: "#features" },
   { icon: Zap, label: "Webhooks e Integraciones", href: "#features" },
@@ -127,8 +128,11 @@ function MegaDropdown({ children }: { children: React.ReactNode }) {
 
 export function Navigation({
   casosDeUso = [],
+  ctaClassName,
 }: {
   casosDeUso?: CasoDeUso[];
+  /** Estilo opcional del CTA principal (p. ej. acento azul en landing de producto). */
+  ctaClassName?: string;
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -200,7 +204,7 @@ export function Navigation({
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 shrink-0">
+          <a href="/" className="flex items-center gap-2 shrink-0">
             <span
               className={`font-display tracking-tight transition-all duration-500 ${
                 isScrolled ? "text-xl" : "text-2xl"
@@ -423,9 +427,11 @@ export function Navigation({
             </a>
             <Button
               size="sm"
-              className={`bg-foreground hover:bg-foreground/90 text-background rounded-full transition-all duration-300 ${
-                isScrolled ? "px-4 h-8 text-xs" : "px-5"
-              }`}
+              className={cn(
+                "bg-foreground hover:bg-foreground/90 text-background rounded-full transition-all duration-300",
+                isScrolled ? "px-4 h-8 text-xs" : "px-5",
+                ctaClassName,
+              )}
               asChild
             >
               <a href="https://www.e-smart360.com/demo">Comienza Gratis</a>
