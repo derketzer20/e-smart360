@@ -188,4 +188,42 @@
       linear-gradient(135deg, var(--foreground) 25%, transparent 25%, transparent 50%, var(--foreground) 50%, var(--foreground) 75%, transparent 75%) border-box;
     background-size: 100% 100%, 8px 8px;
   }
+
+  /* Marquesinas agente de voz: fila superior → izquierda, inferior → derecha; pausa al hover */
+  @keyframes voice-marquee-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes voice-marquee-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  .voice-marquee-row {
+    overflow: hidden;
+  }
+
+  .voice-marquee-track-left {
+    display: flex;
+    width: max-content;
+    animation: voice-marquee-left 52s linear infinite;
+  }
+
+  .voice-marquee-track-right {
+    display: flex;
+    width: max-content;
+    animation: voice-marquee-right 58s linear infinite;
+  }
+
+  .voice-marquee-row:hover .voice-marquee-track-left,
+  .voice-marquee-row:hover .voice-marquee-track-right {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .voice-marquee-track-left,
+    .voice-marquee-track-right {
+      animation: none;
+    }
+  }
 }

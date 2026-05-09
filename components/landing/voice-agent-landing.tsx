@@ -1,7 +1,9 @@
 "use client";
 
 import { useCallback, useMemo, useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import Image from "next/image";
+import CountUp from "react-countup";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -16,6 +18,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
 import {
   BarChart3,
   Building2,
@@ -56,13 +59,79 @@ const partners = [
   "CloudServ",
 ];
 
-const voiceCards = [
-  { name: "Juan", region: "México", role: "Ventas B2B", freq: 180 },
-  { name: "Elena", region: "España", role: "Soporte", freq: 220 },
-  { name: "Camila", region: "Colombia", role: "Cobranza", freq: 200 },
-  { name: "Diego", region: "Argentina", role: "Agendamiento", freq: 190 },
-  { name: "Valentina", region: "Chile", role: "Recepción", freq: 210 },
-  { name: "Mateo", region: "Perú", role: "Outbound", freq: 175 },
+/** Avatares gratuitos (pravatar.cc); banderas vía flagcdn (uso común en demos). */
+type AgentMarquee = {
+  role: string;
+  name: string;
+  lang: string;
+  flagCode: string;
+  avatar: string;
+  freq: number;
+};
+
+const agentsRowTop: AgentMarquee[] = [
+  { role: "Asistente de citas — salón", name: "Clara", lang: "Portugués", flagCode: "br", avatar: "https://i.pravatar.cc/120?img=32", freq: 195 },
+  { role: "Ventas tarjeta de crédito", name: "Marcus", lang: "Inglés", flagCode: "us", avatar: "https://i.pravatar.cc/120?img=12", freq: 175 },
+  { role: "Agendamiento dental", name: "Elena", lang: "Español", flagCode: "es", avatar: "https://i.pravatar.cc/120?img=45", freq: 210 },
+  { role: "Reclutamiento IA", name: "Lina", lang: "Francés", flagCode: "fr", avatar: "https://i.pravatar.cc/120?img=24", freq: 188 },
+  { role: "Reservas restaurante", name: "Zyan", lang: "Turco", flagCode: "tr", avatar: "https://i.pravatar.cc/120?img=52", freq: 200 },
+  { role: "Soporte fisioterapia", name: "Alex", lang: "Inglés", flagCode: "gb", avatar: "https://i.pravatar.cc/120?img=8", freq: 192 },
+];
+
+const agentsRowBottom: AgentMarquee[] = [
+  { role: "Cobranza amable", name: "Diego", lang: "Español", flagCode: "mx", avatar: "https://i.pravatar.cc/120?img=15", freq: 205 },
+  { role: "Recepción hotelera", name: "Sofía", lang: "Español", flagCode: "ar", avatar: "https://i.pravatar.cc/120?img=38", freq: 198 },
+  { role: "Outbound B2B", name: "Juan", lang: "Español", flagCode: "co", avatar: "https://i.pravatar.cc/120?img=33", freq: 182 },
+  { role: "Soporte e-commerce", name: "Mina", lang: "Inglés", flagCode: "ca", avatar: "https://i.pravatar.cc/120?img=47", freq: 190 },
+  { role: "Agendamiento médico", name: "Ana", lang: "Español", flagCode: "cl", avatar: "https://i.pravatar.cc/120?img=20", freq: 215 },
+  { role: "Ventas inmobiliarias", name: "Tomás", lang: "Español", flagCode: "pe", avatar: "https://i.pravatar.cc/120?img=11", freq: 178 },
+];
+
+const highlightPanels = [
+  {
+    id: "close",
+    title: "Cierra más ventas con agentes de voz IA",
+    bullets: [
+      "Vuelve a llamar a nuevos leads en minutos y mejora el cierre sin sumar horas a tu equipo.",
+      "Entrena al agente con el conocimiento de tu negocio para respuestas precisas y alineadas a tu marca.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=960&h=720&fit=crop&q=80",
+    alt: "Equipo analizando resultados de ventas",
+  },
+  {
+    id: "your-way",
+    title: "Tu agente de voz, a tu manera",
+    bullets: [
+      "Plantillas por industria o entrenamiento con web, PDFs y bases de conocimiento.",
+      "Control total del habla: ritmo, longitud de respuesta y estilo conversacional.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=960&h=720&fit=crop&q=80",
+    alt: "Panel de analíticas y métricas",
+  },
+  {
+    id: "outbound",
+    title: "Optimiza campañas de llamadas salientes",
+    bullets: [
+      "Recursos dedicados para alta disponibilidad, velocidad y aislamiento de datos.",
+      "Programación por zona horaria y reglas de reintento sin saturar al contacto.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=960&h=720&fit=crop&q=80",
+    alt: "Profesionales en llamada",
+  },
+  {
+    id: "history",
+    title: "Accede a todo el historial de llamadas",
+    bullets: [
+      "Transcripciones y grabaciones para control de calidad y mejora del guion.",
+      "Análisis de sentimiento y extracción de datos hacia tu CRM automáticamente.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=960&h=720&fit=crop&q=80",
+    alt: "Colaboración en oficina moderna",
+  },
 ];
 
 const testimonials = [
@@ -107,13 +176,15 @@ const faqItems = [
 
 function playVoicePreview(freq: number) {
   try {
-    const Ctx = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    const Ctx =
+      window.AudioContext ||
+      (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
     const ctx = new Ctx();
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
     osc.type = "sine";
     osc.frequency.value = freq;
-    gain.gain.setValueAtTime(0.12, ctx.currentTime);
+    gain.gain.setValueAtTime(0.1, ctx.currentTime);
     gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.45);
     osc.connect(gain);
     gain.connect(ctx.destination);
@@ -132,20 +203,80 @@ function WaveformMock() {
       {heights.map((h, i) => (
         <motion.span
           key={i}
-          className="w-1.5 rounded-full bg-gradient-to-t from-[#0070f3] to-cyan-300"
+          className="w-1.5 rounded-full bg-gradient-to-t from-[#0070f3] to-cyan-400"
           initial={false}
           animate={
-            reduce
-              ? { height: h }
-              : { height: [h * 0.4, h, h * 0.55, h * 0.85, h * 0.5, h] }
+            reduce ? { height: h } : { height: [h * 0.4, h, h * 0.55, h * 0.85, h * 0.5, h] }
           }
           transition={
-            reduce
-              ? {}
-              : { duration: 1.2 + i * 0.07, repeat: Infinity, ease: "easeInOut" }
+            reduce ? {} : { duration: 1.2 + i * 0.07, repeat: Infinity, ease: "easeInOut" }
           }
         />
       ))}
+    </div>
+  );
+}
+
+function AgentCard({
+  agent,
+  playingId,
+  onPlay,
+}: {
+  agent: AgentMarquee;
+  playingId: string | null;
+  onPlay: (id: string, freq: number) => void;
+}) {
+  const id = `${agent.name}-${agent.role}`;
+  const playing = playingId === id;
+  return (
+    <div
+      className={cn(
+        "grid min-w-[300px] shrink-0 grid-cols-[1fr_auto] grid-rows-[auto_auto] gap-x-3 gap-y-1 rounded-2xl border border-border/80 bg-background p-4",
+        "shadow-[0_8px_30px_-12px_rgba(15,23,42,0.12),0_0_0_1px_rgba(0,112,243,0.06)]",
+      )}
+    >
+      <p className="self-start text-sm font-medium leading-snug text-foreground">{agent.role}</p>
+      <div className="flex flex-col items-center gap-0.5">
+        <div className="relative h-11 w-11 overflow-hidden rounded-full ring-2 ring-[#0070f3]/20">
+          <Image
+            src={agent.avatar}
+            alt={`Retrato de ${agent.name}`}
+            width={44}
+            height={44}
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+        <span className="text-[11px] text-muted-foreground">{agent.name}</span>
+      </div>
+      <div className="col-span-2 mt-3 flex items-center justify-between border-t border-border/60 pt-3">
+        <div className="flex items-center gap-2">
+          <div className="relative h-7 w-7 overflow-hidden rounded-full border border-border shadow-sm">
+            <Image
+              src={`https://flagcdn.com/w80/${agent.flagCode}.png`}
+              alt={`Bandera ${agent.lang}`}
+              width={28}
+              height={28}
+              className="h-full w-full object-cover"
+              unoptimized
+            />
+          </div>
+          <span className="text-xs text-muted-foreground">{agent.lang}</span>
+        </div>
+        <button
+          type="button"
+          onClick={() => onPlay(id, agent.freq)}
+          className={cn(
+            "flex h-10 w-10 items-center justify-center rounded-full border transition-colors",
+            playing
+              ? "border-[#0070f3] bg-[#0070f3] text-white"
+              : "border-border bg-muted/50 text-foreground hover:border-[#0070f3]/40",
+          )}
+          aria-label={`Vista previa de voz de ${agent.name}`}
+        >
+          <Play className="h-4 w-4" fill="currentColor" />
+        </button>
+      </div>
     </div>
   );
 }
@@ -154,6 +285,9 @@ export function VoiceAgentLanding() {
   const reduceMotion = useReducedMotion();
   const [wizardStep, setWizardStep] = useState(0);
   const [playingId, setPlayingId] = useState<string | null>(null);
+  const [activeHighlight, setActiveHighlight] = useState(highlightPanels[0].id);
+
+  const activePanel = highlightPanels.find((p) => p.id === activeHighlight) ?? highlightPanels[0];
 
   const wizardSteps = useMemo(
     () => [
@@ -187,29 +321,23 @@ export function VoiceAgentLanding() {
     window.setTimeout(() => setPlayingId((p) => (p === id ? null : p)), 500);
   }, []);
 
+  const rowTopDup = useMemo(() => [...agentsRowTop, ...agentsRowTop], []);
+  const rowBottomDup = useMemo(() => [...agentsRowBottom, ...agentsRowBottom], []);
+
   return (
-    <div className="relative">
-      {/* Fondo rejilla + resplandor */}
+    <div className="relative z-10">
+      {/* Rejilla suave (estilo sitio principal) */}
       <div
-        className="pointer-events-none fixed inset-0 -z-10 bg-[#0b0b0b]"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none fixed inset-0 -z-10 opacity-[0.35]"
+        className="pointer-events-none fixed inset-0 -z-10 opacity-[0.45]"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, oklch(0.12 0.01 60 / 0.06) 1px, transparent 1px), linear-gradient(to bottom, oklch(0.12 0.01 60 / 0.06) 1px, transparent 1px)`,
           backgroundSize: "56px 56px",
         }}
         aria-hidden
       />
       <div
-        className="pointer-events-none fixed top-[-20%] left-1/2 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full blur-[120px]"
-        style={{ background: `radial-gradient(circle, ${accent}33 0%, transparent 70%)` }}
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none fixed bottom-[10%] right-[-10%] -z-10 h-[380px] w-[380px] rounded-full blur-[100px]"
-        style={{ background: `radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 70%)` }}
+        className="pointer-events-none fixed top-0 right-0 -z-10 h-[420px] w-[420px] rounded-full blur-[100px]"
+        style={{ background: `radial-gradient(circle, ${accent}18 0%, transparent 72%)` }}
         aria-hidden
       />
 
@@ -221,7 +349,7 @@ export function VoiceAgentLanding() {
             animate="show"
             variants={fadeUp}
             custom={0}
-            className="mb-4 text-xs font-mono uppercase tracking-[0.2em] text-white/50"
+            className="mb-4 text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground"
           >
             E-SMART360 · Agentes de voz
           </motion.p>
@@ -230,10 +358,10 @@ export function VoiceAgentLanding() {
             animate="show"
             variants={fadeUp}
             custom={1}
-            className="mx-auto max-w-4xl font-display text-4xl font-normal leading-tight tracking-tight text-white sm:text-5xl md:text-6xl"
+            className="mx-auto max-w-4xl font-display text-4xl font-normal leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl"
           >
             Tu agente de voz con IA para ventas, soporte y prospección{" "}
-            <span className="bg-gradient-to-r from-[#0070f3] to-cyan-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#0070f3] to-cyan-500 bg-clip-text text-transparent">
               24/7
             </span>
           </motion.h1>
@@ -242,7 +370,7 @@ export function VoiceAgentLanding() {
             animate="show"
             variants={fadeUp}
             custom={2}
-            className="mx-auto mt-6 max-w-2xl text-lg text-white/65"
+            className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground"
           >
             Lanza campañas de salida, atiende llamadas entrantes, califica leads y agenda reuniones,
             con la misma calidad de mensaje en cada interacción.
@@ -256,7 +384,7 @@ export function VoiceAgentLanding() {
           >
             <Button
               size="lg"
-              className="h-12 rounded-full border-0 bg-[#0070f3] px-8 text-white shadow-[0_0_32px_-8px_#0070f3] hover:bg-[#0060d0]"
+              className="h-12 rounded-full border-0 bg-[#0070f3] px-8 text-white shadow-[0_8px_28px_-8px_rgba(0,112,243,0.55)] hover:bg-[#0060d0]"
               asChild
             >
               <a href="https://www.e-smart360.com/demo">Agendar una demo</a>
@@ -264,7 +392,7 @@ export function VoiceAgentLanding() {
             <Button
               size="lg"
               variant="outline"
-              className="h-12 rounded-full border-white/20 bg-white/5 text-white backdrop-blur-sm hover:bg-white/10"
+              className="h-12 rounded-full border-border bg-background/80 shadow-sm backdrop-blur-sm hover:bg-muted/50"
               asChild
             >
               <a href="https://app.e-smart360.com/login">Probar gratis</a>
@@ -278,37 +406,36 @@ export function VoiceAgentLanding() {
             className="relative mx-auto mt-16 max-w-4xl"
           >
             <div
-              className="rounded-2xl border border-[#0070f3]/40 bg-zinc-950/80 p-6 shadow-[0_0_60px_-12px_rgba(0,112,243,0.45)] backdrop-blur-md"
-              style={{ boxShadow: `0 0 0 1px rgba(0,112,243,0.2), 0 0 80px -20px ${accent}` }}
+              className="rounded-2xl border border-[#0070f3]/25 bg-background/90 p-6 shadow-[0_24px_60px_-20px_rgba(15,23,42,0.18),0_0_0_1px_rgba(0,112,243,0.12)] backdrop-blur-md"
             >
-              <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-4">
-                <div className="flex items-center gap-2 text-sm text-white/80">
+              <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
+                <div className="flex items-center gap-2 text-sm text-foreground/85">
                   <span className="relative flex h-2.5 w-2.5">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-40" />
-                    <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-40" />
+                    <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
                   </span>
                   Llamada en curso · Agente E-SMART360
                 </div>
-                <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">
+                <span className="rounded-full bg-muted px-3 py-1 text-xs text-muted-foreground">
                   Transcripción en vivo
                 </span>
               </div>
               <WaveformMock />
-              <p className="mt-4 text-center text-xs text-white/45">
-                Vista ilustrativa del panel · Compatible con despliegue en Vercel y tu stack actual
+              <p className="mt-4 text-center text-xs text-muted-foreground">
+                Vista ilustrativa del panel · Listo para desplegar en Vercel
               </p>
             </div>
           </motion.div>
         </section>
 
         {/* Confianza */}
-        <section className="mt-24 overflow-hidden border-y border-white/10 py-10" aria-label="Empresas que confían">
-          <p className="mb-6 text-center text-xs font-mono uppercase tracking-widest text-white/40">
+        <section className="mt-24 overflow-hidden border-y border-border py-10" aria-label="Empresas que confían">
+          <p className="mb-6 text-center text-xs font-mono uppercase tracking-widest text-muted-foreground">
             Operaciones que ya automatizan con E-SMART360
           </p>
           <div className="relative overflow-hidden">
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#0b0b0b] to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#0b0b0b] to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-background to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-background to-transparent" />
             <motion.div
               className="flex w-max gap-10"
               animate={reduceMotion ? {} : { x: ["0%", "-50%"] }}
@@ -317,9 +444,9 @@ export function VoiceAgentLanding() {
               {[...partners, ...partners].map((name, i) => (
                 <span
                   key={`${name}-${i}`}
-                  className="inline-flex shrink-0 items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-sm text-white/35"
+                  className="inline-flex shrink-0 items-center gap-2 rounded-full border border-border bg-muted/40 px-5 py-2 text-sm text-muted-foreground shadow-sm"
                 >
-                  <Building2 className="h-4 w-4 opacity-50" />
+                  <Building2 className="h-4 w-4 opacity-60" />
                   {name}
                 </span>
               ))}
@@ -335,7 +462,7 @@ export function VoiceAgentLanding() {
             viewport={{ once: true, margin: "-80px" }}
             variants={fadeUp}
             custom={0}
-            className="mx-auto max-w-3xl text-center font-display text-3xl text-white md:text-4xl"
+            className="mx-auto max-w-3xl text-center font-display text-3xl text-foreground md:text-4xl"
           >
             ¿Qué pasaría si tu mejor vendedor fuera una IA que nunca duerme?
           </motion.h2>
@@ -365,15 +492,199 @@ export function VoiceAgentLanding() {
                 variants={fadeUp}
                 custom={i}
                 whileHover={reduceMotion ? {} : { y: -4 }}
-                className="rounded-2xl border border-white/10 bg-zinc-900/50 p-6 shadow-lg backdrop-blur-sm transition-shadow hover:border-[#0070f3]/35 hover:shadow-[0_0_40px_-16px_rgba(0,112,243,0.35)]"
+                className="rounded-2xl border border-border bg-background p-6 shadow-[0_12px_40px_-18px_rgba(15,23,42,0.15)] transition-shadow hover:border-[#0070f3]/30 hover:shadow-[0_20px_50px_-24px_rgba(0,112,243,0.18)]"
               >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#0070f3]/15 text-[#0070f3]">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#0070f3]/10 text-[#0070f3]">
                   <c.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-lg font-semibold text-white">{c.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/55">{c.body}</p>
+                <h3 className="text-lg font-semibold text-foreground">{c.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.body}</p>
               </motion.div>
             ))}
+          </div>
+        </section>
+
+        {/* Impacto / números (layout tipo referencia, tema claro + contadores) */}
+        <section
+          className="mt-28 rounded-3xl border border-border bg-muted/35 px-5 py-12 shadow-[0_24px_60px_-28px_rgba(15,23,42,0.2)] sm:px-8 md:px-10"
+          aria-label="Impacto en números"
+        >
+          <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1.15fr)] md:items-stretch md:gap-0">
+            <div className="flex flex-col justify-center text-center md:text-left">
+              <p
+                className="font-display text-5xl font-semibold tracking-tight text-[#0070f3] sm:text-6xl"
+                style={{ textShadow: "0 0 40px rgba(0,112,243,0.2)" }}
+              >
+                <CountUp
+                  end={2.3}
+                  decimals={1}
+                  duration={2.2}
+                  enableScrollSpy
+                  scrollSpyOnce
+                  suffix="K+"
+                />
+              </p>
+              <p className="mt-3 max-w-xs text-sm text-muted-foreground md:max-w-none">
+                Empresas en más de 30 países confían en E-SMART360
+              </p>
+            </div>
+
+            <div
+              className="hidden md:block w-px self-stretch justify-self-center bg-gradient-to-b from-transparent via-[#0070f3]/45 to-transparent md:mx-6"
+              aria-hidden
+            />
+
+            <div className="grid min-h-[200px] grid-cols-2 overflow-hidden rounded-2xl border border-[#0070f3]/20 bg-background/80 shadow-inner">
+              {[
+                {
+                  node: (
+                    <div className="font-display text-2xl text-foreground sm:text-3xl">
+                      $
+                      <CountUp end={300} duration={2.4} enableScrollSpy scrollSpyOnce suffix="K+" />
+                    </div>
+                  ),
+                  caption: "Ahorro estimado en costes comerciales",
+                },
+                {
+                  node: (
+                    <div className="font-display text-2xl font-semibold text-[#0070f3] sm:text-3xl">
+                      <CountUp end={112} duration={2.5} enableScrollSpy scrollSpyOnce suffix="K+" />
+                    </div>
+                  ),
+                  caption: "Minutos de voz procesados",
+                },
+                {
+                  node: (
+                    <div className="font-display text-2xl text-foreground sm:text-3xl">
+                      <CountUp
+                        end={11.8}
+                        decimals={1}
+                        duration={2.3}
+                        enableScrollSpy
+                        scrollSpyOnce
+                        suffix="K"
+                      />
+                    </div>
+                  ),
+                  caption: "Agentes de voz activos",
+                },
+                {
+                  node: (
+                    <div className="font-display text-xl font-semibold text-foreground sm:text-2xl">
+                      <CountUp end={3} decimals={0} duration={1.8} enableScrollSpy scrollSpyOnce suffix="x" />
+                      <span className="ml-1 text-sm font-medium text-muted-foreground sm:text-base">
+                        {" "}
+                        citas agendadas
+                      </span>
+                    </div>
+                  ),
+                  caption: "Frente a prospección tradicional",
+                },
+              ].map((cell, idx) => (
+                <div
+                  key={cell.caption}
+                  className={cn(
+                    "flex flex-col justify-center p-4 sm:p-5",
+                    idx % 2 === 0 ? "border-r border-[#0070f3]/15" : "",
+                    idx < 2 ? "border-b border-[#0070f3]/15" : "",
+                  )}
+                >
+                  {cell.node}
+                  <p className="mt-2 text-xs text-muted-foreground sm:text-sm">{cell.caption}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Highlights: lista + imagen dinámica */}
+        <section className="mt-28" aria-labelledby="highlights-heading">
+          <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+            <div>
+              <div className="mb-4 flex items-center gap-2 text-sm font-medium text-[#0070f3]">
+                <span className="h-2 w-2 rounded-full bg-[#0070f3] shadow-[0_0_12px_#0070f3]" />
+                Destacados
+              </div>
+              <h2
+                id="highlights-heading"
+                className="font-display text-3xl leading-tight text-foreground md:text-4xl"
+              >
+                Atiende llamadas, califica leads y agenda citas 24/7 con agentes de voz IA
+              </h2>
+              <div className="mt-10 divide-y divide-border border-t border-border">
+                {highlightPanels.map((panel) => {
+                  const open = activeHighlight === panel.id;
+                  return (
+                    <div key={panel.id} className="py-1">
+                      <button
+                        type="button"
+                        onClick={() => setActiveHighlight(panel.id)}
+                        className={cn(
+                          "flex w-full items-start justify-between gap-3 py-4 text-left text-base transition-colors",
+                          open ? "text-[#0070f3]" : "text-muted-foreground hover:text-foreground",
+                        )}
+                      >
+                        <span className="font-medium">{panel.title}</span>
+                        <span className="text-muted-foreground/60">{open ? "−" : "+"}</span>
+                      </button>
+                      <AnimatePresence initial={false}>
+                        {open && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+                            className="overflow-hidden"
+                          >
+                            <ul className="space-y-3 pb-4 pl-1">
+                              {panel.bullets.map((b) => (
+                                <li
+                                  key={b}
+                                  className="flex gap-2 text-sm leading-relaxed text-muted-foreground"
+                                >
+                                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-[#0070f3]" />
+                                  {b}
+                                </li>
+                              ))}
+                            </ul>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="relative lg:sticky lg:top-28">
+              <div
+                className="relative overflow-hidden rounded-2xl border border-border bg-muted/20 shadow-[0_28px_70px_-28px_rgba(15,23,42,0.35),0_0_0_1px_rgba(0,112,243,0.08)]"
+                style={{ boxShadow: `0 28px 70px -28px rgba(15,23,42,0.3), 0 0 80px -40px ${accent}33` }}
+              >
+                <div className="aspect-[4/3] w-full">
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={activePanel.id}
+                      initial={{ opacity: 0, scale: 1.02 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.98 }}
+                      transition={{ duration: 0.35 }}
+                      className="relative h-full w-full"
+                    >
+                      <Image
+                        src={activePanel.image}
+                        alt={activePanel.alt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        unoptimized
+                        priority={activePanel.id === highlightPanels[0].id}
+                      />
+                    </motion.div>
+                  </AnimatePresence>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -381,7 +692,9 @@ export function VoiceAgentLanding() {
         <section className="mt-28" aria-label="Cómo empezar">
           <div className="text-center">
             <p className="text-xs font-mono uppercase tracking-widest text-[#0070f3]">Cómo funciona</p>
-            <h2 className="mt-3 font-display text-3xl text-white md:text-4xl">De cero a llamadas en cuatro pasos</h2>
+            <h2 className="mt-3 font-display text-3xl text-foreground md:text-4xl">
+              De cero a llamadas en cuatro pasos
+            </h2>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-4">
             {wizardSteps.map((s, i) => {
@@ -391,24 +704,26 @@ export function VoiceAgentLanding() {
                   key={s.title}
                   type="button"
                   onClick={() => setWizardStep(i)}
-                  className={`rounded-2xl border p-5 text-left transition-all ${
+                  className={cn(
+                    "rounded-2xl border p-5 text-left transition-all",
                     active
-                      ? "border-[#0070f3]/60 bg-[#0070f3]/10 shadow-[0_0_32px_-12px_rgba(0,112,243,0.5)]"
-                      : "border-white/10 bg-zinc-900/40 hover:border-white/20"
-                  }`}
+                      ? "border-[#0070f3]/50 bg-[#0070f3]/8 shadow-[0_16px_40px_-20px_rgba(0,112,243,0.35)]"
+                      : "border-border bg-background shadow-sm hover:border-[#0070f3]/25",
+                  )}
                 >
                   <div className="mb-3 flex items-center gap-2">
                     <span
-                      className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-mono ${
-                        active ? "bg-[#0070f3] text-white" : "bg-white/10 text-white/70"
-                      }`}
+                      className={cn(
+                        "flex h-8 w-8 items-center justify-center rounded-full text-sm font-mono",
+                        active ? "bg-[#0070f3] text-white" : "bg-muted text-muted-foreground",
+                      )}
                     >
                       {i + 1}
                     </span>
                     <s.icon className="h-5 w-5 text-[#0070f3]" />
                   </div>
-                  <h3 className="font-medium text-white">{s.title}</h3>
-                  <p className="mt-2 text-sm text-white/55">{s.desc}</p>
+                  <h3 className="font-medium text-foreground">{s.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
                 </button>
               );
             })}
@@ -420,9 +735,10 @@ export function VoiceAgentLanding() {
                 type="button"
                 aria-label={`Paso ${i + 1}`}
                 onClick={() => setWizardStep(i)}
-                className={`h-2 rounded-full transition-all ${
-                  wizardStep === i ? "w-8 bg-[#0070f3]" : "w-2 bg-white/20 hover:bg-white/35"
-                }`}
+                className={cn(
+                  "h-2 rounded-full transition-all",
+                  wizardStep === i ? "w-8 bg-[#0070f3]" : "w-2 bg-muted-foreground/25 hover:bg-muted-foreground/45",
+                )}
               />
             ))}
           </div>
@@ -443,18 +759,18 @@ export function VoiceAgentLanding() {
                 {["Ventas", "Soporte", "Cobranza"].map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/70"
+                    className="rounded-full border border-border bg-muted/50 px-3 py-1 text-xs text-muted-foreground"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <h2 className="mt-4 font-display text-3xl text-white">Campañas salientes que suenan personales</h2>
-              <p className="mt-4 text-white/60">
+              <h2 className="mt-4 font-display text-3xl text-foreground">Campañas salientes que suenan personales</h2>
+              <p className="mt-4 text-muted-foreground">
                 Programa discados, respeta husos horarios y personaliza el guion con datos del CRM. El agente deja
                 notas estructuradas y próximos pasos automáticos.
               </p>
-              <ul className="mt-6 space-y-3 text-sm text-white/70">
+              <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
                 {["Listas y segmentación", "Reintentos inteligentes", "Handoff a humano cuando haga falta"].map(
                   (t) => (
                     <li key={t} className="flex items-center gap-2">
@@ -472,10 +788,10 @@ export function VoiceAgentLanding() {
               transition={{ duration: 0.5 }}
               className="order-1 lg:order-2"
             >
-              <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-zinc-800 to-zinc-950 shadow-2xl">
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-muted to-background shadow-[0_20px_50px_-24px_rgba(15,23,42,0.2)]">
                 <div className="flex h-full flex-col justify-end p-8">
                   <Users className="mb-4 h-12 w-12 text-[#0070f3]" />
-                  <p className="text-sm text-white/50">Outbound + calificación automática</p>
+                  <p className="text-sm text-muted-foreground">Outbound + calificación automática</p>
                 </div>
               </div>
             </motion.div>
@@ -486,10 +802,10 @@ export function VoiceAgentLanding() {
               initial={{ opacity: 0, scale: 0.96 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="rounded-2xl border border-white/10 bg-gradient-to-br from-zinc-900 to-black p-10 shadow-2xl"
+              className="rounded-2xl border border-border bg-gradient-to-br from-muted/80 to-background p-10 shadow-[0_20px_50px_-24px_rgba(15,23,42,0.18)]"
             >
-              <Headphones className="h-12 w-12 text-cyan-400" />
-              <p className="mt-6 text-sm text-white/50">Entrantes 24/7 · CRM sincronizado</p>
+              <Headphones className="h-12 w-12 text-cyan-600" />
+              <p className="mt-6 text-sm text-muted-foreground">Entrantes 24/7 · CRM sincronizado</p>
             </motion.div>
             <motion.div
               initial="hidden"
@@ -502,14 +818,14 @@ export function VoiceAgentLanding() {
                 {["CRM", "API", "Automatización"].map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/70"
+                    className="rounded-full border border-border bg-muted/50 px-3 py-1 text-xs text-muted-foreground"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <h2 className="mt-4 font-display text-3xl text-white">Cada llamada alimenta tu embudo</h2>
-              <p className="mt-4 text-white/60">
+              <h2 className="mt-4 font-display text-3xl text-foreground">Cada llamada alimenta tu embudo</h2>
+              <p className="mt-4 text-muted-foreground">
                 Transcripciones, resúmenes y extracción de datos listos para disparar workflows. Tus equipos revisan
                 excepciones, no el trabajo repetitivo.
               </p>
@@ -517,78 +833,43 @@ export function VoiceAgentLanding() {
           </div>
         </section>
 
-        {/* Métricas */}
-        <section className="mt-28 rounded-3xl border border-white/10 bg-zinc-900/40 px-6 py-14 backdrop-blur-md">
-          <div className="grid gap-10 text-center md:grid-cols-3">
-            {[
-              { label: "Llamadas procesadas", value: "2.3K+", suffix: "" },
-              { label: "Ingresos atribuibles", value: "$300K+", suffix: "" },
-              { label: "Minutos de voz", value: "1.2M+", suffix: "" },
-            ].map((m, i) => (
-              <motion.div
-                key={m.label}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                variants={fadeUp}
-                custom={i}
-              >
-                <p className="font-display text-4xl text-[#0070f3] md:text-5xl">{m.value}</p>
-                <p className="mt-2 text-sm text-white/55">{m.label}</p>
-              </motion.div>
-            ))}
+        {/* Idiomas — dos filas, direcciones opuestas, pausa en hover */}
+        <section className="mt-28" aria-labelledby="languages-heading">
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <h2
+              id="languages-heading"
+              className="max-w-xl font-display text-3xl text-foreground md:text-4xl"
+            >
+              Impulsa tu negocio en{" "}
+              <span className="font-semibold text-foreground">cualquier idioma</span>
+            </h2>
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
+              Biblioteca de voces con matices regionales. Avatares de demostración y banderas para orientar al usuario;
+              la vista previa de audio es un tono breve generado en el navegador.
+            </p>
           </div>
-        </section>
 
-        {/* Voces */}
-        <section className="mt-28">
-          <h2 className="text-center font-display text-3xl text-white md:text-4xl">
-            Impulsa tu negocio en cualquier idioma
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-white/55">
-            Biblioteca de voces con matices regionales. La vista previa es un tono de demostración en el navegador.
-          </p>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {voiceCards.map((v, i) => {
-              const id = `${v.name}-${v.region}`;
-              const isPlaying = playingId === id;
-              return (
-                <motion.div
-                  key={id}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true }}
-                  variants={fadeUp}
-                  custom={i}
-                  className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-zinc-900/50 p-4"
-                >
-                  <div>
-                    <p className="font-medium text-white">
-                      {v.name} · {v.region}
-                    </p>
-                    <p className="text-xs text-white/45">{v.role}</p>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => onPlayVoice(id, v.freq)}
-                    className={`flex h-11 w-11 items-center justify-center rounded-full border transition-colors ${
-                      isPlaying
-                        ? "border-[#0070f3] bg-[#0070f3] text-white"
-                        : "border-white/20 text-white/70 hover:border-[#0070f3]/50 hover:text-white"
-                    }`}
-                    aria-label={`Reproducir muestra de ${v.name}`}
-                  >
-                    <Play className="h-4 w-4" fill="currentColor" />
-                  </button>
-                </motion.div>
-              );
-            })}
+          <div className="mt-10 space-y-5">
+            <div className="voice-marquee-row">
+              <div className="voice-marquee-track-left gap-4 pr-4">
+                {rowTopDup.map((agent, i) => (
+                  <AgentCard key={`t-${i}-${agent.name}`} agent={agent} playingId={playingId} onPlay={onPlayVoice} />
+                ))}
+              </div>
+            </div>
+            <div className="voice-marquee-row">
+              <div className="voice-marquee-track-right gap-4 pr-4">
+                {rowBottomDup.map((agent, i) => (
+                  <AgentCard key={`b-${i}-${agent.name}`} agent={agent} playingId={playingId} onPlay={onPlayVoice} />
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Testimonios */}
         <section className="mt-28">
-          <h2 className="mx-auto max-w-3xl text-center font-display text-3xl text-white md:text-4xl">
+          <h2 className="mx-auto max-w-3xl text-center font-display text-3xl text-foreground md:text-4xl">
             Resultados reales con agentes de voz E-SMART360
           </h2>
           <div className="relative mx-auto mt-12 max-w-3xl px-4 md:px-16">
@@ -597,40 +878,44 @@ export function VoiceAgentLanding() {
                 {testimonials.map((t, i) => (
                   <CarouselItem key={i}>
                     <div
-                      className="mx-1 rounded-2xl border border-white/10 bg-gradient-to-b from-zinc-900/90 to-black/90 p-8 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] md:p-10"
-                      style={{ boxShadow: `inset 0 1px 0 0 rgba(255,255,255,0.06), 0 0 60px -20px ${accent}33` }}
+                      className="mx-1 rounded-2xl border border-border bg-gradient-to-b from-background to-muted/30 p-8 shadow-[0_20px_50px_-28px_rgba(15,23,42,0.2)] md:p-10"
                     >
-                      <div className="mb-4 flex gap-1 text-amber-400">
+                      <div className="mb-4 flex gap-1 text-amber-500">
                         {Array.from({ length: 5 }).map((_, j) => (
                           <span key={j} aria-hidden>
                             ★
                           </span>
                         ))}
                       </div>
-                      <p className="text-lg leading-relaxed text-white/85">&ldquo;{t.quote}&rdquo;</p>
-                      <p className="mt-6 text-sm font-medium text-white">{t.author}</p>
-                      <p className="text-xs text-white/45">{t.role}</p>
+                      <p className="text-lg leading-relaxed text-foreground/90">&ldquo;{t.quote}&rdquo;</p>
+                      <p className="mt-6 text-sm font-medium text-foreground">{t.author}</p>
+                      <p className="text-xs text-muted-foreground">{t.role}</p>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="-left-2 border-white/20 bg-zinc-900 text-white hover:bg-zinc-800 md:-left-4" />
-              <CarouselNext className="-right-2 border-white/20 bg-zinc-900 text-white hover:bg-zinc-800 md:-right-4" />
+              <CarouselPrevious className="-left-2 border-border bg-background shadow-md md:-left-4" />
+              <CarouselNext className="-right-2 border-border bg-background shadow-md md:-right-4" />
             </Carousel>
           </div>
         </section>
 
         {/* Cumplimiento */}
         <section className="mt-28">
-          <h2 className="text-center font-display text-3xl text-white">Cumplimiento en el que puedes confiar</h2>
-          <p className="mx-auto mt-3 max-w-xl text-center text-sm text-white/50">
-            E-SMART360 prioriza la integridad de datos y buenas prácticas para equipos que operan con información sensible.
+          <h2 className="text-center font-display text-3xl text-foreground">Cumplimiento en el que puedes confiar</h2>
+          <p className="mx-auto mt-3 max-w-xl text-center text-sm text-muted-foreground">
+            E-SMART360 prioriza la integridad de datos y buenas prácticas para equipos que operan con información
+            sensible.
           </p>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { icon: Shield, t: "Seguridad de datos", d: "Controles de acceso y buenas prácticas de arquitectura." },
               { icon: Lock, t: "Cifrado", d: "Protección en tránsito y en reposo según estándares modernos." },
-              { icon: CheckCircle2, t: "Privacidad", d: "Alineación con marcos como GDPR / HIPAA según tu despliegue y contrato." },
+              {
+                icon: CheckCircle2,
+                t: "Privacidad",
+                d: "Alineación con marcos como GDPR / HIPAA según tu despliegue y contrato.",
+              },
               { icon: Users, t: "SSO y roles", d: "Acceso seguro para equipos y agencias." },
               { icon: BarChart3, t: "Auditoría", d: "Visibilidad de actividad para gobierno interno." },
               { icon: Building2, t: "Residencia de datos", d: "Opciones de despliegue acordes a tu región." },
@@ -642,11 +927,11 @@ export function VoiceAgentLanding() {
                 viewport={{ once: true }}
                 variants={fadeUp}
                 custom={i}
-                className="rounded-2xl border border-white/10 bg-zinc-900/30 p-5"
+                className="rounded-2xl border border-border bg-background p-5 shadow-sm"
               >
                 <item.icon className="h-8 w-8 text-[#0070f3]" />
-                <h3 className="mt-3 font-medium text-white">{item.t}</h3>
-                <p className="mt-1 text-sm text-white/50">{item.d}</p>
+                <h3 className="mt-3 font-medium text-foreground">{item.t}</h3>
+                <p className="mt-1 text-sm text-muted-foreground">{item.d}</p>
               </motion.div>
             ))}
           </div>
@@ -658,15 +943,17 @@ export function VoiceAgentLanding() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="rounded-3xl border border-[#0070f3]/30 bg-gradient-to-br from-[#0070f3]/25 via-zinc-900 to-black px-6 py-14 text-center md:px-16"
+            className="rounded-3xl border border-[#0070f3]/25 bg-gradient-to-br from-[#0070f3]/12 via-background to-muted/40 px-6 py-14 text-center shadow-[0_24px_60px_-28px_rgba(0,112,243,0.2)] md:px-16"
           >
-            <h2 className="font-display text-3xl text-white md:text-4xl">7 días. Te desafiamos a ponernos a prueba.</h2>
-            <p className="mx-auto mt-4 max-w-xl text-white/65">
+            <h2 className="font-display text-3xl text-foreground md:text-4xl">
+              7 días. Te desafiamos a ponernos a prueba.
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
               Prueba con tus leads reales. Cancela cuando quieras; nuestro objetivo es que veas conversiones antes.
             </p>
             <Button
               size="lg"
-              className="mt-8 h-12 rounded-full bg-white px-10 text-zinc-950 hover:bg-white/90"
+              className="mt-8 h-12 rounded-full bg-[#0070f3] px-10 text-white shadow-lg hover:bg-[#0060d0]"
               asChild
             >
               <a href="https://www.e-smart360.com/demo">Comenzar ahora</a>
@@ -676,14 +963,14 @@ export function VoiceAgentLanding() {
 
         {/* FAQ */}
         <section id="recursos" className="mt-28 pb-8">
-          <h2 className="text-center font-display text-3xl text-white">Preguntas frecuentes</h2>
+          <h2 className="text-center font-display text-3xl text-foreground">Preguntas frecuentes</h2>
           <Accordion type="single" collapsible className="mx-auto mt-10 w-full max-w-3xl">
             {faqItems.map((item, i) => (
-              <AccordionItem key={i} value={`faq-${i}`} className="border-white/10">
-                <AccordionTrigger className="text-left text-white hover:no-underline hover:text-[#0070f3]">
+              <AccordionItem key={i} value={`faq-${i}`} className="border-border">
+                <AccordionTrigger className="text-left text-foreground hover:no-underline hover:text-[#0070f3]">
                   {item.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-white/60">{item.a}</AccordionContent>
+                <AccordionContent className="text-muted-foreground">{item.a}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

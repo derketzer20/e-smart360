@@ -14,13 +14,13 @@ export default function AgenteVozIAPage() {
   const casosDeUso = getCasosDeUso();
 
   return (
-    <div className="dark min-h-screen bg-[#0b0b0b] selection:bg-[#0070f3]/35">
+    <main className="relative min-h-screen overflow-x-hidden bg-background text-foreground noise-overlay">
       <Navigation
         casosDeUso={casosDeUso}
-        ctaClassName="!bg-[#0070f3] hover:!bg-[#005bcc] !text-white shadow-[0_0_24px_-8px_rgba(0,112,243,0.6)]"
+        ctaClassName="!bg-[#0070f3] hover:!bg-[#005bcc] !text-white shadow-[0_4px_24px_-6px_rgba(0,112,243,0.45)]"
       />
       <VoiceAgentLanding />
       <FooterSection />
-    </div>
+    </main>
   );
 }
