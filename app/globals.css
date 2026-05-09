@@ -226,4 +226,47 @@
       animation: none;
     }
   }
+
+  /* Marquesinas chatbots omnicanal: tres filas alternadas con pausa al hover */
+  @keyframes omni-marquee-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.333%); }
+  }
+
+  @keyframes omni-marquee-right {
+    0% { transform: translateX(-33.333%); }
+    100% { transform: translateX(0); }
+  }
+
+  .omni-marquee-row {
+    overflow: hidden;
+    padding-block: 0.125rem;
+  }
+
+  .omni-marquee-track-left,
+  .omni-marquee-track-right {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+  }
+
+  .omni-marquee-track-left {
+    animation: omni-marquee-left 42s linear infinite;
+  }
+
+  .omni-marquee-track-right {
+    animation: omni-marquee-right 48s linear infinite;
+  }
+
+  .omni-marquee-row:hover .omni-marquee-track-left,
+  .omni-marquee-row:hover .omni-marquee-track-right {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .omni-marquee-track-left,
+    .omni-marquee-track-right {
+      animation: none;
+    }
+  }
 }

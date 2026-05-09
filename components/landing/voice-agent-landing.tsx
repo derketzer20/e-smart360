@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import CountUp from "react-countup";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
@@ -19,6 +19,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
+import { VoiceSpectrumBars, VoiceSpectrumHeroDecor } from "@/components/landing/voice-spectrum";
 import {
   BarChart3,
   Building2,
@@ -26,6 +27,7 @@ import {
   Globe2,
   Headphones,
   Lock,
+  Pause,
   Phone,
   Play,
   Shield,
@@ -59,32 +61,143 @@ const partners = [
   "CloudServ",
 ];
 
-/** Avatares gratuitos (pravatar.cc); banderas vía flagcdn (uso común en demos). */
+/** Avatares (pravatar.cc); banderas (flagcdn). Audio: muestra TTS del navegador por idioma (frase de atención al cliente). */
 type AgentMarquee = {
   role: string;
   name: string;
   lang: string;
   flagCode: string;
   avatar: string;
-  freq: number;
+  /** BCP-47 para speechSynthesis */
+  speechLang: string;
+  /** Frase corta de atención al cliente en el idioma indicado */
+  phrase: string;
 };
 
 const agentsRowTop: AgentMarquee[] = [
-  { role: "Asistente de citas — salón", name: "Clara", lang: "Portugués", flagCode: "br", avatar: "https://i.pravatar.cc/120?img=32", freq: 195 },
-  { role: "Ventas tarjeta de crédito", name: "Marcus", lang: "Inglés", flagCode: "us", avatar: "https://i.pravatar.cc/120?img=12", freq: 175 },
-  { role: "Agendamiento dental", name: "Elena", lang: "Español", flagCode: "es", avatar: "https://i.pravatar.cc/120?img=45", freq: 210 },
-  { role: "Reclutamiento IA", name: "Lina", lang: "Francés", flagCode: "fr", avatar: "https://i.pravatar.cc/120?img=24", freq: 188 },
-  { role: "Reservas restaurante", name: "Zyan", lang: "Turco", flagCode: "tr", avatar: "https://i.pravatar.cc/120?img=52", freq: 200 },
-  { role: "Soporte fisioterapia", name: "Alex", lang: "Inglés", flagCode: "gb", avatar: "https://i.pravatar.cc/120?img=8", freq: 192 },
+  {
+    role: "Asistente de citas — salón",
+    name: "Clara",
+    lang: "Portugués",
+    flagCode: "br",
+    avatar: "https://i.pravatar.cc/120?img=32",
+    speechLang: "pt-BR",
+    phrase:
+      "Olá, obrigado por ligar para a E-SMART360. Sou do atendimento ao cliente. Como posso ajudar você hoje?",
+  },
+  {
+    role: "Ventas tarjeta de crédito",
+    name: "Marcus",
+    lang: "Inglés",
+    flagCode: "us",
+    avatar: "https://i.pravatar.cc/120?img=12",
+    speechLang: "en-US",
+    phrase:
+      "Thank you for calling E-SMART360 customer care. My name is Marcus. How may I help you today?",
+  },
+  {
+    role: "Agendamiento dental",
+    name: "Elena",
+    lang: "Español",
+    flagCode: "es",
+    avatar: "https://i.pravatar.cc/120?img=45",
+    speechLang: "es-ES",
+    phrase:
+      "Gracias por llamar a E-SMART360. Le atiende atención al cliente. ¿En qué puedo ayudarle con su cita?",
+  },
+  {
+    role: "Reclutamiento IA",
+    name: "Lina",
+    lang: "Francés",
+    flagCode: "fr",
+    avatar: "https://i.pravatar.cc/120?img=24",
+    speechLang: "fr-FR",
+    phrase:
+      "Bonjour, merci d'avoir contacté le service client d'E-SMART360. Comment puis-je vous aider aujourd'hui ?",
+  },
+  {
+    role: "Reservas restaurante",
+    name: "Zyan",
+    lang: "Turco",
+    flagCode: "tr",
+    avatar: "https://i.pravatar.cc/120?img=52",
+    speechLang: "tr-TR",
+    phrase:
+      "E-SMART360 müşteri hizmetlerini aradığınız için teşekkür ederim. Size nasıl yardımcı olabilirim?",
+  },
+  {
+    role: "Soporte fisioterapia",
+    name: "Alex",
+    lang: "Inglés",
+    flagCode: "gb",
+    avatar: "https://i.pravatar.cc/120?img=8",
+    speechLang: "en-GB",
+    phrase:
+      "Thank you for calling E-SMART360 support. I'll be happy to assist you. What can I do for you today?",
+  },
 ];
 
 const agentsRowBottom: AgentMarquee[] = [
-  { role: "Cobranza amable", name: "Diego", lang: "Español", flagCode: "mx", avatar: "https://i.pravatar.cc/120?img=15", freq: 205 },
-  { role: "Recepción hotelera", name: "Sofía", lang: "Español", flagCode: "ar", avatar: "https://i.pravatar.cc/120?img=38", freq: 198 },
-  { role: "Outbound B2B", name: "Juan", lang: "Español", flagCode: "co", avatar: "https://i.pravatar.cc/120?img=33", freq: 182 },
-  { role: "Soporte e-commerce", name: "Mina", lang: "Inglés", flagCode: "ca", avatar: "https://i.pravatar.cc/120?img=47", freq: 190 },
-  { role: "Agendamiento médico", name: "Ana", lang: "Español", flagCode: "cl", avatar: "https://i.pravatar.cc/120?img=20", freq: 215 },
-  { role: "Ventas inmobiliarias", name: "Tomás", lang: "Español", flagCode: "pe", avatar: "https://i.pravatar.cc/120?img=11", freq: 178 },
+  {
+    role: "Cobranza amable",
+    name: "Diego",
+    lang: "Español",
+    flagCode: "mx",
+    avatar: "https://i.pravatar.cc/120?img=15",
+    speechLang: "es-MX",
+    phrase:
+      "Gracias por comunicarse con E-SMART360. Soy del área de atención a clientes. ¿En qué puedo ayudarle hoy?",
+  },
+  {
+    role: "Recepción hotelera",
+    name: "Sofía",
+    lang: "Español",
+    flagCode: "ar",
+    avatar: "https://i.pravatar.cc/120?img=38",
+    speechLang: "es-AR",
+    phrase:
+      "Hola, gracias por llamar a E-SMART360. Le saluda recepción y atención al cliente. ¿En qué puedo ayudarla?",
+  },
+  {
+    role: "Outbound B2B",
+    name: "Juan",
+    lang: "Español",
+    flagCode: "co",
+    avatar: "https://i.pravatar.cc/120?img=33",
+    speechLang: "es-CO",
+    phrase:
+      "Buenos días, gracias por contactar a E-SMART360. ¿Cómo puedo ayudarle con su consulta comercial?",
+  },
+  {
+    role: "Soporte e-commerce",
+    name: "Mina",
+    lang: "Inglés",
+    flagCode: "ca",
+    avatar: "https://i.pravatar.cc/120?img=47",
+    speechLang: "en-CA",
+    phrase:
+      "Thank you for reaching E-SMART360 customer support. How can I help you with your order today?",
+  },
+  {
+    role: "Agendamiento médico",
+    name: "Ana",
+    lang: "Español",
+    flagCode: "cl",
+    avatar: "https://i.pravatar.cc/120?img=20",
+    speechLang: "es-CL",
+    phrase:
+      "Gracias por llamar a E-SMART360. Atención al paciente, ¿en qué puedo orientarle con su hora médica?",
+  },
+  {
+    role: "Ventas inmobiliarias",
+    name: "Tomás",
+    lang: "Español",
+    flagCode: "pe",
+    avatar: "https://i.pravatar.cc/120?img=11",
+    speechLang: "es-PE",
+    phrase:
+      "Bienvenido a E-SMART360. Gracias por su llamada al servicio de atención al cliente. ¿En qué puedo servirle?",
+  },
 ];
 
 const highlightPanels = [
@@ -174,60 +287,52 @@ const faqItems = [
   },
 ];
 
-function playVoicePreview(freq: number) {
-  try {
-    const Ctx =
-      window.AudioContext ||
-      (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
-    const ctx = new Ctx();
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.type = "sine";
-    osc.frequency.value = freq;
-    gain.gain.setValueAtTime(0.1, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.45);
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.45);
-  } catch {
-    /* noop */
-  }
+function prefetchSpeechVoices(): Promise<void> {
+  if (typeof window === "undefined") return Promise.resolve();
+  const synth = window.speechSynthesis;
+  if (synth.getVoices().length > 0) return Promise.resolve();
+  return new Promise((resolve) => {
+    const done = () => resolve();
+    synth.addEventListener("voiceschanged", done, { once: true });
+    window.setTimeout(done, 400);
+  });
 }
 
-function WaveformMock() {
-  const reduce = useReducedMotion();
-  const heights = useMemo(() => [12, 28, 18, 40, 22, 36, 16, 44, 20, 32, 14, 38], []);
+function pickVoiceForLang(lang: string): SpeechSynthesisVoice | null {
+  if (typeof window === "undefined") return null;
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices.length) return null;
+  const primary = lang.toLowerCase();
+  const [base] = primary.split("-");
   return (
-    <div className="flex h-24 items-end justify-center gap-1.5 px-4" aria-hidden>
-      {heights.map((h, i) => (
-        <motion.span
-          key={i}
-          className="w-1.5 rounded-full bg-gradient-to-t from-[#0070f3] to-cyan-400"
-          initial={false}
-          animate={
-            reduce ? { height: h } : { height: [h * 0.4, h, h * 0.55, h * 0.85, h * 0.5, h] }
-          }
-          transition={
-            reduce ? {} : { duration: 1.2 + i * 0.07, repeat: Infinity, ease: "easeInOut" }
-          }
-        />
-      ))}
-    </div>
+    voices.find((v) => v.lang.replace("_", "-").toLowerCase() === primary) ??
+    voices.find((v) => v.lang.toLowerCase().startsWith(`${base}-`)) ??
+    voices.find((v) => v.lang.toLowerCase().startsWith(base)) ??
+    null
   );
+}
+
+function agentCardId(agent: AgentMarquee) {
+  return `${agent.name}-${agent.role}`;
 }
 
 function AgentCard({
   agent,
-  playingId,
-  onPlay,
+  activeVoiceId,
+  voicePaused,
+  voiceSynthStarted,
+  onVoicePress,
 }: {
   agent: AgentMarquee;
-  playingId: string | null;
-  onPlay: (id: string, freq: number) => void;
+  activeVoiceId: string | null;
+  voicePaused: boolean;
+  /** true cuando el utterance ya disparó onstart (audio en curso o listo para pausar) */
+  voiceSynthStarted: boolean;
+  onVoicePress: (agent: AgentMarquee) => void;
 }) {
-  const id = `${agent.name}-${agent.role}`;
-  const playing = playingId === id;
+  const id = agentCardId(agent);
+  const isThisCard = activeVoiceId === id;
+  const showPauseIcon = isThisCard && !voicePaused && voiceSynthStarted;
   return (
     <div
       className={cn(
@@ -265,16 +370,32 @@ function AgentCard({
         </div>
         <button
           type="button"
-          onClick={() => onPlay(id, agent.freq)}
+          onClick={() => onVoicePress(agent)}
           className={cn(
-            "flex h-10 w-10 items-center justify-center rounded-full border transition-colors",
-            playing
+            "relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-colors",
+            showPauseIcon
               ? "border-[#0070f3] bg-[#0070f3] text-white"
-              : "border-border bg-muted/50 text-foreground hover:border-[#0070f3]/40",
+              : "border-border bg-background text-foreground shadow-sm hover:border-[#0070f3]/40",
           )}
-          aria-label={`Vista previa de voz de ${agent.name}`}
+          aria-label={
+            showPauseIcon
+              ? `Pausar muestra de voz de ${agent.name}`
+              : isThisCard && voicePaused
+                ? `Reanudar muestra de voz de ${agent.name}`
+                : `Reproducir muestra de atención al cliente en ${agent.lang}`
+          }
         >
-          <Play className="h-4 w-4" fill="currentColor" />
+          {/* Contenedor fijo: mismo centro para play y pausa (evita salto / desfase visual) */}
+          <span
+            className="pointer-events-none absolute inset-0 flex items-center justify-center"
+            aria-hidden
+          >
+            {showPauseIcon ? (
+              <Pause className="size-[15px] shrink-0 stroke-[2.75] stroke-current" />
+            ) : (
+              <Play className="size-[15px] shrink-0 translate-x-[2px] stroke-[2.75] stroke-current fill-none" />
+            )}
+          </span>
         </button>
       </div>
     </div>
@@ -284,7 +405,9 @@ function AgentCard({
 export function VoiceAgentLanding() {
   const reduceMotion = useReducedMotion();
   const [wizardStep, setWizardStep] = useState(0);
-  const [playingId, setPlayingId] = useState<string | null>(null);
+  const [activeVoiceId, setActiveVoiceId] = useState<string | null>(null);
+  const [voicePaused, setVoicePaused] = useState(false);
+  const [voiceSynthStarted, setVoiceSynthStarted] = useState(false);
   const [activeHighlight, setActiveHighlight] = useState(highlightPanels[0].id);
 
   const activePanel = highlightPanels.find((p) => p.id === activeHighlight) ?? highlightPanels[0];
@@ -315,11 +438,77 @@ export function VoiceAgentLanding() {
     [],
   );
 
-  const onPlayVoice = useCallback((id: string, freq: number) => {
-    setPlayingId(id);
-    playVoicePreview(freq);
-    window.setTimeout(() => setPlayingId((p) => (p === id ? null : p)), 500);
+  useEffect(() => {
+    return () => {
+      if (typeof window !== "undefined") window.speechSynthesis.cancel();
+    };
   }, []);
+
+  const onVoicePress = useCallback(
+    async (agent: AgentMarquee) => {
+      if (typeof window === "undefined") return;
+      const synth = window.speechSynthesis;
+      const id = agentCardId(agent);
+
+      if (activeVoiceId === id && voicePaused) {
+        try {
+          synth.resume();
+        } catch {
+          /* algunos navegadores móviles limitan resume */
+        }
+        setVoicePaused(false);
+        return;
+      }
+
+      if (activeVoiceId === id && !voicePaused && voiceSynthStarted && synth.speaking) {
+        try {
+          synth.pause();
+        } catch {
+          synth.cancel();
+          setActiveVoiceId(null);
+          setVoicePaused(false);
+          setVoiceSynthStarted(false);
+          return;
+        }
+        setVoicePaused(true);
+        return;
+      }
+
+      if (activeVoiceId === id && !voicePaused && !voiceSynthStarted && synth.pending) {
+        return;
+      }
+
+      synth.cancel();
+      setVoicePaused(false);
+      setVoiceSynthStarted(false);
+      await prefetchSpeechVoices();
+
+      const utter = new SpeechSynthesisUtterance(agent.phrase);
+      utter.lang = agent.speechLang;
+      utter.rate = 0.93;
+      const voice = pickVoiceForLang(agent.speechLang);
+      if (voice) utter.voice = voice;
+
+      utter.onstart = () => {
+        setVoiceSynthStarted(true);
+      };
+      utter.onend = () => {
+        setVoiceSynthStarted(false);
+        setActiveVoiceId(null);
+        setVoicePaused(false);
+      };
+      utter.onerror = () => {
+        setVoiceSynthStarted(false);
+        setActiveVoiceId(null);
+        setVoicePaused(false);
+      };
+
+      synth.speak(utter);
+      setActiveVoiceId(id);
+      setVoicePaused(false);
+    },
+    [activeVoiceId, voicePaused, voiceSynthStarted],
+  );
 
   const rowTopDup = useMemo(() => [...agentsRowTop, ...agentsRowTop], []);
   const rowBottomDup = useMemo(() => [...agentsRowBottom, ...agentsRowBottom], []);
@@ -343,7 +532,9 @@ export function VoiceAgentLanding() {
 
       <div className="relative mx-auto max-w-6xl px-4 pt-28 pb-6 sm:px-6 lg:px-8 lg:pt-32">
         {/* Hero */}
-        <section id="producto" className="text-center">
+        <section id="producto" className="relative text-center">
+          <VoiceSpectrumHeroDecor />
+
           <motion.p
             initial="hidden"
             animate="show"
@@ -406,7 +597,7 @@ export function VoiceAgentLanding() {
             className="relative mx-auto mt-16 max-w-4xl"
           >
             <div
-              className="rounded-2xl border border-[#0070f3]/25 bg-background/90 p-6 shadow-[0_24px_60px_-20px_rgba(15,23,42,0.18),0_0_0_1px_rgba(0,112,243,0.12)] backdrop-blur-md"
+              className="rounded-2xl border border-border/80 bg-background/90 p-6 shadow-[0_24px_60px_-20px_rgba(15,23,42,0.12),0_0_0_1px_rgba(0,0,0,0.04)] backdrop-blur-md"
             >
               <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
                 <div className="flex items-center gap-2 text-sm text-foreground/85">
@@ -420,7 +611,17 @@ export function VoiceAgentLanding() {
                   Transcripción en vivo
                 </span>
               </div>
-              <WaveformMock />
+              <div className="relative px-2">
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-foreground/10 to-transparent" />
+                <VoiceSpectrumBars
+                  bars={52}
+                  maxHeightClass="h-44 sm:h-52"
+                  density="airy"
+                  minPx={36}
+                  maxPx={172}
+                  className="py-2"
+                />
+              </div>
               <p className="mt-4 text-center text-xs text-muted-foreground">
                 Vista ilustrativa del panel · Listo para desplegar en Vercel
               </p>
@@ -844,8 +1045,8 @@ export function VoiceAgentLanding() {
               <span className="font-semibold text-foreground">cualquier idioma</span>
             </h2>
             <p className="max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
-              Biblioteca de voces con matices regionales. Avatares de demostración y banderas para orientar al usuario;
-              la vista previa de audio es un tono breve generado en el navegador.
+              Biblioteca de voces con matices regionales. Pulsa play para escuchar una frase de atención al cliente en
+              cada idioma; puedes pausar y reanudar. La voz usa el sintetizador de tu navegador.
             </p>
           </div>
 
@@ -853,14 +1054,28 @@ export function VoiceAgentLanding() {
             <div className="voice-marquee-row">
               <div className="voice-marquee-track-left gap-4 pr-4">
                 {rowTopDup.map((agent, i) => (
-                  <AgentCard key={`t-${i}-${agent.name}`} agent={agent} playingId={playingId} onPlay={onPlayVoice} />
+                  <AgentCard
+                    key={`t-${i}-${agent.name}`}
+                    agent={agent}
+                    activeVoiceId={activeVoiceId}
+                    voicePaused={voicePaused}
+                    voiceSynthStarted={voiceSynthStarted}
+                    onVoicePress={onVoicePress}
+                  />
                 ))}
               </div>
             </div>
             <div className="voice-marquee-row">
               <div className="voice-marquee-track-right gap-4 pr-4">
                 {rowBottomDup.map((agent, i) => (
-                  <AgentCard key={`b-${i}-${agent.name}`} agent={agent} playingId={playingId} onPlay={onPlayVoice} />
+                  <AgentCard
+                    key={`b-${i}-${agent.name}`}
+                    agent={agent}
+                    activeVoiceId={activeVoiceId}
+                    voicePaused={voicePaused}
+                    voiceSynthStarted={voiceSynthStarted}
+                    onVoicePress={onVoicePress}
+                  />
                 ))}
               </div>
             </div>

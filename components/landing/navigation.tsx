@@ -36,7 +36,7 @@ const productItems = [
     icon: MessageSquare,
     label: "Chatbots Omnicanal",
     description: "WhatsApp, Facebook, Instagram y más",
-    href: "#",
+    href: "/plataforma/chatbots-omnicanal",
     featured: true,
   },
   {
@@ -57,14 +57,14 @@ const productItems = [
     icon: CreditCard,
     label: "Tarjetas Digitales NFC",
     description: "Networking profesional con IA",
-    href: "#",
+    href: "/plataforma/tarjetas-digitales-nfc",
     featured: false,
   },
 ];
 
 const featureItems = [
-  { icon: Workflow, label: "Constructor de Flujos", href: "#features" },
-  { icon: Inbox, label: "Bandeja Omnicanal Unificada", href: "#features" },
+  { icon: Workflow, label: "Constructor de Flujos", href: "/plataforma/chatbots-omnicanal" },
+  { icon: Inbox, label: "Bandeja Omnicanal Unificada", href: "/plataforma/chatbots-omnicanal" },
   { icon: Phone, label: "Embudos de Voz IA", href: "/plataforma/agente-voz-ia" },
   { icon: Megaphone, label: "Campañas Masivas", href: "#features" },
   { icon: Layers, label: "Análisis IQ con IA", href: "#features" },
@@ -165,6 +165,13 @@ export function Navigation({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
   const openMenu = (name: string) => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
     setActiveMenu(name);
@@ -199,7 +206,7 @@ export function Navigation({
         }`}
       >
         <div
-          className={`flex items-center justify-between transition-all duration-500 px-6 lg:px-8 ${
+          className={`flex items-center justify-between transition-all duration-500 px-5 sm:px-6 lg:px-5 xl:px-8 ${
             isScrolled ? "h-14" : "h-20"
           }`}
         >
@@ -207,7 +214,7 @@ export function Navigation({
           <a href="/" className="flex items-center gap-2 shrink-0">
             <span
               className={`font-display tracking-tight transition-all duration-500 ${
-                isScrolled ? "text-xl" : "text-2xl"
+                isScrolled ? "text-xl" : "text-xl xl:text-2xl"
               }`}
             >
               E-SMART360
@@ -215,7 +222,7 @@ export function Navigation({
           </a>
 
           {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-0 xl:gap-1">
             {navItems.map((item) => (
               <div
                 key={item.key}
@@ -224,7 +231,7 @@ export function Navigation({
                 onMouseLeave={scheduleClose}
               >
                 <button
-                  className={`flex items-center gap-1 px-3 py-2 text-sm rounded-lg transition-colors ${
+                  className={`flex items-center gap-1 rounded-lg px-2 py-2 text-xs transition-colors xl:px-3 xl:text-sm ${
                     activeMenu === item.key
                       ? "text-foreground bg-foreground/5"
                       : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
@@ -409,18 +416,18 @@ export function Navigation({
             {/* Precios - enlace directo */}
             <a
               href="#pricing"
-              className="px-3 py-2 text-sm text-foreground/70 hover:text-foreground hover:bg-foreground/5 rounded-lg transition-colors"
+              className="rounded-lg px-2 py-2 text-xs text-foreground/70 transition-colors hover:bg-foreground/5 hover:text-foreground xl:px-3 xl:text-sm"
             >
               Precios
             </a>
           </div>
 
           {/* Desktop CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3">
             <a
               href="https://app.e-smart360.com/login"
               className={`text-foreground/70 hover:text-foreground transition-all duration-300 ${
-                isScrolled ? "text-xs" : "text-sm"
+                isScrolled ? "text-xs" : "text-xs xl:text-sm"
               }`}
             >
               Iniciar Sesión
@@ -429,7 +436,7 @@ export function Navigation({
               size="sm"
               className={cn(
                 "bg-foreground hover:bg-foreground/90 text-background rounded-full transition-all duration-300",
-                isScrolled ? "px-4 h-8 text-xs" : "px-5",
+                isScrolled ? "px-4 h-8 text-xs" : "px-4 text-xs xl:px-5 xl:text-sm",
                 ctaClassName,
               )}
               asChild
@@ -441,8 +448,9 @@ export function Navigation({
           {/* Mobile toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2"
-            aria-label="Abrir menú"
+            className="lg:hidden p-2 rounded-full hover:bg-foreground/5 transition-colors"
+            aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -451,15 +459,36 @@ export function Navigation({
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 bg-background z-40 transition-all duration-500 overflow-y-auto ${
-          isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        className={`lg:hidden fixed inset-0 bg-background z-[60] transition-all duration-500 ease-out overflow-y-auto ${
+          isMobileMenuOpen
+            ? "opacity-100 pointer-events-auto translate-y-0 scale-100"
+            : "opacity-0 pointer-events-none -translate-y-3 scale-[0.985]"
         }`}
       >
-        <div className="px-6 pt-28 pb-12">
+        <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-5 bg-background/85 backdrop-blur-xl border-b border-foreground/10">
+          <a
+            href="/"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="font-display text-2xl tracking-tight"
+          >
+            E-SMART360
+          </a>
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-foreground/10 bg-background shadow-sm transition-all duration-300 hover:rotate-90 hover:bg-foreground hover:text-background"
+            aria-label="Cerrar menú"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        </div>
+
+        <div className="px-6 pt-10 pb-12">
           {/* Sections */}
           {[
             { key: "plataforma", label: "Plataforma", items: productItems.map((p) => ({ label: p.label, href: p.href })) },
             { key: "caracteristicas", label: "Características", items: featureItems.map((f) => ({ label: f.label, href: f.href })) },
+            { key: "casos", label: "Casos de Uso", items: [...useCasesDept, ...useCasesIndustry].map((c) => ({ label: c.label, href: c.href })) },
             { key: "integraciones", label: "Integraciones", items: integrationItems },
             { key: "recursos", label: "Recursos", items: resourceItems.map((r) => ({ label: r.label, href: r.href })) },
           ].map((section, i) => (

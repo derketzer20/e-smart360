@@ -5,10 +5,10 @@ import { AnimatedWave } from "./animated-wave";
 
 const footerLinks = {
   Plataforma: [
-    { name: "Chatbots Omnicanal", href: "#" },
+    { name: "Chatbots Omnicanal", href: "/plataforma/chatbots-omnicanal" },
     { name: "Agentes de Voz IA", href: "/plataforma/agente-voz-ia" },
     { name: "Oficina Virtual", href: "#" },
-    { name: "Tarjetas Digitales NFC", href: "#" },
+    { name: "Tarjetas Digitales NFC", href: "/plataforma/tarjetas-digitales-nfc" },
     { name: "Precios", href: "#pricing" },
   ],
   Características: [
