@@ -1,41 +1,55 @@
 ---
-title: "Fitness Wellness"
+title: "Fitness y Bienestar"
 slug: "fitness-wellness"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/fitness-wellness#nextra-skip-nav)
+# Fitness, bienestar y belleza
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Fitness & Wellness
+Gimnasios, estudios, spas y centros estéticos: gestiona reservas, membresías y la experiencia del cliente sin saturar a tu recepción.
 
-Copy page
+## Estudios y gimnasios
 
-# Fitness & Wellness
+- Reserva de clases por WhatsApp o teléfono
+- Lista de espera automática en clases llenas
+- Cobranza recurrente y gestión de pausas
+- Recuperación de miembros inactivos
 
-## Gyms & Fitness Studios [Permalink for this section](https://www.dialora.ai/docs/use-cases/fitness-wellness\#gyms--fitness-studios)
+## Centros estéticos y spas
 
-- Class Registration → Book spots in group classes
-- Personal Training Scheduling → Match trainer availability
-- Membership Freeze/Unfreeze → Process holds via voice
-- Guest Pass Activation → Register trial members
-- Nutrition Consultation Booking → Schedule with dietitians
-- Equipment Repair Reports → Log issues, notify maintenance
-- Challenge Sign-ups → Register for fitness challenges
-- Payment Update Requests → Update credit cards on file
-- Waitlist Management → Call when class spots open
-- Health Assessment Scheduling → Book body composition tests
+- Agendamiento de tratamientos por especialista
+- Confirmación y recordatorios para reducir no-shows
+- Promociones segmentadas por servicio
+- Encuestas post-tratamiento y NPS
 
-## Spas & Salons [Permalink for this section](https://www.dialora.ai/docs/use-cases/fitness-wellness\#spas--salons)
+## Salud, nutrición y coaching
 
-- Multi-Service Booking → Hair, nails, massage combinations
-- Stylist Preference Matching → Book with preferred providers
-- Product Order Taking → Professional product sales
-- Membership Management → Monthly treatment packages
-- Gift Certificate Sales → Process over phone
-- Consultation Scheduling → Color consultations, skin analysis
-- Cancellation List Management → Fill last-minute openings
-- Special Event Booking → Bridal parties, group events
-- Loyalty Point Redemption → Apply discounts via voice
-- Appointment Confirmations → 24-hour reminder calls
+- Onboarding conversacional al primer plan
+- Recordatorios de hábitos y check-ins automáticos
+- Renovación y upsell de paquetes
+- Soporte 24/7 a dudas frecuentes
 
-[Education & Training](https://www.dialora.ai/docs/use-cases/education-training "Education & Training") [Specialized Services](https://www.dialora.ai/docs/use-cases/specialized-services "Specialized Services")
+#### Cómo funciona
+
+### 1. Conecta tu plataforma de reservas
+
+Mindbody, Glofox, Booksy, Acuity, Calendly o tu propio sistema.
+
+### 2. Configura el catálogo de servicios
+
+Duración, especialistas, sucursales y reglas de cancelación.
+
+### 3. Sal en vivo
+
+Recepción virtual 24/7, sin perder un sólo cliente.
+
+## Resultados típicos
+
+- **-30% no-shows** por recordatorios y confirmaciones
+- **+25% renovaciones** automatizadas
+- **Cero llamadas perdidas** en horas pico
+- **Equipo enfocado** en la experiencia presencial
+
+## Conecta E-Smart360 a tu estudio
+
+[Solicita una demo](https://www.e-smart360.com/demo)

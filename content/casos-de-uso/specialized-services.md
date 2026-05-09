@@ -1,54 +1,48 @@
 ---
-title: "Specialized Services"
+title: "Servicios Especializados"
 slug: "specialized-services"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/specialized-services#nextra-skip-nav)
+# Servicios especializados
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Specialized Services
+E-Smart360 también cubre verticales con requerimientos particulares de cumplimiento, manejo de información sensible o flujos de operación específicos.
 
-Copy page
+## Salud y consultorios
 
-# Specialized Services
+- Agendamiento y triage clínico siguiendo protocolos del consultorio
+- Recordatorios de tratamientos y adherencia a planes
+- Manejo de copagos y aseguradoras
+- Cumplimiento con buenas prácticas de privacidad clínica
 
-## Pet Services [Permalink for this section](https://www.dialora.ai/docs/use-cases/specialized-services\#pet-services)
+## Servicios financieros y fintech
 
-- Grooming Appointments → Schedule based on breed needs
-- Boarding Reservations → Check availability, special requirements
-- Vet Appointment Reminders → Vaccination due dates
-- Pet Sitting Coordination → Match sitters with clients
-- Emergency Vet Triage → Assess urgency, direct to emergency care
-- Prescription Refills → Auto-refill pet medications
-- Training Class Enrollment → Puppy classes, obedience training
-- Lost Pet Alerts → Broadcast to network
-- Pet Transport Scheduling → Vet visits for elderly owners
-- Adoption Follow-ups → Check on new adoptions
+- Calificación de prospectos para productos de crédito
+- Atención conversacional a dudas de cuenta y facturación
+- Cobranza temprana y gestión de morosidad
+- Cumplimiento con políticas KYC y registro completo
 
-## Photography Studios [Permalink for this section](https://www.dialora.ai/docs/use-cases/specialized-services\#photography-studios)
+## Sector público y ONG
 
-- Session Booking → Portrait, wedding, event scheduling
-- Photo Selection Appointments → Review and ordering sessions
-- Digital Download Delivery → Send gallery links
-- Print Order Status → Production and delivery updates
-- Mini Session Registration → Holiday, seasonal campaigns
-- Location Scouting Calls → Discuss shoot locations
-- Model Release Collection → Verbal consent recording
-- Wedding Timeline Coordination → Day-of scheduling
-- Retouching Requests → Collect specific edit requests
-- Album Design Approval → Review changes via phone
+- Atención a programas sociales y trámites
+- Encuestas masivas de impacto y satisfacción
+- Recordatorios de citas y entregables
+- Soporte multilingüe a comunidades atendidas
 
-## Event Planning [Permalink for this section](https://www.dialora.ai/docs/use-cases/specialized-services\#event-planning)
+## Logística y supply chain
 
-- Vendor Coordination → Schedule meetings with vendors
-- RSVP Management → Collect responses, dietary needs
-- Timeline Confirmations → Day-of schedule verification
-- Budget Update Calls → Discuss changes, approvals
-- Site Visit Scheduling → Venue walk-throughs
-- Entertainment Booking → Check availability, book acts
-- Rental Inventory Checks → Confirm equipment availability
-- Weather Contingency Activation → Rain plan implementation
-- Guest List Management → Add/remove attendees
-- Post-Event Surveys → Satisfaction and testimonials
+- Confirmación de recolecciones y entregas
+- Resolución de incidencias de envío
+- Coordinación con transportistas
+- Reportería automática de SLAs
 
-[Fitness & Wellness](https://www.dialora.ai/docs/use-cases/fitness-wellness "Fitness & Wellness") [Advanced Integration Patterns](https://www.dialora.ai/docs/use-cases/advanced-integration-patterns "Advanced Integration Patterns")
+## Cumplimiento, auditoría y trazabilidad
+
+- Logs completos por interacción (texto y audio)
+- Políticas de retención configurables
+- Manejo de consentimientos y opt-outs por canal
+- Roles y permisos granulares
+
+## Diseña tu solución a medida
+
+[Habla con un especialista](https://www.e-smart360.com/demo)

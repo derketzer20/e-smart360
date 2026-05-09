@@ -1,41 +1,55 @@
 ---
-title: "Food Hospitality"
+title: "Restaurantes y Hospitalidad"
 slug: "food-hospitality"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/food-hospitality#nextra-skip-nav)
+# Restaurantes y hospitalidad
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Food & Hospitality
+Restaurantes, hoteles, eventos y catering: maneja reservas, pedidos y consultas de huéspedes sin saturar al equipo de piso.
 
-Copy page
+## Restaurantes y bares
 
-# Food & Hospitality
+- Reservas de mesa por WhatsApp o teléfono
+- Toma de pedidos para llevar y delivery
+- Confirmación, cambios y waitlist en hora pico
+- Encuestas post-visita y captura de reviews
 
-## Restaurants [Permalink for this section](https://www.dialora.ai/docs/use-cases/food-hospitality\#restaurants)
+## Hoteles y hospedaje
 
-- Reservation Management → Book tables, special requests
-- Takeout Order Taking → Voice orders into POS system
-- Catering Consultations → Gather requirements, quote events
-- Waitlist Management → Call when table ready
-- Dietary Restriction Handling → Note allergies, alert kitchen
-- Party Booking → Large group reservations, pre-orders
-- Delivery Status Updates → Real-time driver tracking calls
-- Loyalty Point Balance → Check/redeem rewards via voice
-- Daily Special Notifications → Call VIP customers
-- Feedback Collection → Post-dining experience surveys
+- Atención 24/7 a huéspedes (check-in, amenidades, servicios)
+- Upsell de habitación, traslados y experiencias
+- Gestión de reservas y reagendamientos
+- Soporte conversacional multilingüe
 
-## Hotels & B&Bs [Permalink for this section](https://www.dialora.ai/docs/use-cases/food-hospitality\#hotels--bbs)
+## Catering y eventos
 
-- Room Booking → Check availability, process reservations
-- Concierge Services → Restaurant reservations, activity booking
-- Wake-up Calls → Automated morning calls
-- Room Service Orders → Voice ordering to kitchen
-- Lost Item Recovery → Log items, coordinate shipping
-- Group Booking Coordination → Wedding blocks, conferences
-- Upsell Opportunities → Room upgrades, spa services
-- Check-out Surveys → Immediate feedback collection
-- Maintenance Requests → Room issues, dispatch housekeeping
-- Airport Shuttle Scheduling → Coordinate pickup times
+- Cotizaciones rápidas con criterios estándar
+- Agendamiento de visitas y degustaciones
+- Recordatorios de pagos y entregables
+- Coordinación logística previa al evento
 
-[Retail E-commerce](https://www.dialora.ai/docs/use-cases/retail-e-commerce "Retail E-commerce") [Education & Training](https://www.dialora.ai/docs/use-cases/education-training "Education & Training")
+#### Cómo funciona
+
+### 1. Conecta tu sistema
+
+POS, PMS, plataforma de reservas o WhatsApp directo.
+
+### 2. Carga tu menú y políticas
+
+Disponibilidad, tiempos, zonas de delivery y reglas de reserva.
+
+### 3. Sal en vivo
+
+Atención inmediata en cualquier canal, las 24 horas.
+
+## Resultados típicos
+
+- **+20% reservas** capturadas en horas pico
+- **-25% errores** en toma de pedidos
+- **Cero llamadas perdidas** durante el servicio
+- **Mejor experiencia** del huésped y más reseñas positivas
+
+## Atiende mejor sin saturar al piso
+
+[Solicita una demo](https://www.e-smart360.com/demo)

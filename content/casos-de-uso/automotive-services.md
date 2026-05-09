@@ -1,41 +1,55 @@
 ---
-title: "Automotive Services"
+title: "Servicios Automotrices"
 slug: "automotive-services"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/automotive-services#nextra-skip-nav)
+# Servicios automotrices
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Automotive Services
+Concesionarios, talleres, agencias de seminuevos y servicios de movilidad: cierra más servicios y vende más unidades sin perder un solo lead.
 
-Copy page
+## Concesionarios y agencias
 
-# Automotive Services
+- Atención inmediata a leads de portales y campañas
+- Calificación por modelo, presupuesto y financiamiento
+- Agendamiento de pruebas de manejo
+- Seguimiento de cotizaciones enviadas
 
-## Auto Repair Shops [Permalink for this section](https://www.dialora.ai/docs/use-cases/automotive-services\#auto-repair-shops)
+## Talleres mecánicos y servicio
 
-- Diagnostic Explanations → Call customers with findings, get repair approval
-- Parts Availability Checks → Real-time inventory, automatic ordering
-- Shuttle Service Coordination → Schedule pickups/drop-offs with drivers
-- Warranty Claim Processing → Collect info, submit to manufacturers
-- Fleet Maintenance Tracking → Schedule commercial vehicle services
-- Inspection Reminders → State inspection due dates, instant booking
-- Recall Notifications → VIN matching, schedule recall repairs
-- Loaner Car Management → Reserve vehicles, process agreements
-- Insurance Claim Assistance → Three-way calls with adjusters
-- Service History Inquiries → Voice-accessible maintenance records
+- Reservas de servicio mayor y menor
+- Recordatorios de mantenimiento programado
+- Cotizaciones rápidas para servicios estándar
+- Encuestas post-servicio y captura de reviews
 
-## Car Dealerships [Permalink for this section](https://www.dialora.ai/docs/use-cases/automotive-services\#car-dealerships)
+## Seminuevos y compraventa
 
-- Test Drive Scheduling → Check vehicle availability, book appointments
-- Trade-in Valuations → Collect vehicle info, provide instant estimates
-- Finance Pre-Qualification → Gather financial info, soft credit pulls
-- Service Appointment Booking → Integration with dealer management systems
-- Parts Department Orders → Check availability, order for pickup
-- Vehicle Arrival Notifications → Alert customers when ordered vehicles arrive
-- Lease End Management → Schedule inspections, discuss options
-- Customer Retention Calls → Birthday wishes, service reminders
-- Sales Follow-ups → Post-visit calls, overcome objections
-- Event Invitations → Sale events, new model launches
+- Calificación de prospectos compradores
+- Agendamiento de visitas a la unidad
+- Captura de información para tasaciones
+- Reactivación de prospectos antiguos
 
-[Home Services](https://www.dialora.ai/docs/use-cases/home-services "Home Services") [Real Estate](https://www.dialora.ai/docs/use-cases/real-estate "Real Estate")
+#### Cómo funciona
+
+### 1. Conecta tu DMS o CRM
+
+CDK, AutoUno, Reynolds, HubSpot o cualquier otro sistema.
+
+### 2. Define tus flujos comerciales
+
+Modelos disponibles, planes de financiamiento y criterios de cierre.
+
+### 3. Sal en vivo
+
+E-Smart360 atiende, califica y entrega leads listos al asesor.
+
+## Resultados típicos
+
+- **5 minutos** de respuesta promedio (vs. horas)
+- **+25% pruebas de manejo** agendadas
+- **Cero llamadas perdidas** en horas pico
+- **Más servicio** capturado por seguimiento automático
+
+## Vende más, atiende mejor
+
+[Solicita una demo](https://www.e-smart360.com/demo)

@@ -1,141 +1,67 @@
 ---
-title: "Ai Dispatch"
+title: "Despacho IA"
 slug: "ai-dispatch"
 category: "casos-de-uso"
 ---
 
-# Turn Every Service Call  Into a Booked Job
+# Despacho 24/7 sin saturar a tu coordinador
 
-An AI dispatch assistant that answers every call instantly, schedules technicians in real time, and
+Un agente de voz IA que toma solicitudes de servicio, prioriza emergencias y despacha al técnico correcto en segundos, integrado con tu sistema de rutas y CRM.
 
-keeps customers informed so your dispatch team focuses on real exceptions, not ringing phones.
+## Por qué el despacho manual es un cuello de botella
 
-![Dialora Qualifies Leads](https://www.dialora.ai/images/use-cases/ai-lead-qualification/wave-image.webp)
+- Llamadas de emergencia esperando minutos críticos
+- Coordinador saturado entre técnicos y clientes
+- Errores en la asignación por presión de tiempo
+- Sin cobertura nocturna o de fin de semana
 
-Schedule a Dispatch Service Job
+## Cómo lo resuelve E-Smart360
 
-## Why Dispatch Teams Are  Always Playing Catch-Up
+E-Smart360 atiende cada llamada, identifica el tipo y la urgencia del servicio, consulta disponibilidad de técnicos en vivo y despacha en automático respetando tus reglas de prioridad.
 
-Most service businesses deal with the same inbound calls all day:
+## Funciones clave
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)New service bookings
+- **Triage automático** por urgencia, geografía y especialidad
+- **Asignación al técnico óptimo** según disponibilidad y skill
+- **Confirmación al cliente** con ETA en tiempo real
+- **Escalamiento inmediato** ante emergencias críticas
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)ETA checks and arrival updates
+#### Cómo funciona
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Rescheduling requests
+### 1. Conecta tu sistema de rutas
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Simple status or payment questions
+ServiceTitan, Housecall Pro, Jobber u otros vía API o webhooks.
 
-Dispatchers juggle routine coordination while trying to manage routes, technician workloads, and true priority jobs. Calls get missed. Booking slows down. Customers move on to competitors, especially after hours.
+### 2. Define reglas de despacho
 
-![The Problem](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproblem-image.1c733b14.webp&w=1080&q=100)
+Tipos de servicio, niveles de urgencia, geografía y skills por técnico.
 
-How Dialora Changes Dispatch Operations
+### 3. Sal en vivo
 
-Dialora, as an AI dispatch assistant, answers every call, captures job details, handles routine bookings end-to-end and escalates only the calls that need human judgment.
+E-Smart360 atiende, despacha y notifica sin intervención humana en casos rutinarios.
 
-## What Every Service Call Looks Like
+#### Cómo lo usan los equipos
 
-Customers get fast answers. Dispatchers get breathing room.
+**Servicios HVAC, plomería y eléctricos.** Emergencias 24/7 sin pagar guardia humana de despacho.
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-receptionist%2FTime.webp&w=750&q=100)
+**Logística y mensajería.** Confirmación de recogidas y entregas con asignación dinámica.
 
-Clear intent capture
+**Servicios de campo B2B.** Coordinación de técnicos multi-cliente con priorización por SLA.
 
-It understands the request, verifies customer details, and accurately assesses urgency.
+## Preguntas frecuentes
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-receptionist%2FHandoff.webp&w=750&q=100)
+### ¿Cómo maneja una emergencia real?
 
-Live scheduling
+Triage por palabras clave y tono. Las críticas pasan a humano de inmediato con resumen.
 
-Checks technician availability and skills, books the job, & sends confirmations and ETAs automatically.
+### ¿Se conecta con mi software de rutas?
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-receptionist%2FSupport.webp&w=750&q=100)
+Sí. Integraciones nativas y API genérica para sistemas custom.
 
-Smart escalation
+### ¿Qué pasa si todos los técnicos están ocupados?
 
-Routine job? Booked. True emergency or complex case? Live transfer available.
+E-Smart360 ofrece huecos disponibles, lista de espera priorizada o transferencia.
 
-#### How It Fits Into Your Operation
+## Despacha más rápido sin sumar coordinadores
 
-1\. Connect2\. Define3\. Live
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Fconnect-image.webp&w=1920&q=75)
-
-### Connect your stack
-
-Integrate with your CRM, calendar, and phone system in under an hour.
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Fdefine-image.webp&w=1920&q=75)
-
-### Define your rules
-
-Set qualification criteria (company size, budget, authority, timeline) and load your scripts, FAQs, and objection handling.
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Flive-image.webp&w=1920&q=75)
-
-### Go live
-
-Route calls to Dialora. Conversations are logged and scored. Qualified leads get meetings booked or transferred. Others are documented for insights.
-
-[See a Dispatch Walkthrough](https://www.dialora.ai/signup)
-
-#### How Service Teams Use Dialora
-
-01
-
-Job intake
-
-Routine service calls get booked immediately without dispatcher involvement.
-
-02
-
-Urgency triage
-
-True emergencies surface fast. Everything else follows standard scheduling.
-
-03
-
-After-hours capture
-
-Calls nights and weekends turn into confirmed jobs instead of voicemail.
-
-## Built for Operators Who Need Accuracy
-
-Scheduling logic you control
-
-Live handoff when judgment is required
-
-Works with your existing dispatch stack
-
-Clear visibility into booked jobs and response times
-
-[Connect Dialora to Your Dispatch Software](https://www.dialora.ai/contact-us)
-
-## FAQs
-
-### How does Dialora decide what’s urgent?
-
-You define urgency criteria and escalation rules. Dialora applies them consistently on every call.
-
-### What if availability changes mid-call?
-
-### How long until it’s live?
-
-## Keep Phones From Becoming a  Bottleneck
-
-Every call Dialora handles is a job protected. Every interruption
-
-removed gives dispatch time back to run tighter routes and serve
-
-customers better.
-
-[Contact us](https://www.dialora.ai/contact-us)[Sign up](https://www.dialora.ai/signup)
-
-## We use cookies
-
-We use cookies to ensure you get the best experience on our website. For more information on how we use cookies, please see our privacy policy.
-
-By clicking "Accept", you agree to our use of cookies. [Cookie Policy](https://www.dialora.ai/privacy-policy "Learn more about our privacy policy")
-
-Accept AllDecline
+[Solicita una demo](https://www.e-smart360.com/demo)

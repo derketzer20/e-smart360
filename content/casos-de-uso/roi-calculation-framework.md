@@ -1,32 +1,54 @@
 ---
-title: "Roi Calculation Framework"
+title: "Marco de Cálculo de ROI"
 slug: "roi-calculation-framework"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/roi-calculation-framework#nextra-skip-nav)
+# Marco de cálculo de ROI
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") ROI Calculation Framework
+Un framework simple para estimar el retorno de implementar E-Smart360 en tu operación. Evalúa el ahorro de costos, los ingresos incrementales y los costos de la solución.
 
-Copy page
+## 1. Ahorro de costos
 
-# ROI Calculation Framework
+Calcula cuánto cuesta hoy atender el volumen que automatizarás.
 
-For each use case, calculate:
+| Factor | Cómo calcularlo |
+| --- | --- |
+| Costo del agente por hora | Salario cargado / horas productivas |
+| Tiempo promedio por contacto | Promedio histórico en tu CRM o telefonía |
+| Volumen mensual a automatizar | Tickets o llamadas repetitivas / mes |
+| Tasa de deflexión esperada | 60-80% para casos rutinarios |
 
-```
+**Ahorro mensual = Volumen × Tasa de deflexión × Tiempo × Costo por hora**
 
-ROI = (Time Saved × Hourly Rate) + (New Revenue Generated) - (Dialora + Integration Costs)
+## 2. Ingresos incrementales
 
-Example: Appointment Scheduling
+Calcula qué ingresos estás dejando sobre la mesa hoy.
 
-Time Saved: 10 hours/week × $25/hour = $250/week
-New Revenue: 5 extra appointments × $100 = $500/week
-Costs: Dialora ($200/month) + Zapier ($20/month) = $55/week
-Weekly ROI: $250 + $500 - $55 = $695
-Annual ROI: $36,140
-```
+| Factor | Cómo calcularlo |
+| --- | --- |
+| Leads perdidos por no respuesta | Llamadas no contestadas, formularios sin seguimiento |
+| Tasa de conversión actual | Cierres / leads atendidos |
+| Ticket promedio | Ingreso promedio por cierre |
+| Mejora esperada en velocidad | 5x conversión típica con respuesta sub-minuto |
 
-Each of these use cases can be implemented with Dialora + Zapier/Make, providing immediate automation benefits and measurable ROI for small businesses across every industry.
+**Ingresos incrementales = Leads recuperados × Tasa de conversión × Ticket promedio**
 
-[Implementation Priority Matrix](https://www.dialora.ai/docs/use-cases/implementation-priority-matrix "Implementation Priority Matrix")
+## 3. Costos del proyecto
+
+Suma todos los conceptos para una vista neta.
+
+- Suscripción mensual a E-Smart360
+- Costos de telefonía y mensajería (variable por volumen)
+- Tiempo interno del equipo durante el deploy (típicamente 2-4 semanas)
+- Mantenimiento mensual estimado
+
+## 4. ROI neto
+
+**(Ahorro + Ingresos incrementales − Costos) / Costos × 100**
+
+En implementaciones bien ejecutadas, los pilotos de E-Smart360 alcanzan ROI positivo en menos de 90 días, con payback típico entre 2 y 4 meses.
+
+## Modela tu caso con nosotros
+
+[Solicita una sesión de modelado](https://www.e-smart360.com/demo)

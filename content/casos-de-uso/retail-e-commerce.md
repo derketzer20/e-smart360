@@ -1,41 +1,55 @@
 ---
-title: "Retail E Commerce"
+title: "Retail y E-Commerce"
 slug: "retail-e-commerce"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/retail-e-commerce#nextra-skip-nav)
+# Retail y E-Commerce
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Retail E-commerce
+Automatiza el ciclo de vida del cliente en retail físico y digital: desde la captación y la confirmación de pedido hasta el seguimiento post-venta y la reactivación.
 
-Copy page
+## Tiendas físicas locales
 
-# Retail & E-commerce
+- Coordinación de pickup en tienda con confirmación y aviso de llegada
+- Verificación de disponibilidad y reservas de producto
+- Avisos de pedidos especiales y agendamiento de retiros
+- Inscripción y consulta de programas de lealtad por teléfono
 
-## Local Retail Stores [Permalink for this section](https://www.dialora.ai/docs/use-cases/retail-e-commerce\#local-retail-stores)
+## E-Commerce y marketplaces
 
-- Curbside Pickup Coordination → Order confirmation, arrival notification
-- Product Availability Checks → Inventory lookup, hold items
-- Special Order Updates → Arrival notifications, schedule pickup
-- Loyalty Program Enrollment → Sign up over phone, add points
-- Return Authorization → Pre-approve returns, schedule drop-offs
-- Personal Shopping Appointments → Book stylist sessions
-- Sale Notifications → VIP early access calls
-- Gift Registry Management → Add items, check purchases
-- Layaway Payment Reminders → Payment due dates, process payments
-- Custom Order Status → Updates on special orders
+- Confirmación de pedidos COD y verificación de fraude
+- Seguimiento proactivo de envíos y estatus de entrega
+- Recuperación de carritos abandonados con voz o WhatsApp
+- Gestión de devoluciones, cambios y reembolsos
 
-## Online Stores [Permalink for this section](https://www.dialora.ai/docs/use-cases/retail-e-commerce\#online-stores)
+## Marcas D2C y suscripciones
 
-- Abandoned Cart Recovery → Call high-value cart abandoners
-- Order Confirmation Calls → Verify large orders, prevent fraud
-- Shipping Delay Notifications → Proactive issue communication
-- Product Review Requests → Post-delivery feedback calls
-- Subscription Management → Modify, pause, or cancel subscriptions
-- Size Exchange Coordination → Process exchanges efficiently
-- Wholesale Order Processing → B2B order taking via voice
-- Influencer Outreach → Qualify and onboard affiliates
-- Customer Win-back Campaigns → Re-engage inactive customers
-- Pre-launch Interest Gauging → Call VIPs about new products
+- Onboarding conversacional al primer pedido
+- Cobranza recurrente y gestión de pausas de suscripción
+- Encuestas NPS post-compra con derivación a soporte
+- Reactivación de churners con ofertas segmentadas
 
-[Professional Services](https://www.dialora.ai/docs/use-cases/professional-services "Professional Services") [Food & Hospitality](https://www.dialora.ai/docs/use-cases/food-hospitality "Food & Hospitality")
+#### Cómo funciona
+
+### 1. Conecta tu stack
+
+Shopify, WooCommerce, VTEX, Magento, ERP y CRM en un solo lugar.
+
+### 2. Configura los flujos
+
+Plantillas listas para confirmación, recuperación, soporte y nurture.
+
+### 3. Sal en vivo
+
+Atención omnicanal 24/7 que escala con tus picos de campaña.
+
+## Métricas que mueve E-Smart360
+
+- **+25% conversión** en recuperación de carrito
+- **-40% costo** de atención por contacto
+- **+15% LTV** por mejor onboarding y retención
+- **Tiempos de respuesta** sub-minuto en cualquier canal
+
+## Conecta E-Smart360 a tu operación retail
+
+[Solicita una demo](https://www.e-smart360.com/demo)

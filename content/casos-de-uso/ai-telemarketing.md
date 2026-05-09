@@ -1,139 +1,67 @@
 ---
-title: "Ai Telemarketing"
+title: "Telemarketing IA"
 slug: "ai-telemarketing"
 category: "casos-de-uso"
 ---
 
-# Scale Outbound Calls Without  Burning Out Your Team
+# Campañas outbound a escala, sin armar un piso de telemarketing
 
-An AI telemarketing assistant that runs campaigns, engages prospects naturally, and books
+Un agente de voz IA que ejecuta campañas salientes con voz natural y a una fracción del costo de un piso humano: encuestas, recuperación, recordatorios, reactivación y nurture.
 
-meetings directly on your calendar so your reps only talk to warm, qualified leads.
+## Por qué el telemarketing tradicional está roto
 
-![Dialora Qualifies Leads](https://www.dialora.ai/images/use-cases/ai-lead-qualification/wave-image.webp)
+- Costo por marcación elevado y rotación crónica
+- Calidad inconsistente entre agentes
+- Tiempos para escalar campañas
+- Falta de visibilidad por contacto
 
-See Dialora Run an Outbound Call
+## Cómo lo resuelve E-Smart360
 
-## Why Traditional  Telemarketing Fails
+E-Smart360 marca, conversa, registra y deriva con la misma calidad en cada llamada. Las campañas se lanzan en horas, no en semanas, y escalan a miles de contactos en paralelo sin sumar headcount.
 
-Outbound calling still works, but it’s costly and exhausting
+## Casos de uso típicos
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Connect rates often below 10%
+- **Recuperación de carritos** y reactivación de cuentas inactivas
+- **Encuestas NPS** y feedback de clientes
+- **Recordatorios** de pagos, vencimientos y citas
+- **Promociones segmentadas** para tu base
+- **Nurture conversacional** para leads fríos
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Hours wasted dialing wrong numbers or leaving voicemails
+#### Cómo funciona
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Repetitive objections drain SDR morale
+### 1. Carga tu lista
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Top reps stuck on low-value dials instead of closing deals
+CSV, sincronización con CRM o segmentos por reglas.
 
-Data shows manual cold calling costs 5–10x more per booked meeting than automated qualification, & SDR burnout is a leading cause of sales turnover.
+### 2. Define el guión y los objetivos
 
-![The Problem](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproblem-image.df38fc06.webp&w=1080&q=100)
+Mensaje, manejo de objeciones, criterios de éxito y derivación.
 
-How Dialora Turns Outbound Into Revenue
+### 3. Lanza la campaña
 
-Dialora acts as a persistent, intelligent AI telemarketer. It calls prospects at optimal times, adapts to responses, qualifies interest, and books meetings automatically without overloading your team.
+E-Smart360 marca a velocidad, registra resultados y entrega los positivos a tu equipo.
 
-## What Happens on Every Outbound Call
+## Compliance y reputación de marca
 
-Every prospect interaction is structured and actionable
+- Cumplimiento con DNC y horarios locales
+- Identificación clara como agente IA cuando aplica
+- Guardrails contextuales sobre tu base aprobada
+- Logs completos por contacto para auditoría
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-answering-service%2FHandoff.webp&w=750&q=100)
+## Preguntas frecuentes
 
-Smart dialing
+### ¿Pueden manejar grandes volúmenes?
 
-Uses your CRM lists, respects time zones and do-not-call rules
+Sí. Miles de llamadas concurrentes sin degradar latencia.
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2FHandoff.webp&w=750&q=100)
+### ¿Cómo manejan opt-outs?
 
-Natural engagement
+Detección automática de "no llamar" con baja inmediata de la lista.
 
-Opens with your pitch, builds rapport, handles common objections
+### ¿Reportan por contacto?
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2FSupport.webp&w=750&q=100)
+Sí. Cada llamada con transcript, sentimiento, resultado y siguiente paso.
 
-Instant booking or follow-up
+## Multiplica tu alcance sin multiplicar costo
 
-Secures meetings immediately or schedules callbacks/nurture SMS for later
-
-#### How It Works
-
-1\. Connect2\. Define3\. Live
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Fconnect-image.webp&w=1920&q=75)
-
-### Connect your stack
-
-Integrate with your CRM, calendar, and phone system in under an hour.
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Fdefine-image.webp&w=1920&q=75)
-
-### Define your rules
-
-Set qualification criteria (company size, budget, authority, timeline) and load your scripts, FAQs, and objection handling.
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Flive-image.webp&w=1920&q=75)
-
-### Go live
-
-Route calls to Dialora. Conversations are logged and scored. Qualified leads get meetings booked or transferred. Others are documented for insights.
-
-[See a Telemarketing Walkthrough](https://www.dialora.ai/signup)
-
-#### How Teams Use Dialora for Telemarketing
-
-01
-
-B2B SaaS & tech
-
-Targets ICP lists, qualifies decision-makers, and books demos automatically, scaling the pipeline without adding headcount.
-
-02
-
-Agencies & professional services
-
-Re-engages past leads, pitches new accounts, and secures intro calls consistently without SDR burnout.
-
-03
-
-High-ticket B2C
-
-Calls warm and aged leads, answers questions, addresses objections, and schedules in-home or virtual consultations.
-
-## Built for Sales Leaders Who  Need Scale
-
-Full ownership of messaging, qualification logic, and objection handling
-
-Built-in TCPA/DNC scrubbing, time-zone respect, and opt-out handling
-
-Phone and SMS outreach fully covered
-
-Track connect rates, qualification rates, bookings, and campaign ROI
-
-[Connect Dialora to Your CRM](https://www.dialora.ai/contact-us)
-
-## FAQs
-
-### What happens if a lead asks a complex question not in the script?
-
-The agent uses "Contextual Guardrails." Instead of hallucinating or getting stuck, it recognizes the boundary of its knowledge. It will offer to find the specific answer or seamlessly escalate the call to a senior human rep.
-
-### How do you prevent "AI Latency" (unnatural pauses)?
-
-### Can the agent integrate with our existing sales stack?
-
-## Turn Outbound Into Consistent  Pipeline
-
-Every qualified meeting Dialora books grows your pipeline, while your
-
-reps focus on selling, not dialing.
-
-[Contact us](https://www.dialora.ai/contact-us)[Sign up](https://www.dialora.ai/signup)
-
-## We use cookies
-
-We use cookies to ensure you get the best experience on our website. For more information on how we use cookies, please see our privacy policy.
-
-By clicking "Accept", you agree to our use of cookies. [Cookie Policy](https://www.dialora.ai/privacy-policy "Learn more about our privacy policy")
-
-Accept AllDecline
+[Lanza una campaña](https://www.e-smart360.com/demo)

@@ -1,39 +1,50 @@
 ---
-title: "Implementation Priority Matrix"
+title: "Matriz de Prioridad de Implementación"
 slug: "implementation-priority-matrix"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/implementation-priority-matrix#nextra-skip-nav)
+# Matriz de prioridad de implementación
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Implementation Priority Matrix
+Una guía práctica para decidir qué automatizar primero con E-Smart360. Empieza por los casos de menor fricción y mayor impacto, y avanza progresivamente hacia los flujos más complejos.
 
-Copy page
+## Quick Wins (Fase 1)
 
-# Implementation Priority Matrix
+Automatizaciones de bajo riesgo y alto impacto. Tiempo de despliegue típico: días.
 
-## Quick Wins (Implement First) [Permalink for this section](https://www.dialora.ai/docs/use-cases/implementation-priority-matrix\#quick-wins-implement-first)
+- Agendamiento de citas y reservas
+- Manejo de FAQ básicas
+- Recordatorios de pago y vencimientos
+- Llamadas de confirmación
+- Captura simple de datos
 
-- Appointment scheduling
-- Basic FAQ handling
-- Payment reminders
-- Confirmation calls
-- Simple data collection
+## Complejidad media (Fase 2)
 
-## Medium Complexity (Phase 2) [Permalink for this section](https://www.dialora.ai/docs/use-cases/implementation-priority-matrix\#medium-complexity-phase-2)
+Casos que requieren integraciones y reglas más finas. Tiempo de despliegue: 2 a 4 semanas.
 
-- Multi-step workflows
-- CRM integration
-- Calendar optimization
-- Lead qualification
-- Follow-up sequences
+- Flujos multi-paso y con condicionales
+- Integración profunda con CRM y ERP
+- Optimización de calendarios y rutas
+- Calificación avanzada de leads
+- Secuencias de seguimiento automatizado
 
-## Advanced (Phase 3) [Permalink for this section](https://www.dialora.ai/docs/use-cases/implementation-priority-matrix\#advanced-phase-3)
+## Avanzado (Fase 3)
 
-- Predictive analytics
-- Complex routing logic
-- Multi-system orchestration
-- AI-powered decision trees
-- Real-time optimization
+Casos que orquestan varios sistemas y aprovechan analítica predictiva.
 
-[Advanced Integration Patterns](https://www.dialora.ai/docs/use-cases/advanced-integration-patterns "Advanced Integration Patterns") [ROI Calculation Framework](https://www.dialora.ai/docs/use-cases/roi-calculation-framework "ROI Calculation Framework")
+- Analítica predictiva sobre llamadas y pipeline
+- Lógica compleja de enrutamiento
+- Orquestación multi-sistema
+- Árboles de decisión potenciados con IA
+- Optimización en tiempo real de campañas
+
+## Cómo elegir el primer caso
+
+1. Identifica un cuello de botella repetitivo y medible (tiempo de respuesta, no-shows, costo por contacto).
+2. Asegura que la integración esté disponible (CRM, calendario, telefonía).
+3. Define el criterio de éxito en una semana de operación.
+4. Lanza un piloto controlado y mide.
+
+## Implementa con criterio
+
+[Habla con un experto](https://www.e-smart360.com/demo)

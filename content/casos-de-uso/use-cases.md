@@ -1,58 +1,61 @@
 ---
-title: "Use Cases"
+title: "Catálogo de Casos de Uso"
 slug: "use-cases"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases#nextra-skip-nav)
+# Catálogo de casos de uso
 
-Use CasesHealthcare & Medical Practices
+Más de 200 automatizaciones probadas para pequeñas y medianas empresas, agrupadas por función e industria. Empieza por la que más impacto te genere y crece desde ahí.
 
-Copy page
+## Por función de negocio
 
-# 200+ Automation Use Cases for Small Businesses with Dialora AI Voice Agents
+### Ventas
 
-## Healthcare & Medical Practices [Permalink for this section](https://www.dialora.ai/docs/use-cases\#healthcare--medical-practices)
+- Calificación de leads inbound 24/7
+- Follow-up automático a cotizaciones
+- Reactivación de leads antiguos
+- Agendamiento de demos y reuniones
 
-Follow these steps to launch an outbound voice campaign using your AI agent inside Dialora , perfect for offers, appointment reminders, or any customer outreach automation.
+### Marketing
 
-## Dental Offices [Permalink for this section](https://www.dialora.ai/docs/use-cases\#dental-offices)
+- Captura conversacional desde anuncios
+- Encuestas y feedback de clientes
+- Reactivación de bases inactivas
+- Promociones segmentadas en WhatsApp
 
-- Appointment Scheduling → Voice agent books directly into practice management software (OpenDental/Denticon/Eaglesoft)
-- Lead Followup Campaign → Lead comes in
-- Insurance Verification → Collect insurance info via voice, send to system
-- Appointment Reminders → Call patients 1, 24, 48 hours before, reschedule no-shows automatically
-- Emergency Triage → NO MEDICAL ADVICE After-hours calls routed by severity, urgent cases trigger on-call alerts, next business day emergency appointment
-- Treatment Plan Follow-ups → Call patients who haven’t scheduled recommended procedures (NO MEDICAL ADVICE)
-- Payment Plan Setup → send link to apply to CareCredit or finance companies
-- Prescription Refill Requests → Voice collection → send to office
-- Post-Procedure Check-ins → Automated wellness calls 24 hours after procedures
-- Recall Campaigns → Call overdue patients for cleanings, book immediately
-- New Patient Intake → Text + email intake forms
+### Soporte y operaciones
 
-IF THEY ASK MEDICAL QUESTIONS REFER TO HUMAN. IF IT DOESN’T EXIST ON THEIR WEBSITE DON’T SAY IT.
+- Resolución de FAQ y casos rutinarios
+- Estado de pedidos y trazabilidad
+- Gestión de devoluciones y reembolsos
+- Despacho y coordinación de campo
 
-## Medical Clinics [Permalink for this section](https://www.dialora.ai/docs/use-cases\#medical-clinics)
+### Cobranza y finanzas
 
-- Telehealth Pre-Screening → Qualify symptoms, schedule video visits automatically
-- Lab Result Notifications → Call patients when results ready, schedule follow-ups if needed
-- Vaccine Waitlists → Manage cancellations, auto-call next eligible patient
-- Medication Adherence Calls → Check if patients taking medications, alert doctors if not
-- Prior Authorization → Collect info for insurance pre-approvals, submit automatically
-- Referral Coordination → Book specialist appointments while on call with patient
-- Billing Inquiries → Call transfer to humans
-- Clinical Trial Recruitment → Screen eligible patients, schedule consultations
-- After-Hours Nurse Line → NO MEDICAL ADVICE Triage symptoms, book urgent care or ER if needed
+- Recordatorios de pago automáticos
+- Cobranza temprana conversacional
+- Reactivación de suscripciones canceladas
+- Onboarding a pagos recurrentes
 
-## Mental Health Practices [Permalink for this section](https://www.dialora.ai/docs/use-cases\#mental-health-practices)
+## Por industria
 
-- Crisis Intervention → Assess risk level, connect to crisis counselor immediately
-- Therapy Session Booking → Match availability with therapist schedules
-- Insurance Benefits Check → Verify mental health coverage, copays, deductibles
-- Mood Check-ins → Regular wellness calls, flag concerns to providers
-- Group Session Registration → Enroll in support groups, send calendar invites
-- Prescription Refill Coordination → Connect with psychiatrist for controlled substances
-- Intake Assessments → PHQ-9, GAD-7 screening via voice, score automatically
-- Cancellation Waitlist → Fill last-minute openings automatically
+- **Salud y bienestar:** consultorios, clínicas, gimnasios, centros estéticos
+- **Retail y e-commerce:** tiendas físicas, marketplaces, marcas D2C
+- **Servicios profesionales:** legales, contables, agencias, consultoras
+- **Servicios para el hogar:** plomería, electricidad, HVAC, limpieza
+- **Educación:** universidades, escuelas, academias, e-learning
+- **Inmobiliario:** brokers, desarrolladores, administración
+- **Automotriz:** concesionarios, talleres, seminuevos
+- **Hospitalidad:** restaurantes, hoteles, eventos, catering
 
-[Home Services](https://www.dialora.ai/docs/use-cases/home-services "Home Services")
+## Cómo elegir el primer caso
+
+1. Identifica el cuello de botella más doloroso (volumen, costo o pérdida).
+2. Asegura que la integración esté disponible.
+3. Define un criterio de éxito medible.
+4. Lanza un piloto controlado y escala.
+
+## Empieza por el caso que más mueve tu negocio
+
+[Solicita una demo](https://www.e-smart360.com/demo)

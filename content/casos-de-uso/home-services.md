@@ -1,61 +1,55 @@
 ---
-title: "Home Services"
+title: "Servicios para el Hogar"
 slug: "home-services"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/home-services#nextra-skip-nav)
+# Servicios para el hogar
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Home Services
+Plomeros, electricistas, HVAC, jardinería, limpieza, fumigación: convierte cada llamada en un trabajo agendado sin perder emergencias ni saturar al despachador.
 
-Copy page
+## Operación reactiva (emergencias)
 
-# Home Services
+- Atención 24/7 a llamadas de emergencia
+- Triage por tipo de urgencia y geografía
+- Despacho automático al técnico de guardia
+- Confirmación al cliente con ETA en tiempo real
 
-## HVAC Companies [Permalink for this section](https://www.dialora.ai/docs/use-cases/home-services\#hvac-companies)
+## Operación programada (servicio recurrente)
 
-- Emergency Dispatch → Route urgent calls to on-call technicians via SMS/call
-- Service Scheduling → Book maintenance appointments, optimize route planning
-- Quote Follow-ups → Call prospects 24-48 hours after quote, close deals
-- Maintenance Reminders → Annual filter changes, seasonal tune-ups
-- Parts Ordering → Technician calls for parts, auto-orders from suppliers
-- Service Agreement Renewals → Call expiring contracts, process renewals
-- Weather-Triggered Campaigns → Call customers before heat waves/cold snaps
-- Warranty Registration → Collect equipment info, register with manufacturers
-- Invoice Collection → Payment reminder calls, process payments via phone
-- Customer Satisfaction Surveys → Post-service calls, route complaints to management
+- Agendamiento de visitas y mantenimientos
+- Recordatorios y reagendamiento sin fricción
+- Cotizaciones rápidas para trabajos estándar
+- Seguimiento post-servicio y captura de reviews
 
-## Plumbing Services [Permalink for this section](https://www.dialora.ai/docs/use-cases/home-services\#plumbing-services)
+## Servicios estacionales
 
-- Water Heater Recall Notices → Identify affected customers, schedule inspections
-- Drain Cleaning Reminders → Annual preventive maintenance scheduling
-- Emergency Leak Response → Guide through shut-off process while dispatching
-- Permit Scheduling → Book inspection appointments with city officials
-- New Construction Coordination → Schedule rough-in and final inspections
-- Septic Service Reminders → Track pumping schedules, book automatically
-- Frozen Pipe Prevention → Call customers during freeze warnings
-- Water Quality Testing → Schedule annual tests, email results
+- Campañas outbound de mantenimiento preventivo
+- Reactivación de clientes inactivos
+- Gestión de listas de espera en alta demanda
+- Promociones segmentadas por zona y servicio
 
-## Landscaping Companies [Permalink for this section](https://www.dialora.ai/docs/use-cases/home-services\#landscaping-companies)
+#### Cómo funciona
 
-- Seasonal Service Transitions → Switch from mowing to leaf removal automatically
-- Weather Rescheduling → Rain delays, automatic rescheduling calls
-- Fertilization Schedules → Book treatments based on grass type/season
-- Snow Removal Dispatch → Storm tracking, customer priority routing
-- Irrigation Startups/Winterization → Seasonal scheduling, reminder calls
-- Design Consultations → Qualify projects, book designer visits
-- HOA Bid Proposals → Collect requirements, generate proposals
-- Chemical Application Notices → Compliance calls 24 hours before treatment
+### 1. Conecta tu sistema de campo
 
-## Cleaning Services [Permalink for this section](https://www.dialora.ai/docs/use-cases/home-services\#cleaning-services)
+ServiceTitan, Housecall Pro, Jobber u hojas de cálculo, da igual.
 
-- Recurring Booking Management → Handle schedule changes, vacation holds
-- Move-in/Move-out Scheduling → Coordinate with property managers
-- Supply Reorder Triggers → Client calls for supplies, auto-orders placed
-- Quality Control Calls → Post-clean satisfaction checks, immediate issue resolution
-- Employee Sick Day Coverage → Notify clients, reschedule or substitute
-- Commercial Contract Renewals → Annual contract negotiations via voice
-- Special Request Handling → Deep cleans, add-on services while on call
-- Key/Access Management → Coordinate lockbox codes, entry instructions
+### 2. Define tu catálogo y precios
 
-[Healthcare & Medical Practices](https://www.dialora.ai/docs/use-cases "Healthcare & Medical Practices") [Automotive Services](https://www.dialora.ai/docs/use-cases/automotive-services "Automotive Services")
+Servicios estándar, ventanas de tiempo y reglas de despacho.
+
+### 3. Sal en vivo
+
+E-Smart360 atiende, despacha y notifica al equipo correcto.
+
+## Resultados típicos
+
+- **+20% trabajos agendados** sobre el mismo volumen de llamadas
+- **Cero llamadas perdidas** en horas pico
+- **-50% costo** de despacho administrativo
+- **Mejores reviews** por seguimiento automático
+
+## Captura cada oportunidad
+
+[Solicita una demo](https://www.e-smart360.com/demo)

@@ -1,139 +1,79 @@
 ---
-title: "Ai Call Center"
+title: "Call Center IA"
 slug: "ai-call-center"
 category: "casos-de-uso"
 ---
 
-# Run a Call Center 24/7  Without Adding Staff
+# Opera un call center 24/7 sin sumar personal
 
-An AI-powered call center that handles inbound and outbound calls, qualifies leads, resolves
+Un call center potenciado por IA que gestiona llamadas entrantes y salientes, califica leads, resuelve incidencias rutinarias y agenda citas para que tus agentes se concentren solo en interacciones de alto valor.
 
-routine support issues, and books appointments so your agents focus only on high-value interactions.
+## Por qué escalar un call center tradicional es difícil
 
-![Dialora Qualifies Leads](https://www.dialora.ai/images/use-cases/ai-lead-qualification/wave-image.webp)
+Los call centers enfrentan volúmenes impredecibles con costos fijos:
 
-See Dialora Power a Full Call Center
+- Las horas pico saturan a los agentes
+- Las llamadas fuera de horario se pierden
+- Las consultas rutinarias entierran a los casos complejos
+- La rotación se dispara por tareas repetitivas
 
-## Why Scaling Traditional Call  Centers Is Hard
+Los datos del sector indican que el 70-80% de las interacciones son basadas en reglas, pero las empresas pagan salarios premium por estas tareas, dejando la satisfacción baja y a los agentes agotados.
 
-Call centers face unpredictable volumes but fixed costs
+## Cómo E-Smart360 maneja las llamadas con inteligencia
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Peak hours overwhelm agents
+E-Smart360 actúa como una fuerza laboral completa de call center IA: escala al instante, gestiona inbound y outbound, sigue tus flujos al pie de la letra y solo involucra a los agentes cuando se requiere juicio humano.
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)After-hours calls go unanswered
+## Cómo se ve cada llamada
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Routine queries bury complex issues
+- **Manejo contextual:** entiende la intención, consulta el historial de la cuenta y aplica tus guiones
+- **Resolución completa:** califica, soluciona, agenda o vende según tus flujos
+- **Escalamiento inteligente:** sólo los temas complejos se marcan para seguimiento humano
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)High turnover from repetitive tasks
+#### Cómo funciona
 
-Industry data shows 70–80% of interactions are rule-based, yet companies pay premium wages for these repetitive tasks, leaving customer satisfaction low and agents burned out.
+### 1. Conecta tu stack
 
-![The Problem](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproblem-image.3536c1dc.webp&w=1080&q=100)
+Integra tu CRM, calendario y sistema telefónico en menos de una hora.
 
-How Dialora Handles Calls Smarter
+### 2. Define tus reglas
 
-Dialora acts as a full AI call center workforce. It scales instantly, manages inbound and outbound calls, follows workflows precisely, and only involves agents when human judgment is required.
+Establece criterios de calificación (tamaño de empresa, presupuesto, autoridad, plazo) y carga tus guiones, FAQ y manejo de objeciones.
 
-## What Every Call Looks Like
+### 3. Sal en vivo
 
-Each call is resolved quickly and efficiently
+Las llamadas se enrutan a E-Smart360. Las conversaciones se registran y puntúan, los leads calificados consiguen reuniones agendadas o se transfieren, y el resto queda documentado para insights.
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-call-center%2FTime.webp&w=750&q=100)
+#### Cómo lo usan los equipos
 
-Context-aware handling
+**Soporte al cliente.** Resuelve más del 70% de los tickets de tier 1 (recuperación de contraseñas, estado de pedidos, FAQ), reduce tiempos de espera y solo escala los casos genuinos, bajando el costo por contacto.
 
-Understands caller intent, references account history, and applies your scripts
+**Ventas inbound y respuesta a leads.** Contesta las llamadas de prospectos al instante, califica el ajuste y agenda reuniones o demos, capturando ingresos antes de que el lead se enfríe.
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-call-center%2FHandoff.webp&w=750&q=100)
+**Campañas outbound y seguimientos.** Ejecuta recordatorios de citas, recuperación de clientes, encuestas y nurture sin sumar headcount, manteniendo el alcance consistente y medible.
 
-Complete resolution
+## Pensado para líderes de operaciones que buscan control
 
-Qualifies, troubleshoots, books, or sells according to your workflows
+- Cada guion, árbol de decisión y regla de enrutamiento lo diseñas tú
+- Maneja cualquier número de llamadas simultáneas sin costo adicional
+- Gestiona teléfono, chat y SMS de forma consistente
+- Tableros con tasas de resolución, tiempos de espera, sentimiento y productividad
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-call-center%2FSupport.webp&w=750&q=100)
+## Preguntas frecuentes
 
-Intelligent escalation
+### ¿Cómo controla las "alucinaciones" y la reputación de marca?
 
-Routine issues are resolved automatically; only complex matters are flagged for follow-up.
+E-Smart360 usa Guardrails Contextuales entrenados sobre tu base de conocimiento aprobada. Si un cliente pregunta fuera de su alcance, deriva sin fricción a un especialista humano con un resumen.
 
-#### How It Works
+### ¿La voz se siente realmente humana?
 
-1\. Connect2\. Define3\. Live
+Sí. Voces neutras hispanas con latencia sub-segundo y manejo natural de pausas y muletillas.
 
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Fconnect-image.webp&w=1920&q=75)
+### ¿Cómo manejan TCPA y listas "Do Not Call"?
 
-### Connect your stack
+Tenemos integraciones nativas con DNC nacionales y honra preferencias por lista, hora y canal.
 
-Integrate with your CRM, calendar, and phone system in under an hour.
+## Da mejor servicio sin sumar personal
 
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Fdefine-image.webp&w=1920&q=75)
+Cada llamada rutinaria que maneja E-Smart360 mejora la satisfacción, reduce costos y libera a tus agentes para el trabajo que realmente importa.
 
-### Define your rules
-
-Set qualification criteria (company size, budget, authority, timeline) and load your scripts, FAQs, and objection handling.
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Flive-image.webp&w=1920&q=75)
-
-### Go live
-
-Route calls to Dialora. Conversations are logged and scored. Qualified leads get meetings booked or transferred. Others are documented for insights.
-
-[See a Call Center Walkthrough](https://www.dialora.ai/signup)
-
-#### How Teams Use Dialora for Call Centers
-
-01
-
-Customer Support
-
-Deflects over 70% of tier-1 tickets (password resets, order status, FAQs), reduces hold times, and escalates only genuine issues, cutting cost per contact.
-
-02
-
-Inbound Sales & Lead Response
-
-Answers prospect calls instantly, qualifies fit, and books meetings or demos, ensuring revenue is captured before leads go cold.
-
-03
-
-Outbound Campaigns & Follow-Ups
-
-Runs appointment reminders, win-back calls, surveys, and nurture campaigns without increasing headcount, keeping outreach consistent and measurable.
-
-## Built for Operations Leaders  Who Need Control
-
-Every script, decision tree, and routing rule designed by you
-
-Handles any number of simultaneous calls without adding cost
-
-Manages phone, chat, and SMS consistently
-
-Dashboards track resolution rates, wait times, sentiment, and agent productivity
-
-[Connect Dialora to Your Call System](https://www.dialora.ai/contact-us)
-
-## FAQs
-
-### How does Dialora manage "Hallucinations" and brand reputation?
-
-Dialora uses Contextual Guardrails, trained on your approved knowledge. If a customer asks outside its scope, it smoothly connects to a human specialist with a summary.
-
-### Is the voice response fast enough to feel like a real human?
-
-### How do you handle TCPA compliance and "Do Not Call" (DNC) lists?
-
-## Deliver Better Service Without Adding  Staff
-
-Every routine call Dialora handles improves customer satisfaction,
-
-reduces costs, and frees your agents to focus on the work that truly matters.
-
-[Contact us](https://www.dialora.ai/contact-us)[Sign up](https://www.dialora.ai/signup)
-
-## We use cookies
-
-We use cookies to ensure you get the best experience on our website. For more information on how we use cookies, please see our privacy policy.
-
-By clicking "Accept", you agree to our use of cookies. [Cookie Policy](https://www.dialora.ai/privacy-policy "Learn more about our privacy policy")
-
-Accept AllDecline
+[Hablar con un experto](https://www.e-smart360.com/demo) · [Comienza gratis](https://www.e-smart360.com/demo)

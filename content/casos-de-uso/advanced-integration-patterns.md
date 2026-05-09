@@ -1,31 +1,51 @@
 ---
-title: "Advanced Integration Patterns"
+title: "Patrones Avanzados de Integración"
 slug: "advanced-integration-patterns"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/advanced-integration-patterns#nextra-skip-nav)
+# Patrones avanzados de integración
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Advanced Integration Patterns
+Cuando los flujos básicos no son suficientes, E-Smart360 se conecta como un nodo más en tu arquitectura: orquesta APIs, dispara webhooks, consume datos en vivo y vuelve a tu CRM.
 
-Copy page
+## Patrones más comunes
 
-### Advanced Integration Patterns [Permalink for this section](https://www.dialora.ai/docs/use-cases/advanced-integration-patterns\#advanced-integration-patterns)
+### 1. Llamada con consulta a sistema en vivo
 
-## Multi-Channel Orchestration [Permalink for this section](https://www.dialora.ai/docs/use-cases/advanced-integration-patterns\#multi-channel-orchestration)
+Durante la conversación, el agente consulta tu API (estado de pedido, saldo, disponibilidad) y responde con datos actualizados al segundo.
 
-- Omnichannel Customer Journey → Voice → SMS → Email → App notification
-- Escalation Workflows → AI → Senior AI → Human → Specialist
-- Round-Robin Assignment → Distribute leads among team members
-- Time-Zone Aware Routing → Global business call routing
-- Language Detection → Routing → Multi-lingual support automation
+### 2. Triage con reglas de negocio externas
 
-## AI-Powered Analytics [Permalink for this section](https://www.dialora.ai/docs/use-cases/advanced-integration-patterns\#ai-powered-analytics)
+El agente envía el contexto a un servicio externo que decide la derivación (urgencia, plan del cliente, geografía) y devuelve la acción a ejecutar.
 
-- Sentiment Triggered Actions → Angry customer → Manager callback
-- Churn Prediction Calls → Proactive retention for at-risk customers
-- Upsell Opportunity Detection → Identify and act on buying signals
-- Quality Assurance Automation → Flag calls needing review
-- Predictive Scheduling → Anticipate busy periods, adjust staffing
+### 3. Multi-step con confirmación humana
 
-[Specialized Services](https://www.dialora.ai/docs/use-cases/specialized-services "Specialized Services") [Implementation Priority Matrix](https://www.dialora.ai/docs/use-cases/implementation-priority-matrix "Implementation Priority Matrix")
+El agente captura información, dispara una validación interna (vía Slack o email a un humano) y solo confirma al cliente cuando la respuesta llega.
+
+### 4. Escalamiento por sentimiento
+
+Si el sentimiento detectado supera un umbral, el agente transfiere a humano en vivo con resumen del contexto.
+
+### 5. Orquestación multi-canal
+
+Una sola conversación que empieza en WhatsApp, salta a llamada de voz y termina con confirmación por SMS, conservando todo el contexto.
+
+## Capacidades de integración
+
+- **Webhooks** entrantes y salientes con retries y backoff
+- **REST API** con autenticación OAuth2, API key, JWT
+- **Base de datos** consultas seguras a Postgres, MySQL, MongoDB
+- **Stack low-code** Zapier, Make, n8n, Workato
+- **CRM** HubSpot, Salesforce, Pipedrive, Zoho, Kommo
+- **Telefonía** Twilio, Vonage, SIP nativos, números locales
+
+## Buenas prácticas
+
+1. Mantén las llamadas a API por debajo de 800 ms para no romper el flujo.
+2. Cachea datos estáticos (horarios, catálogos) y refresca periódicamente.
+3. Define fallbacks claros si una integración falla mientras el cliente está en línea.
+4. Loguea cada llamada con request, response y latencia para debugging.
+
+## Diseña tu arquitectura con nosotros
+
+[Habla con ingeniería](https://www.e-smart360.com/demo)

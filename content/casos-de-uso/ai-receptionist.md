@@ -1,139 +1,73 @@
 ---
-title: "Ai Receptionist"
+title: "Recepcionista IA"
 slug: "ai-receptionist"
 category: "casos-de-uso"
 ---
 
-# Never Miss a Call or Tie Up Your  Front Desk Again
+# Nunca pierdas una llamada ni satures tu recepción
 
-An AI receptionist that answers every call instantly, books appointments, and handles routine
+Una recepcionista de IA que contesta cada llamada al instante, agenda citas y resuelve solicitudes rutinarias para que tu equipo de recepción se enfoque en las personas, no en el teléfono.
 
-requests so your front desk team can focus on people, not phones.
+## La realidad diaria en una recepción
 
-![Dialora Qualifies Leads](https://www.dialora.ai/images/use-cases/ai-lead-qualification/wave-image.webp)
+En la mayoría de los negocios el teléfono no para de sonar y casi todas las llamadas son predecibles:
 
-See Dialora Act as Your Receptionist
+- Confirmar o reprogramar citas
+- Solicitar precios, horarios y ubicación
+- Pedir indicaciones, formularios o seguimiento
+- Repetir las mismas preguntas frecuentes una y otra vez
 
-## The Daily Reality at the  Front Desk
+Mientras tanto, los clientes presenciales esperan, las llamadas se pierden y el equipo se desgasta con tareas repetitivas.
 
-For most offices, the phone never stops ringing. And most calls are predictable:
+## Cómo lo resuelve E-Smart360
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Can I book or reschedule an appointment?
+Nuestro agente de voz IA atiende 24/7, entiende el contexto de cada llamada, agenda directo en tu calendario y solo escala al equipo humano cuando hay una situación que lo amerita.
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)What time is my visit tomorrow?
+## Funciones clave
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Are you open today?
+- **Atención simultánea ilimitada** sin perder llamadas en horas pico
+- **Reservas y cambios** sincronizados con Google Calendar y Outlook
+- **Triage inteligente** que deriva a la persona correcta
+- **Resúmenes automáticos** de cada conversación en tu CRM
 
-![](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcloseIcon.e0572051.webp&w=48&q=100)Where are you located or where do I park?
+#### Cómo funciona
 
-Receptionists spend their day juggling calls, walk-ins, schedules, and internal requests at the same time. Mistakes creep in. Hold times grow. No-shows increase. Burnout follows.
+### 1. Conecta tu stack
 
-![The Problem](https://www.dialora.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproblem-image.66c2fa4b.webp&w=1080&q=100)
+Integra tu CRM, calendario y central telefónica en menos de una hora.
 
-How Dialora Changes the Front Desk Experience
+### 2. Define tus reglas
 
-Dialora answers every inbound call with a polished, professional voice and follows exact office procedures. It greets callers, understands why they’re calling, handles scheduling and FAQs instantly, and routes only the calls that truly need a human.
+Configura guiones, FAQ y criterios de derivación específicos para tu negocio.
 
-## What Every Call Looks Like
+### 3. Sal en vivo
 
-Callers get immediate help. Your team stays focused.
+E-Smart360 contesta cada llamada, la registra y deriva al humano sólo cuando es necesario.
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-receptionist%2FTime.webp&w=750&q=100)
+#### Cómo lo usan los equipos
 
-Intent Understanding
+**Clínicas y consultorios.** Agenda y reagenda visitas, recuerda copagos y gestiona cancelaciones.
 
-It recognizes callers, pulls appointment details, and understands requests with accents.
+**Despachos profesionales.** Filtra prospectos, asigna al abogado o contador disponible y registra el caso.
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-receptionist%2FHandoff.webp&w=750&q=100)
+**Operaciones multi-sucursal.** Enrutamiento por sede, idioma o tipo de servicio.
 
-Scheduling Handled
+## Preguntas frecuentes
 
-Books, reschedules, cancels appointments, and answers questions automatically.
+### ¿Qué tan natural se escucha?
 
-![Custom Voice Agents](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-receptionist%2FSupport.webp&w=750&q=100)
+Voces hispano-neutras de alta fidelidad con latencia menor a un segundo: la mayoría de los usuarios no nota que es IA.
 
-Clean Routing
+### ¿Puede contestar en varios idiomas?
 
-Routine calls are resolved end-to-end. Urgent or sensitive matters are transferred live.
+Sí. Detecta el idioma del interlocutor y responde en español, inglés o portugués.
 
-#### How It Works Behind the Scenes
+### ¿Qué pasa si la conversación se complica?
 
-1\. Connect2\. Define3\. Live
+E-Smart360 hace una derivación en caliente al humano disponible con un resumen del contexto.
 
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Fconnect-image.webp&w=1920&q=75)
+## Atiende mejor sin crecer la recepción
 
-### Connect your stack
+Cada llamada que automatiza E-Smart360 reduce el costo operativo y libera a tu equipo para tareas de alto valor.
 
-Plug Dialora into your phone line, calendar, CRM, and scheduling tools in under an hour.
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Fdefine-image.webp&w=1920&q=75)
-
-### Set your protocols
-
-Upload greeting scripts, availability rules, FAQs, and transfer priorities. Dialora follows your playbook exactly.
-
-![How Call Transfers Work in Dialora](https://www.dialora.ai/_next/image?url=%2Fimages%2Fuse-cases%2Fai-lead-qualification%2Flive-image.webp&w=1920&q=75)
-
-### Go live
-
-Route your main line or specific extensions to Dialora. Every call is recorded, transcribed, and logged.
-
-[See a Receptionist Walkthrough](https://www.dialora.ai/signup)
-
-#### How Teams Use Dialora as an AI Receptionist
-
-01
-
-Appointment scheduling
-
-Dialora books, reschedules, and confirms appointments automatically, reducing no-shows and phone traffic.
-
-02
-
-Call handling
-
-Routine questions and messages are handled instantly without interrupting your staff.
-
-03
-
-After-hours coverage
-
-Calls outside business hours are answered professionally instead of going to voicemail.
-
-## Built for Teams That Care About Consistency
-
-Custom greetings and rules
-
-Live human handoff when needed
-
-Works with your calendar and phone system
-
-Full visibility into calls and bookings
-
-[Connect Dialora to Your Calendar & Phone](https://www.dialora.ai/contact-us)
-
-## FAQs
-
-### Will this replace our receptionist?
-
-No. Dialora handles routine calls so your receptionist can focus on in-person visitors, exceptions, and higher-priority tasks.
-
-### Can it follow our scheduling rules exactly?
-
-### How fast can we launch?
-
-## Give Callers a Better First Impression  Without Adding Headcount
-
-Every routine call Dialora handles is one less interruption for your team
-
-and one smoother experience for your callers.
-
-[Contact us](https://www.dialora.ai/contact-us)[Sign up](https://www.dialora.ai/signup)
-
-## We use cookies
-
-We use cookies to ensure you get the best experience on our website. For more information on how we use cookies, please see our privacy policy.
-
-By clicking "Accept", you agree to our use of cookies. [Cookie Policy](https://www.dialora.ai/privacy-policy "Learn more about our privacy policy")
-
-Accept AllDecline
+[Solicita una demo](https://www.e-smart360.com/demo)

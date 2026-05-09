@@ -1,41 +1,55 @@
 ---
-title: "Education Training"
+title: "Educación y Capacitación"
 slug: "education-training"
 category: "casos-de-uso"
 ---
 
-[Skip to Content](https://www.dialora.ai/docs/use-cases/education-training#nextra-skip-nav)
+# Educación y capacitación
 
-[Use Cases](https://www.dialora.ai/docs/use-cases "Use Cases") Education & Training
+Universidades, escuelas, academias y plataformas e-learning: automatiza la atracción, la inscripción y la retención de estudiantes.
 
-Copy page
+## Captación e inscripciones
 
-# Education & Training
+- Atención inmediata a leads inbound de medios pagados
+- Calificación por carrera, modalidad y presupuesto
+- Agendamiento de entrevistas con asesor académico
+- Onboarding al proceso de inscripción
 
-## Tutoring Centers [Permalink for this section](https://www.dialora.ai/docs/use-cases/education-training\#tutoring-centers)
+## Soporte académico y administrativo
 
-- Session Scheduling → Match tutor availability with students
-- Progress Report Calls → Update parents on performance
-- Homework Help Hotline → Route to available tutors
-- Payment Collection → Monthly tuition processing
-- Assessment Scheduling → Book evaluation sessions
-- Absence Notifications → Alert tutors of cancellations
-- Summer Program Enrollment → Register for camps, intensives
-- Parent-Teacher Conferences → Schedule meetings
-- Material Order Taking → Workbooks, study guides
-- Referral Incentive Tracking → Credit accounts for referrals
+- Atención 24/7 a alumnos y padres de familia
+- Consulta de calendario, calificaciones y pagos
+- Recordatorios de fechas y entregables
+- Derivación a tutoría o psicopedagogía
 
-## Driving Schools [Permalink for this section](https://www.dialora.ai/docs/use-cases/education-training\#driving-schools)
+## Educación continua y formación corporativa
 
-- Behind-the-Wheel Scheduling → Book driving sessions
-- Permit Test Prep → Quiz students via voice
-- DMV Appointment Coordination → Schedule road tests
-- Parent Progress Updates → Teen driver progress calls
-- Package Upgrades → Add additional lessons
-- Defensive Driving Registration → Insurance discount courses
-- Vehicle Assignment → Match instructors and cars
-- Weather Cancellations → Automatic rescheduling
-- Certificate Delivery → Completion verification
-- Fleet Maintenance Scheduling → Service training vehicles
+- Captura de RFPs corporativos
+- Reactivación de alumnos egresados
+- Encuestas NPS de programas
+- Promociones segmentadas por interés
 
-[Food & Hospitality](https://www.dialora.ai/docs/use-cases/food-hospitality "Food & Hospitality") [Fitness & Wellness](https://www.dialora.ai/docs/use-cases/fitness-wellness "Fitness & Wellness")
+#### Cómo funciona
+
+### 1. Conecta tu CRM educativo
+
+HubSpot, Salesforce Education Cloud, Moodle, Canvas o tu sistema interno.
+
+### 2. Define los flujos académicos
+
+Procesos de admisión, criterios de calificación y derivación al asesor correcto.
+
+### 3. Sal en vivo
+
+E-Smart360 atiende y nutre prospectos 24/7.
+
+## Resultados que mueven la matrícula
+
+- **Tiempo de respuesta sub-minuto** a leads de campañas
+- **+30% inscripciones** sobre el mismo volumen de leads
+- **Soporte continuo** a estudiantes activos
+- **Liberación de tiempo** del equipo académico
+
+## Acelera tu motor académico
+
+[Solicita una demo](https://www.e-smart360.com/demo)
