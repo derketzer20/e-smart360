@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { DEMO_HREF } from "@/lib/demo-href";
 import {
   ArrowRight,
   BarChart3,
@@ -341,7 +342,7 @@ export function ChatbotsOmnichannelLanding() {
             className="mt-9 flex flex-col gap-3 sm:flex-row"
           >
             <Button className="h-12 rounded-full bg-foreground px-7 text-background hover:bg-foreground/90" asChild>
-              <a href="https://www.e-smart360.com/demo">
+              <a href={DEMO_HREF}>
                 Solicita una demo
                 <ArrowRight className="ml-1 h-4 w-4" />
               </a>
@@ -534,7 +535,7 @@ export function ChatbotsOmnichannelLanding() {
             Diseñamos contigo un primer flujo de alto impacto y lo conectamos con tus herramientas actuales.
           </p>
           <Button className="mt-8 rounded-full bg-background px-8 text-foreground hover:bg-background/90" asChild>
-            <a href="https://www.e-smart360.com/demo">
+            <a href={DEMO_HREF}>
               Empezar con E-SMART360
               <Rocket className="ml-1 h-4 w-4" />
             </a>

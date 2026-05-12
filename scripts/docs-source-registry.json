@@ -1,0 +1,147 @@
+{
+  "generatedFor": "E-SMART360",
+  "providers": [
+    {
+      "id": "fulldoc",
+      "label": "Repositorio fuente interno",
+      "type": "repository",
+      "rebrand": "E-SMART360",
+      "sources": [
+        {
+          "id": "fulldoc-esmart360-mdx",
+          "url": ".source-docs/fulldoc/docs/esmart360",
+          "kind": "mdx-repository",
+          "platforms": ["chatbots", "broadcasting", "ecommerce", "telegram", "meta", "agencies"],
+          "sections": ["chatbots-omnicanal", "broadcasting", "ecommerce", "telegram", "operacion-meta", "integracion", "agencias"]
+        }
+      ]
+    },
+    {
+      "id": "botsailor",
+      "label": "Proveedor omnicanal",
+      "type": "provider",
+      "rebrand": "E-SMART360",
+      "forbiddenPublicName": true,
+      "sources": [
+        {
+          "id": "botsailor-help",
+          "url": "https://botsailor.com/help/en",
+          "kind": "help-center",
+          "platforms": ["chatbots", "broadcasting", "ecommerce", "telegram", "meta", "agencies"],
+          "sections": ["chatbots-omnicanal", "broadcasting", "ecommerce", "telegram", "operacion-meta", "integracion", "agencias"]
+        },
+        {
+          "id": "botsailor-blog",
+          "url": "https://botsailor.com/blog",
+          "kind": "blog",
+          "platforms": ["chatbots", "broadcasting", "ecommerce", "telegram", "agencies"],
+          "sections": ["chatbots-omnicanal", "broadcasting", "ecommerce", "telegram", "agencias"]
+        },
+        {
+          "id": "botsailor-blog-page-9",
+          "url": "https://botsailor.com/blog?page=9",
+          "kind": "blog-archive",
+          "platforms": ["chatbots", "broadcasting", "ecommerce"],
+          "sections": ["chatbots-omnicanal", "broadcasting", "ecommerce"]
+        }
+      ]
+    },
+    {
+      "id": "whatchimp",
+      "label": "Referencia UX y casos de uso",
+      "type": "competitor",
+      "rebrand": "E-SMART360",
+      "forbiddenPublicName": true,
+      "sources": [
+        {
+          "id": "whatchimp-docs",
+          "url": "https://help.whatchimp.com/docs",
+          "kind": "docs",
+          "platforms": ["chatbots", "integrations", "sectors"],
+          "sections": ["primeros-pasos", "sectores", "integracion"]
+        },
+        {
+          "id": "whatchimp-features",
+          "url": "https://whatchimp.com/features/",
+          "kind": "features",
+          "platforms": ["chatbots", "broadcasting", "ecommerce"],
+          "sections": ["chatbots-omnicanal", "broadcasting", "ecommerce"]
+        },
+        {
+          "id": "whatchimp-integrations",
+          "url": "https://whatchimp.com/integrations/",
+          "kind": "integrations",
+          "platforms": ["integrations", "ecommerce"],
+          "sections": ["integracion", "ecommerce"]
+        }
+      ]
+    },
+    {
+      "id": "dialora",
+      "label": "Proveedor voz IA",
+      "type": "provider",
+      "rebrand": "E-SMART360",
+      "forbiddenPublicName": true,
+      "sources": [
+        {
+          "id": "dialora-guide",
+          "url": "https://www.dialora.ai/docs/guide",
+          "kind": "docs",
+          "platforms": ["voice"],
+          "sections": ["agente-voz"]
+        },
+        {
+          "id": "dialora-first-agent",
+          "url": "https://www.dialora.ai/docs/guide/first-ai-voice-agent",
+          "kind": "guide",
+          "platforms": ["voice"],
+          "sections": ["agente-voz"]
+        },
+        {
+          "id": "dialora-outbound",
+          "url": "https://www.dialora.ai/docs/guide/outbound-campaigns",
+          "kind": "guide",
+          "platforms": ["voice"],
+          "sections": ["agente-voz"]
+        }
+      ]
+    },
+    {
+      "id": "consolto",
+      "label": "Proveedor oficina virtual",
+      "type": "provider",
+      "rebrand": "E-SMART360 Oficina Virtual",
+      "allowedPublicName": true,
+      "sources": [
+        {
+          "id": "consolto-documentation",
+          "url": "https://www.consolto.com/documentation",
+          "kind": "docs",
+          "platforms": ["virtual-office"],
+          "sections": ["oficina-virtual"]
+        },
+        {
+          "id": "consolto-widget-clickntalk",
+          "url": "https://www.consolto.com/knowledge-posts/setup-your-agents-widget-and-clickntalk-page",
+          "kind": "guide",
+          "platforms": ["virtual-office"],
+          "sections": ["oficina-virtual"]
+        },
+        {
+          "id": "consolto-webhooks",
+          "url": "https://www.consolto.com/knowledge-posts/webhooks",
+          "kind": "developer-guide",
+          "platforms": ["virtual-office"],
+          "sections": ["oficina-virtual", "api-referencia"]
+        },
+        {
+          "id": "consolto-frontend-api",
+          "url": "https://www.consolto.com/knowledge-posts/web-frontend-api",
+          "kind": "developer-guide",
+          "platforms": ["virtual-office"],
+          "sections": ["oficina-virtual", "api-referencia"]
+        }
+      ]
+    }
+  ]
+}

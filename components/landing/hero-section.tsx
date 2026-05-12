@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { DEMO_HREF } from "@/lib/demo-href";
 import { ArrowRight, Shield } from "lucide-react";
 import { AnimatedSphere } from "./animated-sphere";
 
@@ -127,7 +128,7 @@ export function HeroSection() {
               className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
               asChild
             >
-              <a href="https://www.e-smart360.com/demo">
+              <a href={DEMO_HREF}>
                 Solicita una Demo
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </a>

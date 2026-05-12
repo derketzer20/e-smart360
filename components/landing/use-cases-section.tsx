@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight, HeartPulse, ShoppingCart, GraduationCap, Building2, Megaphone, Briefcase } from "lucide-react";
+import { DEMO_HREF } from "@/lib/demo-href";
 
 const cases = [
   {
@@ -90,7 +91,7 @@ export function UseCasesSection() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <a
-            href="https://www.e-smart360.com/demo"
+            href={DEMO_HREF}
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors group"
           >
             Solicitar implementación asistida 1:1

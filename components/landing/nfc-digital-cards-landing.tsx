@@ -15,6 +15,8 @@ import { useI18n } from "@/components/i18n/i18n-provider";
 import { cn } from "@/lib/utils";
 import { PUBLIC_PLANS, toLocaleText } from "@/lib/pricing-data";
 import { formatCurrency } from "@/lib/format-currency";
+import { DEMO_HREF } from "@/lib/demo-href";
+import { NfcProfileTemplatesCarousel } from "@/components/landing/nfc-profile-templates-carousel";
 import {
   ArrowRight,
   BadgeCheck,
@@ -203,7 +205,7 @@ function NfcHeroVisual() {
       >
         <div className="flex items-center gap-3">
           <div className="rounded-2xl border border-border bg-muted p-2">
-            <QRCodeSVG value="https://www.e-smart360.com/demo" size={74} level="M" />
+            <QRCodeSVG value={`https://www.e-smart360.com${DEMO_HREF}`} size={74} level="M" />
           </div>
           <div>
             <p className="text-sm font-medium text-foreground">Escanea y guarda</p>
@@ -313,7 +315,7 @@ export function NfcDigitalCardsLanding() {
             className="mt-9 flex flex-col gap-3 sm:flex-row"
           >
             <Button className="h-12 rounded-full bg-foreground px-7 text-background hover:bg-foreground/90" asChild>
-              <a href="https://www.e-smart360.com/demo">
+              <a href={DEMO_HREF}>
                 Solicita una demo
                 <ArrowRight className="ml-1 h-4 w-4" />
               </a>
@@ -342,6 +344,8 @@ export function NfcDigitalCardsLanding() {
           <NfcHeroVisual />
         </motion.div>
       </section>
+
+      <NfcProfileTemplatesCarousel />
 
       <section className="border-y border-border bg-muted/25 py-14">
         <div className="mx-auto grid max-w-6xl gap-5 px-4 sm:grid-cols-2 md:grid-cols-4 lg:px-8">
@@ -584,7 +588,7 @@ export function NfcDigitalCardsLanding() {
             Diseñamos el perfil, la tarjeta NFC y el flujo de captura para tu equipo o propuesta white label.
           </p>
           <Button className="mt-8 rounded-full bg-background px-8 text-foreground hover:bg-background/90" asChild>
-            <a href="https://www.e-smart360.com/demo">
+            <a href={DEMO_HREF}>
               Empezar con E-SMART360
               <ExternalLink className="ml-1 h-4 w-4" />
             </a>

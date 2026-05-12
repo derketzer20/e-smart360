@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { DEMO_HREF } from "@/lib/demo-href";
 import { useI18n } from "@/components/i18n/i18n-provider";
 import { LocaleSwitcher } from "@/components/i18n/locale-switcher";
 import {
@@ -518,7 +519,7 @@ export function Navigation({
               )}
               asChild
             >
-              <a href="https://www.e-smart360.com/demo">{t("nav.cta")}</a>
+              <a href={DEMO_HREF}>{t("nav.cta")}</a>
             </Button>
           </div>
 
@@ -672,7 +673,7 @@ export function Navigation({
               onClick={() => setIsMobileMenuOpen(false)}
               asChild
             >
-              <a href="https://www.e-smart360.com/demo">{t("nav.cta")}</a>
+              <a href={DEMO_HREF}>{t("nav.cta")}</a>
             </Button>
           </div>
         </div>

@@ -1,3 +1,6 @@
+# Dependencies (no subir a Git)
+node_modules/
+
 ### Windows
 # Windows thumbnail cache files
 Thumbs.db

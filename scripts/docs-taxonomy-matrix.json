@@ -1,0 +1,138 @@
+{
+  "coverageGroups": [
+    {
+      "id": "core",
+      "label": "Fundamentos",
+      "section": "vision-general",
+      "expectedRoutes": ["overview", "arquitectura", "primeros-pasos/onboarding", "ayuda/soporte"]
+    },
+    {
+      "id": "chatbots",
+      "label": "Chatbots omnicanal",
+      "section": "chatbots-omnicanal",
+      "providers": ["fulldoc", "botsailor", "whatchimp"],
+      "expectedRoutes": [
+        "chatbots/intro",
+        "chatbots/canales-omnicanal",
+        "chatbots/constructor-visual",
+        "chatbots/flujos-y-canales",
+        "chatbots/variables-y-segmentacion",
+        "chatbots/live-chat-bandeja",
+        "chatbots/entrenamiento-ia",
+        "chatbots/formularios-whatsapp-flows",
+        "chatbots/webchat-e-instagram"
+      ]
+    },
+    {
+      "id": "broadcasting",
+      "label": "Broadcasting y plantillas",
+      "section": "broadcasting",
+      "providers": ["fulldoc", "botsailor", "whatchimp"],
+      "expectedRoutes": [
+        "broadcasting/plantillas-whatsapp",
+        "broadcasting/campanas-y-segmentacion",
+        "broadcasting/regla-24-horas",
+        "broadcasting/botones-y-carruseles",
+        "broadcasting/smart-delay",
+        "broadcasting/rechazos-y-calidad"
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "label": "E-commerce conversacional",
+      "section": "ecommerce",
+      "providers": ["fulldoc", "botsailor", "whatchimp"],
+      "expectedRoutes": [
+        "ecommerce/catalogo-y-pagos-whatsapp",
+        "ecommerce/shopify",
+        "ecommerce/woocommerce",
+        "ecommerce/carritos-abandonados",
+        "ecommerce/cod-y-prepago",
+        "ecommerce/notificaciones-pedidos"
+      ]
+    },
+    {
+      "id": "meta",
+      "label": "Operación Meta",
+      "section": "operacion-meta",
+      "providers": ["fulldoc", "botsailor"],
+      "expectedRoutes": [
+        "operacion-meta/calidad-y-limites-whatsapp",
+        "operacion-meta/cloud-api-y-embedded-signup",
+        "operacion-meta/verificacion-negocio",
+        "operacion-meta/errores-comunes"
+      ]
+    },
+    {
+      "id": "telegram",
+      "label": "Telegram y comunidades",
+      "section": "telegram",
+      "providers": ["fulldoc", "botsailor"],
+      "expectedRoutes": ["telegram/marketing-y-comunidades", "telegram/comunidades-y-antispam", "telegram/bots-y-captacion"]
+    },
+    {
+      "id": "voice",
+      "label": "Agente de voz IA",
+      "section": "agente-voz",
+      "providers": ["dialora"],
+      "expectedRoutes": [
+        "agente-voz/intro",
+        "agente-voz/primer-agente",
+        "agente-voz/llamadas-entrantes",
+        "agente-voz/campanas-salientes",
+        "agente-voz/clinicas-y-citas",
+        "agente-voz/soporte-y-handoff"
+      ]
+    },
+    {
+      "id": "virtual-office",
+      "label": "Oficina virtual",
+      "section": "oficina-virtual",
+      "providers": ["consolto"],
+      "expectedRoutes": [
+        "oficina-virtual/intro",
+        "oficina-virtual/widget-y-clickntalk",
+        "oficina-virtual/agenda-y-videollamadas",
+        "oficina-virtual/apps-y-canales",
+        "oficina-virtual/cname-y-wordpress-wix-shopify",
+        "oficina-virtual/webhooks-y-api-frontend"
+      ]
+    },
+    {
+      "id": "nfc",
+      "label": "Tarjetas digitales NFC",
+      "section": "tarjetas-nfc",
+      "providers": ["manual"],
+      "expectedRoutes": ["tarjetas-nfc/intro", "tarjetas-nfc/perfiles-y-qr", "tarjetas-nfc/tracking-y-crm", "tarjetas-nfc/casos-de-uso"]
+    },
+    {
+      "id": "sectors",
+      "label": "Sectores",
+      "section": "sectores",
+      "providers": ["fulldoc", "whatchimp", "manual"],
+      "expectedRoutes": [
+        "sectores/salud",
+        "sectores/educacion",
+        "sectores/ecommerce",
+        "sectores/agencias",
+        "sectores/ventas",
+        "sectores/servicios-profesionales",
+        "sectores/inmobiliaria"
+      ]
+    },
+    {
+      "id": "developers",
+      "label": "Developers",
+      "section": "api-referencia",
+      "providers": ["fulldoc", "botsailor", "consolto"],
+      "expectedRoutes": ["api/overview", "api/webhooks", "api/eventos", "api/payloads", "api/seguridad-y-reintentos"]
+    },
+    {
+      "id": "agencies",
+      "label": "Agencias y revendedores",
+      "section": "agencias",
+      "providers": ["fulldoc", "botsailor"],
+      "expectedRoutes": ["agencias/marca-blanca-y-operacion", "agencias/cuentas-clientes-billing", "agencias/paquetes-y-soporte"]
+    }
+  ]
+}

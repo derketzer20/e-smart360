@@ -19,6 +19,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
+import { DEMO_HREF } from "@/lib/demo-href";
 import { VoiceSpectrumBars, VoiceSpectrumHeroDecor } from "@/components/landing/voice-spectrum";
 import {
   BarChart3,
@@ -574,7 +575,7 @@ export function VoiceAgentLanding() {
               className="h-12 rounded-full border-0 bg-[#0070f3] px-8 text-white shadow-[0_8px_28px_-8px_rgba(0,112,243,0.55)] hover:bg-[#0060d0]"
               asChild
             >
-              <a href="https://www.e-smart360.com/demo">Agendar una demo</a>
+              <a href={DEMO_HREF}>Agendar una demo</a>
             </Button>
             <Button
               size="lg"
@@ -1167,7 +1168,7 @@ export function VoiceAgentLanding() {
               className="mt-8 h-12 rounded-full bg-[#0070f3] px-10 text-white shadow-lg hover:bg-[#0060d0]"
               asChild
             >
-              <a href="https://www.e-smart360.com/demo">Comenzar ahora</a>
+              <a href={DEMO_HREF}>Comenzar ahora</a>
             </Button>
           </motion.div>
         </section>

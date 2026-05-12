@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/prebuild-next.mjs",
     "build": "next build",
     "dev": "next dev",
-    "dev:clean": "node -e \"try{require('fs').unlinkSync('.next/dev/lock')}catch(_){}\" && next dev",
+    "dev:clean": "node scripts/clear-next-lock.mjs && next dev",
+    "dev:fresh": "node scripts/prebuild-next.mjs && next dev",
     "lint": "eslint .",
     "start": "next start",
     "gemini:image": "node scripts/gemini-nano-banana-image.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
+    "@number-flow/react": "^0.6.0",
     "@radix-ui/react-accordion": "1.2.2",
     "@radix-ui/react-alert-dialog": "1.1.4",
     "@radix-ui/react-aspect-ratio": "1.1.1",

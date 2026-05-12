@@ -52,7 +52,7 @@ function sanitizeContent(content: string): string {
   // 3. Enlaces a dialora.ai → CTA de E-Smart360 conservando el texto
   out = out.replace(
     /\[([^\]]+)\]\(https?:\/\/(?:www\.)?dialora\.ai[^)]*\)/g,
-    "[$1](https://www.e-smart360.com/demo)",
+    "[$1](/demo)",
   );
 
   // 4. Branding

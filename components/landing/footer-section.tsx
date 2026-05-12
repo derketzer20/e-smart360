@@ -4,9 +4,10 @@ import { useMemo } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { AnimatedWave } from "./animated-wave";
 import { useI18n } from "@/components/i18n/i18n-provider";
+import { DEMO_HREF } from "@/lib/demo-href";
 
 const socialLinks = [
-  { name: "WhatsApp", href: "https://www.e-smart360.com/demo" },
+  { name: "WhatsApp", href: DEMO_HREF },
   { name: "Instagram", href: "#" },
   { name: "Facebook", href: "#" },
 ];
@@ -65,7 +66,7 @@ export function FooterSection() {
           { name: t("footer.agencyProgram"), href: "https://www.e-smart360.com/precios-pro" },
           { name: t("footer.blog"), href: "#" },
           { name: t("footer.docs"), href: "/docs" },
-          { name: t("footer.contact"), href: "https://www.e-smart360.com/demo" },
+          { name: t("footer.contact"), href: DEMO_HREF },
         ],
       },
       {

@@ -20,6 +20,7 @@ import {
   getCasoDeUsoBySlug,
   getCasosDeUso,
 } from "@/lib/casos-de-uso";
+import { DEMO_HREF } from "@/lib/demo-href";
 
 const HIGHLIGHTS = [
   {
@@ -140,7 +141,7 @@ export default async function CasoDeUsoPage({ params }: PageProps) {
                 className="bg-foreground hover:bg-foreground/90 text-background px-7 h-12 text-sm rounded-full group"
                 asChild
               >
-                <a href="https://www.e-smart360.com/demo">
+                <a href={DEMO_HREF}>
                   Solicita una Demo
                   <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                 </a>
@@ -229,7 +230,7 @@ export default async function CasoDeUsoPage({ params }: PageProps) {
                     className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-5 group"
                     asChild
                   >
-                    <a href="https://www.e-smart360.com/demo">
+                    <a href={DEMO_HREF}>
                       Hablar con un experto
                       <ArrowRight className="w-3.5 h-3.5 ml-1.5 transition-transform group-hover:translate-x-1" />
                     </a>

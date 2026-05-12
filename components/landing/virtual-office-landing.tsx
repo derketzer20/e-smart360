@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { ProductHoverCard } from "@/components/landing/product-hover-card";
+import { DEMO_HREF } from "@/lib/demo-href";
 import {
   ArrowRight,
   Bell,
@@ -214,7 +215,7 @@ export function VirtualOfficeLanding() {
               className="rounded-full bg-[var(--accent-meta,#0668E1)] px-7 text-white hover:bg-[#0554c4]"
               asChild
             >
-              <a href="https://www.e-smart360.com/demo">
+              <a href={DEMO_HREF}>
                 Agendar demo
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
@@ -449,7 +450,7 @@ export function VirtualOfficeLanding() {
             resto de tus canales E-SMART360.
           </p>
           <Button className="mt-8 rounded-full bg-background px-8 text-foreground hover:bg-background/90" asChild>
-            <a href="https://www.e-smart360.com/demo">
+            <a href={DEMO_HREF}>
               Hablar con un especialista
               <Rocket className="ml-2 h-4 w-4" />
             </a>

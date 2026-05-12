@@ -27,6 +27,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+import { DEMO_HREF } from "@/lib/demo-href";
 
 export function PreciosLanding() {
   const { locale, t } = useI18n();
@@ -551,7 +552,7 @@ export function PreciosLanding() {
                       {locale === "en" ? "Cancel" : "Cancelar"}
                     </Button>
                     <Button className="rounded-full bg-[var(--accent-meta,#0668E1)] text-white hover:bg-[#0554c4]" asChild>
-                      <a href="https://www.e-smart360.com/demo">
+                      <a href={DEMO_HREF}>
                         {locale === "en" ? "Buy credits" : "Comprar créditos"}
                       </a>
                     </Button>
@@ -743,7 +744,7 @@ export function PreciosLanding() {
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Button className="rounded-full bg-background px-8 text-foreground hover:bg-background/90" asChild>
-              <a href="https://www.e-smart360.com/demo">
+              <a href={DEMO_HREF}>
                 {locale === "en" ? "Schedule a demo" : "Agendar demo"}
               </a>
             </Button>
@@ -769,14 +770,14 @@ function resolvePlanHref(plan: {
   if (plan.ctaType === "contact-sales" || plan.ctaType === "agency-form") {
     return "https://www.e-smart360.com/precios-pro";
   }
-  return "https://www.e-smart360.com/demo";
+  return DEMO_HREF;
 }
 
 function resolveBundleHref(ctaType: "checkout" | "demo" | "contact-sales" | "agency-form") {
   if (ctaType === "contact-sales" || ctaType === "agency-form") {
     return "https://www.e-smart360.com/precios-pro";
   }
-  return "https://www.e-smart360.com/demo";
+  return DEMO_HREF;
 }
 
 function labelForCta(
