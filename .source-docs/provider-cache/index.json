@@ -1,0 +1,1004 @@
+{
+  "generatedAt": "2026-05-12T07:18:50.241Z",
+  "totalSources": 14,
+  "ok": 14,
+  "failed": 0,
+  "results": [
+    {
+      "id": "fulldoc-esmart360-mdx",
+      "provider": "fulldoc",
+      "url": ".source-docs/fulldoc/docs/esmart360",
+      "status": "local",
+      "cachedFile": null,
+      "headings": [],
+      "links": [],
+      "textLength": 0
+    },
+    {
+      "id": "botsailor-help",
+      "provider": "botsailor",
+      "url": "https://botsailor.com/help/en",
+      "kind": "help-center",
+      "platforms": [
+        "chatbots",
+        "broadcasting",
+        "ecommerce",
+        "telegram",
+        "meta",
+        "agencies"
+      ],
+      "sections": [
+        "chatbots-omnicanal",
+        "broadcasting",
+        "ecommerce",
+        "telegram",
+        "operacion-meta",
+        "integracion",
+        "agencias"
+      ],
+      "fetchedAt": "2026-05-12T07:18:45.080Z",
+      "cachedFile": ".source-docs/provider-cache/botsailor__botsailor-help__help-center.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 2,
+          "text": "Knowledgebase"
+        },
+        {
+          "level": 2,
+          "text": "Blog"
+        },
+        {
+          "level": 2,
+          "text": "API Documentation"
+        },
+        {
+          "level": 2,
+          "text": "Forum"
+        },
+        {
+          "level": 2,
+          "text": "Video Tutorials"
+        },
+        {
+          "level": 2,
+          "text": "Bug Report"
+        },
+        {
+          "level": 2,
+          "text": "Feature Request"
+        },
+        {
+          "level": 2,
+          "text": "What&#039;s New"
+        },
+        {
+          "level": 2,
+          "text": "Corporate Social Responsibility"
+        },
+        {
+          "level": 2,
+          "text": "Life at BotSailor"
+        },
+        {
+          "level": 2,
+          "text": "WC Plugin"
+        },
+        {
+          "level": 2,
+          "text": "Contact (Ask)"
+        },
+        {
+          "level": 2,
+          "text": "Support (Technical)"
+        },
+        {
+          "level": 2,
+          "text": "Pricing Plans"
+        },
+        {
+          "level": 2,
+          "text": "Pay As You Go"
+        },
+        {
+          "level": 2,
+          "text": "Addons"
+        },
+        {
+          "level": 2,
+          "text": "AI Token"
+        },
+        {
+          "level": 2,
+          "text": "Reseller"
+        },
+        {
+          "level": 2,
+          "text": "Affiliate"
+        },
+        {
+          "level": 2,
+          "text": "AI Startup Program"
+        }
+      ],
+      "links": 55,
+      "textLength": 2504
+    },
+    {
+      "id": "botsailor-blog",
+      "provider": "botsailor",
+      "url": "https://botsailor.com/blog",
+      "kind": "blog",
+      "platforms": [
+        "chatbots",
+        "broadcasting",
+        "ecommerce",
+        "telegram",
+        "agencies"
+      ],
+      "sections": [
+        "chatbots-omnicanal",
+        "broadcasting",
+        "ecommerce",
+        "telegram",
+        "agencias"
+      ],
+      "fetchedAt": "2026-05-12T07:18:46.493Z",
+      "cachedFile": ".source-docs/provider-cache/botsailor__botsailor-blog__blog.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 2,
+          "text": "Knowledgebase"
+        },
+        {
+          "level": 2,
+          "text": "Blog"
+        },
+        {
+          "level": 2,
+          "text": "API Documentation"
+        },
+        {
+          "level": 2,
+          "text": "Forum"
+        },
+        {
+          "level": 2,
+          "text": "Video Tutorials"
+        },
+        {
+          "level": 2,
+          "text": "Bug Report"
+        },
+        {
+          "level": 2,
+          "text": "Feature Request"
+        },
+        {
+          "level": 2,
+          "text": "What&#039;s New"
+        },
+        {
+          "level": 2,
+          "text": "Corporate Social Responsibility"
+        },
+        {
+          "level": 2,
+          "text": "Life at BotSailor"
+        },
+        {
+          "level": 2,
+          "text": "WC Plugin"
+        },
+        {
+          "level": 2,
+          "text": "Contact (Ask)"
+        },
+        {
+          "level": 2,
+          "text": "Support (Technical)"
+        },
+        {
+          "level": 2,
+          "text": "Pricing Plans"
+        },
+        {
+          "level": 2,
+          "text": "Pay As You Go"
+        },
+        {
+          "level": 2,
+          "text": "Addons"
+        },
+        {
+          "level": 2,
+          "text": "AI Token"
+        },
+        {
+          "level": 2,
+          "text": "Reseller"
+        },
+        {
+          "level": 2,
+          "text": "Affiliate"
+        },
+        {
+          "level": 2,
+          "text": "AI Startup Program"
+        }
+      ],
+      "links": 99,
+      "textLength": 4306
+    },
+    {
+      "id": "botsailor-blog-page-9",
+      "provider": "botsailor",
+      "url": "https://botsailor.com/blog?page=9",
+      "kind": "blog-archive",
+      "platforms": [
+        "chatbots",
+        "broadcasting",
+        "ecommerce"
+      ],
+      "sections": [
+        "chatbots-omnicanal",
+        "broadcasting",
+        "ecommerce"
+      ],
+      "fetchedAt": "2026-05-12T07:18:46.583Z",
+      "cachedFile": ".source-docs/provider-cache/botsailor__botsailor-blog-page-9__blog-archive.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 2,
+          "text": "Knowledgebase"
+        },
+        {
+          "level": 2,
+          "text": "Blog"
+        },
+        {
+          "level": 2,
+          "text": "API Documentation"
+        },
+        {
+          "level": 2,
+          "text": "Forum"
+        },
+        {
+          "level": 2,
+          "text": "Video Tutorials"
+        },
+        {
+          "level": 2,
+          "text": "Bug Report"
+        },
+        {
+          "level": 2,
+          "text": "Feature Request"
+        },
+        {
+          "level": 2,
+          "text": "What&#039;s New"
+        },
+        {
+          "level": 2,
+          "text": "Corporate Social Responsibility"
+        },
+        {
+          "level": 2,
+          "text": "Life at BotSailor"
+        },
+        {
+          "level": 2,
+          "text": "WC Plugin"
+        },
+        {
+          "level": 2,
+          "text": "Contact (Ask)"
+        },
+        {
+          "level": 2,
+          "text": "Support (Technical)"
+        },
+        {
+          "level": 2,
+          "text": "Pricing Plans"
+        },
+        {
+          "level": 2,
+          "text": "Pay As You Go"
+        },
+        {
+          "level": 2,
+          "text": "Addons"
+        },
+        {
+          "level": 2,
+          "text": "AI Token"
+        },
+        {
+          "level": 2,
+          "text": "Reseller"
+        },
+        {
+          "level": 2,
+          "text": "Affiliate"
+        },
+        {
+          "level": 2,
+          "text": "AI Startup Program"
+        }
+      ],
+      "links": 95,
+      "textLength": 4169
+    },
+    {
+      "id": "whatchimp-docs",
+      "provider": "whatchimp",
+      "url": "https://help.whatchimp.com/docs",
+      "kind": "docs",
+      "platforms": [
+        "chatbots",
+        "integrations",
+        "sectors"
+      ],
+      "sections": [
+        "primeros-pasos",
+        "sectores",
+        "integracion"
+      ],
+      "fetchedAt": "2026-05-12T07:18:46.688Z",
+      "cachedFile": ".source-docs/provider-cache/whatchimp__whatchimp-docs__docs.json",
+      "status": 200,
+      "ok": true,
+      "headings": [],
+      "links": 0,
+      "textLength": 23
+    },
+    {
+      "id": "whatchimp-features",
+      "provider": "whatchimp",
+      "url": "https://whatchimp.com/features/",
+      "kind": "features",
+      "platforms": [
+        "chatbots",
+        "broadcasting",
+        "ecommerce"
+      ],
+      "sections": [
+        "chatbots-omnicanal",
+        "broadcasting",
+        "ecommerce"
+      ],
+      "fetchedAt": "2026-05-12T07:18:47.292Z",
+      "cachedFile": ".source-docs/provider-cache/whatchimp__whatchimp-features__features.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 2,
+          "text": "TEAMS"
+        },
+        {
+          "level": 2,
+          "text": "INDUTRIES"
+        },
+        {
+          "level": 1,
+          "text": "Everything You Need for Whatsapp Engagement"
+        },
+        {
+          "level": 2,
+          "text": "Personalized Broadcast Campaigns"
+        },
+        {
+          "level": 2,
+          "text": "Setup Product Catalogs on WhatsApp"
+        },
+        {
+          "level": 2,
+          "text": "Shared Team Inbox"
+        },
+        {
+          "level": 2,
+          "text": "Discover everything you can do with WhatChimp"
+        },
+        {
+          "level": 2,
+          "text": "Your Customers are on WhatsApp! Are You?"
+        },
+        {
+          "level": 2,
+          "text": "🚨 FREE MASTERCLASS 🚨"
+        },
+        {
+          "level": 2,
+          "text": "How to Send 1000s of WhatsApp Messages Without Getting Banned"
+        }
+      ],
+      "links": 127,
+      "textLength": 7007
+    },
+    {
+      "id": "whatchimp-integrations",
+      "provider": "whatchimp",
+      "url": "https://whatchimp.com/integrations/",
+      "kind": "integrations",
+      "platforms": [
+        "integrations",
+        "ecommerce"
+      ],
+      "sections": [
+        "integracion",
+        "ecommerce"
+      ],
+      "fetchedAt": "2026-05-12T07:18:47.767Z",
+      "cachedFile": ".source-docs/provider-cache/whatchimp__whatchimp-integrations__integrations.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 2,
+          "text": "TEAMS"
+        },
+        {
+          "level": 2,
+          "text": "INDUTRIES"
+        },
+        {
+          "level": 2,
+          "text": "Connect WhatChimp With All Your Existing Softwares"
+        },
+        {
+          "level": 2,
+          "text": "Available Integrations"
+        },
+        {
+          "level": 3,
+          "text": "Zapier Integration"
+        },
+        {
+          "level": 3,
+          "text": "Pabbly Integration"
+        },
+        {
+          "level": 3,
+          "text": "WooCommerce Integration"
+        },
+        {
+          "level": 3,
+          "text": "API Integration"
+        },
+        {
+          "level": 3,
+          "text": "Shopify Integration"
+        },
+        {
+          "level": 3,
+          "text": "Google Sheets Integration"
+        },
+        {
+          "level": 3,
+          "text": "WhatsApp Commerce Integration"
+        },
+        {
+          "level": 3,
+          "text": "Make Integration"
+        },
+        {
+          "level": 3,
+          "text": "N8N Integration"
+        },
+        {
+          "level": 2,
+          "text": "Need Help Getting Started?"
+        },
+        {
+          "level": 3,
+          "text": "WhatsApp Support"
+        },
+        {
+          "level": 3,
+          "text": "Documentation"
+        },
+        {
+          "level": 3,
+          "text": "Video Guides"
+        },
+        {
+          "level": 2,
+          "text": "Your Customers are on WhatsApp! Are You?"
+        },
+        {
+          "level": 2,
+          "text": "🚨 FREE MASTERCLASS 🚨"
+        },
+        {
+          "level": 2,
+          "text": "How to Send 1000s of WhatsApp Messages Without Getting Banned"
+        }
+      ],
+      "links": 139,
+      "textLength": 7288
+    },
+    {
+      "id": "dialora-guide",
+      "provider": "dialora",
+      "url": "https://www.dialora.ai/docs/guide",
+      "kind": "docs",
+      "platforms": [
+        "voice"
+      ],
+      "sections": [
+        "agente-voz"
+      ],
+      "fetchedAt": "2026-05-12T07:18:47.890Z",
+      "cachedFile": ".source-docs/provider-cache/dialora__dialora-guide__docs.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Dialora: A Step-by-Step Guide"
+        },
+        {
+          "level": 2,
+          "text": "What is Dialora.AI"
+        },
+        {
+          "level": 3,
+          "text": "What are these agents capable of"
+        }
+      ],
+      "links": 160,
+      "textLength": 4264
+    },
+    {
+      "id": "dialora-first-agent",
+      "provider": "dialora",
+      "url": "https://www.dialora.ai/docs/guide/first-ai-voice-agent",
+      "kind": "guide",
+      "platforms": [
+        "voice"
+      ],
+      "sections": [
+        "agente-voz"
+      ],
+      "fetchedAt": "2026-05-12T07:18:48.628Z",
+      "cachedFile": ".source-docs/provider-cache/dialora__dialora-first-agent__guide.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 1,
+          "text": "How to Set Up Your First AI Voice Agent"
+        },
+        {
+          "level": 2,
+          "text": "Step 1: Sign Up and Log In to Dialora"
+        },
+        {
+          "level": 2,
+          "text": "Step 2: Navigate to the Create Agent Button"
+        },
+        {
+          "level": 2,
+          "text": "Choose How You Want to Create Your AI Agent:"
+        },
+        {
+          "level": 2,
+          "text": "Step 3: Enter Basic Agent Details"
+        },
+        {
+          "level": 2,
+          "text": "Step 4: Connect a Phone Number and Optional Integrations"
+        },
+        {
+          "level": 2,
+          "text": "Step 5: Define the Data You Want to Collect"
+        },
+        {
+          "level": 2,
+          "text": "Step 6: Preview and Create Your Agent"
+        },
+        {
+          "level": 2,
+          "text": "Step 7: Fine-Tune Your Agent’s Basics (Basic Settings)"
+        },
+        {
+          "level": 2,
+          "text": "Step 8: Configure Advanced Settings"
+        }
+      ],
+      "links": 165,
+      "textLength": 8170
+    },
+    {
+      "id": "dialora-outbound",
+      "provider": "dialora",
+      "url": "https://www.dialora.ai/docs/guide/outbound-campaigns",
+      "kind": "guide",
+      "platforms": [
+        "voice"
+      ],
+      "sections": [
+        "agente-voz"
+      ],
+      "fetchedAt": "2026-05-12T07:18:48.904Z",
+      "cachedFile": ".source-docs/provider-cache/dialora__dialora-outbound__guide.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 1,
+          "text": "How to Set Up Outbound Calling Campaigns with Dialora Voice Agents"
+        },
+        {
+          "level": 2,
+          "text": "Step 1: Log in to Your Dialora Account"
+        },
+        {
+          "level": 2,
+          "text": "Step 2: Navigate to the Campaigns Tab"
+        },
+        {
+          "level": 2,
+          "text": "Step 3: Create a New Campaign"
+        },
+        {
+          "level": 2,
+          "text": "Step 4: Fill Out Campaign Details"
+        },
+        {
+          "level": 2,
+          "text": "Step 5: Save &amp; Launch"
+        },
+        {
+          "level": 2,
+          "text": "Step 6: Monitor or Create Additional Campaigns"
+        }
+      ],
+      "links": 162,
+      "textLength": 6632
+    },
+    {
+      "id": "consolto-documentation",
+      "provider": "consolto",
+      "url": "https://www.consolto.com/documentation",
+      "kind": "docs",
+      "platforms": [
+        "virtual-office"
+      ],
+      "sections": [
+        "oficina-virtual"
+      ],
+      "fetchedAt": "2026-05-12T07:18:49.253Z",
+      "cachedFile": ".source-docs/provider-cache/consolto__consolto-documentation__docs.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hi there! How can we Help you?"
+        },
+        {
+          "level": 2,
+          "text": "Getting started"
+        },
+        {
+          "level": 2,
+          "text": "Installation &amp; setup"
+        },
+        {
+          "level": 2,
+          "text": "Troubleshooting"
+        },
+        {
+          "level": 2,
+          "text": "Get to know Consolto Features"
+        },
+        {
+          "level": 2,
+          "text": "Customizations"
+        },
+        {
+          "level": 2,
+          "text": "Multi agent"
+        },
+        {
+          "level": 2,
+          "text": "Integrations"
+        },
+        {
+          "level": 2,
+          "text": "Advanced Installation"
+        },
+        {
+          "level": 2,
+          "text": "Can we answer that question?"
+        },
+        {
+          "level": 4,
+          "text": "FIX"
+        }
+      ],
+      "links": 236,
+      "textLength": 18000
+    },
+    {
+      "id": "consolto-widget-clickntalk",
+      "provider": "consolto",
+      "url": "https://www.consolto.com/knowledge-posts/setup-your-agents-widget-and-clickntalk-page",
+      "kind": "guide",
+      "platforms": [
+        "virtual-office"
+      ],
+      "sections": [
+        "oficina-virtual"
+      ],
+      "fetchedAt": "2026-05-12T07:18:49.574Z",
+      "cachedFile": ".source-docs/provider-cache/consolto__consolto-widget-clickntalk__guide.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hi there! How can we help you?"
+        },
+        {
+          "level": 2,
+          "text": "CATEGORIES"
+        },
+        {
+          "level": 3,
+          "text": "Getting started"
+        },
+        {
+          "level": 3,
+          "text": "Installation &amp; setup"
+        },
+        {
+          "level": 3,
+          "text": "Troubleshooting"
+        },
+        {
+          "level": 3,
+          "text": "Get to know Consolto Features"
+        },
+        {
+          "level": 3,
+          "text": "Customizations"
+        },
+        {
+          "level": 3,
+          "text": "Multi agent"
+        },
+        {
+          "level": 3,
+          "text": "Integrations"
+        },
+        {
+          "level": 3,
+          "text": "Advanced Installation"
+        },
+        {
+          "level": 2,
+          "text": "Setup your agents&#x27; widget and ClickNTalk page"
+        },
+        {
+          "level": 3,
+          "text": "What are team widgets"
+        },
+        {
+          "level": 3,
+          "text": "What are Agent Skins"
+        },
+        {
+          "level": 3,
+          "text": "Managing team widgets"
+        },
+        {
+          "level": 3,
+          "text": "Navigating the backoffice and selecting agent skins and widgets"
+        },
+        {
+          "level": 3,
+          "text": "Managing agent skins on the team widget"
+        },
+        {
+          "level": 3,
+          "text": "Setting up agent skins for the agent as an account admin"
+        },
+        {
+          "level": 2,
+          "text": "Can we answer that question?"
+        },
+        {
+          "level": 4,
+          "text": "FIX"
+        }
+      ],
+      "links": 238,
+      "textLength": 18000
+    },
+    {
+      "id": "consolto-webhooks",
+      "provider": "consolto",
+      "url": "https://www.consolto.com/knowledge-posts/webhooks",
+      "kind": "developer-guide",
+      "platforms": [
+        "virtual-office"
+      ],
+      "sections": [
+        "oficina-virtual",
+        "api-referencia"
+      ],
+      "fetchedAt": "2026-05-12T07:18:49.842Z",
+      "cachedFile": ".source-docs/provider-cache/consolto__consolto-webhooks__developer-guide.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hi there! How can we help you?"
+        },
+        {
+          "level": 2,
+          "text": "CATEGORIES"
+        },
+        {
+          "level": 3,
+          "text": "Getting started"
+        },
+        {
+          "level": 3,
+          "text": "Installation &amp; setup"
+        },
+        {
+          "level": 3,
+          "text": "Troubleshooting"
+        },
+        {
+          "level": 3,
+          "text": "Get to know Consolto Features"
+        },
+        {
+          "level": 3,
+          "text": "Customizations"
+        },
+        {
+          "level": 3,
+          "text": "Multi agent"
+        },
+        {
+          "level": 3,
+          "text": "Integrations"
+        },
+        {
+          "level": 3,
+          "text": "Advanced Installation"
+        },
+        {
+          "level": 2,
+          "text": "Webhooks"
+        },
+        {
+          "level": 1,
+          "text": "Consolto Webhooks: Real-Time Events at Your Fingertips"
+        },
+        {
+          "level": 2,
+          "text": "📨 Chat &amp; Feed Events"
+        },
+        {
+          "level": 2,
+          "text": "📞 Call Events"
+        },
+        {
+          "level": 2,
+          "text": "👤 Customer &amp; Contact Events"
+        },
+        {
+          "level": 2,
+          "text": "📅 Appointment &amp; Scheduling Events"
+        },
+        {
+          "level": 3,
+          "text": "Why It Matters"
+        },
+        {
+          "level": 2,
+          "text": "Settings and configuration:"
+        },
+        {
+          "level": 2,
+          "text": "Can we answer that question?"
+        },
+        {
+          "level": 4,
+          "text": "FIX"
+        }
+      ],
+      "links": 239,
+      "textLength": 18000
+    },
+    {
+      "id": "consolto-frontend-api",
+      "provider": "consolto",
+      "url": "https://www.consolto.com/knowledge-posts/web-frontend-api",
+      "kind": "developer-guide",
+      "platforms": [
+        "virtual-office"
+      ],
+      "sections": [
+        "oficina-virtual",
+        "api-referencia"
+      ],
+      "fetchedAt": "2026-05-12T07:18:50.005Z",
+      "cachedFile": ".source-docs/provider-cache/consolto__consolto-frontend-api__developer-guide.json",
+      "status": 200,
+      "ok": true,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hi there! How can we help you?"
+        },
+        {
+          "level": 2,
+          "text": "CATEGORIES"
+        },
+        {
+          "level": 3,
+          "text": "Getting started"
+        },
+        {
+          "level": 3,
+          "text": "Installation &amp; setup"
+        },
+        {
+          "level": 3,
+          "text": "Troubleshooting"
+        },
+        {
+          "level": 3,
+          "text": "Get to know Consolto Features"
+        },
+        {
+          "level": 3,
+          "text": "Customizations"
+        },
+        {
+          "level": 3,
+          "text": "Multi agent"
+        },
+        {
+          "level": 3,
+          "text": "Integrations"
+        },
+        {
+          "level": 3,
+          "text": "Advanced Installation"
+        },
+        {
+          "level": 2,
+          "text": "Web Frontend API"
+        },
+        {
+          "level": 2,
+          "text": "Can we answer that question?"
+        },
+        {
+          "level": 4,
+          "text": "FIX"
+        }
+      ],
+      "links": 239,
+      "textLength": 18000
+    }
+  ]
+}

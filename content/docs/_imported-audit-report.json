@@ -1,0 +1,2608 @@
+{
+  "generatedAt": "2026-05-12T07:22:00.614Z",
+  "total": 183,
+  "canonical": 183,
+  "duplicates": 0,
+  "bySection": {
+    "agencias": {
+      "total": 8,
+      "canonical": 8,
+      "duplicates": 0
+    },
+    "broadcasting": {
+      "total": 23,
+      "canonical": 23,
+      "duplicates": 0
+    },
+    "chatbots-omnicanal": {
+      "total": 92,
+      "canonical": 92,
+      "duplicates": 0
+    },
+    "ecommerce": {
+      "total": 24,
+      "canonical": 24,
+      "duplicates": 0
+    },
+    "integracion": {
+      "total": 14,
+      "canonical": 14,
+      "duplicates": 0
+    },
+    "operacion-meta": {
+      "total": 6,
+      "canonical": 6,
+      "duplicates": 0
+    },
+    "telegram": {
+      "total": 16,
+      "canonical": 16,
+      "duplicates": 0
+    }
+  },
+  "canonicalRows": [
+    {
+      "key": "programa-de-afiliados",
+      "selected": {
+        "route": "imported/agencias/008-programa-de-afiliados-esmart360",
+        "file": "content/docs/imported/agencias/008-programa-de-afiliados-esmart360.md",
+        "title": "Programa de Afiliados E-SMART360",
+        "section": "agencias",
+        "canonical": "programa-de-afiliados",
+        "words": 7417,
+        "headings": 64,
+        "score": 8697
+      },
+      "alternatives": []
+    },
+    {
+      "key": "programa-de-afiliados-de-gana-comisiones-recurrentes",
+      "selected": {
+        "route": "imported/agencias/009-programa-afiliados-guia-completa-esmart360",
+        "file": "content/docs/imported/agencias/009-programa-afiliados-guia-completa-esmart360.md",
+        "title": "Programa de Afiliados de E-SMART360: Gana Comisiones Recurrentes",
+        "section": "agencias",
+        "canonical": "programa-de-afiliados-de-gana-comisiones-recurrentes",
+        "words": 5421,
+        "headings": 98,
+        "score": 7381
+      },
+      "alternatives": []
+    },
+    {
+      "key": "configurar-una-app-de-google-cloud-y-someterla-a-revision-para-revendedores-de",
+      "selected": {
+        "route": "imported/agencias/016-configurar-app-google-cloud-y-someter-a-revision-para-revendedores-esmart360",
+        "file": "content/docs/imported/agencias/016-configurar-app-google-cloud-y-someter-a-revision-para-revendedores-esmart360.md",
+        "title": "Configurar una App de Google Cloud y Someterla a Revisión para Revendedores de E-SMART360",
+        "section": "agencias",
+        "canonical": "configurar-una-app-de-google-cloud-y-someterla-a-revision-para-revendedores-de",
+        "words": 5735,
+        "headings": 101,
+        "score": 7755
+      },
+      "alternatives": []
+    },
+    {
+      "key": "alternativa-a-chatrace-para-plataforma-chatbot-de-marca-blanca-costo-escala-y-flexibilidad",
+      "selected": {
+        "route": "imported/agencias/alternativa-chatrace-plataforma-chatbot-marca-blanca-costos-escala-esmart360",
+        "file": "content/docs/imported/agencias/alternativa-chatrace-plataforma-chatbot-marca-blanca-costos-escala-esmart360.md",
+        "title": "Alternativa a ChatRace para Plataforma Chatbot de Marca Blanca: Costo, Escala y Flexibilidad Comparados",
+        "section": "agencias",
+        "canonical": "alternativa-a-chatrace-para-plataforma-chatbot-de-marca-blanca-costo-escala-y-flexibilidad",
+        "words": 5229,
+        "headings": 85,
+        "score": 6929
+      },
+      "alternatives": []
+    },
+    {
+      "key": "alternativa-a-chatrace-plataforma-chatbot-white-label-costos-escalabilidad-y-flexibilidad",
+      "selected": {
+        "route": "imported/agencias/alternativa-chatrace-plataforma-chatbot-white-label-costos-escala-flexibilidad-esmart360",
+        "file": "content/docs/imported/agencias/alternativa-chatrace-plataforma-chatbot-white-label-costos-escala-flexibilidad-esmart360.md",
+        "title": "Alternativa a ChatRace: Plataforma Chatbot White Label — Costos, Escalabilidad y Flexibilidad Comparados",
+        "section": "agencias",
+        "canonical": "alternativa-a-chatrace-plataforma-chatbot-white-label-costos-escalabilidad-y-flexibilidad",
+        "words": 7312,
+        "headings": 92,
+        "score": 9152
+      },
+      "alternatives": []
+    },
+    {
+      "key": "programa-de-afiliados-de-gana-comisiones-recurrentes-del-25",
+      "selected": {
+        "route": "imported/agencias/programa-afiliados-comisiones-recurrentes-esmart360",
+        "file": "content/docs/imported/agencias/programa-afiliados-comisiones-recurrentes-esmart360.md",
+        "title": "Programa de Afiliados de E-SMART360: Gana Comisiones Recurrentes del 25%",
+        "section": "agencias",
+        "canonical": "programa-de-afiliados-de-gana-comisiones-recurrentes-del-25",
+        "words": 6794,
+        "headings": 91,
+        "score": 8614
+      },
+      "alternatives": []
+    },
+    {
+      "key": "programa-de-afiliados-de",
+      "selected": {
+        "route": "imported/agencias/programa-afiliados-esmart360",
+        "file": "content/docs/imported/agencias/programa-afiliados-esmart360.md",
+        "title": "Programa de Afiliados de E-SMART360",
+        "section": "agencias",
+        "canonical": "programa-de-afiliados-de",
+        "words": 6851,
+        "headings": 86,
+        "score": 8571
+      },
+      "alternatives": []
+    },
+    {
+      "key": "programa-de-afiliados-de-gana-el-25-de-comision-recurrente-de-por-vida",
+      "selected": {
+        "route": "imported/agencias/programa-de-afiliados-e-smart360",
+        "file": "content/docs/imported/agencias/programa-de-afiliados-e-smart360.md",
+        "title": "Programa de Afiliados de E-SMART360 — Gana el 25% de Comisión Recurrente de por Vida",
+        "section": "agencias",
+        "canonical": "programa-de-afiliados-de-gana-el-25-de-comision-recurrente-de-por-vida",
+        "words": 6406,
+        "headings": 117,
+        "score": 8746
+      },
+      "alternatives": []
+    },
+    {
+      "key": "actualiza-plantillas-de-whatsapp-facilmente-en",
+      "selected": {
+        "route": "imported/broadcasting/005-actualizar-plantillas-whatsapp-facilmente-esmart360",
+        "file": "content/docs/imported/broadcasting/005-actualizar-plantillas-whatsapp-facilmente-esmart360.md",
+        "title": "Actualiza Plantillas de WhatsApp Fácilmente en E-SMART360",
+        "section": "broadcasting",
+        "canonical": "actualiza-plantillas-de-whatsapp-facilmente-en",
+        "words": 3865,
+        "headings": 67,
+        "score": 5205
+      },
+      "alternatives": []
+    },
+    {
+      "key": "actualiza-plantillas-de-whatsapp-sin-esfuerzo-en",
+      "selected": {
+        "route": "imported/broadcasting/011-actualizar-plantillas-whatsapp-esmart360",
+        "file": "content/docs/imported/broadcasting/011-actualizar-plantillas-whatsapp-esmart360.md",
+        "title": "Actualiza Plantillas de WhatsApp sin Esfuerzo en E-SMART360",
+        "section": "broadcasting",
+        "canonical": "actualiza-plantillas-de-whatsapp-sin-esfuerzo-en",
+        "words": 3982,
+        "headings": 90,
+        "score": 5782
+      },
+      "alternatives": []
+    },
+    {
+      "key": "razones-comunes-de-rechazo-de-plantillas-de-whatsapp",
+      "selected": {
+        "route": "imported/broadcasting/013-razones-comunes-rechazo-plantillas-whatsapp-esmart360",
+        "file": "content/docs/imported/broadcasting/013-razones-comunes-rechazo-plantillas-whatsapp-esmart360.md",
+        "title": "Razones Comunes de Rechazo de Plantillas de WhatsApp",
+        "section": "broadcasting",
+        "canonical": "razones-comunes-de-rechazo-de-plantillas-de-whatsapp",
+        "words": 3604,
+        "headings": 93,
+        "score": 5464
+      },
+      "alternatives": []
+    },
+    {
+      "key": "para-enviar-mensajes-broadcast-en-whatsapp-con-plantillas-de-mensaje",
+      "selected": {
+        "route": "imported/broadcasting/014-guia-completa-broadcasting-whatsapp-plantillas-mensajes-esmart360",
+        "file": "content/docs/imported/broadcasting/014-guia-completa-broadcasting-whatsapp-plantillas-mensajes-esmart360.md",
+        "title": "Guía Completa para Enviar Mensajes Broadcast en WhatsApp con Plantillas de Mensaje",
+        "section": "broadcasting",
+        "canonical": "para-enviar-mensajes-broadcast-en-whatsapp-con-plantillas-de-mensaje",
+        "words": 7158,
+        "headings": 124,
+        "score": 9638
+      },
+      "alternatives": []
+    },
+    {
+      "key": "regla-de-las-24-horas-en-whatsapp-para-cumplirla-efectivamente",
+      "selected": {
+        "route": "imported/broadcasting/022-regla-24-horas-whatsapp-guia-completa-esmart360",
+        "file": "content/docs/imported/broadcasting/022-regla-24-horas-whatsapp-guia-completa-esmart360.md",
+        "title": "Regla de las 24 Horas en WhatsApp: Guía Completa para Cumplirla Efectivamente",
+        "section": "broadcasting",
+        "canonical": "regla-de-las-24-horas-en-whatsapp-para-cumplirla-efectivamente",
+        "words": 6088,
+        "headings": 84,
+        "score": 7768
+      },
+      "alternatives": []
+    },
+    {
+      "key": "actualizar-plantillas-de-whatsapp-en",
+      "selected": {
+        "route": "imported/broadcasting/actualizar-plantillas-whatsapp-en-e-smart360",
+        "file": "content/docs/imported/broadcasting/actualizar-plantillas-whatsapp-en-e-smart360.md",
+        "title": "Actualizar Plantillas de WhatsApp en E-SMART360",
+        "section": "broadcasting",
+        "canonical": "actualizar-plantillas-de-whatsapp-en",
+        "words": 3453,
+        "headings": 78,
+        "score": 5013
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-actualizar-plantillas-de-whatsapp-y-sincronizarlas-con",
+      "selected": {
+        "route": "imported/broadcasting/actualizar-plantillas-whatsapp-sincronizacion-esmart360",
+        "file": "content/docs/imported/broadcasting/actualizar-plantillas-whatsapp-sincronizacion-esmart360.md",
+        "title": "Cómo Actualizar Plantillas de WhatsApp y Sincronizarlas con E-SMART360",
+        "section": "broadcasting",
+        "canonical": "como-actualizar-plantillas-de-whatsapp-y-sincronizarlas-con",
+        "words": 3630,
+        "headings": 79,
+        "score": 5210
+      },
+      "alternatives": []
+    },
+    {
+      "key": "causas-comunes-del-rechazo-de-plantillas-de-whatsapp-y-como-solucionarlas",
+      "selected": {
+        "route": "imported/broadcasting/causas-comunes-rechazo-plantillas-whatsapp-esmart360",
+        "file": "content/docs/imported/broadcasting/causas-comunes-rechazo-plantillas-whatsapp-esmart360.md",
+        "title": "Causas Comunes del Rechazo de Plantillas de WhatsApp y Cómo Solucionarlas",
+        "section": "broadcasting",
+        "canonical": "causas-comunes-del-rechazo-de-plantillas-de-whatsapp-y-como-solucionarlas",
+        "words": 4296,
+        "headings": 84,
+        "score": 5976
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-broadcast-a-suscriptores-de-whatsapp-usando-plantillas-de-mensajes",
+      "selected": {
+        "route": "imported/broadcasting/como-enviar-mensajes-broadcast-en-whatsapp-usando-plantillas-de-mensajes",
+        "file": "content/docs/imported/broadcasting/como-enviar-mensajes-broadcast-en-whatsapp-usando-plantillas-de-mensajes.md",
+        "title": "Cómo Enviar Mensajes Broadcast a Suscriptores de WhatsApp Usando Plantillas de Mensajes",
+        "section": "broadcasting",
+        "canonical": "como-enviar-mensajes-broadcast-a-suscriptores-de-whatsapp-usando-plantillas-de-mensajes",
+        "words": 3943,
+        "headings": 95,
+        "score": 5843
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-plantillas-de-carrusel-en-whatsapp-con",
+      "selected": {
+        "route": "imported/broadcasting/crear-plantilla-carrusel-whatsapp-esmart360",
+        "file": "content/docs/imported/broadcasting/crear-plantilla-carrusel-whatsapp-esmart360.md",
+        "title": "Cómo Crear Plantillas de Carrusel en WhatsApp con E-SMART360",
+        "section": "broadcasting",
+        "canonical": "como-crear-plantillas-de-carrusel-en-whatsapp-con",
+        "words": 4093,
+        "headings": 80,
+        "score": 5693
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-una-plantilla-de-mensaje-para-whatsapp-en",
+      "selected": {
+        "route": "imported/broadcasting/crear-plantilla-mensaje-whatsapp-paso-a-paso-esmart360",
+        "file": "content/docs/imported/broadcasting/crear-plantilla-mensaje-whatsapp-paso-a-paso-esmart360.md",
+        "title": "Cómo Crear una Plantilla de Mensaje para WhatsApp en E-SMART360",
+        "section": "broadcasting",
+        "canonical": "como-crear-una-plantilla-de-mensaje-para-whatsapp-en",
+        "words": 4408,
+        "headings": 87,
+        "score": 6148
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-una-plantilla-de-mensaje-para-whatsapp",
+      "selected": {
+        "route": "imported/broadcasting/crear-plantilla-mensaje-whatsapp",
+        "file": "content/docs/imported/broadcasting/crear-plantilla-mensaje-whatsapp.md",
+        "title": "Cómo crear una plantilla de mensaje para WhatsApp",
+        "section": "broadcasting",
+        "canonical": "como-crear-una-plantilla-de-mensaje-para-whatsapp",
+        "words": 4474,
+        "headings": 68,
+        "score": 5834
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-masivos-por-whatsapp-usando-plantillas-de-mensaje",
+      "selected": {
+        "route": "imported/broadcasting/enviar-mensajes-masivos-whatsapp-plantillas-campanas-esmart360",
+        "file": "content/docs/imported/broadcasting/enviar-mensajes-masivos-whatsapp-plantillas-campanas-esmart360.md",
+        "title": "Cómo enviar mensajes masivos por WhatsApp usando plantillas de mensaje",
+        "section": "broadcasting",
+        "canonical": "como-enviar-mensajes-masivos-por-whatsapp-usando-plantillas-de-mensaje",
+        "words": 8124,
+        "headings": 157,
+        "score": 11264
+      },
+      "alternatives": []
+    },
+    {
+      "key": "de-facebook-broadcasting-con-rcn-notificaciones-recurrentes-en-messenger-202",
+      "selected": {
+        "route": "imported/broadcasting/guia-facebook-rcn-broadcasting-messenger-2025-esmart360",
+        "file": "content/docs/imported/broadcasting/guia-facebook-rcn-broadcasting-messenger-2025-esmart360.md",
+        "title": "Guía Completa de Facebook Broadcasting con RCN (Notificaciones Recurrentes) en Messenger — 2025",
+        "section": "broadcasting",
+        "canonical": "de-facebook-broadcasting-con-rcn-notificaciones-recurrentes-en-messenger-202",
+        "words": 7599,
+        "headings": 114,
+        "score": 9879
+      },
+      "alternatives": []
+    },
+    {
+      "key": "para-crear-plantillas-de-mensaje-en-whatsapp",
+      "selected": {
+        "route": "imported/broadcasting/guia-para-crear-plantillas-de-mensaje-en-whatsapp-md",
+        "file": "content/docs/imported/broadcasting/guia-para-crear-plantillas-de-mensaje-en-whatsapp-md.md",
+        "title": "Guía Completa para Crear Plantillas de Mensaje en WhatsApp",
+        "section": "broadcasting",
+        "canonical": "para-crear-plantillas-de-mensaje-en-whatsapp",
+        "words": 3802,
+        "headings": 85,
+        "score": 5502
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-una-plantilla-de-carrusel-en-whatsapp-con",
+      "selected": {
+        "route": "imported/broadcasting/plantilla-carrusel-whatsapp-crear-en-e-smart360",
+        "file": "content/docs/imported/broadcasting/plantilla-carrusel-whatsapp-crear-en-e-smart360.md",
+        "title": "Cómo Crear una Plantilla de Carrusel en WhatsApp con E-SMART360",
+        "section": "broadcasting",
+        "canonical": "como-crear-una-plantilla-de-carrusel-en-whatsapp-con",
+        "words": 7968,
+        "headings": 68,
+        "score": 9328
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-y-usar-plantillas-de-carrusel-en-whatsapp-con",
+      "selected": {
+        "route": "imported/broadcasting/plantillas-carrusel-whatsapp-esmart360",
+        "file": "content/docs/imported/broadcasting/plantillas-carrusel-whatsapp-esmart360.md",
+        "title": "Cómo Crear y Usar Plantillas de Carrusel en WhatsApp con E-SMART360",
+        "section": "broadcasting",
+        "canonical": "como-crear-y-usar-plantillas-de-carrusel-en-whatsapp-con",
+        "words": 4722,
+        "headings": 81,
+        "score": 6342
+      },
+      "alternatives": []
+    },
+    {
+      "key": "razones-comunes-del-rechazo-de-plantillas-de-mensajes-de-whatsapp",
+      "selected": {
+        "route": "imported/broadcasting/razones-comunes-de-rechazo-plantillas-whatsapp-esmart360",
+        "file": "content/docs/imported/broadcasting/razones-comunes-de-rechazo-plantillas-whatsapp-esmart360.md",
+        "title": "Razones Comunes del Rechazo de Plantillas de Mensajes de WhatsApp",
+        "section": "broadcasting",
+        "canonical": "razones-comunes-del-rechazo-de-plantillas-de-mensajes-de-whatsapp",
+        "words": 4245,
+        "headings": 82,
+        "score": 5885
+      },
+      "alternatives": []
+    },
+    {
+      "key": "razones-comunes-de-rechazo-de-plantillas-de-mensajes-de-whatsapp",
+      "selected": {
+        "route": "imported/broadcasting/razones-comunes-rechazo-plantillas-whatsapp",
+        "file": "content/docs/imported/broadcasting/razones-comunes-rechazo-plantillas-whatsapp.md",
+        "title": "Razones Comunes de Rechazo de Plantillas de Mensajes de WhatsApp",
+        "section": "broadcasting",
+        "canonical": "razones-comunes-de-rechazo-de-plantillas-de-mensajes-de-whatsapp",
+        "words": 3468,
+        "headings": 71,
+        "score": 4888
+      },
+      "alternatives": []
+    },
+    {
+      "key": "regla-de-las-24-horas-de-whatsapp-como-cumplirla-efectivamente",
+      "selected": {
+        "route": "imported/broadcasting/regla-24-horas-whatsapp-business",
+        "file": "content/docs/imported/broadcasting/regla-24-horas-whatsapp-business.md",
+        "title": "Regla de las 24 Horas de WhatsApp: Cómo Cumplirla Efectivamente",
+        "section": "broadcasting",
+        "canonical": "regla-de-las-24-horas-de-whatsapp-como-cumplirla-efectivamente",
+        "words": 6715,
+        "headings": 87,
+        "score": 8455
+      },
+      "alternatives": []
+    },
+    {
+      "key": "regla-de-las-24-horas-en-whatsapp-que-es-y-como-cumplirla-efectivamente",
+      "selected": {
+        "route": "imported/broadcasting/regla-24-horas-whatsapp-como-cumplirla-esmart360",
+        "file": "content/docs/imported/broadcasting/regla-24-horas-whatsapp-como-cumplirla-esmart360.md",
+        "title": "Regla de las 24 Horas en WhatsApp: Qué es y Cómo Cumplirla Efectivamente",
+        "section": "broadcasting",
+        "canonical": "regla-de-las-24-horas-en-whatsapp-que-es-y-como-cumplirla-efectivamente",
+        "words": 4888,
+        "headings": 87,
+        "score": 6628
+      },
+      "alternatives": []
+    },
+    {
+      "key": "smart-delay-programa-respuestas-del-bot-hasta-24-horas",
+      "selected": {
+        "route": "imported/broadcasting/smart-delay-programar-respuestas-bot-hasta-24-horas-esmart360",
+        "file": "content/docs/imported/broadcasting/smart-delay-programar-respuestas-bot-hasta-24-horas-esmart360.md",
+        "title": "Smart Delay: Programa Respuestas del Bot Hasta 24 Horas | E-SMART360",
+        "section": "broadcasting",
+        "canonical": "smart-delay-programa-respuestas-del-bot-hasta-24-horas",
+        "words": 5710,
+        "headings": 98,
+        "score": 7670
+      },
+      "alternatives": []
+    },
+    {
+      "key": "urls-dinamicas-en-botones-de-llamada-a-la-accion-en-plantillas-de-mensajes-de-whatsapp",
+      "selected": {
+        "route": "imported/broadcasting/urls-dinamicas-en-botones-cta-de-plantillas-de-mensajes-whatsapp-esmart360",
+        "file": "content/docs/imported/broadcasting/urls-dinamicas-en-botones-cta-de-plantillas-de-mensajes-whatsapp-esmart360.md",
+        "title": "URLs Dinámicas en Botones de Llamada a la Acción en Plantillas de Mensajes de WhatsApp",
+        "section": "broadcasting",
+        "canonical": "urls-dinamicas-en-botones-de-llamada-a-la-accion-en-plantillas-de-mensajes-de-whatsapp",
+        "words": 7019,
+        "headings": 95,
+        "score": 8919
+      },
+      "alternatives": []
+    },
+    {
+      "key": "a-para-crear-un-chatbot-de-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/002-guia-paso-a-paso-para-crear-un-chatbot-de-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/002-guia-paso-a-paso-para-crear-un-chatbot-de-whatsapp-esmart360.md",
+        "title": "Guía paso a paso para crear un chatbot de WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "paso-a-paso-para-crear-un-chatbot-de-whatsapp",
+        "words": 5419,
+        "headings": 83,
+        "score": 7079
+      },
+      "alternatives": []
+    },
+    {
+      "key": "live-chat-bandeja-compartida-para-soporte-en-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/004-live-chat-bandeja-compartida-para-soporte-en-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/004-live-chat-bandeja-compartida-para-soporte-en-whatsapp-esmart360.md",
+        "title": "Live Chat: Bandeja Compartida para Soporte en WhatsApp | E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "live-chat-bandeja-compartida-para-soporte-en-whatsapp",
+        "words": 7818,
+        "headings": 112,
+        "score": 10058
+      },
+      "alternatives": []
+    },
+    {
+      "key": "live-chat-bandeja-compartida-de-whatsapp-para-soporte-al-cliente",
+      "selected": {
+        "route": "imported/chatbots/010-live-chat-bandeja-compartida-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/010-live-chat-bandeja-compartida-whatsapp-esmart360.md",
+        "title": "Live Chat: Bandeja Compartida de WhatsApp para Soporte al Cliente",
+        "section": "chatbots-omnicanal",
+        "canonical": "live-chat-bandeja-compartida-de-whatsapp-para-soporte-al-cliente",
+        "words": 11954,
+        "headings": 123,
+        "score": 14414
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-to-buy-de-ventas-por-chat-para-tu-negocio",
+      "selected": {
+        "route": "imported/chatbots/012-chattobuy-guia-completa-ventas-por-chat-esmart360",
+        "file": "content/docs/imported/chatbots/012-chattobuy-guia-completa-ventas-por-chat-esmart360.md",
+        "title": "Chat-to-Buy 2026: Guía Completa de Ventas por Chat para tu Negocio",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-to-buy-2026-de-ventas-por-chat-para-tu-negocio",
+        "words": 6762,
+        "headings": 120,
+        "score": 9162
+      },
+      "alternatives": []
+    },
+    {
+      "key": "email-vs-whatsapp-marketing-comparativa-definitiva",
+      "selected": {
+        "route": "imported/chatbots/015-email-vs-whatsapp-marketing-comparativa-2025-esmart360",
+        "file": "content/docs/imported/chatbots/015-email-vs-whatsapp-marketing-comparativa-2025-esmart360.md",
+        "title": "Email vs WhatsApp Marketing: Comparativa Definitiva 2025",
+        "section": "chatbots-omnicanal",
+        "canonical": "email-vs-whatsapp-marketing-comparativa-definitiva-2025",
+        "words": 5850,
+        "headings": 97,
+        "score": 7790
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-chatbots-personalizados-para-cualquier-industria",
+      "selected": {
+        "route": "imported/chatbots/017-guia-completa-chatbots-para-cualquier-industria-esmart360",
+        "file": "content/docs/imported/chatbots/017-guia-completa-chatbots-para-cualquier-industria-esmart360.md",
+        "title": "Guía Completa: Cómo Crear Chatbots Personalizados para Cualquier Industria",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-chatbots-personalizados-para-cualquier-industria",
+        "words": 6593,
+        "headings": 93,
+        "score": 8453
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-en-vivo-bandeja-compartida-de-whatsapp-para-atencion-al-cliente-en",
+      "selected": {
+        "route": "imported/chatbots/019-bandeja-compartida-chat-en-vivo-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/019-bandeja-compartida-chat-en-vivo-whatsapp-esmart360.md",
+        "title": "Chat en Vivo: Bandeja Compartida de WhatsApp para Atención al Cliente en E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-en-vivo-bandeja-compartida-de-whatsapp-para-atencion-al-cliente-en",
+        "words": 10447,
+        "headings": 159,
+        "score": 13627
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-automatizar-conversaciones-complejas-con-user-input-flow-en-el-chat-web",
+      "selected": {
+        "route": "imported/chatbots/021-automatizar-conversaciones-complejas-con-input-flow-en-webchat-esmart360",
+        "file": "content/docs/imported/chatbots/021-automatizar-conversaciones-complejas-con-input-flow-en-webchat-esmart360.md",
+        "title": "Cómo Automatizar Conversaciones Complejas con User Input Flow en el Chat Web",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-automatizar-conversaciones-complejas-con-user-input-flow-en-el-chat-web",
+        "words": 6434,
+        "headings": 91,
+        "score": 8254
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chatbot-de-whatsapp-mensaje-de-bienvenida-rompehielos-comandos-y-boton-de-ubicacion",
+      "selected": {
+        "route": "imported/chatbots/021-mensaje-bienvenida-rompehielos-comandos-boton-ubicacion-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/021-mensaje-bienvenida-rompehielos-comandos-boton-ubicacion-whatsapp-esmart360.md",
+        "title": "Chatbot de WhatsApp: Mensaje de Bienvenida, Rompehielos, Comandos y Botón de Ubicación",
+        "section": "chatbots-omnicanal",
+        "canonical": "chatbot-de-whatsapp-mensaje-de-bienvenida-rompehielos-comandos-y-boton-de-ubicacion",
+        "words": 4727,
+        "headings": 100,
+        "score": 6727
+      },
+      "alternatives": []
+    },
+    {
+      "key": "crear-un-chatbot-de-ia-para-instagram-y-entrenarlo-con-el-asistente-de-ia",
+      "selected": {
+        "route": "imported/chatbots/025-crear-chatbot-ia-instagram-entrenar-asistente-ia-esmart360",
+        "file": "content/docs/imported/chatbots/025-crear-chatbot-ia-instagram-entrenar-asistente-ia-esmart360.md",
+        "title": "Crear un Chatbot de IA para Instagram y Entrenarlo con el Asistente de IA",
+        "section": "chatbots-omnicanal",
+        "canonical": "crear-un-chatbot-de-ia-para-instagram-y-entrenarlo-con-el-asistente-de-ia",
+        "words": 5732,
+        "headings": 89,
+        "score": 7512
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-asistente-de-ventas-inteligente-con-ia-para-whatsapp-en-tu-tienda-ecommerce",
+      "selected": {
+        "route": "imported/chatbots/2026-05-07-asistente-ventas-whatsapp-ia-ecommerce",
+        "file": "content/docs/imported/chatbots/2026-05-07-asistente-ventas-whatsapp-ia-ecommerce.md",
+        "title": "Cómo crear un asistente de ventas inteligente con IA para WhatsApp en tu tienda eCommerce",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-asistente-de-ventas-inteligente-con-ia-para-whatsapp-en-tu-tienda-ecommerce",
+        "words": 3576,
+        "headings": 39,
+        "score": 4356
+      },
+      "alternatives": []
+    },
+    {
+      "key": "agente-de-ia-para-chatbots-revoluciona-tu-atencion-al-cliente",
+      "selected": {
+        "route": "imported/chatbots/agente-ia-asistente-inteligente-chatbot-esmart360",
+        "file": "content/docs/imported/chatbots/agente-ia-asistente-inteligente-chatbot-esmart360.md",
+        "title": "Agente de IA para Chatbots: Revoluciona tu Atención al Cliente",
+        "section": "chatbots-omnicanal",
+        "canonical": "agente-de-ia-para-chatbots-revoluciona-tu-atencion-al-cliente",
+        "words": 6417,
+        "headings": 83,
+        "score": 8077
+      },
+      "alternatives": []
+    },
+    {
+      "key": "agente-ia-para-chatbots-revoluciona-tu-soporte-al-cliente",
+      "selected": {
+        "route": "imported/chatbots/agente-ia-central-controlador-chatbot-esmart360",
+        "file": "content/docs/imported/chatbots/agente-ia-central-controlador-chatbot-esmart360.md",
+        "title": "Agente IA para Chatbots: Revoluciona tu Soporte al Cliente",
+        "section": "chatbots-omnicanal",
+        "canonical": "agente-ia-para-chatbots-revoluciona-tu-soporte-al-cliente",
+        "words": 6243,
+        "headings": 96,
+        "score": 8163
+      },
+      "alternatives": []
+    },
+    {
+      "key": "anuncios-click-to-whatsapp-como-crear-anuncios-que-convierten-en-conversaciones-reales",
+      "selected": {
+        "route": "imported/chatbots/anuncios-click-to-whatsapp-guia-completa-esmart360",
+        "file": "content/docs/imported/chatbots/anuncios-click-to-whatsapp-guia-completa-esmart360.md",
+        "title": "Anuncios Click to WhatsApp: Cómo Crear Anuncios que Convierten en Conversaciones Reales",
+        "section": "chatbots-omnicanal",
+        "canonical": "anuncios-click-to-whatsapp-como-crear-anuncios-que-convierten-en-conversaciones-reales",
+        "words": 6462,
+        "headings": 93,
+        "score": 8322
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-usar-el-asistente-de-ia-en-el-chat-web-para-soporte-al-cliente",
+      "selected": {
+        "route": "imported/chatbots/asistente-ia-en-web-chat-para-soporte-al-cliente-esmart360",
+        "file": "content/docs/imported/chatbots/asistente-ia-en-web-chat-para-soporte-al-cliente-esmart360.md",
+        "title": "Cómo Usar el Asistente de IA en el Chat Web para Soporte al Cliente",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-usar-el-asistente-de-ia-en-el-chat-web-para-soporte-al-cliente",
+        "words": 7300,
+        "headings": 117,
+        "score": 9640
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-asistente-de-ventas-inteligente-con-ia-para-tu-tienda-en-linea-en-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/asistente-ventas-ia-whatsapp-ecommerce-esmart360",
+        "file": "content/docs/imported/chatbots/asistente-ventas-ia-whatsapp-ecommerce-esmart360.md",
+        "title": "Cómo Crear un Asistente de Ventas Inteligente con IA para tu Tienda en Línea en WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-asistente-de-ventas-inteligente-con-ia-para-tu-tienda-en-linea-en-whatsapp",
+        "words": 5579,
+        "headings": 127,
+        "score": 8119
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-construir-un-asistente-de-ventas-inteligente-con-ia-para-whatsapp-en-ecommerce",
+      "selected": {
+        "route": "imported/chatbots/asistente-ventas-whatsapp-ia-ecommerce-esmart360",
+        "file": "content/docs/imported/chatbots/asistente-ventas-whatsapp-ia-ecommerce-esmart360.md",
+        "title": "Cómo construir un asistente de ventas inteligente con IA para WhatsApp en eCommerce",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-construir-un-asistente-de-ventas-inteligente-con-ia-para-whatsapp-en-ecommerce",
+        "words": 6731,
+        "headings": 67,
+        "score": 8071
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-automatizar-conversaciones-complejas-con-input-flow-de-usuario-en-webchat",
+      "selected": {
+        "route": "imported/chatbots/automatizar-conversaciones-complejas-user-input-flow-webchat-esmart360",
+        "file": "content/docs/imported/chatbots/automatizar-conversaciones-complejas-user-input-flow-webchat-esmart360.md",
+        "title": "Cómo Automatizar Conversaciones Complejas con Input Flow de Usuario en Webchat",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-automatizar-conversaciones-complejas-con-input-flow-de-usuario-en-webchat",
+        "words": 5542,
+        "headings": 115,
+        "score": 7842
+      },
+      "alternatives": []
+    },
+    {
+      "key": "bandeja-compartida-de-whatsapp-para-equipos-chat-en-vivo-colaborativo",
+      "selected": {
+        "route": "imported/chatbots/bandeja-compartida-inbox-equipo-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/bandeja-compartida-inbox-equipo-whatsapp-esmart360.md",
+        "title": "Bandeja Compartida de WhatsApp para Equipos: Chat en Vivo Colaborativo",
+        "section": "chatbots-omnicanal",
+        "canonical": "bandeja-compartida-de-whatsapp-para-equipos-chat-en-vivo-colaborativo",
+        "words": 5741,
+        "headings": 85,
+        "score": 7441
+      },
+      "alternatives": []
+    },
+    {
+      "key": "casos-de-uso-de-chatbots-para-diferentes-industrias-en",
+      "selected": {
+        "route": "imported/chatbots/casos-de-uso-chatbots-diferentes-industrias-2026-esmart360",
+        "file": "content/docs/imported/chatbots/casos-de-uso-chatbots-diferentes-industrias-2026-esmart360.md",
+        "title": "Casos de Uso de Chatbots para Diferentes Industrias en 2026",
+        "section": "chatbots-omnicanal",
+        "canonical": "casos-de-uso-de-chatbots-para-diferentes-industrias-en-2026",
+        "words": 7784,
+        "headings": 140,
+        "score": 10584
+      },
+      "alternatives": []
+    },
+    {
+      "key": "casos-de-uso-de-chatbots-por-industria-en",
+      "selected": {
+        "route": "imported/chatbots/casos-de-uso-chatbots-por-industria-2026-esmart360",
+        "file": "content/docs/imported/chatbots/casos-de-uso-chatbots-por-industria-2026-esmart360.md",
+        "title": "Casos de Uso de Chatbots por Industria en 2026",
+        "section": "chatbots-omnicanal",
+        "canonical": "casos-de-uso-de-chatbots-por-industria-en-2026",
+        "words": 10583,
+        "headings": 145,
+        "score": 13483
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-en-vivo-bandeja-compartida-para-soporte-en-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/chat-en-vivo-bandeja-compartida-equipo-soporte-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/chat-en-vivo-bandeja-compartida-equipo-soporte-whatsapp-esmart360.md",
+        "title": "Chat en Vivo: Bandeja Compartida para Soporte en WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-en-vivo-bandeja-compartida-para-soporte-en-whatsapp",
+        "words": 9293,
+        "headings": 125,
+        "score": 11793
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-en-vivo-bandeja-compartida-de-equipo-para-soporte-en-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/chat-en-vivo-bandeja-compartida-equipo-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/chat-en-vivo-bandeja-compartida-equipo-whatsapp-esmart360.md",
+        "title": "Chat en Vivo: Bandeja Compartida de Equipo para Soporte en WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-en-vivo-bandeja-compartida-de-equipo-para-soporte-en-whatsapp",
+        "words": 4319,
+        "headings": 69,
+        "score": 5699
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-en-vivo-con-bandeja-de-entrada-compartida-para-equipos-de-soporte",
+      "selected": {
+        "route": "imported/chatbots/chat-en-vivo-inbox-compartido-whatsapp-equipo-soporte-esmart360",
+        "file": "content/docs/imported/chatbots/chat-en-vivo-inbox-compartido-whatsapp-equipo-soporte-esmart360.md",
+        "title": "Chat en Vivo con Bandeja de Entrada Compartida para Equipos de Soporte",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-en-vivo-con-bandeja-de-entrada-compartida-para-equipos-de-soporte",
+        "words": 8394,
+        "headings": 142,
+        "score": 11234
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-to-buy-en-por-que-toda-marca-necesita-chat-to-buy-antes-de",
+      "selected": {
+        "route": "imported/chatbots/chat-to-buy-2026-por-que-toda-marca-necesita-chat-to-buy-esmart360",
+        "file": "content/docs/imported/chatbots/chat-to-buy-2026-por-que-toda-marca-necesita-chat-to-buy-esmart360.md",
+        "title": "Chat-to-Buy en 2026: Por Qué Toda Marca Necesita Chat-to-Buy Antes de 2026",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-to-buy-en-2026-por-que-toda-marca-necesita-chat-to-buy-antes-de-2026",
+        "words": 8665,
+        "headings": 155,
+        "score": 11765
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-to-buy-en-por-que-toda-marca-necesita-el-modelo-de-compra-por-conversacion",
+      "selected": {
+        "route": "imported/chatbots/chat-to-buy-en-2026-por-que-toda-marca-necesita-chat-to-buy-esmart360",
+        "file": "content/docs/imported/chatbots/chat-to-buy-en-2026-por-que-toda-marca-necesita-chat-to-buy-esmart360.md",
+        "title": "Chat-to-Buy en 2026: Por Qué Toda Marca Necesita el Modelo de Compra por Conversación",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-to-buy-en-2026-por-que-toda-marca-necesita-el-modelo-de-compra-por-conversacion",
+        "words": 8425,
+        "headings": 126,
+        "score": 10945
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-ia-para-instagram-y-entrenarlo-con-el-asistente-de-ia",
+      "selected": {
+        "route": "imported/chatbots/chatbot-ia-instagram-entrenar-asistente-ai-esmart360",
+        "file": "content/docs/imported/chatbots/chatbot-ia-instagram-entrenar-asistente-ai-esmart360.md",
+        "title": "Como crear un chatbot de IA para Instagram y entrenarlo con el asistente de IA",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-chatbot-de-ia-para-instagram-y-entrenarlo-con-el-asistente-de-ia",
+        "words": 8086,
+        "headings": 105,
+        "score": 10186
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-messenger-en-5-minutos",
+      "selected": {
+        "route": "imported/chatbots/chatbot-messenger-en-5-minutos-esmart360",
+        "file": "content/docs/imported/chatbots/chatbot-messenger-en-5-minutos-esmart360.md",
+        "title": "Cómo Crear un Chatbot de Messenger en 5 Minutos",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-chatbot-de-messenger-en-5-minutos",
+        "words": 6225,
+        "headings": 84,
+        "score": 7905
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-to-buy-en-por-que-toda-marca-necesita-la-compra-por-chat",
+      "selected": {
+        "route": "imported/chatbots/chattobuy-2026-guia-completa-ventas-por-chat-esmart360",
+        "file": "content/docs/imported/chatbots/chattobuy-2026-guia-completa-ventas-por-chat-esmart360.md",
+        "title": "Chat-to-Buy en 2026: Por qué toda marca necesita la compra por chat",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-to-buy-en-2026-por-que-toda-marca-necesita-la-compra-por-chat",
+        "words": 6815,
+        "headings": 122,
+        "score": 9255
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-arreglar-un-bot-de-whatsapp-que-no-funciona",
+      "selected": {
+        "route": "imported/chatbots/como-arreglar-bot-whatsapp-no-funciona-esmart360",
+        "file": "content/docs/imported/chatbots/como-arreglar-bot-whatsapp-no-funciona-esmart360.md",
+        "title": "Cómo Arreglar un Bot de WhatsApp que No Funciona",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-arreglar-un-bot-de-whatsapp-que-no-funciona",
+        "words": 4723,
+        "headings": 96,
+        "score": 6643
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-conectar-tu-cuenta-de-whatsapp-business-a",
+      "selected": {
+        "route": "imported/chatbots/como-conectar-cuenta-whatsapp-business-esmart360",
+        "file": "content/docs/imported/chatbots/como-conectar-cuenta-whatsapp-business-esmart360.md",
+        "title": "Cómo Conectar tu Cuenta de WhatsApp Business a E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-conectar-tu-cuenta-de-whatsapp-business-a",
+        "words": 5882,
+        "headings": 119,
+        "score": 8262
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-asistente-de-ventas-inteligente-con-ia-en-whatsapp-para-tu-tienda-ecommerce",
+      "selected": {
+        "route": "imported/chatbots/como-crear-un-asistente-de-ventas-inteligente-en-whatsapp-para-tu-tienda-ecommerce",
+        "file": "content/docs/imported/chatbots/como-crear-un-asistente-de-ventas-inteligente-en-whatsapp-para-tu-tienda-ecommerce.md",
+        "title": "Cómo Crear un Asistente de Ventas Inteligente con IA en WhatsApp para tu Tienda Ecommerce",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-asistente-de-ventas-inteligente-con-ia-en-whatsapp-para-tu-tienda-ecommerce",
+        "words": 6546,
+        "headings": 130,
+        "score": 9146
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-whatsapp-en-s-sencillos",
+      "selected": {
+        "route": "imported/chatbots/como-crear-un-chatbot-de-whatsapp-en-pasos-sencillos",
+        "file": "content/docs/imported/chatbots/como-crear-un-chatbot-de-whatsapp-en-pasos-sencillos.md",
+        "title": "Cómo crear un chatbot de WhatsApp en pasos sencillos",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-chatbot-de-whatsapp-en-pasos-sencillos",
+        "words": 5153,
+        "headings": 84,
+        "score": 6833
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-elegir-la-mejor-herramienta-de-marketing-para-whatsapp-comparativa",
+      "selected": {
+        "route": "imported/chatbots/como-elegir-la-mejor-herramienta-de-marketing-para-whatsapp-comparativa-2024",
+        "file": "content/docs/imported/chatbots/como-elegir-la-mejor-herramienta-de-marketing-para-whatsapp-comparativa-2024.md",
+        "title": "Cómo Elegir la Mejor Herramienta de Marketing para WhatsApp: Comparativa Completa 2026",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-elegir-la-mejor-herramienta-de-marketing-para-whatsapp-comparativa-2026",
+        "words": 5299,
+        "headings": 93,
+        "score": 7159
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-elegir-la-mejor-herramienta-de-marketing-en-whatsapp-comparativa",
+      "selected": {
+        "route": "imported/chatbots/como-elegir-la-mejor-herramienta-de-marketing-whatsapp-comparativa-esmart360",
+        "file": "content/docs/imported/chatbots/como-elegir-la-mejor-herramienta-de-marketing-whatsapp-comparativa-esmart360.md",
+        "title": "Cómo Elegir la Mejor Herramienta de Marketing en WhatsApp: Comparativa Completa",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-elegir-la-mejor-herramienta-de-marketing-en-whatsapp-comparativa",
+        "words": 5220,
+        "headings": 98,
+        "score": 7180
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-automaticos-de-whatsapp-al-enviar-un-formulario-wp",
+      "selected": {
+        "route": "imported/chatbots/como-enviar-mensajes-automaticos-de-whatsapp-al-enviar-formularios-wp",
+        "file": "content/docs/imported/chatbots/como-enviar-mensajes-automaticos-de-whatsapp-al-enviar-formularios-wp.md",
+        "title": "Cómo Enviar Mensajes Automáticos de WhatsApp al Enviar un Formulario WP",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-enviar-mensajes-automaticos-de-whatsapp-al-enviar-un-formulario-wp",
+        "words": 6024,
+        "headings": 74,
+        "score": 7504
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-hacer-marketing-con-chatbot-en-whatsapp-para-tu-negocio",
+      "selected": {
+        "route": "imported/chatbots/como-hacer-marketing-con-chatbot-en-whatsapp",
+        "file": "content/docs/imported/chatbots/como-hacer-marketing-con-chatbot-en-whatsapp.md",
+        "title": "Cómo Hacer Marketing con Chatbot en WhatsApp — Guía Completa para tu Negocio",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-hacer-marketing-con-chatbot-en-whatsapp-para-tu-negocio",
+        "words": 6192,
+        "headings": 115,
+        "score": 8492
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-solucionar-respuestas-duplicadas-en-un-bot-de-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/como-solucionar-respuestas-duplicadas-en-bot-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/como-solucionar-respuestas-duplicadas-en-bot-whatsapp-esmart360.md",
+        "title": "Cómo Solucionar Respuestas Duplicadas en un Bot de WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-solucionar-respuestas-duplicadas-en-un-bot-de-whatsapp",
+        "words": 5422,
+        "headings": 68,
+        "score": 6782
+      },
+      "alternatives": []
+    },
+    {
+      "key": "la-mejor-herramienta-de-marketing-para-whatsapp-en-comparativa",
+      "selected": {
+        "route": "imported/chatbots/comparativa-herramientas-marketing-whatsapp-2024-esmart360",
+        "file": "content/docs/imported/chatbots/comparativa-herramientas-marketing-whatsapp-2024-esmart360.md",
+        "title": "La Mejor Herramienta de Marketing para WhatsApp en 2024: Comparativa Completa | E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "la-mejor-herramienta-de-marketing-para-whatsapp-en-2024-comparativa",
+        "words": 6732,
+        "headings": 134,
+        "score": 9412
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-conectar-tu-cuenta-de-whatsapp-business-a-una-pagina-de-facebook",
+      "selected": {
+        "route": "imported/chatbots/conectar-whatsapp-business-pagina-facebook-esmart360",
+        "file": "content/docs/imported/chatbots/conectar-whatsapp-business-pagina-facebook-esmart360.md",
+        "title": "Cómo Conectar tu Cuenta de WhatsApp Business a una Página de Facebook",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-conectar-tu-cuenta-de-whatsapp-business-a-una-pagina-de-facebook",
+        "words": 6303,
+        "headings": 74,
+        "score": 7783
+      },
+      "alternatives": []
+    },
+    {
+      "key": "configuracion-del-bot-de-respuesta-sin-coincidencia-y-su-limite-de-frecuencia-en-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/configuracion-respuesta-sin-coincidencia-y-frecuencia-en-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/configuracion-respuesta-sin-coincidencia-y-frecuencia-en-whatsapp-esmart360.md",
+        "title": "Configuración del Bot de Respuesta Sin Coincidencia y su Límite de Frecuencia en WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "configuracion-del-bot-de-respuesta-sin-coincidencia-y-su-limite-de-frecuencia-en-whatsapp",
+        "words": 4211,
+        "headings": 77,
+        "score": 5751
+      },
+      "alternatives": []
+    },
+    {
+      "key": "mensaje-de-bienvenida-rompehielos-comandos-y-boton-de-ubicacion-en-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/configurar-mensaje-bienvenida-icebreakers-comandos-boton-ubicacion-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/configurar-mensaje-bienvenida-icebreakers-comandos-boton-ubicacion-whatsapp-esmart360.md",
+        "title": "Mensaje de Bienvenida, Rompehielos, Comandos y Botón de Ubicación en WhatsApp — Guía Completa",
+        "section": "chatbots-omnicanal",
+        "canonical": "mensaje-de-bienvenida-rompehielos-comandos-y-boton-de-ubicacion-en-whatsapp",
+        "words": 6141,
+        "headings": 80,
+        "score": 7741
+      },
+      "alternatives": []
+    },
+    {
+      "key": "configurar-mensajes-de-firma-en-la-bandeja-de-entrada-compartida-del-equipo",
+      "selected": {
+        "route": "imported/chatbots/configurar-mensajes-de-firma-en-bandeja-de-entrada-compartida-esmart360",
+        "file": "content/docs/imported/chatbots/configurar-mensajes-de-firma-en-bandeja-de-entrada-compartida-esmart360.md",
+        "title": "Configurar Mensajes de Firma en la Bandeja de Entrada Compartida del Equipo",
+        "section": "chatbots-omnicanal",
+        "canonical": "configurar-mensajes-de-firma-en-la-bandeja-de-entrada-compartida-del-equipo",
+        "words": 6719,
+        "headings": 96,
+        "score": 8639
+      },
+      "alternatives": []
+    },
+    {
+      "key": "configurar-mensajes-de-firma-en-la-bandeja-de-entrada-compartida",
+      "selected": {
+        "route": "imported/chatbots/configurar-mensajes-firma-inbox-compartido-esmart360",
+        "file": "content/docs/imported/chatbots/configurar-mensajes-firma-inbox-compartido-esmart360.md",
+        "title": "Configurar Mensajes de Firma en la Bandeja de Entrada Compartida",
+        "section": "chatbots-omnicanal",
+        "canonical": "configurar-mensajes-de-firma-en-la-bandeja-de-entrada-compartida",
+        "words": 6874,
+        "headings": 73,
+        "score": 8334
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-construir-un-chatbot-de-whatsapp-en-pocos-s-sencillos",
+      "selected": {
+        "route": "imported/chatbots/construir-chatbot-whatsapp-pasos-sencillos-esmart360",
+        "file": "content/docs/imported/chatbots/construir-chatbot-whatsapp-pasos-sencillos-esmart360.md",
+        "title": "Cómo construir un chatbot de WhatsApp en pocos pasos sencillos",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-construir-un-chatbot-de-whatsapp-en-pocos-pasos-sencillos",
+        "words": 5467,
+        "headings": 93,
+        "score": 7327
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-anuncios-que-lleven-a-whatsapp-haz-que-cada-clic-cuente",
+      "selected": {
+        "route": "imported/chatbots/crear-anuncios-click-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/crear-anuncios-click-whatsapp-esmart360.md",
+        "title": "Cómo Crear Anuncios que Lleven a WhatsApp — Haz que Cada Clic Cuente",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-anuncios-que-lleven-a-whatsapp-haz-que-cada-clic-cuente",
+        "words": 5760,
+        "headings": 65,
+        "score": 7060
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-anuncios-que-llevan-a-whatsapp-haz-que-cada-clic-cuente",
+      "selected": {
+        "route": "imported/chatbots/crear-anuncios-click-whatsapp-guia-completa-esmart360",
+        "file": "content/docs/imported/chatbots/crear-anuncios-click-whatsapp-guia-completa-esmart360.md",
+        "title": "Cómo Crear Anuncios que Llevan a WhatsApp — Haz que Cada Clic Cuente",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-anuncios-que-llevan-a-whatsapp-haz-que-cada-clic-cuente",
+        "words": 1401,
+        "headings": 22,
+        "score": 1841
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-instagram-gratis-en",
+      "selected": {
+        "route": "imported/chatbots/crear-chatbot-instagram-gratis-2025-esmart360",
+        "file": "content/docs/imported/chatbots/crear-chatbot-instagram-gratis-2025-esmart360.md",
+        "title": "Cómo Crear un Chatbot de Instagram Gratis en 2025",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-chatbot-de-instagram-gratis-en-2025",
+        "words": 7080,
+        "headings": 59,
+        "score": 8260
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-instagram-gratis-en-con-asistente-de-ia",
+      "selected": {
+        "route": "imported/chatbots/crear-chatbot-instagram-gratis-2025-guia-completa-esmart360",
+        "file": "content/docs/imported/chatbots/crear-chatbot-instagram-gratis-2025-guia-completa-esmart360.md",
+        "title": "Cómo Crear un Chatbot de Instagram Gratis en 2025 — Guía Completa con Asistente de IA",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-chatbot-de-instagram-gratis-en-2025-con-asistente-de-ia",
+        "words": 7095,
+        "headings": 119,
+        "score": 9475
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-para-messenger-de-facebook-en-5-minutos",
+      "selected": {
+        "route": "imported/chatbots/crear-chatbot-messenger-facebook-5-minutos-esmart360",
+        "file": "content/docs/imported/chatbots/crear-chatbot-messenger-facebook-5-minutos-esmart360.md",
+        "title": "Cómo Crear un Chatbot para Messenger de Facebook en 5 Minutos",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-crear-un-chatbot-para-messenger-de-facebook-en-5-minutos",
+        "words": 6451,
+        "headings": 133,
+        "score": 9111
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-automaticos-de-whatsapp-al-recibir-formularios-de-wpforms",
+      "selected": {
+        "route": "imported/chatbots/enviar-mensajes-automaticos-whatsapp-al-recibir-formularios-wp-esmart360",
+        "file": "content/docs/imported/chatbots/enviar-mensajes-automaticos-whatsapp-al-recibir-formularios-wp-esmart360.md",
+        "title": "Cómo Enviar Mensajes Automáticos de WhatsApp al Recibir Formularios de WPForms",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-enviar-mensajes-automaticos-de-whatsapp-al-recibir-formularios-de-wpforms",
+        "words": 4746,
+        "headings": 64,
+        "score": 6026
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-masivos-de-whatsapp-usando-listas-de-difusion",
+      "selected": {
+        "route": "imported/chatbots/enviar-mensajes-masivos-whatsapp-listas-difusion",
+        "file": "content/docs/imported/chatbots/enviar-mensajes-masivos-whatsapp-listas-difusion.md",
+        "title": "Cómo Enviar Mensajes Masivos de WhatsApp Usando Listas de Difusión",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-enviar-mensajes-masivos-de-whatsapp-usando-listas-de-difusion",
+        "words": 4924,
+        "headings": 131,
+        "score": 7544
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-de-whatsapp-automaticos-al-recibir-formularios-de-elementor",
+      "selected": {
+        "route": "imported/chatbots/enviar-mensajes-whatsapp-automaticos-formularios-elementor-esmart360",
+        "file": "content/docs/imported/chatbots/enviar-mensajes-whatsapp-automaticos-formularios-elementor-esmart360.md",
+        "title": "Cómo enviar mensajes de WhatsApp automáticos al recibir formularios de Elementor",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-enviar-mensajes-de-whatsapp-automaticos-al-recibir-formularios-de-elementor",
+        "words": 6804,
+        "headings": 120,
+        "score": 9204
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-automaticos-de-whatsapp-al-recibir-un-formulario-wpforms",
+      "selected": {
+        "route": "imported/chatbots/enviar-mensajes-whatsapp-automaticos-wpforms-esmart360",
+        "file": "content/docs/imported/chatbots/enviar-mensajes-whatsapp-automaticos-wpforms-esmart360.md",
+        "title": "Cómo Enviar Mensajes Automáticos de WhatsApp al Recibir un Formulario WPForms",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-enviar-mensajes-automaticos-de-whatsapp-al-recibir-un-formulario-wpforms",
+        "words": 2588,
+        "headings": 63,
+        "score": 3848
+      },
+      "alternatives": []
+    },
+    {
+      "key": "envio-masivo-de-mensajes-en-whatsapp-con-datos-variables-personalizados",
+      "selected": {
+        "route": "imported/chatbots/envio-mensajes-whatsapp-masivos-personalizados-variables-esmart360",
+        "file": "content/docs/imported/chatbots/envio-mensajes-whatsapp-masivos-personalizados-variables-esmart360.md",
+        "title": "Envío Masivo de Mensajes en WhatsApp con Datos Variables Personalizados",
+        "section": "chatbots-omnicanal",
+        "canonical": "envio-masivo-de-mensajes-en-whatsapp-con-datos-variables-personalizados",
+        "words": 5363,
+        "headings": 106,
+        "score": 7483
+      },
+      "alternatives": []
+    },
+    {
+      "key": "error-131026-de-whatsapp-mensaje-no-entregable-soluciones",
+      "selected": {
+        "route": "imported/chatbots/error-131026-whatsapp-mensaje-no-entregable-soluciones-esmart360",
+        "file": "content/docs/imported/chatbots/error-131026-whatsapp-mensaje-no-entregable-soluciones-esmart360.md",
+        "title": "Error 131026 de WhatsApp: Mensaje No Entregable (Soluciones)",
+        "section": "chatbots-omnicanal",
+        "canonical": "error-131026-de-whatsapp-mensaje-no-entregable-soluciones",
+        "words": 4794,
+        "headings": 58,
+        "score": 5954
+      },
+      "alternatives": []
+    },
+    {
+      "key": "formularios-flow-de-whatsapp-en",
+      "selected": {
+        "route": "imported/chatbots/formularios-flow-de-whatsapp-en-esmart360",
+        "file": "content/docs/imported/chatbots/formularios-flow-de-whatsapp-en-esmart360.md",
+        "title": "Formularios Flow de WhatsApp en E-SMART360: Guía Completa 2025",
+        "section": "chatbots-omnicanal",
+        "canonical": "formularios-flow-de-whatsapp-en-2025",
+        "words": 4290,
+        "headings": 130,
+        "score": 6890
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-usar-el-formulario-de-flujo-de-whatsapp-en",
+      "selected": {
+        "route": "imported/chatbots/formularios-flujo-whatsapp-en-e-smart360",
+        "file": "content/docs/imported/chatbots/formularios-flujo-whatsapp-en-e-smart360.md",
+        "title": "Cómo Usar el Formulario de Flujo de WhatsApp en E-SMART360: Guía 2025",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-usar-el-formulario-de-flujo-de-whatsapp-en-2025",
+        "words": 4464,
+        "headings": 60,
+        "score": 5664
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-usar-formularios-interactivos-de-whatsapp-flows-en",
+      "selected": {
+        "route": "imported/chatbots/formularios-whatsapp-flows-esmart360",
+        "file": "content/docs/imported/chatbots/formularios-whatsapp-flows-esmart360.md",
+        "title": "Cómo usar formularios interactivos de WhatsApp Flows en E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-usar-formularios-interactivos-de-whatsapp-flows-en",
+        "words": 6773,
+        "headings": 119,
+        "score": 9153
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-usar-formularios-whatsapp-flow-en",
+      "selected": {
+        "route": "imported/chatbots/formularios-whatsapp-flows-guia-completa-esmart360",
+        "file": "content/docs/imported/chatbots/formularios-whatsapp-flows-guia-completa-esmart360.md",
+        "title": "Cómo Usar Formularios WhatsApp Flow en E-SMART360: Guía Completa 2025-2026",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-usar-formularios-whatsapp-flow-en-2025-2026",
+        "words": 6208,
+        "headings": 104,
+        "score": 8288
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-usar-el-asistente-de-ia-en-el-web-chat-para-soporte-al-cliente-e-smart3",
+      "selected": {
+        "route": "imported/chatbots/guia-completa-asistente-ia-en-web-chat-soporte-cliente-esmart360",
+        "file": "content/docs/imported/chatbots/guia-completa-asistente-ia-en-web-chat-soporte-cliente-esmart360.md",
+        "title": "Guía Completa: Cómo Usar el Asistente de IA en el Web Chat para Soporte al Cliente | E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-usar-el-asistente-de-ia-en-el-web-chat-para-soporte-al-cliente-e-smart3",
+        "words": 6276,
+        "headings": 88,
+        "score": 8036
+      },
+      "alternatives": []
+    },
+    {
+      "key": "para-crear-chatbots-para-cualquier-industria",
+      "selected": {
+        "route": "imported/chatbots/guia-completa-chatbots-cualquier-industria-esmart360",
+        "file": "content/docs/imported/chatbots/guia-completa-chatbots-cualquier-industria-esmart360.md",
+        "title": "Guía Completa para Crear Chatbots para Cualquier Industria",
+        "section": "chatbots-omnicanal",
+        "canonical": "para-crear-chatbots-para-cualquier-industria",
+        "words": 4878,
+        "headings": 114,
+        "score": 7158
+      },
+      "alternatives": []
+    },
+    {
+      "key": "de-chatbots-para-cualquier-industria-como-construir-el-tuyo-con",
+      "selected": {
+        "route": "imported/chatbots/guia-completa-chatbots-para-cualquier-industria-y-como-construir-el-tuyo-esmart360",
+        "file": "content/docs/imported/chatbots/guia-completa-chatbots-para-cualquier-industria-y-como-construir-el-tuyo-esmart360.md",
+        "title": "Guía Completa de Chatbots para Cualquier Industria: Cómo Construir el Tuyo con E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "de-chatbots-para-cualquier-industria-como-construir-el-tuyo-con",
+        "words": 6103,
+        "headings": 119,
+        "score": 8483
+      },
+      "alternatives": []
+    },
+    {
+      "key": "para-construir-chatbots-para-cualquier-industria",
+      "selected": {
+        "route": "imported/chatbots/guia-completa-construir-chatbots-para-cualquier-industria-esmart360",
+        "file": "content/docs/imported/chatbots/guia-completa-construir-chatbots-para-cualquier-industria-esmart360.md",
+        "title": "Guía Completa para Construir Chatbots para Cualquier Industria",
+        "section": "chatbots-omnicanal",
+        "canonical": "para-construir-chatbots-para-cualquier-industria",
+        "words": 6077,
+        "headings": 124,
+        "score": 8557
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-construir-chatbots-para-cualquier-industria-una",
+      "selected": {
+        "route": "imported/chatbots/guia-completa-construir-chatbots-para-cualquier-industria",
+        "file": "content/docs/imported/chatbots/guia-completa-construir-chatbots-para-cualquier-industria.md",
+        "title": "Cómo Construir Chatbots para Cualquier Industria: Una Guía Completa",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-construir-chatbots-para-cualquier-industria-una",
+        "words": 5835,
+        "headings": 129,
+        "score": 8415
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-automatizar-conversaciones-complejas-con-user-input-flow-en-webchat",
+      "selected": {
+        "route": "imported/chatbots/how-to-automate-complex-conversations-with-user-input-flow-in-webchat-esmart360",
+        "file": "content/docs/imported/chatbots/how-to-automate-complex-conversations-with-user-input-flow-in-webchat-esmart360.md",
+        "title": "Cómo Automatizar Conversaciones Complejas con User Input Flow en Webchat",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-automatizar-conversaciones-complejas-con-user-input-flow-en-webchat",
+        "words": 7470,
+        "headings": 78,
+        "score": 9030
+      },
+      "alternatives": []
+    },
+    {
+      "key": "listas-dinamicas-en-mensajes-interactivos-de-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/listas-dinamicas-en-mensajes-interactivos-de-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/listas-dinamicas-en-mensajes-interactivos-de-whatsapp-esmart360.md",
+        "title": "Listas Dinámicas en Mensajes Interactivos de WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "listas-dinamicas-en-mensajes-interactivos-de-whatsapp",
+        "words": 4700,
+        "headings": 78,
+        "score": 6260
+      },
+      "alternatives": []
+    },
+    {
+      "key": "live-chat-bandeja-compartida-de-whatsapp-para-soporte-al-cliente-omnicanal",
+      "selected": {
+        "route": "imported/chatbots/live-chat-bandeja-compartida-soporte-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/live-chat-bandeja-compartida-soporte-whatsapp-esmart360.md",
+        "title": "Live Chat: Bandeja Compartida de WhatsApp para Soporte al Cliente Omnicanal",
+        "section": "chatbots-omnicanal",
+        "canonical": "live-chat-bandeja-compartida-de-whatsapp-para-soporte-al-cliente-omnicanal",
+        "words": 8967,
+        "headings": 115,
+        "score": 11267
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chat-en-vivo-bandeja-compartida-de-whatsapp-para-soporte-al-cliente",
+      "selected": {
+        "route": "imported/chatbots/live-chat-plataforma-de-chat-en-vivo-con-bandeja-compartida-para-soporte-en-whatsapp-esmar",
+        "file": "content/docs/imported/chatbots/live-chat-plataforma-de-chat-en-vivo-con-bandeja-compartida-para-soporte-en-whatsapp-esmar.md",
+        "title": "Chat en Vivo: Bandeja Compartida de WhatsApp para Soporte al Cliente | E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "chat-en-vivo-bandeja-compartida-de-whatsapp-para-soporte-al-cliente",
+        "words": 9255,
+        "headings": 147,
+        "score": 12195
+      },
+      "alternatives": []
+    },
+    {
+      "key": "marketing-con-chatbots-en-whatsapp-para-tu-negocio",
+      "selected": {
+        "route": "imported/chatbots/marketing-chatbot-whatsapp-guia-completa-esmart360",
+        "file": "content/docs/imported/chatbots/marketing-chatbot-whatsapp-guia-completa-esmart360.md",
+        "title": "Marketing con Chatbots en WhatsApp: Guía Completa para tu Negocio",
+        "section": "chatbots-omnicanal",
+        "canonical": "marketing-con-chatbots-en-whatsapp-para-tu-negocio",
+        "words": 7345,
+        "headings": 112,
+        "score": 9585
+      },
+      "alternatives": []
+    },
+    {
+      "key": "marketing-en-whatsapp-a",
+      "selected": {
+        "route": "imported/chatbots/marketing-whatsapp-guia-completa-paso-a-paso-esmart360",
+        "file": "content/docs/imported/chatbots/marketing-whatsapp-guia-completa-paso-a-paso-esmart360.md",
+        "title": "Marketing en WhatsApp: Guía Completa Paso a Paso",
+        "section": "chatbots-omnicanal",
+        "canonical": "marketing-en-whatsapp-paso-a-paso",
+        "words": 5941,
+        "headings": 128,
+        "score": 8501
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-maximizar-los-ingresos-de-tu-e-commerce-con-chatbots-inteligentes",
+      "selected": {
+        "route": "imported/chatbots/maximizar-ingresos-ecommerce-chatbot-ia-esmart360",
+        "file": "content/docs/imported/chatbots/maximizar-ingresos-ecommerce-chatbot-ia-esmart360.md",
+        "title": "Cómo Maximizar los Ingresos de tu E-commerce con Chatbots Inteligentes",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-maximizar-los-ingresos-de-tu-e-commerce-con-chatbots-inteligentes",
+        "words": 4661,
+        "headings": 83,
+        "score": 6321
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-solucionar-mensaje-de-whatsapp-no-entregado-para-mantener-un-ecosistema-saludable",
+      "selected": {
+        "route": "imported/chatbots/mensaje-whatsapp-no-entregado-ecosistema-saludable-solucion-esmart360",
+        "file": "content/docs/imported/chatbots/mensaje-whatsapp-no-entregado-ecosistema-saludable-solucion-esmart360.md",
+        "title": "Cómo Solucionar: Mensaje de WhatsApp No Entregado para Mantener un Ecosistema Saludable",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-solucionar-mensaje-de-whatsapp-no-entregado-para-mantener-un-ecosistema-saludable",
+        "words": 5743,
+        "headings": 89,
+        "score": 7523
+      },
+      "alternatives": []
+    },
+    {
+      "key": "para-enviar-mensajes-en-secuencia-por-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/mensajes-secuencia-whatsapp-guia-completa-esmart360",
+        "file": "content/docs/imported/chatbots/mensajes-secuencia-whatsapp-guia-completa-esmart360.md",
+        "title": "Guía Completa para Enviar Mensajes en Secuencia por WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "para-enviar-mensajes-en-secuencia-por-whatsapp",
+        "words": 4203,
+        "headings": 61,
+        "score": 5423
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-configurar-el-menu-persistente-en-el-chatbot-de-tu-sitio-web",
+      "selected": {
+        "route": "imported/chatbots/menu-persistente-en-chatbot-web-esmart360",
+        "file": "content/docs/imported/chatbots/menu-persistente-en-chatbot-web-esmart360.md",
+        "title": "Cómo configurar el menú persistente en el chatbot de tu sitio web",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-configurar-el-menu-persistente-en-el-chatbot-de-tu-sitio-web",
+        "words": 6443,
+        "headings": 79,
+        "score": 8023
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-configurar-un-menu-persistente-en-messenger-y-webchat-de",
+      "selected": {
+        "route": "imported/chatbots/menu-persistente-messenger-webchat-esmart360",
+        "file": "content/docs/imported/chatbots/menu-persistente-messenger-webchat-esmart360.md",
+        "title": "Cómo configurar un menú persistente en Messenger y WebChat de E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-configurar-un-menu-persistente-en-messenger-y-webchat-de",
+        "words": 5200,
+        "headings": 104,
+        "score": 7280
+      },
+      "alternatives": []
+    },
+    {
+      "key": "por-que-el-chat-marketing-esta-ganando-popularidad-dia-a-dia",
+      "selected": {
+        "route": "imported/chatbots/por-que-el-chat-marketing-esta-ganando-popularidad",
+        "file": "content/docs/imported/chatbots/por-que-el-chat-marketing-esta-ganando-popularidad.md",
+        "title": "Por qué el Chat Marketing está ganando popularidad día a día",
+        "section": "chatbots-omnicanal",
+        "canonical": "por-que-el-chat-marketing-esta-ganando-popularidad-dia-a-dia",
+        "words": 7566,
+        "headings": 84,
+        "score": 9246
+      },
+      "alternatives": []
+    },
+    {
+      "key": "por-que-el-marketing-por-chat-esta-ganando-popularidad-dia-a-dia",
+      "selected": {
+        "route": "imported/chatbots/por-que-el-marketing-por-chat-esta-ganando-popularidad",
+        "file": "content/docs/imported/chatbots/por-que-el-marketing-por-chat-esta-ganando-popularidad.md",
+        "title": "Por qué el Marketing por Chat está ganando popularidad día a día",
+        "section": "chatbots-omnicanal",
+        "canonical": "por-que-el-marketing-por-chat-esta-ganando-popularidad-dia-a-dia",
+        "words": 7697,
+        "headings": 87,
+        "score": 9437
+      },
+      "alternatives": []
+    },
+    {
+      "key": "por-que-las-pequenas-empresas-necesitan-chatbots-en",
+      "selected": {
+        "route": "imported/chatbots/por-que-las-pequenas-empresas-necesitan-chatbots-en-2026-esmart360",
+        "file": "content/docs/imported/chatbots/por-que-las-pequenas-empresas-necesitan-chatbots-en-2026-esmart360.md",
+        "title": "Por qué las pequeñas empresas necesitan chatbots en 2026",
+        "section": "chatbots-omnicanal",
+        "canonical": "por-que-las-pequenas-empresas-necesitan-chatbots-en-2026",
+        "words": 7459,
+        "headings": 93,
+        "score": 9319
+      },
+      "alternatives": []
+    },
+    {
+      "key": "proyecto-q-star-de-openai-puede-realmente-predecir-el-futuro",
+      "selected": {
+        "route": "imported/chatbots/proyecto-q-star-openai-puede-predecir-el-futuro-esmart360",
+        "file": "content/docs/imported/chatbots/proyecto-q-star-openai-puede-predecir-el-futuro-esmart360.md",
+        "title": "Proyecto Q-Star de OpenAI: ¿Puede Realmente Predecir el Futuro?",
+        "section": "chatbots-omnicanal",
+        "canonical": "proyecto-q-star-de-openai-puede-realmente-predecir-el-futuro",
+        "words": 7435,
+        "headings": 93,
+        "score": 9295
+      },
+      "alternatives": []
+    },
+    {
+      "key": "que-es-la-ia-de-y-como-usar-los-tokens-de-ia",
+      "selected": {
+        "route": "imported/chatbots/que-es-ia-esmart360-y-como-usar-tokens-de-ia-esmart360",
+        "file": "content/docs/imported/chatbots/que-es-ia-esmart360-y-como-usar-tokens-de-ia-esmart360.md",
+        "title": "¿Qué es la IA de E-SMART360 y Cómo Usar los Tokens de IA?",
+        "section": "chatbots-omnicanal",
+        "canonical": "que-es-la-ia-de-y-como-usar-los-tokens-de-ia",
+        "words": 3522,
+        "headings": 86,
+        "score": 5242
+      },
+      "alternatives": []
+    },
+    {
+      "key": "responsabilidad-social-corporativa-rsc-un-imperativo-estrategico-para-empresas-modernas",
+      "selected": {
+        "route": "imported/chatbots/responsabilidad-social-corporativa-csr-estrategia-empresarial-esmart360",
+        "file": "content/docs/imported/chatbots/responsabilidad-social-corporativa-csr-estrategia-empresarial-esmart360.md",
+        "title": "Responsabilidad Social Corporativa (RSC): Un Imperativo Estratégico para Empresas Modernas",
+        "section": "chatbots-omnicanal",
+        "canonical": "responsabilidad-social-corporativa-rsc-un-imperativo-estrategico-para-empresas-modernas",
+        "words": 8537,
+        "headings": 57,
+        "score": 9677
+      },
+      "alternatives": []
+    },
+    {
+      "key": "sistema-de-reserva-de-citas-profesional-en-whatsapp",
+      "selected": {
+        "route": "imported/chatbots/sistema-reserva-citas-profesional-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/sistema-reserva-citas-profesional-whatsapp-esmart360.md",
+        "title": "Sistema de Reserva de Citas Profesional en WhatsApp",
+        "section": "chatbots-omnicanal",
+        "canonical": "sistema-de-reserva-de-citas-profesional-en-whatsapp",
+        "words": 3897,
+        "headings": 66,
+        "score": 5217
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-solucionar-el-error-mensaje-de-whatsapp-no-entregado-por-mantener-un-ecosistema-salud",
+      "selected": {
+        "route": "imported/chatbots/solucion-mensaje-no-entregado-ecosistema-saludable-esmart360",
+        "file": "content/docs/imported/chatbots/solucion-mensaje-no-entregado-ecosistema-saludable-esmart360.md",
+        "title": "Cómo Solucionar el Error: Mensaje de WhatsApp No Entregado por Mantener un Ecosistema Saludable",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-solucionar-el-error-mensaje-de-whatsapp-no-entregado-por-mantener-un-ecosistema-salud",
+        "words": 5825,
+        "headings": 68,
+        "score": 7185
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-construir-un-asistente-de-ventas-inteligente-con-ia-para-whatsapp-en-tu-tienda-ecomme",
+      "selected": {
+        "route": "imported/chatbots/source-how-to-create-a-smart-whatsapp-sales-assistant-for-your-ecommerce-store",
+        "file": "content/docs/imported/chatbots/source-how-to-create-a-smart-whatsapp-sales-assistant-for-your-ecommerce-store.md",
+        "title": "Cómo construir un asistente de ventas inteligente con IA para WhatsApp en tu tienda eCommerce",
+        "section": "chatbots-omnicanal",
+        "canonical": "como-construir-un-asistente-de-ventas-inteligente-con-ia-para-whatsapp-en-tu-tienda-ecomme",
+        "words": 3543,
+        "headings": 38,
+        "score": 4303
+      },
+      "alternatives": []
+    },
+    {
+      "key": "top-10-tendencias-de-chatbots-en",
+      "selected": {
+        "route": "imported/chatbots/top-10-tendencias-de-chatbots-en-2025",
+        "file": "content/docs/imported/chatbots/top-10-tendencias-de-chatbots-en-2025.md",
+        "title": "Top 10 Tendencias de Chatbots en 2025",
+        "section": "chatbots-omnicanal",
+        "canonical": "top-10-tendencias-de-chatbots-en-2025",
+        "words": 7941,
+        "headings": 117,
+        "score": 10281
+      },
+      "alternatives": []
+    },
+    {
+      "key": "los-10-usos-principales-del-chatbot-de-whatsapp-para-ecommerce",
+      "selected": {
+        "route": "imported/chatbots/top-10-usos-chatbot-whatsapp-ecommerce-esmart360",
+        "file": "content/docs/imported/chatbots/top-10-usos-chatbot-whatsapp-ecommerce-esmart360.md",
+        "title": "Los 10 Usos Principales del Chatbot de WhatsApp para Ecommerce",
+        "section": "chatbots-omnicanal",
+        "canonical": "los-10-usos-principales-del-chatbot-de-whatsapp-para-ecommerce",
+        "words": 8491,
+        "headings": 116,
+        "score": 10811
+      },
+      "alternatives": []
+    },
+    {
+      "key": "top-10-usos-del-chatbot-de-whatsapp-para-ecommerce",
+      "selected": {
+        "route": "imported/chatbots/top-10-usos-de-chatbot-whatsapp-para-ecommerce",
+        "file": "content/docs/imported/chatbots/top-10-usos-de-chatbot-whatsapp-para-ecommerce.md",
+        "title": "Top 10 Usos del Chatbot de WhatsApp para Ecommerce",
+        "section": "chatbots-omnicanal",
+        "canonical": "top-10-usos-del-chatbot-de-whatsapp-para-ecommerce",
+        "words": 7277,
+        "headings": 65,
+        "score": 8577
+      },
+      "alternatives": []
+    },
+    {
+      "key": "transferencia-de-chat-al-cliente-mediante-unirse-al-chat-y-mensaje-de-firma",
+      "selected": {
+        "route": "imported/chatbots/transferencia-chat-cliente-via-unirse-chat-mensaje-firma-esmart360",
+        "file": "content/docs/imported/chatbots/transferencia-chat-cliente-via-unirse-chat-mensaje-firma-esmart360.md",
+        "title": "Transferencia de Chat al Cliente mediante Unirse al Chat y Mensaje de Firma",
+        "section": "chatbots-omnicanal",
+        "canonical": "transferencia-de-chat-al-cliente-mediante-unirse-al-chat-y-mensaje-de-firma",
+        "words": 7217,
+        "headings": 85,
+        "score": 8917
+      },
+      "alternatives": []
+    },
+    {
+      "key": "transferencia-de-chat-y-mensaje-de-firma-en-bandeja-compartida",
+      "selected": {
+        "route": "imported/chatbots/transferencia-chat-join-chat-mensaje-firma-whatsapp-esmart360",
+        "file": "content/docs/imported/chatbots/transferencia-chat-join-chat-mensaje-firma-whatsapp-esmart360.md",
+        "title": "Transferencia de Chat y Mensaje de Firma en Bandeja Compartida | E-SMART360",
+        "section": "chatbots-omnicanal",
+        "canonical": "transferencia-de-chat-y-mensaje-de-firma-en-bandeja-compartida",
+        "words": 5376,
+        "headings": 120,
+        "score": 7776
+      },
+      "alternatives": []
+    },
+    {
+      "key": "transferencia-de-chat-mediante-join-chat-y-mensaje-de-firma",
+      "selected": {
+        "route": "imported/chatbots/transferencia-de-chat-mediante-join-chat-y-mensaje-de-firma",
+        "file": "content/docs/imported/chatbots/transferencia-de-chat-mediante-join-chat-y-mensaje-de-firma.md",
+        "title": "Transferencia de Chat mediante Join Chat y Mensaje de Firma",
+        "section": "chatbots-omnicanal",
+        "canonical": "transferencia-de-chat-mediante-join-chat-y-mensaje-de-firma",
+        "words": 6976,
+        "headings": 88,
+        "score": 8736
+      },
+      "alternatives": []
+    },
+    {
+      "key": "wati-vs-la-mejor-alternativa-a-wati-para-marketing-en-whatsapp-en",
+      "selected": {
+        "route": "imported/chatbots/wati-vs-esmart360-comparativa-plataforma-marketing-whatsapp-2025",
+        "file": "content/docs/imported/chatbots/wati-vs-esmart360-comparativa-plataforma-marketing-whatsapp-2025.md",
+        "title": "Wati vs E-SMART360: La Mejor Alternativa a Wati para Marketing en WhatsApp en 2025",
+        "section": "chatbots-omnicanal",
+        "canonical": "wati-vs-la-mejor-alternativa-a-wati-para-marketing-en-whatsapp-en-2025",
+        "words": 9806,
+        "headings": 144,
+        "score": 12686
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-whatsapp-sin-programacion",
+      "selected": {
+        "route": "imported/ecommerce/006-crea-un-chatbot-de-whatsapp-sin-codificacion-esmart360",
+        "file": "content/docs/imported/ecommerce/006-crea-un-chatbot-de-whatsapp-sin-codificacion-esmart360.md",
+        "title": "Cómo Crear un Chatbot de WhatsApp Sin Programación | Guía Completa E-SMART360",
+        "section": "ecommerce",
+        "canonical": "como-crear-un-chatbot-de-whatsapp-sin-programacion",
+        "words": 5349,
+        "headings": 75,
+        "score": 6849
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-whatsapp-sin-programar-a",
+      "selected": {
+        "route": "imported/ecommerce/008-crear-chatbot-whatsapp-sin-codigo-guia-completa-esmart360",
+        "file": "content/docs/imported/ecommerce/008-crear-chatbot-whatsapp-sin-codigo-guia-completa-esmart360.md",
+        "title": "Cómo Crear un Chatbot de WhatsApp Sin Programar: Guía Completa Paso a Paso",
+        "section": "ecommerce",
+        "canonical": "como-crear-un-chatbot-de-whatsapp-sin-programar-paso-a-paso",
+        "words": 5626,
+        "headings": 98,
+        "score": 7586
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-whatsapp-gratis-sin-codigo",
+      "selected": {
+        "route": "imported/ecommerce/2026-05-07-crear-chatbot-whatsapp-gratis-sin-codigo-esmart360",
+        "file": "content/docs/imported/ecommerce/2026-05-07-crear-chatbot-whatsapp-gratis-sin-codigo-esmart360.md",
+        "title": "Cómo crear un chatbot de WhatsApp gratis sin código",
+        "section": "ecommerce",
+        "canonical": "como-crear-un-chatbot-de-whatsapp-gratis-sin-codigo",
+        "words": 4543,
+        "headings": 88,
+        "score": 6303
+      },
+      "alternatives": []
+    },
+    {
+      "key": "aumenta-tus-ventas-con-el-catalogo-de-whatsapp-para-e-commerce",
+      "selected": {
+        "route": "imported/ecommerce/aumenta-ventas-catalogo-whatsapp-ecommerce-esmart360",
+        "file": "content/docs/imported/ecommerce/aumenta-ventas-catalogo-whatsapp-ecommerce-esmart360.md",
+        "title": "Aumenta tus Ventas con el Catálogo de WhatsApp para E-commerce",
+        "section": "ecommerce",
+        "canonical": "aumenta-tus-ventas-con-el-catalogo-de-whatsapp-para-e-commerce",
+        "words": 5447,
+        "headings": 89,
+        "score": 7227
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-integrar-un-catalogo-de-productos-en-whatsapp-con",
+      "selected": {
+        "route": "imported/ecommerce/catalogo-productos-whatsapp-esmart360",
+        "file": "content/docs/imported/ecommerce/catalogo-productos-whatsapp-esmart360.md",
+        "title": "Cómo Integrar un Catálogo de Productos en WhatsApp con E-SMART360",
+        "section": "ecommerce",
+        "canonical": "como-integrar-un-catalogo-de-productos-en-whatsapp-con",
+        "words": 5547,
+        "headings": 67,
+        "score": 6887
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-whatsapp-sin-programar",
+      "selected": {
+        "route": "imported/ecommerce/como-crear-un-chatbot-de-whatsapp-sin-codigo",
+        "file": "content/docs/imported/ecommerce/como-crear-un-chatbot-de-whatsapp-sin-codigo.md",
+        "title": "Cómo Crear un Chatbot de WhatsApp Sin Programar: Guía Completa",
+        "section": "ecommerce",
+        "canonical": "como-crear-un-chatbot-de-whatsapp-sin-programar",
+        "words": 5166,
+        "headings": 109,
+        "score": 7346
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-mostrar-productos-de-woocommerce-dentro-de-whatsapp",
+      "selected": {
+        "route": "imported/ecommerce/como-mostrar-productos-de-woocommerce-dentro-de-whatsapp-esmart360",
+        "file": "content/docs/imported/ecommerce/como-mostrar-productos-de-woocommerce-dentro-de-whatsapp-esmart360.md",
+        "title": "Cómo Mostrar Productos de WooCommerce Dentro de WhatsApp",
+        "section": "ecommerce",
+        "canonical": "como-mostrar-productos-de-woocommerce-dentro-de-whatsapp",
+        "words": 4664,
+        "headings": 71,
+        "score": 6084
+      },
+      "alternatives": []
+    },
+    {
+      "key": "configuracion-de-embedded-signup-para-conectar-whatsapp-sin-catalogo",
+      "selected": {
+        "route": "imported/ecommerce/configuracion-app-embedded-signup-conectar-whatsapp-sin-catalogo-esmart360",
+        "file": "content/docs/imported/ecommerce/configuracion-app-embedded-signup-conectar-whatsapp-sin-catalogo-esmart360.md",
+        "title": "Configuración de Embedded Signup para Conectar WhatsApp Sin Catálogo",
+        "section": "ecommerce",
+        "canonical": "configuracion-de-embedded-signup-para-conectar-whatsapp-sin-catalogo",
+        "words": 4844,
+        "headings": 98,
+        "score": 6804
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-construir-un-chatbot-de-whatsapp-sin-codigo",
+      "selected": {
+        "route": "imported/ecommerce/construir-chatbot-whatsapp-sin-codigo-guia-completa-esmart360",
+        "file": "content/docs/imported/ecommerce/construir-chatbot-whatsapp-sin-codigo-guia-completa-esmart360.md",
+        "title": "Cómo construir un chatbot de WhatsApp sin código",
+        "section": "ecommerce",
+        "canonical": "como-construir-un-chatbot-de-whatsapp-sin-codigo",
+        "words": 5158,
+        "headings": 110,
+        "score": 7358
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-construir-un-chatbot-de-whatsapp-simple-sin-programacion",
+      "selected": {
+        "route": "imported/ecommerce/construir-chatbot-whatsapp-sin-codigo",
+        "file": "content/docs/imported/ecommerce/construir-chatbot-whatsapp-sin-codigo.md",
+        "title": "Cómo construir un chatbot de WhatsApp simple sin programación",
+        "section": "ecommerce",
+        "canonical": "como-construir-un-chatbot-de-whatsapp-simple-sin-programacion",
+        "words": 5370,
+        "headings": 98,
+        "score": 7330
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-construir-un-chatbot-de-whatsapp-sin-programacion",
+      "selected": {
+        "route": "imported/ecommerce/construye-chatbot-whatsapp-sin-codigo",
+        "file": "content/docs/imported/ecommerce/construye-chatbot-whatsapp-sin-codigo.md",
+        "title": "Cómo Construir un Chatbot de WhatsApp sin Programación",
+        "section": "ecommerce",
+        "canonical": "como-construir-un-chatbot-de-whatsapp-sin-programacion",
+        "words": 5157,
+        "headings": 112,
+        "score": 7397
+      },
+      "alternatives": []
+    },
+    {
+      "key": "construye-un-chatbot-de-whatsapp-sin-codificacion-para-tu-negocio",
+      "selected": {
+        "route": "imported/ecommerce/construye-un-chatbot-de-whatsapp-sin-codificacion-esmart360",
+        "file": "content/docs/imported/ecommerce/construye-un-chatbot-de-whatsapp-sin-codificacion-esmart360.md",
+        "title": "Construye un Chatbot de WhatsApp Sin Codificación: Guía Completa para tu Negocio",
+        "section": "ecommerce",
+        "canonical": "construye-un-chatbot-de-whatsapp-sin-codificacion-para-tu-negocio",
+        "words": 5345,
+        "headings": 92,
+        "score": 7185
+      },
+      "alternatives": []
+    },
+    {
+      "key": "convertir-pedidos-woocommerce-contra-entrega-cod-en-pedidos-prepagados-via-whatsapp",
+      "selected": {
+        "route": "imported/ecommerce/convertir-pedido-woocommerce-entrega-pago-prepagado-whatsapp",
+        "file": "content/docs/imported/ecommerce/convertir-pedido-woocommerce-entrega-pago-prepagado-whatsapp.md",
+        "title": "Convertir Pedidos WooCommerce Contra Entrega (COD) en Pedidos Prepagados vía WhatsApp",
+        "section": "ecommerce",
+        "canonical": "convertir-pedidos-woocommerce-contra-entrega-cod-en-pedidos-prepagados-via-whatsapp",
+        "words": 6365,
+        "headings": 108,
+        "score": 8525
+      },
+      "alternatives": []
+    },
+    {
+      "key": "convertir-pedidos-woocommerce-contra-reembolso-en-pedidos-prepago-via-whatsapp",
+      "selected": {
+        "route": "imported/ecommerce/convertir-pedidos-woocommerce-efectivo-a-prepago-via-whatsapp",
+        "file": "content/docs/imported/ecommerce/convertir-pedidos-woocommerce-efectivo-a-prepago-via-whatsapp.md",
+        "title": "Convertir pedidos WooCommerce contra reembolso en pedidos prepago vía WhatsApp",
+        "section": "ecommerce",
+        "canonical": "convertir-pedidos-woocommerce-contra-reembolso-en-pedidos-prepago-via-whatsapp",
+        "words": 6730,
+        "headings": 118,
+        "score": 9090
+      },
+      "alternatives": []
+    },
+    {
+      "key": "enviar-notificaciones-de-pedidos-de-woocommerce-a-whatsapp-con-webhook-workflow",
+      "selected": {
+        "route": "imported/ecommerce/enviar-notificaciones-de-pedidos-de-woocommerce-a-whatsapp-con-webhook-workflow-esmart360",
+        "file": "content/docs/imported/ecommerce/enviar-notificaciones-de-pedidos-de-woocommerce-a-whatsapp-con-webhook-workflow-esmart360.md",
+        "title": "Enviar Notificaciones de Pedidos de WooCommerce a WhatsApp con Webhook Workflow",
+        "section": "ecommerce",
+        "canonical": "enviar-notificaciones-de-pedidos-de-woocommerce-a-whatsapp-con-webhook-workflow",
+        "words": 5385,
+        "headings": 106,
+        "score": 7505
+      },
+      "alternatives": []
+    },
+    {
+      "key": "flujo-webhook-de-whatsapp-automatizacion-de-notificaciones-de-pedidos",
+      "selected": {
+        "route": "imported/ecommerce/flujo-webhook-whatsapp-automatizacion-notificaciones-pedidos-esmart360",
+        "file": "content/docs/imported/ecommerce/flujo-webhook-whatsapp-automatizacion-notificaciones-pedidos-esmart360.md",
+        "title": "Flujo Webhook de WhatsApp: Automatización de Notificaciones de Pedidos",
+        "section": "ecommerce",
+        "canonical": "flujo-webhook-de-whatsapp-automatizacion-de-notificaciones-de-pedidos",
+        "words": 5975,
+        "headings": 76,
+        "score": 7495
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-integrar-un-catalogo-de-productos-en-whatsapp",
+      "selected": {
+        "route": "imported/ecommerce/integrar-catalogo-productos-whatsapp-esmart360",
+        "file": "content/docs/imported/ecommerce/integrar-catalogo-productos-whatsapp-esmart360.md",
+        "title": "Cómo Integrar un Catálogo de Productos en WhatsApp",
+        "section": "ecommerce",
+        "canonical": "como-integrar-un-catalogo-de-productos-en-whatsapp",
+        "words": 7905,
+        "headings": 92,
+        "score": 9745
+      },
+      "alternatives": []
+    },
+    {
+      "key": "integrar-shopify-con-para-automatizacion-en-whatsapp",
+      "selected": {
+        "route": "imported/ecommerce/integrar-shopify-automatizacion-whatsapp-esmart360",
+        "file": "content/docs/imported/ecommerce/integrar-shopify-automatizacion-whatsapp-esmart360.md",
+        "title": "Integrar Shopify con E-SMART360 para automatización en WhatsApp",
+        "section": "ecommerce",
+        "canonical": "integrar-shopify-con-para-automatizacion-en-whatsapp",
+        "words": 4562,
+        "headings": 92,
+        "score": 6402
+      },
+      "alternatives": []
+    },
+    {
+      "key": "integrar-woocommerce-con-para-automatizar-tu-tienda-en-whatsapp",
+      "selected": {
+        "route": "imported/ecommerce/integrar-woocommerce-automatizacion-whatsapp-esmart360",
+        "file": "content/docs/imported/ecommerce/integrar-woocommerce-automatizacion-whatsapp-esmart360.md",
+        "title": "Integrar WooCommerce con E-SMART360 para automatizar tu tienda en WhatsApp",
+        "section": "ecommerce",
+        "canonical": "integrar-woocommerce-con-para-automatizar-tu-tienda-en-whatsapp",
+        "words": 4584,
+        "headings": 111,
+        "score": 6804
+      },
+      "alternatives": []
+    },
+    {
+      "key": "notificaciones-de-pedidos-woocommerce-a-whatsapp",
+      "selected": {
+        "route": "imported/ecommerce/notificaciones-pedidos-woocommerce-a-whatsapp-guia-completa-esmart360",
+        "file": "content/docs/imported/ecommerce/notificaciones-pedidos-woocommerce-a-whatsapp-guia-completa-esmart360.md",
+        "title": "Notificaciones de Pedidos WooCommerce a WhatsApp: Guía Completa",
+        "section": "ecommerce",
+        "canonical": "notificaciones-de-pedidos-woocommerce-a-whatsapp",
+        "words": 4471,
+        "headings": 95,
+        "score": 6371
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-recuperar-carritos-abandonados-de-shopify-por-whatsapp-con",
+      "selected": {
+        "route": "imported/ecommerce/recuperar-carritos-abandonados-shopify-whatsapp-esmart360",
+        "file": "content/docs/imported/ecommerce/recuperar-carritos-abandonados-shopify-whatsapp-esmart360.md",
+        "title": "Cómo Recuperar Carritos Abandonados de Shopify por WhatsApp con E-SMART360",
+        "section": "ecommerce",
+        "canonical": "como-recuperar-carritos-abandonados-de-shopify-por-whatsapp-con",
+        "words": 4709,
+        "headings": 75,
+        "score": 6209
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-verificar-un-pedido-contra-reembolso-cod-de-woocommerce-por-whatsapp",
+      "selected": {
+        "route": "imported/ecommerce/verificar-pedidos-woocommerce-cod-por-whatsapp-esmart360",
+        "file": "content/docs/imported/ecommerce/verificar-pedidos-woocommerce-cod-por-whatsapp-esmart360.md",
+        "title": "Cómo Verificar un Pedido Contra Reembolso (COD) de WooCommerce por WhatsApp",
+        "section": "ecommerce",
+        "canonical": "como-verificar-un-pedido-contra-reembolso-cod-de-woocommerce-por-whatsapp",
+        "words": 3443,
+        "headings": 70,
+        "score": 4843
+      },
+      "alternatives": []
+    },
+    {
+      "key": "webhook-workflow-de-whatsapp-transforma-la-forma-de-hacer-negocios",
+      "selected": {
+        "route": "imported/ecommerce/webhook-whatsapp-workflow-automatizar-notificaciones-pedidos-esmart360",
+        "file": "content/docs/imported/ecommerce/webhook-whatsapp-workflow-automatizar-notificaciones-pedidos-esmart360.md",
+        "title": "Webhook Workflow de WhatsApp: transforma la forma de hacer negocios",
+        "section": "ecommerce",
+        "canonical": "webhook-workflow-de-whatsapp-transforma-la-forma-de-hacer-negocios",
+        "words": 5827,
+        "headings": 70,
+        "score": 7227
+      },
+      "alternatives": []
+    },
+    {
+      "key": "whatsapp-pay-y-catalogo-de-whatsapp-configuracion-beneficios-y-casos-de-uso",
+      "selected": {
+        "route": "imported/ecommerce/whatsapp-pay-catalogo-whatsapp-configuracion-beneficios-casos-uso-esmart360",
+        "file": "content/docs/imported/ecommerce/whatsapp-pay-catalogo-whatsapp-configuracion-beneficios-casos-uso-esmart360.md",
+        "title": "WhatsApp Pay y Catálogo de WhatsApp: Configuración, Beneficios y Casos de Uso",
+        "section": "ecommerce",
+        "canonical": "whatsapp-pay-y-catalogo-de-whatsapp-configuracion-beneficios-y-casos-de-uso",
+        "words": 4215,
+        "headings": 44,
+        "score": 5095
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-migrar-tu-cuenta-de-whatsapp-existente-a-la-whatsapp-cloud-api",
+      "selected": {
+        "route": "imported/integracion/004-migrar-cuenta-whatsapp-existente-a-cloud-api-esmart360",
+        "file": "content/docs/imported/integracion/004-migrar-cuenta-whatsapp-existente-a-cloud-api-esmart360.md",
+        "title": "Cómo Migrar tu Cuenta de WhatsApp Existente a la WhatsApp Cloud API",
+        "section": "integracion",
+        "canonical": "como-migrar-tu-cuenta-de-whatsapp-existente-a-la-whatsapp-cloud-api",
+        "words": 5548,
+        "headings": 80,
+        "score": 7148
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-conectar-zapier-con-para-enviar-datos-recopilados-en-whatsapp",
+      "selected": {
+        "route": "imported/integracion/como-conectar-zapier-con-esmart360-para-enviar-datos-recopilados-en-whatsapp",
+        "file": "content/docs/imported/integracion/como-conectar-zapier-con-esmart360-para-enviar-datos-recopilados-en-whatsapp.md",
+        "title": "Cómo Conectar Zapier con E-SMART360 para Enviar Datos Recopilados en WhatsApp",
+        "section": "integracion",
+        "canonical": "como-conectar-zapier-con-para-enviar-datos-recopilados-en-whatsapp",
+        "words": 6625,
+        "headings": 84,
+        "score": 8305
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-de-whatsapp-masivos-desde-google-sheets",
+      "selected": {
+        "route": "imported/integracion/como-enviar-mensajes-whatsapp-masivos-desde-google-sheets-2026",
+        "file": "content/docs/imported/integracion/como-enviar-mensajes-whatsapp-masivos-desde-google-sheets-2026.md",
+        "title": "Cómo Enviar Mensajes de WhatsApp Masivos desde Google Sheets (2026)",
+        "section": "integracion",
+        "canonical": "como-enviar-mensajes-de-whatsapp-masivos-desde-google-sheets-2026",
+        "words": 5600,
+        "headings": 76,
+        "score": 7120
+      },
+      "alternatives": []
+    },
+    {
+      "key": "conectar-la-aplicacion-whatsapp-business-a-la-cloud-api-de-meta",
+      "selected": {
+        "route": "imported/integracion/conectar-whatsapp-business-app-a-cloud-api-esmart360",
+        "file": "content/docs/imported/integracion/conectar-whatsapp-business-app-a-cloud-api-esmart360.md",
+        "title": "Conectar la Aplicación WhatsApp Business a la Cloud API de Meta",
+        "section": "integracion",
+        "canonical": "conectar-la-aplicacion-whatsapp-business-a-la-cloud-api-de-meta",
+        "words": 5797,
+        "headings": 111,
+        "score": 8017
+      },
+      "alternatives": []
+    },
+    {
+      "key": "conectar-la-app-de-whatsapp-business-a-la-cloud-api",
+      "selected": {
+        "route": "imported/integracion/conectar-whatsapp-business-app-cloud-api-esmart360",
+        "file": "content/docs/imported/integracion/conectar-whatsapp-business-app-cloud-api-esmart360.md",
+        "title": "Conectar la App de WhatsApp Business a la Cloud API",
+        "section": "integracion",
+        "canonical": "conectar-la-app-de-whatsapp-business-a-la-cloud-api",
+        "words": 6918,
+        "headings": 101,
+        "score": 8938
+      },
+      "alternatives": []
+    },
+    {
+      "key": "configuracion-del-perfil-de-whatsapp-business-para-la-api-de-whatsapp-cloud",
+      "selected": {
+        "route": "imported/integracion/configuracion-perfil-whatsapp-business-cloud-api-esmart360",
+        "file": "content/docs/imported/integracion/configuracion-perfil-whatsapp-business-cloud-api-esmart360.md",
+        "title": "Configuración del Perfil de WhatsApp Business para la API de WhatsApp Cloud",
+        "section": "integracion",
+        "canonical": "configuracion-del-perfil-de-whatsapp-business-para-la-api-de-whatsapp-cloud",
+        "words": 3833,
+        "headings": 79,
+        "score": 5413
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-configurar-la-whatsapp-cloud-api-con",
+      "selected": {
+        "route": "imported/integracion/configuracion-whatsapp-cloud-api-esmart360",
+        "file": "content/docs/imported/integracion/configuracion-whatsapp-cloud-api-esmart360.md",
+        "title": "Cómo configurar la WhatsApp Cloud API con E-SMART360",
+        "section": "integracion",
+        "canonical": "como-configurar-la-whatsapp-cloud-api-con",
+        "words": 6253,
+        "headings": 78,
+        "score": 7813
+      },
+      "alternatives": []
+    },
+    {
+      "key": "configuracion-del-perfil-empresarial-en-whatsapp-cloud-api",
+      "selected": {
+        "route": "imported/integracion/configurar-perfil-empresarial-whatsapp-cloud-api-esmart360",
+        "file": "content/docs/imported/integracion/configurar-perfil-empresarial-whatsapp-cloud-api-esmart360.md",
+        "title": "Configuración del Perfil Empresarial en WhatsApp Cloud API",
+        "section": "integracion",
+        "canonical": "configuracion-del-perfil-empresarial-en-whatsapp-cloud-api",
+        "words": 4210,
+        "headings": 75,
+        "score": 5710
+      },
+      "alternatives": []
+    },
+    {
+      "key": "entrenar-un-asistente-de-ia-para-chatbot-con-faq-url-archivo-api-http-y-google-sheets",
+      "selected": {
+        "route": "imported/integracion/entrenar-asistente-ia-chatbot-con-faq-url-archivo-api-http-google-sheets",
+        "file": "content/docs/imported/integracion/entrenar-asistente-ia-chatbot-con-faq-url-archivo-api-http-google-sheets.md",
+        "title": "Entrenar un Asistente de IA para Chatbot con FAQ, URL, Archivo, API HTTP y Google Sheets",
+        "section": "integracion",
+        "canonical": "entrenar-un-asistente-de-ia-para-chatbot-con-faq-url-archivo-api-http-y-google-sheets",
+        "words": 7561,
+        "headings": 155,
+        "score": 10661
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-enviar-mensajes-masivos-de-whatsapp-desde-google-sheets",
+      "selected": {
+        "route": "imported/integracion/enviar-mensajes-whatsapp-masivos-desde-google-sheets-guia-completa-esmart360",
+        "file": "content/docs/imported/integracion/enviar-mensajes-whatsapp-masivos-desde-google-sheets-guia-completa-esmart360.md",
+        "title": "Cómo Enviar Mensajes Masivos de WhatsApp desde Google Sheets — Guía Completa 2026",
+        "section": "integracion",
+        "canonical": "como-enviar-mensajes-masivos-de-whatsapp-desde-google-sheets-2026",
+        "words": 6179,
+        "headings": 123,
+        "score": 8639
+      },
+      "alternatives": []
+    },
+    {
+      "key": "indicadores-de-escritura-en-whatsapp-cloud-api-mejora-la-experiencia-en-tiempo-real",
+      "selected": {
+        "route": "imported/integracion/indicadores-de-escritura-en-whatsapp-cloud-api-esmart360",
+        "file": "content/docs/imported/integracion/indicadores-de-escritura-en-whatsapp-cloud-api-esmart360.md",
+        "title": "Indicadores de Escritura en WhatsApp Cloud API: Mejora la Experiencia en Tiempo Real",
+        "section": "integracion",
+        "canonical": "indicadores-de-escritura-en-whatsapp-cloud-api-mejora-la-experiencia-en-tiempo-real",
+        "words": 4807,
+        "headings": 110,
+        "score": 7007
+      },
+      "alternatives": []
+    },
+    {
+      "key": "nuevos-indicadores-de-escritura-en-whatsapp-cloud-api",
+      "selected": {
+        "route": "imported/integracion/nuevos-indicadores-de-escritura-en-whatsapp-cloud-api-esmart360",
+        "file": "content/docs/imported/integracion/nuevos-indicadores-de-escritura-en-whatsapp-cloud-api-esmart360.md",
+        "title": "Nuevos Indicadores de Escritura en WhatsApp Cloud API",
+        "section": "integracion",
+        "canonical": "nuevos-indicadores-de-escritura-en-whatsapp-cloud-api",
+        "words": 4233,
+        "headings": 59,
+        "score": 5413
+      },
+      "alternatives": []
+    },
+    {
+      "key": "es-necesaria-la-verificacion-empresarial-en-la-plataforma-whatsapp-business-limites-y-bene",
+      "selected": {
+        "route": "imported/integracion/verificacion-empresarial-en-whatsapp-business-api-md",
+        "file": "content/docs/imported/integracion/verificacion-empresarial-en-whatsapp-business-api-md.md",
+        "title": "¿Es Necesaria la Verificación Empresarial en la Plataforma WhatsApp Business? Límites y Beneficios",
+        "section": "integracion",
+        "canonical": "es-necesaria-la-verificacion-empresarial-en-la-plataforma-whatsapp-business-limites-y-bene",
+        "words": 4369,
+        "headings": 81,
+        "score": 5989
+      },
+      "alternatives": []
+    },
+    {
+      "key": "api-de-whatsapp-business-eleva-la-interaccion-con-tus-clientes",
+      "selected": {
+        "route": "imported/integracion/whatsapp-business-api-elevar-interaccion-clientes",
+        "file": "content/docs/imported/integracion/whatsapp-business-api-elevar-interaccion-clientes.md",
+        "title": "API de WhatsApp Business: Eleva la Interacción con tus Clientes",
+        "section": "integracion",
+        "canonical": "api-de-whatsapp-business-eleva-la-interaccion-con-tus-clientes",
+        "words": 5977,
+        "headings": 112,
+        "score": 8217
+      },
+      "alternatives": []
+    },
+    {
+      "key": "es-necesaria-la-verificacion-de-cuenta-de-whatsapp-business-limites-y-beneficios",
+      "selected": {
+        "route": "imported/operacion-meta/007-verificacion-cuenta-whatsapp-business-esmart360",
+        "file": "content/docs/imported/operacion-meta/007-verificacion-cuenta-whatsapp-business-esmart360.md",
+        "title": "¿Es Necesaria la Verificación de Cuenta de WhatsApp Business? Límites y Beneficios",
+        "section": "operacion-meta",
+        "canonical": "es-necesaria-la-verificacion-de-cuenta-de-whatsapp-business-limites-y-beneficios",
+        "words": 5388,
+        "headings": 81,
+        "score": 7008
+      },
+      "alternatives": []
+    },
+    {
+      "key": "verificacion-empresarial-en-whatsapp-business-es-necesaria-limites-beneficios-y-compl",
+      "selected": {
+        "route": "imported/operacion-meta/016-verificacion-empresarial-whatsapp-necesaria-limites-beneficios-esmart360",
+        "file": "content/docs/imported/operacion-meta/016-verificacion-empresarial-whatsapp-necesaria-limites-beneficios-esmart360.md",
+        "title": "Verificación Empresarial en WhatsApp Business: ¿Es Necesaria? Límites, Beneficios y Guía Completa",
+        "section": "operacion-meta",
+        "canonical": "verificacion-empresarial-en-whatsapp-business-es-necesaria-limites-beneficios-y-compl",
+        "words": 5902,
+        "headings": 81,
+        "score": 7522
+      },
+      "alternatives": []
+    },
+    {
+      "key": "error-130472-de-whatsapp-por-que-ocurre-y-como-solucionarlo",
+      "selected": {
+        "route": "imported/operacion-meta/error-whatsapp-130472-numero-en-experimento-meta-esmart360",
+        "file": "content/docs/imported/operacion-meta/error-whatsapp-130472-numero-en-experimento-meta-esmart360.md",
+        "title": "Error 130472 de WhatsApp: Por qué ocurre y cómo solucionarlo",
+        "section": "operacion-meta",
+        "canonical": "error-130472-de-whatsapp-por-que-ocurre-y-como-solucionarlo",
+        "words": 4966,
+        "headings": 94,
+        "score": 6846
+      },
+      "alternatives": []
+    },
+    {
+      "key": "es-obligatoria-la-verificacion-empresarial-en-whatsapp-business-limites-y-beneficios",
+      "selected": {
+        "route": "imported/operacion-meta/verificacion-empresarial-whatsapp-business-obligatoria-esmart360",
+        "file": "content/docs/imported/operacion-meta/verificacion-empresarial-whatsapp-business-obligatoria-esmart360.md",
+        "title": "¿Es Obligatoria la Verificación Empresarial en WhatsApp Business? Límites y Beneficios",
+        "section": "operacion-meta",
+        "canonical": "es-obligatoria-la-verificacion-empresarial-en-whatsapp-business-limites-y-beneficios",
+        "words": 5124,
+        "headings": 98,
+        "score": 7084
+      },
+      "alternatives": []
+    },
+    {
+      "key": "es-necesaria-la-verificacion-de-negocio-en-whatsapp-limites-y-beneficios",
+      "selected": {
+        "route": "imported/operacion-meta/verificacion-negocio-whatsapp-plataforma-esmart360",
+        "file": "content/docs/imported/operacion-meta/verificacion-negocio-whatsapp-plataforma-esmart360.md",
+        "title": "¿Es Necesaria la Verificación de Negocio en WhatsApp? Límites y Beneficios",
+        "section": "operacion-meta",
+        "canonical": "es-necesaria-la-verificacion-de-negocio-en-whatsapp-limites-y-beneficios",
+        "words": 5387,
+        "headings": 82,
+        "score": 7027
+      },
+      "alternatives": []
+    },
+    {
+      "key": "es-obligatoria-la-verificacion-de-negocios-en-whatsapp-limites-y-beneficios",
+      "selected": {
+        "route": "imported/operacion-meta/verificacion-negocios-whatsapp-obligatoria-limites-beneficios",
+        "file": "content/docs/imported/operacion-meta/verificacion-negocios-whatsapp-obligatoria-limites-beneficios.md",
+        "title": "¿Es obligatoria la verificación de negocios en WhatsApp? Límites y beneficios",
+        "section": "operacion-meta",
+        "canonical": "es-obligatoria-la-verificacion-de-negocios-en-whatsapp-limites-y-beneficios",
+        "words": 5497,
+        "headings": 76,
+        "score": 7017
+      },
+      "alternatives": []
+    },
+    {
+      "key": "marketing-en-whatsapp-y-telegram-la-de",
+      "selected": {
+        "route": "imported/telegram/005-marketing-completo-whatsapp-telegram-guia-esmart360",
+        "file": "content/docs/imported/telegram/005-marketing-completo-whatsapp-telegram-guia-esmart360.md",
+        "title": "Marketing en WhatsApp y Telegram: La Guía Completa de E-SMART360",
+        "section": "telegram",
+        "canonical": "marketing-en-whatsapp-y-telegram-la-de",
+        "words": 5769,
+        "headings": 97,
+        "score": 7709
+      },
+      "alternatives": []
+    },
+    {
+      "key": "marketing-en-whatsapp-y-telegram-la-con",
+      "selected": {
+        "route": "imported/telegram/005-marketing-en-whatsapp-y-telegram-guia-completa-esmart360",
+        "file": "content/docs/imported/telegram/005-marketing-en-whatsapp-y-telegram-guia-completa-esmart360.md",
+        "title": "Marketing en WhatsApp y Telegram: La Guía Completa con E-SMART360",
+        "section": "telegram",
+        "canonical": "marketing-en-whatsapp-y-telegram-la-con",
+        "words": 4474,
+        "headings": 81,
+        "score": 6094
+      },
+      "alternatives": []
+    },
+    {
+      "key": "compromiso-social-como-apoyo-a-las-comunidades-durante-el-covid-19",
+      "selected": {
+        "route": "imported/telegram/016-compromiso-social-covid19-esmart360",
+        "file": "content/docs/imported/telegram/016-compromiso-social-covid19-esmart360.md",
+        "title": "Compromiso Social: Cómo E-SMART360 Apoyó a las Comunidades Durante el COVID-19",
+        "section": "telegram",
+        "canonical": "compromiso-social-como-apoyo-a-las-comunidades-durante-el-covid-19",
+        "words": 9965,
+        "headings": 103,
+        "score": 12025
+      },
+      "alternatives": []
+    },
+    {
+      "key": "chatbot-multicanal-para-whatsapp-messenger-instagram-telegram-y-webchat",
+      "selected": {
+        "route": "imported/telegram/chatbot-multicanal-whatsapp-messenger-instagram-telegram-webchat-esmart360",
+        "file": "content/docs/imported/telegram/chatbot-multicanal-whatsapp-messenger-instagram-telegram-webchat-esmart360.md",
+        "title": "Chatbot Multicanal para WhatsApp, Messenger, Instagram, Telegram y WebChat",
+        "section": "telegram",
+        "canonical": "chatbot-multicanal-para-whatsapp-messenger-instagram-telegram-y-webchat",
+        "words": 8155,
+        "headings": 169,
+        "score": 11535
+      },
+      "alternatives": []
+    },
+    {
+      "key": "de-marketing-en-whatsapp-y-telegram",
+      "selected": {
+        "route": "imported/telegram/completa-guia-marketing-whatsapp-telegram",
+        "file": "content/docs/imported/telegram/completa-guia-marketing-whatsapp-telegram.md",
+        "title": "Guía Completa de Marketing en WhatsApp y Telegram",
+        "section": "telegram",
+        "canonical": "de-marketing-en-whatsapp-y-telegram",
+        "words": 4128,
+        "headings": 95,
+        "score": 6028
+      },
+      "alternatives": []
+    },
+    {
+      "key": "comunidad-telegram-libre-de-spam-protege-tu-grupo-con",
+      "selected": {
+        "route": "imported/telegram/comunidad-telegram-libre-spam-filtros-antispam-esmart360",
+        "file": "content/docs/imported/telegram/comunidad-telegram-libre-spam-filtros-antispam-esmart360.md",
+        "title": "Comunidad Telegram Libre de Spam: Protege tu Grupo con E-SMART360",
+        "section": "telegram",
+        "canonical": "comunidad-telegram-libre-de-spam-protege-tu-grupo-con",
+        "words": 5321,
+        "headings": 69,
+        "score": 6701
+      },
+      "alternatives": []
+    },
+    {
+      "key": "comunidad-telegram-sin-spam-filtrado-avanzado-y-antispam",
+      "selected": {
+        "route": "imported/telegram/comunidad-telegram-sin-spam-filtrado-antispam-esmart360",
+        "file": "content/docs/imported/telegram/comunidad-telegram-sin-spam-filtrado-antispam-esmart360.md",
+        "title": "Comunidad Telegram Sin Spam: Filtrado Avanzado y Antispam",
+        "section": "telegram",
+        "canonical": "comunidad-telegram-sin-spam-filtrado-avanzado-y-antispam",
+        "words": 4118,
+        "headings": 88,
+        "score": 5878
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-crear-un-chatbot-de-telegram-gratis-en",
+      "selected": {
+        "route": "imported/telegram/crear-chatbot-telegram-gratis-guia-completa-esmart360",
+        "file": "content/docs/imported/telegram/crear-chatbot-telegram-gratis-guia-completa-esmart360.md",
+        "title": "Cómo Crear un Chatbot de Telegram Gratis en 2025 — Guía Completa",
+        "section": "telegram",
+        "canonical": "como-crear-un-chatbot-de-telegram-gratis-en-2025",
+        "words": 2978,
+        "headings": 70,
+        "score": 4378
+      },
+      "alternatives": []
+    },
+    {
+      "key": "diferencias-entre-chatbot-de-telegram-y-chatbot-de-whatsapp",
+      "selected": {
+        "route": "imported/telegram/diferencia-chatbot-telegram-whatsapp-esmart360",
+        "file": "content/docs/imported/telegram/diferencia-chatbot-telegram-whatsapp-esmart360.md",
+        "title": "Diferencias entre Chatbot de Telegram y Chatbot de WhatsApp: Guía Completa 2026",
+        "section": "telegram",
+        "canonical": "diferencias-entre-chatbot-de-telegram-y-chatbot-de-whatsapp-2026",
+        "words": 9120,
+        "headings": 128,
+        "score": 11680
+      },
+      "alternatives": []
+    },
+    {
+      "key": "diferencia-entre-chatbot-de-telegram-y-chatbot-de-whatsapp",
+      "selected": {
+        "route": "imported/telegram/diferencia-entre-chatbot-telegram-y-whatsapp-esmart360",
+        "file": "content/docs/imported/telegram/diferencia-entre-chatbot-telegram-y-whatsapp-esmart360.md",
+        "title": "Diferencia entre Chatbot de Telegram y Chatbot de WhatsApp",
+        "section": "telegram",
+        "canonical": "diferencia-entre-chatbot-de-telegram-y-chatbot-de-whatsapp",
+        "words": 7035,
+        "headings": 119,
+        "score": 9415
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-usar-widgets-de-chat-de-telegram-y-enlaces-cortos-para-hacer-crecer-tu-lista-de-suscr",
+      "selected": {
+        "route": "imported/telegram/enlaces-cortos-widget-chat-telegram-crecer-suscriptores-esmart360",
+        "file": "content/docs/imported/telegram/enlaces-cortos-widget-chat-telegram-crecer-suscriptores-esmart360.md",
+        "title": "Cómo Usar Widgets de Chat de Telegram y Enlaces Cortos para Hacer Crecer tu Lista de Suscriptores",
+        "section": "telegram",
+        "canonical": "como-usar-widgets-de-chat-de-telegram-y-enlaces-cortos-para-hacer-crecer-tu-lista-de-suscr",
+        "words": 6688,
+        "headings": 75,
+        "score": 8188
+      },
+      "alternatives": []
+    },
+    {
+      "key": "de-marketing-en-whatsapp-y-telegram-con",
+      "selected": {
+        "route": "imported/telegram/guia-completa-marketing-whatsapp-telegram-esmart360",
+        "file": "content/docs/imported/telegram/guia-completa-marketing-whatsapp-telegram-esmart360.md",
+        "title": "Guía Completa de Marketing en WhatsApp y Telegram con E-SMART360",
+        "section": "telegram",
+        "canonical": "de-marketing-en-whatsapp-y-telegram-con",
+        "words": 5586,
+        "headings": 102,
+        "score": 7626
+      },
+      "alternatives": []
+    },
+    {
+      "key": "marketing-en-whatsapp-y-telegram-la",
+      "selected": {
+        "route": "imported/telegram/marketing-whatsapp-telegram-guia-completa-esmart360",
+        "file": "content/docs/imported/telegram/marketing-whatsapp-telegram-guia-completa-esmart360.md",
+        "title": "Marketing en WhatsApp y Telegram: La Guía Completa | E-SMART360",
+        "section": "telegram",
+        "canonical": "marketing-en-whatsapp-y-telegram-la",
+        "words": 4175,
+        "headings": 89,
+        "score": 5955
+      },
+      "alternatives": []
+    },
+    {
+      "key": "marketing-en-whatsapp-y-telegram-simplificado",
+      "selected": {
+        "route": "imported/telegram/marketing-whatsapp-telegram-simplificado-esmart360",
+        "file": "content/docs/imported/telegram/marketing-whatsapp-telegram-simplificado-esmart360.md",
+        "title": "Marketing en WhatsApp y Telegram Simplificado: Guía Completa",
+        "section": "telegram",
+        "canonical": "marketing-en-whatsapp-y-telegram-simplificado",
+        "words": 4073,
+        "headings": 95,
+        "score": 5973
+      },
+      "alternatives": []
+    },
+    {
+      "key": "como-detener-el-spam-en-telegram-usando-restricciones-de-miembros",
+      "selected": {
+        "route": "imported/telegram/restriccion-miembros-telegram-anti-spam-onboarding-esmart360",
+        "file": "content/docs/imported/telegram/restriccion-miembros-telegram-anti-spam-onboarding-esmart360.md",
+        "title": "Cómo Detener el Spam en Telegram Usando Restricciones de Miembros | E-SMART360",
+        "section": "telegram",
+        "canonical": "como-detener-el-spam-en-telegram-usando-restricciones-de-miembros",
+        "words": 5194,
+        "headings": 66,
+        "score": 6514
+      },
+      "alternatives": []
+    },
+    {
+      "key": "marketing-en-whatsapp-y-telegram-la-para-tu-negocio",
+      "selected": {
+        "route": "imported/telegram/whatsapp-telegram-marketing-guia-completa",
+        "file": "content/docs/imported/telegram/whatsapp-telegram-marketing-guia-completa.md",
+        "title": "Marketing en WhatsApp y Telegram: La Guía Completa para tu Negocio",
+        "section": "telegram",
+        "canonical": "marketing-en-whatsapp-y-telegram-la-para-tu-negocio",
+        "words": 6690,
+        "headings": 107,
+        "score": 8830
+      },
+      "alternatives": []
+    }
+  ],
+  "duplicateRows": []
+}

@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import CountUp from "react-countup";
 import { motion, useReducedMotion } from "framer-motion";
+import { ProductHoverCard } from "@/components/landing/product-hover-card";
 import {
   Accordion,
   AccordionContent,
@@ -262,9 +263,6 @@ function IntegrationMarqueeRow({
 }
 
 export function ChatbotsOmnichannelLanding() {
-  const [activeGrowth, setActiveGrowth] = useState<string | null>(null);
-  const reduceMotion = useReducedMotion();
-
   const featureGrid = useMemo(
     () => [
       {
@@ -294,12 +292,7 @@ export function ChatbotsOmnichannelLanding() {
   return (
     <div className="relative z-10">
       <div
-        className="pointer-events-none fixed inset-0 -z-10 opacity-[0.45]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, oklch(0.12 0.01 60 / 0.06) 1px, transparent 1px), linear-gradient(to bottom, oklch(0.12 0.01 60 / 0.06) 1px, transparent 1px)",
-          backgroundSize: "56px 56px",
-        }}
+        className="page-grid-bg pointer-events-none fixed inset-0 -z-10 opacity-[0.45]"
         aria-hidden
       />
 
@@ -437,42 +430,20 @@ export function ChatbotsOmnichannelLanding() {
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {growthCards.map((card, i) => {
-            const active = activeGrowth === card.title;
-            return (
-              <motion.article
-                key={card.title}
-                onMouseEnter={() => setActiveGrowth(card.title)}
-                onMouseLeave={() => setActiveGrowth(null)}
-                initial={{ opacity: 0, y: 22 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05, duration: 0.45 }}
-                whileHover={reduceMotion ? {} : { y: -7 }}
-                className={cn(
-                  "group relative min-h-[250px] overflow-hidden rounded-2xl border border-border bg-background p-6 shadow-[0_18px_60px_-35px_rgba(15,23,42,0.35)] transition-colors",
-                  active && "border-[#0070f3]/30",
-                )}
-              >
-                <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-[#0070f3]/0 blur-2xl transition-colors group-hover:bg-[#0070f3]/12" />
-                <div className="absolute -bottom-10 -left-10 h-28 w-28 rounded-full bg-[#25D366]/0 blur-2xl transition-colors group-hover:bg-[#25D366]/12" />
-
-                <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0070f3]/10 text-[#0070f3]">
-                  <card.icon className="h-5 w-5" />
-                </div>
-                <h3 className="relative mt-8 text-lg font-semibold text-foreground">{card.title}</h3>
-                <p className="relative mt-3 text-sm leading-relaxed text-muted-foreground">{card.short}</p>
-                <motion.div
-                  className="relative mt-5 rounded-xl border border-border bg-muted/40 p-4 text-sm leading-relaxed text-muted-foreground"
-                  initial={false}
-                  animate={active ? { opacity: 1, y: 0 } : { opacity: 0.72, y: 8 }}
-                  transition={{ duration: 0.22 }}
-                >
-                  {card.detail}
-                </motion.div>
-              </motion.article>
-            );
-          })}
+          {growthCards.map((card, i) => (
+            <ProductHoverCard
+              key={card.title}
+              icon={card.icon}
+              title={card.title}
+              short={card.short}
+              detail={card.detail}
+              index={i}
+              activeBorderClass="border-[#0070f3]/30"
+              glowPrimaryClassName="bg-[#0070f3]/0 group-hover:bg-[#0070f3]/12"
+              glowSecondaryClassName="bg-[#25D366]/0 group-hover:bg-[#25D366]/12"
+              iconWrapClassName="bg-[#0070f3]/10 text-[#0070f3]"
+            />
+          ))}
         </div>
       </section>
 

@@ -1,0 +1,931 @@
+{
+  "generatedAt": "2026-05-12T07:28:07.300Z",
+  "providers": [
+    {
+      "id": "fulldoc",
+      "sources": 1,
+      "sections": [
+        "chatbots-omnicanal",
+        "broadcasting",
+        "ecommerce",
+        "telegram",
+        "operacion-meta",
+        "integracion",
+        "agencias"
+      ]
+    },
+    {
+      "id": "botsailor",
+      "sources": 3,
+      "sections": [
+        "chatbots-omnicanal",
+        "broadcasting",
+        "ecommerce",
+        "telegram",
+        "operacion-meta",
+        "integracion",
+        "agencias"
+      ]
+    },
+    {
+      "id": "whatchimp",
+      "sources": 3,
+      "sections": [
+        "primeros-pasos",
+        "sectores",
+        "integracion",
+        "chatbots-omnicanal",
+        "broadcasting",
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "dialora",
+      "sources": 3,
+      "sections": [
+        "agente-voz"
+      ]
+    },
+    {
+      "id": "consolto",
+      "sources": 4,
+      "sections": [
+        "oficina-virtual",
+        "api-referencia"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "core",
+      "label": "Fundamentos",
+      "section": "vision-general",
+      "providers": [],
+      "expected": 4,
+      "present": 4,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "overview",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "vision-general",
+            "core",
+            "overview"
+          ]
+        },
+        {
+          "route": "arquitectura",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "vision-general",
+            "core",
+            "arquitectura"
+          ]
+        },
+        {
+          "route": "primeros-pasos/onboarding",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "vision-general",
+            "core",
+            "primeros",
+            "pasos",
+            "onboarding"
+          ]
+        },
+        {
+          "route": "ayuda/soporte",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "vision-general",
+            "core",
+            "ayuda",
+            "soporte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chatbots",
+      "label": "Chatbots omnicanal",
+      "section": "chatbots-omnicanal",
+      "providers": [
+        "fulldoc",
+        "botsailor",
+        "whatchimp"
+      ],
+      "expected": 9,
+      "present": 9,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "chatbots/intro",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "intro"
+          ]
+        },
+        {
+          "route": "chatbots/canales-omnicanal",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "canales",
+            "omnicanal"
+          ]
+        },
+        {
+          "route": "chatbots/constructor-visual",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "constructor",
+            "visual"
+          ]
+        },
+        {
+          "route": "chatbots/flujos-y-canales",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "flujos",
+            "canales"
+          ]
+        },
+        {
+          "route": "chatbots/variables-y-segmentacion",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "variables",
+            "segmentacion"
+          ]
+        },
+        {
+          "route": "chatbots/live-chat-bandeja",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "live",
+            "chat",
+            "bandeja"
+          ]
+        },
+        {
+          "route": "chatbots/entrenamiento-ia",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "entrenamiento"
+          ]
+        },
+        {
+          "route": "chatbots/formularios-whatsapp-flows",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "formularios",
+            "whatsapp",
+            "flows"
+          ]
+        },
+        {
+          "route": "chatbots/webchat-e-instagram",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "chatbots-omnicanal",
+            "chatbots",
+            "webchat",
+            "instagram"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broadcasting",
+      "label": "Broadcasting y plantillas",
+      "section": "broadcasting",
+      "providers": [
+        "fulldoc",
+        "botsailor",
+        "whatchimp"
+      ],
+      "expected": 6,
+      "present": 6,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "broadcasting/plantillas-whatsapp",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "broadcasting",
+            "plantillas",
+            "whatsapp"
+          ]
+        },
+        {
+          "route": "broadcasting/campanas-y-segmentacion",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "broadcasting",
+            "campanas",
+            "segmentacion"
+          ]
+        },
+        {
+          "route": "broadcasting/regla-24-horas",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "broadcasting",
+            "regla",
+            "horas"
+          ]
+        },
+        {
+          "route": "broadcasting/botones-y-carruseles",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "broadcasting",
+            "botones",
+            "carruseles"
+          ]
+        },
+        {
+          "route": "broadcasting/smart-delay",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "broadcasting",
+            "smart",
+            "delay"
+          ]
+        },
+        {
+          "route": "broadcasting/rechazos-y-calidad",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "broadcasting",
+            "rechazos",
+            "calidad"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "label": "E-commerce conversacional",
+      "section": "ecommerce",
+      "providers": [
+        "fulldoc",
+        "botsailor",
+        "whatchimp"
+      ],
+      "expected": 6,
+      "present": 6,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "ecommerce/catalogo-y-pagos-whatsapp",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "ecommerce",
+            "catalogo",
+            "pagos",
+            "whatsapp"
+          ]
+        },
+        {
+          "route": "ecommerce/shopify",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "ecommerce",
+            "shopify"
+          ]
+        },
+        {
+          "route": "ecommerce/woocommerce",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "ecommerce",
+            "woocommerce"
+          ]
+        },
+        {
+          "route": "ecommerce/carritos-abandonados",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "ecommerce",
+            "carritos",
+            "abandonados"
+          ]
+        },
+        {
+          "route": "ecommerce/cod-y-prepago",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "ecommerce",
+            "prepago"
+          ]
+        },
+        {
+          "route": "ecommerce/notificaciones-pedidos",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "ecommerce",
+            "notificaciones",
+            "pedidos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meta",
+      "label": "Operación Meta",
+      "section": "operacion-meta",
+      "providers": [
+        "fulldoc",
+        "botsailor"
+      ],
+      "expected": 4,
+      "present": 4,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "operacion-meta/calidad-y-limites-whatsapp",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "operacion-meta",
+            "meta",
+            "operacion",
+            "calidad",
+            "limites",
+            "whatsapp"
+          ]
+        },
+        {
+          "route": "operacion-meta/cloud-api-y-embedded-signup",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "operacion-meta",
+            "meta",
+            "operacion",
+            "cloud",
+            "embedded",
+            "signup"
+          ]
+        },
+        {
+          "route": "operacion-meta/verificacion-negocio",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "operacion-meta",
+            "meta",
+            "operacion",
+            "verificacion",
+            "negocio"
+          ]
+        },
+        {
+          "route": "operacion-meta/errores-comunes",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "operacion-meta",
+            "meta",
+            "operacion",
+            "errores",
+            "comunes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "telegram",
+      "label": "Telegram y comunidades",
+      "section": "telegram",
+      "providers": [
+        "fulldoc",
+        "botsailor"
+      ],
+      "expected": 3,
+      "present": 3,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "telegram/marketing-y-comunidades",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "telegram",
+            "marketing",
+            "comunidades"
+          ]
+        },
+        {
+          "route": "telegram/comunidades-y-antispam",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "telegram",
+            "comunidades",
+            "antispam"
+          ]
+        },
+        {
+          "route": "telegram/bots-y-captacion",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "telegram",
+            "bots",
+            "captacion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "label": "Agente de voz IA",
+      "section": "agente-voz",
+      "providers": [
+        "dialora"
+      ],
+      "expected": 6,
+      "present": 6,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "agente-voz/intro",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "agente-voz",
+            "voice",
+            "agente",
+            "intro"
+          ]
+        },
+        {
+          "route": "agente-voz/primer-agente",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "agente-voz",
+            "voice",
+            "agente",
+            "primer"
+          ]
+        },
+        {
+          "route": "agente-voz/llamadas-entrantes",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "agente-voz",
+            "voice",
+            "agente",
+            "llamadas",
+            "entrantes"
+          ]
+        },
+        {
+          "route": "agente-voz/campanas-salientes",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "agente-voz",
+            "voice",
+            "agente",
+            "campanas",
+            "salientes"
+          ]
+        },
+        {
+          "route": "agente-voz/clinicas-y-citas",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "agente-voz",
+            "voice",
+            "agente",
+            "clinicas",
+            "citas"
+          ]
+        },
+        {
+          "route": "agente-voz/soporte-y-handoff",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "agente-voz",
+            "voice",
+            "agente",
+            "soporte",
+            "handoff"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "virtual-office",
+      "label": "Oficina virtual",
+      "section": "oficina-virtual",
+      "providers": [
+        "consolto"
+      ],
+      "expected": 6,
+      "present": 6,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "oficina-virtual/intro",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "oficina-virtual",
+            "virtual-office",
+            "oficina",
+            "virtual",
+            "intro"
+          ]
+        },
+        {
+          "route": "oficina-virtual/widget-y-clickntalk",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "oficina-virtual",
+            "virtual-office",
+            "oficina",
+            "virtual",
+            "widget",
+            "clickntalk"
+          ]
+        },
+        {
+          "route": "oficina-virtual/agenda-y-videollamadas",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "oficina-virtual",
+            "virtual-office",
+            "oficina",
+            "virtual",
+            "agenda",
+            "videollamadas"
+          ]
+        },
+        {
+          "route": "oficina-virtual/apps-y-canales",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "oficina-virtual",
+            "virtual-office",
+            "oficina",
+            "virtual",
+            "apps",
+            "canales"
+          ]
+        },
+        {
+          "route": "oficina-virtual/cname-y-wordpress-wix-shopify",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "oficina-virtual",
+            "virtual-office",
+            "oficina",
+            "virtual",
+            "cname",
+            "wordpress",
+            "shopify"
+          ]
+        },
+        {
+          "route": "oficina-virtual/webhooks-y-api-frontend",
+          "exists": true,
+          "source": "scrape",
+          "tags": [
+            "oficina-virtual",
+            "virtual-office",
+            "oficina",
+            "virtual",
+            "webhooks",
+            "frontend"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nfc",
+      "label": "Tarjetas digitales NFC",
+      "section": "tarjetas-nfc",
+      "providers": [
+        "manual"
+      ],
+      "expected": 4,
+      "present": 4,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "tarjetas-nfc/intro",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "tarjetas-nfc",
+            "nfc",
+            "tarjetas",
+            "intro"
+          ]
+        },
+        {
+          "route": "tarjetas-nfc/perfiles-y-qr",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "tarjetas-nfc",
+            "nfc",
+            "tarjetas",
+            "perfiles"
+          ]
+        },
+        {
+          "route": "tarjetas-nfc/tracking-y-crm",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "tarjetas-nfc",
+            "nfc",
+            "tarjetas",
+            "tracking"
+          ]
+        },
+        {
+          "route": "tarjetas-nfc/casos-de-uso",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "tarjetas-nfc",
+            "nfc",
+            "tarjetas",
+            "casos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sectors",
+      "label": "Sectores",
+      "section": "sectores",
+      "providers": [
+        "fulldoc",
+        "whatchimp",
+        "manual"
+      ],
+      "expected": 7,
+      "present": 7,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "sectores/salud",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "sectores",
+            "sectors",
+            "salud"
+          ]
+        },
+        {
+          "route": "sectores/educacion",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "sectores",
+            "sectors",
+            "educacion"
+          ]
+        },
+        {
+          "route": "sectores/ecommerce",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "sectores",
+            "sectors",
+            "ecommerce"
+          ]
+        },
+        {
+          "route": "sectores/agencias",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "sectores",
+            "sectors",
+            "agencias"
+          ]
+        },
+        {
+          "route": "sectores/ventas",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "sectores",
+            "sectors",
+            "ventas"
+          ]
+        },
+        {
+          "route": "sectores/servicios-profesionales",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "sectores",
+            "sectors",
+            "servicios",
+            "profesionales"
+          ]
+        },
+        {
+          "route": "sectores/inmobiliaria",
+          "exists": true,
+          "source": "manual",
+          "tags": [
+            "sectores",
+            "sectors",
+            "inmobiliaria"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developers",
+      "label": "Developers",
+      "section": "api-referencia",
+      "providers": [
+        "fulldoc",
+        "botsailor",
+        "consolto"
+      ],
+      "expected": 5,
+      "present": 5,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "api/overview",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "api-referencia",
+            "developers",
+            "overview"
+          ]
+        },
+        {
+          "route": "api/webhooks",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "api-referencia",
+            "developers",
+            "webhooks"
+          ]
+        },
+        {
+          "route": "api/eventos",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "api-referencia",
+            "developers",
+            "eventos"
+          ]
+        },
+        {
+          "route": "api/payloads",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "api-referencia",
+            "developers",
+            "payloads"
+          ]
+        },
+        {
+          "route": "api/seguridad-y-reintentos",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "api-referencia",
+            "developers",
+            "seguridad",
+            "reintentos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agencies",
+      "label": "Agencias y revendedores",
+      "section": "agencias",
+      "providers": [
+        "fulldoc",
+        "botsailor"
+      ],
+      "expected": 3,
+      "present": 3,
+      "missing": [],
+      "status": "pass",
+      "routes": [
+        {
+          "route": "agencias/marca-blanca-y-operacion",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "agencias",
+            "agencies",
+            "marca",
+            "blanca",
+            "operacion"
+          ]
+        },
+        {
+          "route": "agencias/cuentas-clientes-billing",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "agencias",
+            "agencies",
+            "cuentas",
+            "clientes",
+            "billing"
+          ]
+        },
+        {
+          "route": "agencias/paquetes-y-soporte",
+          "exists": true,
+          "source": "fulldoc",
+          "tags": [
+            "agencias",
+            "agencies",
+            "paquetes",
+            "soporte"
+          ]
+        }
+      ]
+    }
+  ],
+  "expectedRoutes": 63,
+  "presentRoutes": 63,
+  "missingRoutes": []
+}

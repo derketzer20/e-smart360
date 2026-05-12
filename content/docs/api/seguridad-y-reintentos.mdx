@@ -1,0 +1,91 @@
+---
+title: "Seguridad, firma y reintentos"
+description: "Buenas prácticas para tokens, firmas, retry, idempotencia y operación segura."
+section: "api-referencia"
+order: 60
+audience: ["developer", "agencia"]
+platform: ["chatbots"]
+useCase: ["support"]
+source: "fulldoc"
+canonicalGroup: "api-seguridad-y-reintentos"
+tags: ["api-referencia", "developers", "seguridad", "reintentos"]
+---
+
+Esta página cubre **Seguridad, firma y reintentos**. La referencia developer documenta cómo conectar eventos, webhooks y payloads con CRM, hojas, ERPs, sitios web y automatizaciones internas. El foco es claridad contractual, seguridad, trazabilidad, retry e idempotencia.
+
+## Modelo de eventos
+
+Los eventos deben ser pequeños, verificables y repetibles. Cada payload incluye un identificador único, fecha, origen, tipo de evento y objeto principal. Si el destino no responde, E-SMART360 debe poder reintentar sin duplicar efectos.
+
+## Payload de ejemplo
+
+```json
+{
+  "eventId": "evt_01HSMART360",
+  "event": "conversation.updated",
+  "source": "esmart360",
+  "occurredAt": "2026-06-18T16:00:00-06:00",
+  "customer": {
+    "name": "Cliente Demo",
+    "phone": "+525512345678",
+    "channel": "whatsapp"
+  },
+  "context": {
+    "route": "api/seguridad-y-reintentos",
+    "tags": ["api-referencia","developers","seguridad","reintentos"]
+  }
+}
+```
+
+## Seguridad y autenticación
+
+Usa HTTPS, tokens por entorno, rotación de secretos y firma HMAC cuando el destino lo permita. Nunca expongas tokens en documentación pública, capturas o ejemplos reales. Para producción, separa credenciales de desarrollo y mantén una lista de IPs, dominios y responsables técnicos.
+
+## Retry e idempotencia
+
+Los webhooks deben aceptar reintentos. El receptor debe usar `eventId` como clave idempotente para no crear dos tickets, dos pedidos o dos citas por el mismo evento. Recomendamos responder `2xx` solo cuando el evento fue validado y guardado; cualquier error temporal debe devolver `5xx` para permitir retry controlado.
+
+## Configuración recomendada
+
+1. **Define el objetivo operativo.** Establece si esta página se usará para vender, atender, confirmar citas, recuperar pedidos, calificar leads, crear comunidad o conectar sistemas. El objetivo evita flujos inflados y ayuda a medir resultados.
+2. **Identifica canales y responsables.** Decide qué canal inicia el proceso, qué equipo recibe excepciones y qué datos se guardan. En E-SMART360 conviene documentar propietario, horario, handoff y prioridad.
+3. **Prepara datos y permisos.** Reúne números, catálogos, plantillas, etiquetas, campos de CRM, calendario, credenciales o webhooks. La calidad del dato determina la calidad de la automatización.
+4. **Construye el flujo base.** Empieza con un recorrido corto: entrada, calificación, respuesta principal, confirmación y cierre. Después agrega ramificaciones para objeciones, errores y casos humanos.
+5. **Prueba con casos reales.** Valida desde móvil, escritorio y canal final. Revisa textos, botones, variables, permisos y escenarios donde el cliente no responde.
+6. **Publica con monitoreo.** Lanza por segmento, revisa métricas diariamente la primera semana y ajusta mensajes, tiempos, handoff y reglas de calidad.
+
+## Checklist de configuración
+
+- [ ] El objetivo de negocio está escrito en una frase y tiene métrica asociada.
+- [ ] La audiencia está segmentada por cliente nuevo, cliente activo, lead, paciente, alumno, comprador, agencia o developer.
+- [ ] Los canales conectados tienen permisos correctos y responsables claros.
+- [ ] Los mensajes usan tono E-SMART360: directo, útil, profesional y rebrandeado.
+- [ ] Las variables obligatorias tienen nombre, tipo, ejemplo y validación.
+- [ ] Existe handoff humano para excepciones, reclamos, urgencias o dudas sensibles.
+- [ ] La medición incluye conversión, tiempo de respuesta, errores, abandono y satisfacción.
+- [ ] Hay una prueba de extremo a extremo antes de activar campañas o tráfico real.
+
+## Troubleshooting
+
+- Si no llega el webhook, valida URL pública, certificado TLS, método HTTP y reglas de firewall.
+- Si llega duplicado, revisa idempotencia por `eventId`.
+- Si faltan campos, confirma versión del payload y permisos del canal.
+- Si el destino responde tarde, mueve procesos pesados a una cola interna.
+- Si hay errores de firma, verifica encoding, secreto activo y cuerpo original sin modificar.
+
+## Métricas que debes revisar
+
+| Métrica | Por qué importa | Acción si baja |
+| --- | --- | --- |
+| Tasa de respuesta | Indica si el mensaje abre conversación real | Ajustar copy, horario y segmento |
+| Conversión principal | Mide si el flujo logra venta, cita, registro o resolución | Simplificar pasos y mejorar CTA |
+| Tiempo de primera atención | Evalúa experiencia y carga operativa | Automatizar respuestas frecuentes o reforzar equipo |
+| Handoff a humano | Muestra complejidad y huecos del bot | Crear nuevas reglas, FAQs o etiquetas |
+| Errores o abandonos | Señala fricción técnica o de contenido | Probar variables, botones, permisos y enlaces |
+
+## Rutas relacionadas
+
+- [API y webhooks para developers](/docs/api/overview)
+- [Webhooks](/docs/api/webhooks)
+- [Eventos](/docs/api/eventos)
+- [Payloads JSON](/docs/api/payloads)

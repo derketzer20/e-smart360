@@ -1,0 +1,22 @@
+---
+title: "Flujos y canales"
+description: "Diseño de flujos, reglas por canal y buenas prácticas operativas."
+section: "chatbots-omnicanal"
+order: 2
+---
+
+Un buen flujo omnicanal separa **qué es igual en todos los canales** (identidad, tono, políticas) de **qué cambia** (ventanas de respuesta, formatos de medios, reglas de privacidad).
+
+## Principios
+
+1. **Una fuente de verdad** para FAQs y precios; evita copiar texto en varios nodos.
+2. **Handoff explícito** a humano con resumen de contexto para el agente.
+3. **Etiquetas y segmentación** desde el primer contacto para campañas posteriores (siempre con consentimiento).
+
+## Webhooks y automatización
+
+Los webhooks permiten sincronizar con CRM, hojas de cálculo o sistemas legacy. La tabla de eventos concreta depende de tu plan y conectores; la sección **API y webhooks** centralizará referencias técnicas cuando consolidemos endpoints de proveedor (p. ej. documentación tipo **proveedor omnicanal** para clientes técnicos).
+
+<Callout type="warn" title="Riesgo de bloqueos">
+Respeta políticas de uso de Meta y límites de mensajería. Los embudos agresivos sin opt-in claro degradan la cuenta y la experiencia del usuario final.
+</Callout>

@@ -1,0 +1,1009 @@
+{
+  "id": "consolto-documentation",
+  "provider": "consolto",
+  "url": "https://www.consolto.com/documentation",
+  "kind": "docs",
+  "platforms": [
+    "virtual-office"
+  ],
+  "sections": [
+    "oficina-virtual"
+  ],
+  "fetchedAt": "2026-05-12T07:18:49.253Z",
+  "cachedFile": ".source-docs/provider-cache/consolto__consolto-documentation__docs.json",
+  "status": 200,
+  "ok": true,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Hi there! How can we Help you?"
+    },
+    {
+      "level": 2,
+      "text": "Getting started"
+    },
+    {
+      "level": 2,
+      "text": "Installation &amp; setup"
+    },
+    {
+      "level": 2,
+      "text": "Troubleshooting"
+    },
+    {
+      "level": 2,
+      "text": "Get to know Consolto Features"
+    },
+    {
+      "level": 2,
+      "text": "Customizations"
+    },
+    {
+      "level": 2,
+      "text": "Multi agent"
+    },
+    {
+      "level": 2,
+      "text": "Integrations"
+    },
+    {
+      "level": 2,
+      "text": "Advanced Installation"
+    },
+    {
+      "level": 2,
+      "text": "Can we answer that question?"
+    },
+    {
+      "level": 4,
+      "text": "FIX"
+    }
+  ],
+  "links": [
+    {
+      "label": "How to add Consolto Video Chat to your website and business WebFont.load({ google: { families: [\"Montserrat:100,100itali",
+      "url": "https://cdn.prod.website-files.com/"
+    },
+    {
+      "label": "Pricing",
+      "url": "https://www.consolto.com/pricing"
+    },
+    {
+      "label": "Login",
+      "url": "https://app.consolto.com/login"
+    },
+    {
+      "label": "Web conferencing 1x1 and group video chat and screen sharing",
+      "url": "https://www.consolto.com/features/video-chat"
+    },
+    {
+      "label": "Appointment scheduling 2-way booking software",
+      "url": "https://www.consolto.com/features/scheduling"
+    },
+    {
+      "label": "Live chat Modern and rich messaging",
+      "url": "https://www.consolto.com/features/live-chat"
+    },
+    {
+      "label": "Cloud storage Recordings, files, images and all your customer data",
+      "url": "https://www.consolto.com/features/rich-communication-center"
+    },
+    {
+      "label": "Site analytics Actionable insights",
+      "url": "https://www.consolto.com/features/analytics"
+    },
+    {
+      "label": "Money transfer 1-click invoicing and charging",
+      "url": "https://www.consolto.com/features/payment-transfer"
+    },
+    {
+      "label": "Style and branding Part of your website. Your brand. Your company.",
+      "url": "https://www.consolto.com/features/custom-styling"
+    },
+    {
+      "label": "Integrations Keep your toolset with easy integrations.",
+      "url": "https://www.consolto.com/features/integrations"
+    },
+    {
+      "label": "All features",
+      "url": "https://www.consolto.com/features"
+    },
+    {
+      "label": "Website widget",
+      "url": "https://www.consolto.com/features/website-widget"
+    },
+    {
+      "label": "ClickNTalk pages",
+      "url": "https://www.consolto.com/features/clickntalk-page"
+    },
+    {
+      "label": "Expert Directory",
+      "url": "https://www.consolto.com/features/expert-directory"
+    },
+    {
+      "label": "Rich Backoffice",
+      "url": "https://www.consolto.com/features/rich-communication-center"
+    },
+    {
+      "label": "Sales If you find it challenging to sell products or services online, this is for you",
+      "url": "https://www.consolto.com/use-cases/sales"
+    },
+    {
+      "label": "Consulting If you use provide remote consulting services, this is for you",
+      "url": "https://www.consolto.com/use-cases/consulting"
+    },
+    {
+      "label": "Customer service Remove endless back-and-forth emails that waste time. Get on a meeting and solve the issue.",
+      "url": "https://www.consolto.com/use-cases/customer-service"
+    },
+    {
+      "label": "Health &amp; medical Telehealth , Hospitals , Pharmacies , Food supplements , Medical tourism",
+      "url": "https://www.consolto.com/industries/medical"
+    },
+    {
+      "label": "Ecommerce &amp; Retail Home appliances , Consumer electronics , Furniture",
+      "url": "https://www.consolto.com/industries/ecommerce"
+    },
+    {
+      "label": "Financial advice Tax , Loans, Mortgage , Investments",
+      "url": "https://www.consolto.com/industries/financial-services"
+    },
+    {
+      "label": "Aesthetics and Beauty Aesthetic clinics , Beauty products, Dermatology",
+      "url": "https://www.consolto.com/industries/medical"
+    },
+    {
+      "label": "Automotive OEMs , Auto dealerships , Auto services",
+      "url": "https://www.consolto.com/industries/car-dealers"
+    },
+    {
+      "label": "Education and academia Online admissions, Career advice",
+      "url": "https://www.consolto.com/industries/education"
+    },
+    {
+      "label": "Legal Law firms , Mediators",
+      "url": "https://www.consolto.com/industries/lawyers"
+    },
+    {
+      "label": "Tech SaaS , Medical devices",
+      "url": "https://www.consolto.com/industries/tech-companies"
+    },
+    {
+      "label": "Fashion Fashion stores , Independant fashion consultants",
+      "url": "https://www.consolto.com/industries/fashion"
+    },
+    {
+      "label": "Coaching and advice Business coaching, Life coaching",
+      "url": "https://www.consolto.com/industries/consultant"
+    },
+    {
+      "label": "Insurance Life insurance, Health insurance",
+      "url": "https://www.consolto.com/industries/insurance"
+    },
+    {
+      "label": "Home services Plumbers , Technicians, HVAC",
+      "url": "https://www.consolto.com/industries/home-maintenance-and-repair"
+    },
+    {
+      "label": "Blog Every meeting has a story. Visit our blog",
+      "url": "https://www.consolto.com/blog"
+    },
+    {
+      "label": "FAQ Frequently Asked Questions",
+      "url": "https://www.consolto.com/faq"
+    },
+    {
+      "label": "Documentation Support and help articles. Optimize your Consolto!",
+      "url": "https://www.consolto.com/documentation"
+    },
+    {
+      "label": "Contact us Our widget is always open for you",
+      "url": "https://www.consolto.com/contact"
+    },
+    {
+      "label": "Any-platform installation Installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/google-tag-manager-installation"
+    },
+    {
+      "label": "Wordpress plugin Wordpress installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/wordpress-installation-instructions"
+    },
+    {
+      "label": "Shopify plugin Shopify installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/how-to-embed-consolto-video-chat-on-your-shopify-store"
+    },
+    {
+      "label": "Wix installation Wix installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/wix-installation-instructions"
+    },
+    {
+      "label": "What Sales Leaders Need to Know to Win in 2025 December 3, 2024",
+      "url": "https://www.consolto.com/blog/what-sales-leaders-need-to-know-to-win-in-2025"
+    },
+    {
+      "label": "Five Ways to Boost Your Sales Reps’ Performance with Consolto October 2, 2024",
+      "url": "https://www.consolto.com/blog/five-ways-to-boost-your-sales-reps-performance-with-consolto"
+    },
+    {
+      "label": "Start today",
+      "url": "https://app.consolto.com/registration"
+    },
+    {
+      "label": "Desktop and mobile apps",
+      "url": "https://www.consolto.com/knowledge-posts/desktop-and-mobile-apps"
+    },
+    {
+      "label": "Setup Ooni ai assistant",
+      "url": "https://www.consolto.com/knowledge-posts/setup-ooni-ai-assistant"
+    },
+    {
+      "label": "Team conversation features",
+      "url": "https://www.consolto.com/knowledge-posts/team-conversation-features"
+    },
+    {
+      "label": "Zapier integration",
+      "url": "https://www.consolto.com/knowledge-posts/zapier-integration"
+    },
+    {
+      "label": "Your first Consolto ClickNTalk conference call",
+      "url": "https://www.consolto.com/knowledge-posts/your-first-consolto-personal-page-conference-call"
+    },
+    {
+      "label": "Whatsapp and Facebook Messenger",
+      "url": "https://www.consolto.com/knowledge-posts/whatsapp-and-fb-messenger"
+    },
+    {
+      "label": "Your direct ClickNTalk Page",
+      "url": "https://www.consolto.com/knowledge-posts/your-personal-page"
+    },
+    {
+      "label": "Your first Consolto Plugin video-conference call",
+      "url": "https://www.consolto.com/knowledge-posts/your-first-consolto-plugin-video-conference-call"
+    },
+    {
+      "label": "Wordpress Installation Troubleshooting",
+      "url": "https://www.consolto.com/knowledge-posts/wordpress-installation-troubleshooting"
+    },
+    {
+      "label": "Wordpress Installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/wordpress-installation-instructions"
+    },
+    {
+      "label": "Wix Installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/wix-installation-instructions"
+    },
+    {
+      "label": "Setup your agents&#x27; widget and ClickNTalk page",
+      "url": "https://www.consolto.com/knowledge-posts/setup-your-agents-widget-and-clickntalk-page"
+    },
+    {
+      "label": "Which devices and browsers support Consolto?",
+      "url": "https://www.consolto.com/knowledge-posts/which-devices-and-browsers-support-consolto"
+    },
+    {
+      "label": "Automatic Messages and texts",
+      "url": "https://www.consolto.com/knowledge-posts/welcome-website-visitors-with-custom-welcome-messages"
+    },
+    {
+      "label": "Webhooks",
+      "url": "https://www.consolto.com/knowledge-posts/webhooks"
+    },
+    {
+      "label": "Video calls",
+      "url": "https://www.consolto.com/knowledge-posts/videocalls"
+    },
+    {
+      "label": "Web Frontend API",
+      "url": "https://www.consolto.com/knowledge-posts/web-frontend-api"
+    },
+    {
+      "label": "Use CNAME for your ClickNTalk page",
+      "url": "https://www.consolto.com/knowledge-posts/use-cname-for-your-clickntalk-pages"
+    },
+    {
+      "label": "Video Call Troubleshooting",
+      "url": "https://www.consolto.com/knowledge-posts/video-call-troubleshooting"
+    },
+    {
+      "label": "Triggering the Consolto widget programatically",
+      "url": "https://www.consolto.com/knowledge-posts/triggering-the-consolto-widget-programatically"
+    },
+    {
+      "label": "Single Agent VS Multi Agent",
+      "url": "https://www.consolto.com/knowledge-posts/single-agent-vs-multi-agent"
+    },
+    {
+      "label": "Sending user-data from website to widget",
+      "url": "https://www.consolto.com/knowledge-posts/sending-user-data-from-website-to-widget"
+    },
+    {
+      "label": "Setting up the features and texts",
+      "url": "https://www.consolto.com/knowledge-posts/setting-up-the-features-and-texts"
+    },
+    {
+      "label": "Screen sharing",
+      "url": "https://www.consolto.com/knowledge-posts/screen-sharing"
+    },
+    {
+      "label": "Appointment scheduling",
+      "url": "https://www.consolto.com/knowledge-posts/scheduling"
+    },
+    {
+      "label": "Sending user-data from ClickNTalk link",
+      "url": "https://www.consolto.com/knowledge-posts/sending-user-data-from-clickntalk-link"
+    },
+    {
+      "label": "Screen share troubleshooting",
+      "url": "https://www.consolto.com/knowledge-posts/screen-share-troubleshooting"
+    },
+    {
+      "label": "Privacy features",
+      "url": "https://www.consolto.com/knowledge-posts/privacy-features"
+    },
+    {
+      "label": "Phone number",
+      "url": "https://www.consolto.com/knowledge-posts/phone-number"
+    },
+    {
+      "label": "Paypal",
+      "url": "https://www.consolto.com/knowledge-posts/paypal"
+    },
+    {
+      "label": "Multi Agent Settings",
+      "url": "https://www.consolto.com/knowledge-posts/multi-agent-settings"
+    },
+    {
+      "label": "Page Matches",
+      "url": "https://www.consolto.com/knowledge-posts/page-matches"
+    },
+    {
+      "label": "Listening to widget events",
+      "url": "https://www.consolto.com/knowledge-posts/listening-to-widget-events"
+    },
+    {
+      "label": "Manage chats/ calls in Consolto chat center",
+      "url": "https://www.consolto.com/knowledge-posts/manage-chats-calls-in-consolto-chat-center"
+    },
+    {
+      "label": "Overview Tab",
+      "url": "https://www.consolto.com/knowledge-posts/overview-tab"
+    },
+    {
+      "label": "Live Chat",
+      "url": "https://www.consolto.com/knowledge-posts/live-chat"
+    },
+    {
+      "label": "How to Grant Camera and Microphone Permissions for Website Video Calls With Consolto",
+      "url": "https://www.consolto.com/knowledge-posts/how-to-grant-camera-and-microphone-permissions-for-website-video-calls-with-consolto"
+    },
+    {
+      "label": "Get paid for your video chat sessions",
+      "url": "https://www.consolto.com/knowledge-posts/get-paid-for-your-video-chat-sessions"
+    },
+    {
+      "label": "Installing with AMP support",
+      "url": "https://www.consolto.com/knowledge-posts/installing-with-amp-support"
+    },
+    {
+      "label": "How to embed Consolto video chat on your shopify store?",
+      "url": "https://www.consolto.com/knowledge-posts/how-to-embed-consolto-video-chat-on-your-shopify-store"
+    },
+    {
+      "label": "Google Tag Manager Installation",
+      "url": "https://www.consolto.com/knowledge-posts/google-tag-manager-installation"
+    },
+    {
+      "label": "Group Meetings",
+      "url": "https://www.consolto.com/knowledge-posts/group-meetings"
+    },
+    {
+      "label": "Google Calendar Integration",
+      "url": "https://www.consolto.com/knowledge-posts/google-calendar-integration"
+    },
+    {
+      "label": "Google analytics events",
+      "url": "https://www.consolto.com/knowledge-posts/google-analytics-events"
+    },
+    {
+      "label": "General Website Installation Troubleshooting",
+      "url": "https://www.consolto.com/knowledge-posts/general-website-installation-troubleshooting"
+    },
+    {
+      "label": "Fetching agent availability programatically",
+      "url": "https://www.consolto.com/knowledge-posts/fetching-agent-availability-programatically"
+    },
+    {
+      "label": "File sharing",
+      "url": "https://www.consolto.com/knowledge-posts/file-sharing"
+    },
+    {
+      "label": "General website installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/general-website-installation-instructions"
+    },
+    {
+      "label": "Embed your ClickNTalk page as an iframe",
+      "url": "https://www.consolto.com/knowledge-posts/embed-your-clickntalk-page-as-an-iframe"
+    },
+    {
+      "label": "Customize widget appearance",
+      "url": "https://www.consolto.com/knowledge-posts/customize-widget-appearance"
+    },
+    {
+      "label": "Dashboard-header",
+      "url": "https://www.consolto.com/knowledge-posts/dashboard-header"
+    },
+    {
+      "label": "Dynamic Forms",
+      "url": "https://www.consolto.com/knowledge-posts/dynamic-forms"
+    },
+    {
+      "label": "Bandwidth requirements to use Consolto",
+      "url": "https://www.consolto.com/knowledge-posts/bandwidth-requirements-to-use-consolto"
+    },
+    {
+      "label": "Direct Action Links - ClickNTalk Page",
+      "url": "https://www.consolto.com/knowledge-posts/direct-action-links-personal-page"
+    },
+    {
+      "label": "Direct Action Links - Widget",
+      "url": "https://www.consolto.com/knowledge-posts/direct-action-links-widget"
+    },
+    {
+      "label": "Connecting SMTP Email to Consolto",
+      "url": "https://www.consolto.com/knowledge-posts/connecting-smtp-email-to-consolto"
+    },
+    {
+      "label": "Consolto product tour",
+      "url": "https://www.consolto.com/knowledge-posts/consolto-product-tour"
+    },
+    {
+      "label": "Contact form",
+      "url": "https://www.consolto.com/knowledge-posts/contact-form"
+    },
+    {
+      "label": "Using Website Custom Buttons",
+      "url": "https://www.consolto.com/knowledge-posts/custom-buttons"
+    },
+    {
+      "label": "Choose action when you are not available",
+      "url": "https://www.consolto.com/knowledge-posts/choose-action-when-you-are-not-available"
+    },
+    {
+      "label": "Active engager - Give remote an in-store feeling",
+      "url": "https://www.consolto.com/knowledge-posts/active-engager"
+    },
+    {
+      "label": "Brief intro to the dashboard tabs",
+      "url": "https://www.consolto.com/knowledge-posts/brief-intro-to-the-dashboard-tabs"
+    },
+    {
+      "label": "3D-Sense",
+      "url": "https://www.consolto.com/knowledge-posts/3d-sense"
+    },
+    {
+      "label": "Availability Options",
+      "url": "https://www.consolto.com/knowledge-posts/availability-options"
+    },
+    {
+      "label": "Availability Cues on website elements",
+      "url": "https://www.consolto.com/knowledge-posts/availability-cues-on-website-elements"
+    },
+    {
+      "label": "Your first Consolto Plugin video-conference call",
+      "url": "https://www.consolto.com/knowledge-posts/your-first-consolto-plugin-video-conference-call"
+    },
+    {
+      "label": "Your first Consolto ClickNTalk conference call",
+      "url": "https://www.consolto.com/knowledge-posts/your-first-consolto-personal-page-conference-call"
+    },
+    {
+      "label": "Brief intro to the dashboard tabs",
+      "url": "https://www.consolto.com/knowledge-posts/brief-intro-to-the-dashboard-tabs"
+    },
+    {
+      "label": "Availability Options",
+      "url": "https://www.consolto.com/knowledge-posts/availability-options"
+    },
+    {
+      "label": "Desktop and mobile apps",
+      "url": "https://www.consolto.com/knowledge-posts/desktop-and-mobile-apps"
+    },
+    {
+      "label": "How to embed Consolto video chat on your shopify store?",
+      "url": "https://www.consolto.com/knowledge-posts/how-to-embed-consolto-video-chat-on-your-shopify-store"
+    },
+    {
+      "label": "General website installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/general-website-installation-instructions"
+    },
+    {
+      "label": "Google Tag Manager Installation",
+      "url": "https://www.consolto.com/knowledge-posts/google-tag-manager-installation"
+    },
+    {
+      "label": "Wordpress Installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/wordpress-installation-instructions"
+    },
+    {
+      "label": "Wix Installation instructions",
+      "url": "https://www.consolto.com/knowledge-posts/wix-installation-instructions"
+    },
+    {
+      "label": "Bandwidth requirements to use Consolto",
+      "url": "https://www.consolto.com/knowledge-posts/bandwidth-requirements-to-use-consolto"
+    },
+    {
+      "label": "How to Grant Camera and Microphone Permissions for Website Video Calls With Consolto",
+      "url": "https://www.consolto.com/knowledge-posts/how-to-grant-camera-and-microphone-permissions-for-website-video-calls-with-consolto"
+    },
+    {
+      "label": "Screen share troubleshooting",
+      "url": "https://www.consolto.com/knowledge-posts/screen-share-troubleshooting"
+    },
+    {
+      "label": "Video Call Troubleshooting",
+      "url": "https://www.consolto.com/knowledge-posts/video-call-troubleshooting"
+    },
+    {
+      "label": "Which devices and browsers support Consolto?",
+      "url": "https://www.consolto.com/knowledge-posts/which-devices-and-browsers-support-consolto"
+    },
+    {
+      "label": "General Website Installation Troubleshooting",
+      "url": "https://www.consolto.com/knowledge-posts/general-website-installation-troubleshooting"
+    },
+    {
+      "label": "Wordpress Installation Troubleshooting",
+      "url": "https://www.consolto.com/knowledge-posts/wordpress-installation-troubleshooting"
+    },
+    {
+      "label": "Consolto product tour",
+      "url": "https://www.consolto.com/knowledge-posts/consolto-product-tour"
+    },
+    {
+      "label": "Setup Ooni ai assistant",
+      "url": "https://www.consolto.com/knowledge-posts/setup-ooni-ai-assistant"
+    },
+    {
+      "label": "Overview Tab",
+      "url": "https://www.consolto.com/knowledge-posts/overview-tab"
+    },
+    {
+      "label": "Privacy features",
+      "url": "https://www.consolto.com/knowledge-posts/privacy-features"
+    },
+    {
+      "label": "Your direct ClickNTalk Page",
+      "url": "https://www.consolto.com/knowledge-posts/your-personal-page"
+    },
+    {
+      "label": "Video calls",
+      "url": "https://www.consolto.com/knowledge-posts/videocalls"
+    },
+    {
+      "label": "Group Meetings",
+      "url": "https://www.consolto.com/knowledge-posts/group-meetings"
+    },
+    {
+      "label": "Screen sharing",
+      "url": "https://www.consolto.com/knowledge-posts/screen-sharing"
+    },
+    {
+      "label": "Live Chat",
+      "url": "https://www.consolto.com/knowledge-posts/live-chat"
+    },
+    {
+      "label": "Manage chats/ calls in Consolto chat center",
+      "url": "https://www.consolto.com/knowledge-posts/manage-chats-calls-in-consolto-chat-center"
+    },
+    {
+      "label": "Appointment scheduling",
+      "url": "https://www.consolto.com/knowledge-posts/scheduling"
+    },
+    {
+      "label": "Active engager - Give remote an in-store feeling",
+      "url": "https://www.consolto.com/knowledge-posts/active-engager"
+    },
+    {
+      "label": "File sharing",
+      "url": "https://www.consolto.com/knowledge-posts/file-sharing"
+    },
+    {
+      "label": "3D-Sense",
+      "url": "https://www.consolto.com/knowledge-posts/3d-sense"
+    },
+    {
+      "label": "Get paid for your video chat sessions",
+      "url": "https://www.consolto.com/knowledge-posts/get-paid-for-your-video-chat-sessions"
+    },
+    {
+      "label": "Contact form",
+      "url": "https://www.consolto.com/knowledge-posts/contact-form"
+    },
+    {
+      "label": "Whatsapp and Facebook Messenger",
+      "url": "https://www.consolto.com/knowledge-posts/whatsapp-and-fb-messenger"
+    },
+    {
+      "label": "Phone number",
+      "url": "https://www.consolto.com/knowledge-posts/phone-number"
+    },
+    {
+      "label": "Dynamic Forms",
+      "url": "https://www.consolto.com/knowledge-posts/dynamic-forms"
+    },
+    {
+      "label": "Customize widget appearance",
+      "url": "https://www.consolto.com/knowledge-posts/customize-widget-appearance"
+    },
+    {
+      "label": "Setting up the features and texts",
+      "url": "https://www.consolto.com/knowledge-posts/setting-up-the-features-and-texts"
+    },
+    {
+      "label": "Automatic Messages and texts",
+      "url": "https://www.consolto.com/knowledge-posts/welcome-website-visitors-with-custom-welcome-messages"
+    },
+    {
+      "label": "Choose action when you are not available",
+      "url": "https://www.consolto.com/knowledge-posts/choose-action-when-you-are-not-available"
+    },
+    {
+      "label": "Single Agent VS Multi Agent",
+      "url": "https://www.consolto.com/knowledge-posts/single-agent-vs-multi-agent"
+    },
+    {
+      "label": "Multi Agent Settings",
+      "url": "https://www.consolto.com/knowledge-posts/multi-agent-settings"
+    },
+    {
+      "label": "Setup your agents&#x27; widget and ClickNTalk page",
+      "url": "https://www.consolto.com/knowledge-posts/setup-your-agents-widget-and-clickntalk-page"
+    },
+    {
+      "label": "Team conversation features",
+      "url": "https://www.consolto.com/knowledge-posts/team-conversation-features"
+    },
+    {
+      "label": "Zapier integration",
+      "url": "https://www.consolto.com/knowledge-posts/zapier-integration"
+    },
+    {
+      "label": "Webhooks",
+      "url": "https://www.consolto.com/knowledge-posts/webhooks"
+    },
+    {
+      "label": "Connecting SMTP Email to Consolto",
+      "url": "https://www.consolto.com/knowledge-posts/connecting-smtp-email-to-consolto"
+    },
+    {
+      "label": "Paypal",
+      "url": "https://www.consolto.com/knowledge-posts/paypal"
+    },
+    {
+      "label": "Web Frontend API",
+      "url": "https://www.consolto.com/knowledge-posts/web-frontend-api"
+    },
+    {
+      "label": "Google analytics events",
+      "url": "https://www.consolto.com/knowledge-posts/google-analytics-events"
+    },
+    {
+      "label": "Google Calendar Integration",
+      "url": "https://www.consolto.com/knowledge-posts/google-calendar-integration"
+    },
+    {
+      "label": "Page Matches",
+      "url": "https://www.consolto.com/knowledge-posts/page-matches"
+    },
+    {
+      "label": "Use CNAME for your ClickNTalk page",
+      "url": "https://www.consolto.com/knowledge-posts/use-cname-for-your-clickntalk-pages"
+    },
+    {
+      "label": "Using Website Custom Buttons",
+      "url": "https://www.consolto.com/knowledge-posts/custom-buttons"
+    },
+    {
+      "label": "Direct Action Links - Widget",
+      "url": "https://www.consolto.com/knowledge-posts/direct-action-links-widget"
+    },
+    {
+      "label": "Direct Action Links - ClickNTalk Page",
+      "url": "https://www.consolto.com/knowledge-posts/direct-action-links-personal-page"
+    },
+    {
+      "label": "Sending user-data from ClickNTalk link",
+      "url": "https://www.consolto.com/knowledge-posts/sending-user-data-from-clickntalk-link"
+    },
+    {
+      "label": "Sending user-data from website to widget",
+      "url": "https://www.consolto.com/knowledge-posts/sending-user-data-from-website-to-widget"
+    },
+    {
+      "label": "Triggering the Consolto widget programatically",
+      "url": "https://www.consolto.com/knowledge-posts/triggering-the-consolto-widget-programatically"
+    },
+    {
+      "label": "Availability Cues on website elements",
+      "url": "https://www.consolto.com/knowledge-posts/availability-cues-on-website-elements"
+    },
+    {
+      "label": "Fetching agent availability programatically",
+      "url": "https://www.consolto.com/knowledge-posts/fetching-agent-availability-programatically"
+    },
+    {
+      "label": "Listening to widget events",
+      "url": "https://www.consolto.com/knowledge-posts/listening-to-widget-events"
+    },
+    {
+      "label": "Embed your ClickNTalk page as an iframe",
+      "url": "https://www.consolto.com/knowledge-posts/embed-your-clickntalk-page-as-an-iframe"
+    },
+    {
+      "label": "Installing with AMP support",
+      "url": "https://www.consolto.com/knowledge-posts/installing-with-amp-support"
+    },
+    {
+      "label": "",
+      "url": "https://www.consolto.com/"
+    },
+    {
+      "label": "Desktop &amp; Mobile apps",
+      "url": "https://www.consolto.com/features/desktop-and-mobile-apps"
+    },
+    {
+      "label": "",
+      "url": "https://apps.apple.com/us/app/consolto-video-chat/id1584996493"
+    },
+    {
+      "label": "",
+      "url": "https://play.google.com/store/apps/details?id=com.consolto.app&amp;pli=1"
+    },
+    {
+      "label": "",
+      "url": "https://www.facebook.com/ConsoltoVideoChat/"
+    },
+    {
+      "label": "",
+      "url": "https://www.linkedin.com/company/consolto-com"
+    },
+    {
+      "label": "",
+      "url": "https://www.youtube.com/channel/UCza9P-9s4OjwAmcCoEtbsCw"
+    },
+    {
+      "label": "Sales",
+      "url": "https://www.consolto.com/use-cases/sales"
+    },
+    {
+      "label": "Consulting",
+      "url": "https://www.consolto.com/use-cases/consulting"
+    },
+    {
+      "label": "Customer service",
+      "url": "https://www.consolto.com/use-cases/customer-service"
+    },
+    {
+      "label": "Health &amp; medical",
+      "url": "https://www.consolto.com/industries/medical"
+    },
+    {
+      "label": "Ecommerce &amp; Retail",
+      "url": "https://www.consolto.com/industries/ecommerce"
+    },
+    {
+      "label": "Financial advisory",
+      "url": "https://www.consolto.com/industries/financial-services"
+    },
+    {
+      "label": "Automotive",
+      "url": "https://www.consolto.com/industries/car-dealers"
+    },
+    {
+      "label": "Academics",
+      "url": "https://www.consolto.com/industries/education"
+    },
+    {
+      "label": "Legal",
+      "url": "https://www.consolto.com/industries/lawyers"
+    },
+    {
+      "label": "Tech",
+      "url": "https://www.consolto.com/industries/tech-companies"
+    },
+    {
+      "label": "Fashion",
+      "url": "https://www.consolto.com/industries/fashion"
+    },
+    {
+      "label": "Coaching and advice",
+      "url": "https://www.consolto.com/use-cases/consulting"
+    },
+    {
+      "label": "Insurance",
+      "url": "https://www.consolto.com/industries/insurance"
+    },
+    {
+      "label": "Home services",
+      "url": "https://www.consolto.com/industries/home-maintenance-and-repair"
+    },
+    {
+      "label": "Website widget",
+      "url": "https://www.consolto.com/features/website-widget"
+    },
+    {
+      "label": "ClickNTalk page",
+      "url": "https://www.consolto.com/features/clickntalk-page"
+    },
+    {
+      "label": "Expert Directory",
+      "url": "https://www.consolto.com/features/expert-directory"
+    },
+    {
+      "label": "Rich communication center",
+      "url": "https://www.consolto.com/features/rich-communication-center"
+    },
+    {
+      "label": "Video Chat",
+      "url": "https://www.consolto.com/features/video-chat"
+    },
+    {
+      "label": "Scheduling",
+      "url": "https://www.consolto.com/features/scheduling"
+    },
+    {
+      "label": "Group Meetings",
+      "url": "https://www.consolto.com/features/group-meetings"
+    },
+    {
+      "label": "Live Chat",
+      "url": "https://www.consolto.com/features/live-chat"
+    },
+    {
+      "label": "Ooni AI",
+      "url": "https://www.consolto.com/features/ooni-ai"
+    },
+    {
+      "label": "Screen sharing",
+      "url": "https://www.consolto.com/features/screen-sharing"
+    },
+    {
+      "label": "3D-Sense",
+      "url": "https://www.consolto.com/features/3dsense"
+    },
+    {
+      "label": "Custom styling",
+      "url": "https://www.consolto.com/features/custom-styling"
+    },
+    {
+      "label": "Analytics",
+      "url": "https://www.consolto.com/features/analytics"
+    },
+    {
+      "label": "Payment transfer",
+      "url": "https://www.consolto.com/features/payment-transfer"
+    },
+    {
+      "label": "Facebook messenger",
+      "url": "https://www.consolto.com/features/facebook-messenger"
+    },
+    {
+      "label": "Whatsapp",
+      "url": "https://www.consolto.com/features/whatsapp"
+    },
+    {
+      "label": "File transfer",
+      "url": "https://www.consolto.com/features/file-transfer"
+    },
+    {
+      "label": "Voice inbox",
+      "url": "https://www.consolto.com/features/voice-inbox"
+    },
+    {
+      "label": "Contact Form",
+      "url": "https://www.consolto.com/features/contact-form"
+    },
+    {
+      "label": "Multi Agent",
+      "url": "https://www.consolto.com/features/multi-agent"
+    },
+    {
+      "label": "All features",
+      "url": "https://www.consolto.com/features"
+    },
+    {
+      "label": "Help center",
+      "url": "https://www.consolto.com/documentation"
+    },
+    {
+      "label": "Blog",
+      "url": "https://www.consolto.com/blog"
+    },
+    {
+      "label": "FAQ",
+      "url": "https://www.consolto.com/faq"
+    },
+    {
+      "label": "Release notes",
+      "url": "https://www.consolto.com/release-notes"
+    },
+    {
+      "label": "Installation",
+      "url": "https://www.consolto.com/knowledge-posts/general-website-installation-instructions"
+    },
+    {
+      "label": "Wordpress plugin",
+      "url": "https://wordpress.org/plugins/consolto-videochat/"
+    },
+    {
+      "label": "Shopify plugin",
+      "url": "https://apps.shopify.com/consolto-videochat"
+    },
+    {
+      "label": "Wix installation",
+      "url": "https://www.consolto.com/knowledge-posts/wix-installation-instructions"
+    },
+    {
+      "label": "Install on any platform",
+      "url": "https://www.consolto.com/knowledge-posts/google-tag-manager-installation"
+    },
+    {
+      "label": "All integrations",
+      "url": "https://www.consolto.com/features/integrations"
+    },
+    {
+      "label": "Zapier",
+      "url": "https://www.consolto.com/knowledge-posts/zapier-integration"
+    },
+    {
+      "label": "Webhooks",
+      "url": "https://www.consolto.com/knowledge-posts/webhooks"
+    },
+    {
+      "label": "Google analytics",
+      "url": "https://www.consolto.com/knowledge-posts/google-analytics-events"
+    },
+    {
+      "label": "Google Calendar",
+      "url": "https://www.consolto.com/knowledge-posts/google-calendar-integration"
+    },
+    {
+      "label": "Paypal",
+      "url": "https://www.consolto.com/knowledge-posts/paypal"
+    },
+    {
+      "label": "Pricing",
+      "url": "https://www.consolto.com/pricing"
+    },
+    {
+      "label": "About",
+      "url": "https://www.consolto.com/about"
+    },
+    {
+      "label": "Press &amp; News",
+      "url": "https://www.consolto.com/press-and-news"
+    },
+    {
+      "label": "Partners",
+      "url": "https://www.consolto.com/partners/partner-program"
+    },
+    {
+      "label": "Contact",
+      "url": "https://www.consolto.com/contact"
+    },
+    {
+      "label": "Cookies",
+      "url": "https://www.consolto.com/legal/cookies-policy"
+    },
+    {
+      "label": "Terms of Use",
+      "url": "https://www.consolto.com/legal/terms-of-use"
+    },
+    {
+      "label": "Privacy Policy",
+      "url": "https://www.consolto.com/legal/privacy-policy"
+    }
+  ],
+  "text": "How to add Consolto Video Chat to your website and business Product Use cases Resources Pricing Login Back Tightly bundled features Web conferencing 1x1 and group video chat and screen sharing Appointment scheduling 2-way booking software Live chat Modern and rich messaging Cloud storage Recordings, files, images and all your customer data Site analytics Actionable insights Money transfer 1-click invoicing and charging Style and branding Part of your website. Your brand. Your company. Integrations Keep your toolset with easy integrations. All features What you get Website widget ClickNTalk pages Expert Directory Rich Backoffice Use Cases Sales If you find it challenging to sell products or services online, this is for you Consulting If you use provide remote consulting services, this is for you Customer service Remove endless back-and-forth emails that waste time. Get on a meeting and solve the issue. Industries Health &amp; medical Telehealth , Hospitals , Pharmacies , Food supplements , Medical tourism Ecommerce &amp; Retail Home appliances , Consumer electronics , Furniture Financial advice Tax , Loans, Mortgage , Investments Aesthetics and Beauty Aesthetic clinics , Beauty products, Dermatology Automotive OEMs , Auto dealerships , Auto services Education and academia Online admissions, Career advice Legal Law firms , Mediators Tech SaaS , Medical devices Fashion Fashion stores , Independant fashion consultants Coaching and advice Business coaching, Life coaching Insurance Life insurance, Health insurance Home services Plumbers , Technicians, HVAC Resources &amp; Support Blog Every meeting has a story. Visit our blog FAQ Frequently Asked Questions Documentation Support and help articles. Optimize your Consolto! Contact us Our widget is always open for you Installation Any-platform installation Installation instructions Wordpress plugin Wordpress installation instructions Shopify plugin Shopify installation instructions Wix installation Wix installation instructions Recent Blogs What Sales Leaders Need to Know to Win in 2025 December 3, 2024 Five Ways to Boost Your Sales Reps’ Performance with Consolto October 2, 2024 Start today Hi there! How can we Help you? Search Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Desktop and mobile apps www.consolto.com/knowledge-posts/ desktop-and-mobile-apps How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Setup Ooni ai assistant www.consolto.com/knowledge-posts/ setup-ooni-ai-assistant How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Team conversation features www.consolto.com/knowledge-posts/ team-conversation-features How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Zapier integration www.consolto.com/knowledge-posts/ zapier-integration How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Your first Consolto ClickNTalk conference call www.consolto.com/knowledge-posts/ your-first-consolto-personal-page-conference-call How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Whatsapp and Facebook Messenger www.consolto.com/knowledge-posts/ whatsapp-and-fb-messenger How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Your direct ClickNTalk Page www.consolto.com/knowledge-posts/ your-personal-page How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Your first Consolto Plugin video-conference call www.consolto.com/knowledge-posts/ your-first-consolto-plugin-video-conference-call How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Wordpress Installation Troubleshooting www.consolto.com/knowledge-posts/ wordpress-installation-troubleshooting How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Wordpress Installation instructions www.consolto.com/knowledge-posts/ wordpress-installation-instructions How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Wix Installation instructions www.consolto.com/knowledge-posts/ wix-installation-instructions How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Setup your agents&#x27; widget and ClickNTalk page www.consolto.com/knowledge-posts/ setup-your-agents-widget-and-clickntalk-page How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Which devices and browsers support Consolto? www.consolto.com/knowledge-posts/ which-devices-and-browsers-support-consolto How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Automatic Messages and texts www.consolto.com/knowledge-posts/ welcome-website-visitors-with-custom-welcome-messages How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Webhooks www.consolto.com/knowledge-posts/ webhooks How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Video calls www.consolto.com/knowledge-posts/ videocalls How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Web Frontend API www.consolto.com/knowledge-posts/ web-frontend-api How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Use CNAME for your ClickNTalk page www.consolto.com/knowledge-posts/ use-cname-for-your-clickntalk-pages How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Video Call Troubleshooting www.consolto.com/knowledge-posts/ video-call-troubleshooting How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Triggering the Consolto widget programatically www.consolto.com/knowledge-posts/ triggering-the-consolto-widget-programatically How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Single Agent VS Multi Agent www.consolto.com/knowledge-posts/ single-agent-vs-multi-agent How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Sending user-data from website to widget www.consolto.com/knowledge-posts/ sending-user-data-from-website-to-widget How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Setting up the features and texts www.consolto.com/knowledge-posts/ setting-up-the-features-and-texts How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Screen sharing www.consolto.com/knowledge-posts/ screen-sharing How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Appointment scheduling www.consolto.com/knowledge-posts/ scheduling How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Sending user-data from ClickNTalk link www.consolto.com/knowledge-posts/ sending-user-data-from-clickntalk-link How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Screen share troubleshooting www.consolto.com/knowledge-posts/ screen-share-troubleshooting How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Privacy features www.consolto.com/knowledge-posts/ privacy-features How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Phone number www.consolto.com/knowledge-posts/ phone-number How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Paypal www.consolto.com/knowledge-posts/ paypal How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Multi Agent Settings www.consolto.com/knowledge-posts/ multi-agent-settings How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Page Matches www.consolto.com/knowledge-posts/ page-matches How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Listening to widget events www.consolto.com/knowledge-posts/ listening-to-widget-events How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Manage chats/ calls in Consolto chat center www.consolto.com/knowledge-posts/ manage-chats-calls-in-consolto-chat-center How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Overview Tab www.consolto.com/knowledge-posts/ overview-tab How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Live Chat www.consolto.com/knowledge-posts/ live-chat How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… How to Grant Camera and Microphone Permissions for Website Video Calls With Consolto www.consolto.com/knowledge-posts/ how-to-grant-camera-and-microphone-permissions-for-website-video-calls-with-consolto How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Get paid for your video chat sessions www.consolto.com/knowledge-posts/ get-paid-for-your-video-chat-sessions How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Installing with AMP support www.consolto.com/knowledge-posts/ installing-with-amp-support How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… How to embed Consolto video chat on your shopify store? www.consolto.com/knowledge-posts/ how-to-embed-consolto-video-chat-on-your-shopify-store How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Google Tag Manager Installation www.consolto.com/knowledge-posts/ google-tag-manager-installation How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Group Meetings www.consolto.com/knowledge-posts/ group-meetings How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Google Calendar Integration www.consolto.com/knowledge-posts/ google-calendar-integration How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Google analytics events www.consolto.com/knowledge-posts/ google-analytics-events How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… General Website Installation Troubleshooting www.consolto.com/knowledge-posts/ general-website-installation-troubleshooting How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Fetching agent availability programatically www.consolto.com/knowledge-posts/ fetching-agent-availability-programatically How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… File sharing www.consolto.com/knowledge-posts/ file-sharing How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… General website installation instructions www.consolto.com/knowledge-posts/ general-website-installation-instructions How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Embed your ClickNTalk page as an iframe www.consolto.com/knowledge-posts/ embed-your-clickntalk-page-as-an-iframe How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Customize widget appearance www.consolto.com/knowledge-posts/ customize-widget-appearance How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Dashboard-header www.consolto.com/knowledge-posts/ dashboard-header How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Dynamic Forms www.consolto.com/knowledge-posts/ dynamic-forms How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Bandwidth requirements to use Consolto www.consolto.com/knowledge-posts/ bandwidth-requirements-to-use-consolto How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Direct Action Links - ClickNTalk Page www.consolto.com/knowledge-posts/ direct-action-links-personal-page How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Direct Action Links - Widget www.consolto.com/knowledge-posts/ direct-action-links-widget How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Connecting SMTP Email to Consolto www.consolto.com/knowledge-posts/ connecting-smtp-email-to-consolto How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Consolto product tour www.consolto.com/knowledge-posts/ consolto-product-tour How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Contact form www.consolto.com/knowledge-posts/ contact-form How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Using Website Custom Buttons www.consolto.com/knowledge-posts/ custom-buttons How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Choose action when you are not available www.consolto.com/knowledge-posts/ choose-action-when-you-are-not-available How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Active engager - Give remote an in-store feeling www.consolto.com/knowledge-posts/ active-engager How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Brief intro to the dashboard tabs www.consolto.com/knowledge-posts/ brief-intro-to-the-dashboard-tabs How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… 3D-Sense www.consolto.com/knowledge-posts/ 3d-sense How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Availability Options www.consolto.com/knowledge-posts/ availability-options How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Availability Cues on website elements www.consolto.com/knowledge-posts/ availability-cues-on-website-elements How To. Wordpress plugin. Shopify plugin. Wix installation. integrations. Install on any platform.… Getting started Your first Consolto Plugin video-conference call Your first Consolto ClickNTalk conference call Brief intro to the dashboard tabs Availability Options Desktop and mobile apps Article Full List Installation &amp; setup How to embed Consolto video chat on your shopify store? General website installation instructions Google Tag Manager Installation Wordpress Installation instructions Wix Installation instructions Article Full List Troubleshooting Bandwidth requirements to use Consolto How to Grant Camera and Microphone Permissions for Website Video Calls With Consolto Screen share troubleshooting Video Call Troubleshooting Which devices and browsers support Consolto? General Website Installation Troubleshooting Wordpress Installation Troubleshooting Article Full List Get to know Consolto Features Consolto product tour Setup Ooni ai assistant Overview Tab Privacy features Your direct ClickNTalk Page Video calls Group Meetings Screen sharing Live Chat Manage chats/ calls in Consolto chat center Appointment scheduling Active engager - Give remote an in-store feeling File sharing 3D-Sense Get paid for your video chat sessions Contact form Whatsapp and Facebook Messenger Phone number Article Full List Customizations Dynamic Forms Customize widget appearance Setting up the features and texts Automatic Messages and texts Choose action when you are not available Article Full List Multi agent Single Agent VS Multi Agent Multi Agent Settings Setup your agents&#x27; widget and ClickNTalk page Team conversation features Article Full List Integrations Zapier integration Webhooks Connecting SMTP Email to Consolto Paypal Web Frontend API Google analytics events Google Calendar Integration Article Full List Advanced Installation Page Matches Use CNAME for your ClickNTalk page Using Website Custom Buttons Direct Action Links - Widget Direct Action Links - ClickNTalk Page Sending user-data from ClickNTalk link Sending user-data from website to widget Triggering the Consolto widget programatically Availability Cues on website elements Fetching agent availability programatically Listening to widget events Embed your ClickNTalk page as an iframe Installing with AMP support Article Full List Can we answer that question? Together we’ll change what you considered as great communication experience How can we help? I want enterprise demo Ask a question Support Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Simply Meet Customers Online Our vision is to make customer meetings so simple that it feels like sending an SMS Desktop &amp; Mobile apps Solutions by Use-case Sales Consulting Customer service by Industry Health &amp; medical Ecommerce &amp; Retail Financial advisory Aesthetics and Beauty Automotive Academics Legal Tech Fashion Coaching and advice Insurance Home services Product Website widget ClickNTalk page Expert Directory Rich communication center Capabilities Video Chat Scheduling Group Meetings Live Chat Ooni AI Screen sharing 3D-Sense Custom styling Analytics Payment transfer Facebook messenger Whatsapp File transfer Voice inbox Contact Form Mul"
+}

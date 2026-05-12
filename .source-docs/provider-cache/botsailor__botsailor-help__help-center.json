@@ -1,0 +1,340 @@
+{
+  "id": "botsailor-help",
+  "provider": "botsailor",
+  "url": "https://botsailor.com/help/en",
+  "kind": "help-center",
+  "platforms": [
+    "chatbots",
+    "broadcasting",
+    "ecommerce",
+    "telegram",
+    "meta",
+    "agencies"
+  ],
+  "sections": [
+    "chatbots-omnicanal",
+    "broadcasting",
+    "ecommerce",
+    "telegram",
+    "operacion-meta",
+    "integracion",
+    "agencias"
+  ],
+  "fetchedAt": "2026-05-12T07:18:45.080Z",
+  "cachedFile": ".source-docs/provider-cache/botsailor__botsailor-help__help-center.json",
+  "status": 200,
+  "ok": true,
+  "headings": [
+    {
+      "level": 2,
+      "text": "Knowledgebase"
+    },
+    {
+      "level": 2,
+      "text": "Blog"
+    },
+    {
+      "level": 2,
+      "text": "API Documentation"
+    },
+    {
+      "level": 2,
+      "text": "Forum"
+    },
+    {
+      "level": 2,
+      "text": "Video Tutorials"
+    },
+    {
+      "level": 2,
+      "text": "Bug Report"
+    },
+    {
+      "level": 2,
+      "text": "Feature Request"
+    },
+    {
+      "level": 2,
+      "text": "What&#039;s New"
+    },
+    {
+      "level": 2,
+      "text": "Corporate Social Responsibility"
+    },
+    {
+      "level": 2,
+      "text": "Life at BotSailor"
+    },
+    {
+      "level": 2,
+      "text": "WC Plugin"
+    },
+    {
+      "level": 2,
+      "text": "Contact (Ask)"
+    },
+    {
+      "level": 2,
+      "text": "Support (Technical)"
+    },
+    {
+      "level": 2,
+      "text": "Pricing Plans"
+    },
+    {
+      "level": 2,
+      "text": "Pay As You Go"
+    },
+    {
+      "level": 2,
+      "text": "Addons"
+    },
+    {
+      "level": 2,
+      "text": "AI Token"
+    },
+    {
+      "level": 2,
+      "text": "Reseller"
+    },
+    {
+      "level": 2,
+      "text": "Affiliate"
+    },
+    {
+      "level": 2,
+      "text": "AI Startup Program"
+    },
+    {
+      "level": 2,
+      "text": "Knowledgebase"
+    },
+    {
+      "level": 2,
+      "text": "Subscribe to our newsletter"
+    }
+  ],
+  "links": [
+    {
+      "label": "Knowledgebase | BotSailor var current_path = 'help/en'; var current_route = 'list-knowledgebase-folder'; var base_url = ",
+      "url": "https://botsailor.com/build/Y3VzdG9t.critical.Y3Nz.css?v=41778419218"
+    },
+    {
+      "label": "Knowledgebase Find answers, guides, and resources all in one place.",
+      "url": "https://botsailor.com/help/en"
+    },
+    {
+      "label": "Blog Latest insights, tips, and updates from our team.",
+      "url": "https://botsailor.com/blog"
+    },
+    {
+      "label": "API Documentation Comprehensive guide to BotSailor APIs and integrations.",
+      "url": "https://botsailor.com/api-docs"
+    },
+    {
+      "label": "Forum Join discussions and connect with the BotSailor community.",
+      "url": "https://botsailor.com/forum"
+    },
+    {
+      "label": "Video Tutorials Step-by-step official videos to learn features quickly.",
+      "url": "https://www.youtube.com/@BotSailor"
+    },
+    {
+      "label": "Bug Report Report issues you experience and help us improve BotSailor.",
+      "url": "https://botsailor.com/forum/category/2-bug-report"
+    },
+    {
+      "label": "Feature Request Contribute new feature ideas and help shape the future roadmap.",
+      "url": "https://botsailor.com/forum/category/3-feature-request"
+    },
+    {
+      "label": "What&#039;s New Stay updated with the latest product releases and fixes.",
+      "url": "https://botsailor.com/blog/botsailors-change-log"
+    },
+    {
+      "label": "Corporate Social Responsibility Learn about our social and environmental initiatives.",
+      "url": "https://botsailor.com/corporate-social-responsibility"
+    },
+    {
+      "label": "Life at BotSailor Discover our culture, people, and workplace stories.",
+      "url": "https://botsailor.com/company-culture"
+    },
+    {
+      "label": "WC Plugin Recover sales with automated WooCommerce abandoned cart webhooks.",
+      "url": "https://botsailor.com/resource/woocommerce-abandoned-cart-recovery-webhook-plugin"
+    },
+    {
+      "label": "Contact (Ask) Get in touch through your preferred communication channel.",
+      "url": "https://botsailor.com/contact-us"
+    },
+    {
+      "label": "Support (Technical) Need assistance? Our technical experts are ready to help.",
+      "url": "https://botsailor.com/resource/support"
+    },
+    {
+      "label": "Pricing Plans Compare subscription options and choose the right plan.",
+      "url": "https://botsailor.com/pricing"
+    },
+    {
+      "label": "Pay As You Go Flexible usage-based billing for your needs.",
+      "url": "https://botsailor.com/pricing/pay-as-you-go"
+    },
+    {
+      "label": "Addons Enhance BotSailor with powerful extra features.",
+      "url": "https://botsailor.com/pricing/addon"
+    },
+    {
+      "label": "AI Token Unlock next-level automation with AI tokens.",
+      "url": "https://botsailor.com/pricing/ai-token"
+    },
+    {
+      "label": "Reseller Exclusive tools, support, and benefits for your sales journey.",
+      "url": "https://botsailor.com/reseller"
+    },
+    {
+      "label": "Affiliate Join affiliate program and earn recurring commissions.",
+      "url": "https://botsailor.com/partner/affiliate"
+    },
+    {
+      "label": "AI Startup Program Claim free AI tokens and unlock AI-powered automation.",
+      "url": "https://botsailor.com/partner/botsailor-ai-startup-program"
+    },
+    {
+      "label": "Dashboard",
+      "url": "https://botsailor.com/login"
+    },
+    {
+      "label": "Dashboard",
+      "url": "https://botsailor.com/login"
+    },
+    {
+      "label": "13 Categories",
+      "url": "https://botsailor.com/help/en/folder/6"
+    },
+    {
+      "label": "93 Articles",
+      "url": "https://botsailor.com/help/en/folder/6/articles"
+    },
+    {
+      "label": "3 Categories",
+      "url": "https://botsailor.com/help/en/folder/7"
+    },
+    {
+      "label": "9 Articles",
+      "url": "https://botsailor.com/help/en/folder/7/articles"
+    },
+    {
+      "label": "3 Categories",
+      "url": "https://botsailor.com/help/en/folder/8"
+    },
+    {
+      "label": "5 Articles",
+      "url": "https://botsailor.com/help/en/folder/8/articles"
+    },
+    {
+      "label": "7 Categories",
+      "url": "https://botsailor.com/help/en/folder/9"
+    },
+    {
+      "label": "39 Articles",
+      "url": "https://botsailor.com/help/en/folder/9/articles"
+    },
+    {
+      "label": "2 Categories",
+      "url": "https://botsailor.com/help/en/folder/10"
+    },
+    {
+      "label": "12 Articles",
+      "url": "https://botsailor.com/help/en/folder/10/articles"
+    },
+    {
+      "label": "2 Categories",
+      "url": "https://botsailor.com/help/en/folder/11"
+    },
+    {
+      "label": "22 Articles",
+      "url": "https://botsailor.com/help/en/folder/11/articles"
+    },
+    {
+      "label": "",
+      "url": "https://botsailor.com/"
+    },
+    {
+      "label": "",
+      "url": "https://t.me/botsailor"
+    },
+    {
+      "label": "",
+      "url": "https://www.facebook.com/profile.php?id=61572424690628"
+    },
+    {
+      "label": "",
+      "url": "https://www.youtube.com/channel/UCGXLEjzQwxNz1bO-ujKgn3Q"
+    },
+    {
+      "label": "",
+      "url": "https://twitter.com/botsailorapp"
+    },
+    {
+      "label": "",
+      "url": "https://www.instagram.com/botsailor"
+    },
+    {
+      "label": "",
+      "url": "https://linkedin.com/company/botsailor"
+    },
+    {
+      "label": "Video Tutorials",
+      "url": "https://www.youtube.com/channel/UCGXLEjzQwxNz1bO-ujKgn3Q"
+    },
+    {
+      "label": "Community",
+      "url": "https://facebook.com/groups/botsailor"
+    },
+    {
+      "label": "Affiliate Program",
+      "url": "https://botsailor.com/blog/botsailors-affiliate-program"
+    },
+    {
+      "label": "Reseller Program",
+      "url": "https://botsailor.com/reseller"
+    },
+    {
+      "label": "Support Desk",
+      "url": "https://botsailor.com/resource/support"
+    },
+    {
+      "label": "Contact Us",
+      "url": "https://botsailor.com/contact-us"
+    },
+    {
+      "label": "Privacy Policy",
+      "url": "https://botsailor.com/policy/privacy"
+    },
+    {
+      "label": "Terms of Service",
+      "url": "https://botsailor.com/policy/terms"
+    },
+    {
+      "label": "GDPR Policy",
+      "url": "https://botsailor.com/policy/gdpr"
+    },
+    {
+      "label": "Refund Policy",
+      "url": "https://botsailor.com/policy/refund"
+    },
+    {
+      "label": "Affiliate Policy",
+      "url": "https://botsailor.com/policy/affiliate"
+    },
+    {
+      "label": "Reseller Policy",
+      "url": "https://botsailor.com/policy/reseller"
+    },
+    {
+      "label": "BotSailor",
+      "url": "https://botsailor.com/"
+    }
+  ],
+  "text": "Knowledgebase | BotSailor Resources Knowledgebase Find answers, guides, and resources all in one place. Blog Latest insights, tips, and updates from our team. API Documentation Comprehensive guide to BotSailor APIs and integrations. Forum Join discussions and connect with the BotSailor community. Video Tutorials Step-by-step official videos to learn features quickly. Bug Report Report issues you experience and help us improve BotSailor. Feature Request Contribute new feature ideas and help shape the future roadmap. What&#039;s New Stay updated with the latest product releases and fixes. Corporate Social Responsibility Learn about our social and environmental initiatives. Life at BotSailor Discover our culture, people, and workplace stories. WC Plugin Recover sales with automated WooCommerce abandoned cart webhooks. Contact (Ask) Get in touch through your preferred communication channel. Support (Technical) Need assistance? Our technical experts are ready to help. Pricing Pricing Plans Compare subscription options and choose the right plan. Pay As You Go Flexible usage-based billing for your needs. Addons Enhance BotSailor with powerful extra features. AI Token Unlock next-level automation with AI tokens. Partner Programs Reseller Exclusive tools, support, and benefits for your sales journey. Affiliate Join affiliate program and earn recurring commissions. AI Startup Program Claim free AI tokens and unlock AI-powered automation. Dashboard Dashboard Knowledgebase Knowledgebase Step-by-step guides, FAQs, and expert tutorials on Chatbot, automation, and white-label solutions. Bot Channel 20 Apr 2026 Bot Channel 13 Categories 93 Articles Broadcasting 12 Apr 2026 Broadcasting 3 Categories 9 Articles Widgets 12 Apr 2026 Widgets 3 Categories 5 Articles Integration 13 Apr 2026 Integration 7 Categories 39 Articles Accounts &amp; Billing 20 Apr 2026 Accounts &amp; Billing 2 Categories 12 Articles Reseller 20 Apr 2026 Reseller 2 Categories 22 Articles Stay Updated Subscribe to our newsletter Highly curated content and updates directly to your inbox. Subscribe Create a FREE (forever) account today to get access to everything you need to succeed in chatbot marketing. Links Video Tutorials Community Affiliate Program Reseller Program Support Desk Contact Us Legal Privacy Policy Terms of Service GDPR Policy Refund Policy Affiliate Policy Reseller Policy Copyright © BotSailor . &nbsp; All Rights Reserved. Subscribe to Newsletter First Name Last Name Email Address Subscribe Now"
+}

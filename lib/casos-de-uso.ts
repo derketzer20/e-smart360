@@ -15,7 +15,12 @@ export type CasoDeUsoFull = CasoDeUso & {
 const CASOS_DIR = path.join(process.cwd(), "content", "casos-de-uso");
 
 function readAllFiles(): string[] {
-  return fs.readdirSync(CASOS_DIR).filter((file) => file.endsWith(".md"));
+  try {
+    if (!fs.existsSync(CASOS_DIR)) return [];
+    return fs.readdirSync(CASOS_DIR).filter((file) => file.endsWith(".md"));
+  } catch {
+    return [];
+  }
 }
 
 /**
@@ -72,24 +77,28 @@ function sanitizeContent(content: string): string {
 }
 
 function parseFile(file: string): CasoDeUsoFull | null {
-  const fullPath = path.join(CASOS_DIR, file);
-  const raw = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(raw);
+  try {
+    const fullPath = path.join(CASOS_DIR, file);
+    const raw = fs.readFileSync(fullPath, "utf8");
+    const { data, content } = matter(raw);
 
-  const title = typeof data.title === "string" ? data.title : "";
-  const slug =
-    typeof data.slug === "string" ? data.slug : file.replace(/\.md$/, "");
-  const category =
-    typeof data.category === "string" ? data.category : "casos-de-uso";
+    const title = typeof data.title === "string" ? data.title : "";
+    const slug =
+      typeof data.slug === "string" ? data.slug : file.replace(/\.md$/, "");
+    const category =
+      typeof data.category === "string" ? data.category : "casos-de-uso";
 
-  if (!title || !slug) return null;
+    if (!title || !slug) return null;
 
-  return {
-    title: title.replace(/\bDialora\b/gi, "E-Smart360"),
-    slug,
-    category,
-    content: sanitizeContent(content),
-  };
+    return {
+      title: title.replace(/\bDialora\b/gi, "E-Smart360"),
+      slug,
+      category,
+      content: sanitizeContent(content),
+    };
+  } catch {
+    return null;
+  }
 }
 
 /**

@@ -1,0 +1,573 @@
+{
+  "id": "whatchimp-features",
+  "provider": "whatchimp",
+  "url": "https://whatchimp.com/features/",
+  "kind": "features",
+  "platforms": [
+    "chatbots",
+    "broadcasting",
+    "ecommerce"
+  ],
+  "sections": [
+    "chatbots-omnicanal",
+    "broadcasting",
+    "ecommerce"
+  ],
+  "fetchedAt": "2026-05-12T07:18:47.292Z",
+  "cachedFile": ".source-docs/provider-cache/whatchimp__whatchimp-features__features.json",
+  "status": 200,
+  "ok": true,
+  "headings": [
+    {
+      "level": 2,
+      "text": "TEAMS"
+    },
+    {
+      "level": 2,
+      "text": "INDUTRIES"
+    },
+    {
+      "level": 1,
+      "text": "Everything You Need for Whatsapp Engagement"
+    },
+    {
+      "level": 2,
+      "text": "Personalized Broadcast Campaigns"
+    },
+    {
+      "level": 2,
+      "text": "Setup Product Catalogs on WhatsApp"
+    },
+    {
+      "level": 2,
+      "text": "Shared Team Inbox"
+    },
+    {
+      "level": 2,
+      "text": "Discover everything you can do with WhatChimp"
+    },
+    {
+      "level": 2,
+      "text": "Your Customers are on WhatsApp! Are You?"
+    },
+    {
+      "level": 2,
+      "text": "🚨 FREE MASTERCLASS 🚨"
+    },
+    {
+      "level": 2,
+      "text": "How to Send 1000s of WhatsApp Messages Without Getting Banned"
+    }
+  ],
+  "links": [
+    {
+      "label": "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/whatchimp.com\\/features\\/#breadc",
+      "url": "https://whatchimp.com/features/"
+    },
+    {
+      "label": "Skip to content",
+      "url": "https://whatchimp.com/storage/2024/04/WhatChimp-Icon-150x150.png"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/"
+    },
+    {
+      "label": "Pricing",
+      "url": "https://whatchimp.com/pricing/"
+    },
+    {
+      "label": "Basic Plans",
+      "url": "https://whatchimp.com/pricing/"
+    },
+    {
+      "label": "Enterprise Plans",
+      "url": "https://whatchimp.com/enterprise-plans/"
+    },
+    {
+      "label": "Done For You (Concierge)",
+      "url": "https://whatchimp.com/concierge/"
+    },
+    {
+      "label": "Basic Plans Ideal for small businesses, with everything to start WhatsApp marketing using the official API",
+      "url": "https://whatchimp.com/pricing/"
+    },
+    {
+      "label": "Enterprise Plans Ideal for large teams, with advanced features, higher limits, and premium support for WhatsApp marketin",
+      "url": "https://whatchimp.com/enterprise-plans/"
+    },
+    {
+      "label": "Concierge Service Completely done-for-you lead generation service for service businesses where we run Click to WhatsApp ",
+      "url": "https://whatchimp.com/concierge/"
+    },
+    {
+      "label": "Features",
+      "url": "https://whatchimp.com/features"
+    },
+    {
+      "label": "Bulk WhatsApp Broadcast Reach Everyone Instantly with Bulk WhatsApp Broadcast",
+      "url": "https://whatchimp.com/bulk-whatsapp-broadcast/"
+    },
+    {
+      "label": "WhatsApp Chatbot Automate Responses with a WhatsApp Chatbot",
+      "url": "https://whatchimp.com/whatsapp-chatbot/"
+    },
+    {
+      "label": "AI Agent Create smart AI Agents inside WhatsApp that understands your business",
+      "url": "https://whatchimp.com/ai-chatbot/"
+    },
+    {
+      "label": "WhatsApp Payments Accept payments seamlessly on WhatsApp",
+      "url": "https://whatchimp.com/whatsapp-payments/"
+    },
+    {
+      "label": "Omnichannel Inbox Manage WhatsApp, Instagram and Facebook from a single inbox",
+      "url": "https://whatchimp.com/omnichannel-inbox/"
+    },
+    {
+      "label": "Shared Inbox Centralized Communication with Shared Inbox",
+      "url": "https://whatchimp.com/shared-inbox/"
+    },
+    {
+      "label": "WhatsApp Catalog Showcase Resources with WhatsApp Catalog",
+      "url": "https://whatchimp.com/whatsapp-catalog/"
+    },
+    {
+      "label": "WhatsApp Forms Create and share forms that collect responses directly on WhatsApp",
+      "url": "https://whatchimp.com/whatsapp-flows/"
+    },
+    {
+      "label": "Click To WhatsApp Ads Drive instant conversations with ads that open directly in WhatsApp",
+      "url": "https://whatchimp.com/click-to-whatsapp-ads/"
+    },
+    {
+      "label": "WhatsApp Appointment Booking Let customers book appointments directly on WhatsApp",
+      "url": "https://whatchimp.com/whatsapp-appointment-booking/"
+    },
+    {
+      "label": "WhatChimp for Marketing Launch campaigns and reach your audience",
+      "url": "https://whatchimp.com/whatchimp-for-marketing/"
+    },
+    {
+      "label": "WhatChimp for Sales Track and close more WhatsApp leads",
+      "url": "https://whatchimp.com/whatchimp-for-sales/"
+    },
+    {
+      "label": "WhatChimp for Support Help customers and solve their questions quickly",
+      "url": "https://whatchimp.com/whatchimp-for-support/"
+    },
+    {
+      "label": "Marketing Agencies",
+      "url": "https://whatchimp.com/marketing-agencies/"
+    },
+    {
+      "label": "Education",
+      "url": "https://whatchimp.com/education/"
+    },
+    {
+      "label": "Healthcare",
+      "url": "https://whatchimp.com/healthcare/"
+    },
+    {
+      "label": "E-commerce",
+      "url": "https://whatchimp.com/ecommerce/"
+    },
+    {
+      "label": "Apply for Partner Account Unlock exclusive pricing, features, and support with the WhatChimp Agency Partner Program.",
+      "url": "https://whatchimp.com/agency-partner/"
+    },
+    {
+      "label": "Became an Affiliate Earn recurring commissions by joining the WhatChimp Affiliate Program",
+      "url": "https://whatchimp.com/become-an-affiliate/"
+    },
+    {
+      "label": "Integrations",
+      "url": "https://whatchimp.com/integrations/"
+    },
+    {
+      "label": "Zapier",
+      "url": "https://zapier.com/apps/whatchimp/integrations"
+    },
+    {
+      "label": "Pabbly",
+      "url": "https://www.pabbly.com/connect/integrations/whatchimp/"
+    },
+    {
+      "label": "Zapier Integration Connect WhatChimp with thousands of apps via Zapier for seamless data automation",
+      "url": "https://whatchimp.com/zapier-integration/"
+    },
+    {
+      "label": "Make Integration Integrate WhatChimp with Make &amp; design sophisticated workflows with visual precision",
+      "url": "https://whatchimp.com/make-integration/"
+    },
+    {
+      "label": "Woo Commerce Integration Integrate WhatChimp with WooCommerce to streamline your e-commerce processes",
+      "url": "https://whatchimp.com/woo-commerce-integration/"
+    },
+    {
+      "label": "Shopify Integration Integrate WhatChimp with Shopify for automated e-commerce workflows",
+      "url": "https://whatchimp.com/shopify-integration/"
+    },
+    {
+      "label": "WhatsApp Commerce Integration Integrate WhatChimp with WhatsApp Commerce to enhance your sales and customer interactions",
+      "url": "https://whatchimp.com/whatsapp-commerce-integration/"
+    },
+    {
+      "label": "Pabbly Integration Connect WhatChimp with thousands of apps via Pabbly for seamless data automation",
+      "url": "https://whatchimp.com/pabbly-integration/"
+    },
+    {
+      "label": "N8N Integration Link WhatChimp with N8N &amp; build powerful custom workflows",
+      "url": "https://whatchimp.com/n8n-integration/"
+    },
+    {
+      "label": "API Integration Connect WhatChimp with custom applications via API for powerful automation",
+      "url": "https://help.whatchimp.com/docs/whatchimp-apis"
+    },
+    {
+      "label": "Google Sheets Integration Link WhatChimp with Google Sheets for effortless data management and automation",
+      "url": "https://whatchimp.com/google-sheets-integration/"
+    },
+    {
+      "label": "View All Integrations Integrate WhatChimp with your existing software to automate workflows, sync data, and enhance cust",
+      "url": "https://whatchimp.com/integrations/"
+    },
+    {
+      "label": "Onboarding",
+      "url": "https://whatchimp.com/onboarding"
+    },
+    {
+      "label": "WhatsApp Support",
+      "url": "https://whatchimp.com/support-whatsapp"
+    },
+    {
+      "label": "Raise A Ticket",
+      "url": "https://support.whatchimp.com/"
+    },
+    {
+      "label": "Download Invoices",
+      "url": "https://whatchimp.com/invoices"
+    },
+    {
+      "label": "FAQ",
+      "url": "https://whatchimp.com/faq/"
+    },
+    {
+      "label": "Youtube Tutorial Videos Step-by-step video guides to help you master our tools and features.",
+      "url": "https://whatchimp.com/youtube"
+    },
+    {
+      "label": "Help Docs Explore our in-depth WhatsApp API documentation—setup guides, best practices, and everything you need to integ",
+      "url": "https://help.whatchimp.com/docs"
+    },
+    {
+      "label": "Raise a ticket Quickly submit a support ticket for prompt resolution of any technical challenges with WhatChimp",
+      "url": "https://help.whatchimp.com/"
+    },
+    {
+      "label": "Onboarding Support Set up WhatChimp with our step-by-step onboarding process",
+      "url": "https://help.whatchimp.com/onboarding"
+    },
+    {
+      "label": "WhatsApp Support Access real-time assistance directly through WhatsApp for any queries or issues with WhatChimp",
+      "url": "https://help.whatchimp.com/"
+    },
+    {
+      "label": "Download Invoices Easily download and manage invoices for all your WhatChimp transactions and subscriptions",
+      "url": "https://whatchimp.com/invoices"
+    },
+    {
+      "label": "Basic Plans",
+      "url": "https://whatchimp.com/pricing/"
+    },
+    {
+      "label": "Enterprise Plans",
+      "url": "https://whatchimp.com/enterprise-plans/"
+    },
+    {
+      "label": "Concierge",
+      "url": "https://whatchimp.com/concierge/"
+    },
+    {
+      "label": "Features",
+      "url": "https://whatchimp.com/features"
+    },
+    {
+      "label": "Bulk WhatsApp Broadcast",
+      "url": "https://whatchimp.com/bulk-whatsapp-broadcast/"
+    },
+    {
+      "label": "Shared Inbox",
+      "url": "https://whatchimp.com/shared-inbox/"
+    },
+    {
+      "label": "WhatsApp Catalog",
+      "url": "https://whatchimp.com/whatsapp-catalog/"
+    },
+    {
+      "label": "WhatsApp Chatbot",
+      "url": "https://whatchimp.com/whatsapp-chatbot/"
+    },
+    {
+      "label": "AI Chatbot",
+      "url": "https://whatchimp.com/ai-chatbot/"
+    },
+    {
+      "label": "WhatsApp Payments",
+      "url": "https://whatchimp.com/whatsapp-payments/"
+    },
+    {
+      "label": "WhatsApp Flows",
+      "url": "https://whatchimp.com/whatsapp-flows/"
+    },
+    {
+      "label": "Click to whatsapp ads",
+      "url": "https://whatchimp.com/click-to-whatsapp-ads/"
+    },
+    {
+      "label": "Apply for Partner Account",
+      "url": "https://partner.whatchimp.com/register/"
+    },
+    {
+      "label": "Become an Affiliate",
+      "url": "https://whatchimp.com/become-an-affiliate/"
+    },
+    {
+      "label": "Integrations",
+      "url": "https://whatchimp.com/integrations/"
+    },
+    {
+      "label": "WhatChimp Demo",
+      "url": "https://whatchimp.com/watch-demo/"
+    },
+    {
+      "label": "Docs",
+      "url": "https://whatchimp.com/docs/"
+    },
+    {
+      "label": "Sign Up",
+      "url": "https://whatchimp.com/#get-started"
+    },
+    {
+      "label": "Watch Demo",
+      "url": "https://whatchimp.com/book-demo/"
+    },
+    {
+      "label": "Get Started",
+      "url": "https://whatchimp.com/#get-started"
+    },
+    {
+      "label": "Book Demo",
+      "url": "https://app.sessions.us/book/whatchimp/whatchimp-pro-demo"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/partner-directory"
+    },
+    {
+      "label": "Find us on Meta&#8217;s Partner Directory",
+      "url": "https://whatchimp.com/partner-directory"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/ai-chatbot/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/omnichannel-inbox/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/bulk-whatsapp-broadcast/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/shared-inbox/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatsapp-chatbot"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatsapp-catalog"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatsapp-appointment-booking/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatsapp-flows/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatsapp-payments"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/click-to-whatsapp-ads"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/coexistence/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/multiple-whatsapp-number-feature/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatchimp-for-marketing/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatchimp-for-sales/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatchimp-for-support/"
+    },
+    {
+      "label": "",
+      "url": "https://app.whatchimp.com/"
+    },
+    {
+      "label": "",
+      "url": "https://help.whatchimp.com/docs"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/book-demo/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/invoices"
+    },
+    {
+      "label": "",
+      "url": "https://help.whatchimp.com/onboarding/"
+    },
+    {
+      "label": "",
+      "url": "https://help.whatchimp.com/docs/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/youtube"
+    },
+    {
+      "label": "",
+      "url": "https://help.whatchimp.com/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/about-us/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/pricing/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/partner-directory"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/faq/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/contact/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/agency-partner"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/become-an-affiliate/"
+    },
+    {
+      "label": "",
+      "url": "https://help.whatchimp.com/docs/whatchimp-apis"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/google-sheets-integration"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/zapier-integration/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/pabbly-integration"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/make-integration"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/n8n-integration/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/whatsapp-commerce-integration"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/woo-commerce-integration"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/shopify-integration/"
+    },
+    {
+      "label": "",
+      "url": "https://whatchimp.com/integrations"
+    },
+    {
+      "label": "Contact Us",
+      "url": "https://whatchimp.com/contact/"
+    },
+    {
+      "label": "‪+1 (555) 750‑6003‬",
+      "url": "https://whatchimp.com/support-whatsapp"
+    },
+    {
+      "label": "",
+      "url": "https://www.instagram.com/whatchimp"
+    },
+    {
+      "label": "",
+      "url": "https://www.facebook.com/whatchimp"
+    },
+    {
+      "label": "",
+      "url": "https://www.youtube.com/@whatchimp_com"
+    },
+    {
+      "label": "",
+      "url": "https://linkedin.com/company/whatchimp/"
+    },
+    {
+      "label": "GrowMeOrganic LLC",
+      "url": "https://www.growmeorganic.com/"
+    },
+    {
+      "label": "Refund &amp; Cancellation",
+      "url": "https://whatchimp.com/refund-policy/"
+    },
+    {
+      "label": "Terms &amp; Conditions",
+      "url": "https://whatchimp.com/terms-and-conditions/"
+    },
+    {
+      "label": "Privacy Policy",
+      "url": "https://whatchimp.com/privacy-policy/"
+    }
+  ],
+  "text": "Features - WhatChimp Skip to content Pricing Basic Plans Enterprise Plans Done For You (Concierge) Basic Plans Ideal for small businesses, with everything to start WhatsApp marketing using the official API Enterprise Plans Ideal for large teams, with advanced features, higher limits, and premium support for WhatsApp marketing Concierge Service Completely done-for-you lead generation service for service businesses where we run Click to WhatsApp ads and set up chatbots to bring high-quality leads straight to your inbox Features Bulk WhatsApp Broadcast Reach Everyone Instantly with Bulk WhatsApp Broadcast WhatsApp Chatbot Automate Responses with a WhatsApp Chatbot AI Agent Create smart AI Agents inside WhatsApp that understands your business WhatsApp Payments Accept payments seamlessly on WhatsApp Omnichannel Inbox Manage WhatsApp, Instagram and Facebook from a single inbox Shared Inbox Centralized Communication with Shared Inbox WhatsApp Catalog Showcase Resources with WhatsApp Catalog WhatsApp Forms Create and share forms that collect responses directly on WhatsApp Click To WhatsApp Ads Drive instant conversations with ads that open directly in WhatsApp WhatsApp Appointment Booking Let customers book appointments directly on WhatsApp Solutions TEAMS WhatChimp for Marketing Launch campaigns and reach your audience WhatChimp for Sales Track and close more WhatsApp leads WhatChimp for Support Help customers and solve their questions quickly INDUTRIES Marketing Agencies Education Healthcare E-commerce Partner Apply for Partner Account Unlock exclusive pricing, features, and support with the WhatChimp Agency Partner Program. Became an Affiliate Earn recurring commissions by joining the WhatChimp Affiliate Program Integrations Zapier Pabbly Zapier Integration Connect WhatChimp with thousands of apps via Zapier for seamless data automation Make Integration Integrate WhatChimp with Make &amp; design sophisticated workflows with visual precision Woo Commerce Integration Integrate WhatChimp with WooCommerce to streamline your e-commerce processes Shopify Integration Integrate WhatChimp with Shopify for automated e-commerce workflows WhatsApp Commerce Integration Integrate WhatChimp with WhatsApp Commerce to enhance your sales and customer interactions Pabbly Integration Connect WhatChimp with thousands of apps via Pabbly for seamless data automation N8N Integration Link WhatChimp with N8N &amp; build powerful custom workflows API Integration Connect WhatChimp with custom applications via API for powerful automation Google Sheets Integration Link WhatChimp with Google Sheets for effortless data management and automation View All Integrations Integrate WhatChimp with your existing software to automate workflows, sync data, and enhance customer engagement Help Onboarding WhatsApp Support Raise A Ticket Download Invoices FAQ Youtube Tutorial Videos Step-by-step video guides to help you master our tools and features. Help Docs Explore our in-depth WhatsApp API documentation—setup guides, best practices, and everything you need to integrate seamlessly Raise a ticket Quickly submit a support ticket for prompt resolution of any technical challenges with WhatChimp Onboarding Support Set up WhatChimp with our step-by-step onboarding process WhatsApp Support Access real-time assistance directly through WhatsApp for any queries or issues with WhatChimp Download Invoices Easily download and manage invoices for all your WhatChimp transactions and subscriptions X Pricing Basic Plans Enterprise Plans Concierge Features Bulk WhatsApp Broadcast Shared Inbox WhatsApp Catalog WhatsApp Chatbot AI Chatbot WhatsApp Payments WhatsApp Flows Click to whatsapp ads Partner Apply for Partner Account Become an Affiliate Integrations WhatChimp Demo Docs X Sign Up Watch Demo Everything You Need for Whatsapp Engagement WhatChimp Pro covers all aspects of Marketing, CRM &amp; Customer Support in one Place Marketing Personalized Broadcast Campaigns Send Exciting Offers, Discount Coupon Code and Festival Wishes without getting your Number blocked! Actionable Campaign Analytics Customer Segmentation Create Interactive Messages Sales Setup Product Catalogs on WhatsApp Drive Orders via WhatsApp with WhatsApp Catalogs and Cart. Seamlessly build your Catalog in 10 minutes and get going! Showcase Product Catalog Send Order Confirmation Recover Abandoned Cart Support Shared Team Inbox Have multiple team members to drive Live Chat Support on the Same WhatsApp Business Number Filter Chats Assign Agents Add Internal Notes All Features Discover everything you can do with WhatChimp Everything you need to notify, chat &amp; engage your users All in one place Chatbot Easy-to-use Chatbot Flow builder to build your conversational journeys Shared Inbox Share the WhatChimp inbox across your team and provide stellar support on WhatsApp Whatsapp Catalogs Drive Orders via WhatsApp with WhatsApp Catlaogs and Cart, built in 10 mins Powerful Analytics Access up-to-the-minute insights, enabling you to make timely and informed decisions. Drip Messaging Nurture your leads with series of automated messages in certain time intervals AI Bot Reply Understand and respond to your customers using OpenAI Integration Custom Fields Create custom fields to store more than just 'name' and 'number' Segment Subscribers Sending messages to targeted segment can increase engagement by more than 25% Powerful API Use API endpoints to send messages and manage subscriber's list WooCommerce Connect with WooCommerce &amp; send messages for Abandoned Cart, Order Confirmation, &amp; more Shopify Connect with Shopify &amp; send messages for Abandoned Cart, Order Confirmation, &amp; more Webhook Workflow Connect any third-party webhook provider to send personalized messages Start Today Your Customers are on WhatsApp! Are You? supercharge your customer engagement! Get Started Book Demo #1 Official WhatsApp Marketing Platform (Meta Business Partner) Find us on Meta&#8217;s Partner Directory Features AI Agents Omnichannel: FB &amp; Insta Bulk Broadcasting Shared Inbox Smart Chatbots Catalog Appointment Booking Native Forms Payments CTWA Ads Coexistence Multi WhatsApp Numbers Solution For Marketing For Sales For Support Resources Login Documentation Watch Demo Invoices Help Onboarding Documentation Tutorial Videos Support Company About us Pricing Meta Partner Directory FAQ Contact Us Partner Agency Partnership Become an Affiliate Integrations API Google Sheets Zapier Pabbly Make N8N WhatsApp Commerce WooCommerce Shopify View All Integrations Get in touch Contact Us sales@whatchimp.com ‪+1 (555) 750‑6003‬ © Copyright 2019-2025 GrowMeOrganic LLC . All rights reserved. Refund &amp; Cancellation Terms &amp; Conditions Privacy Policy 🚨 FREE MASTERCLASS 🚨 How to Send 1000s of WhatsApp Messages Without Getting Banned Learn How to Leverage Meta's Official WhatsApp API to Automate Your Sales &amp; Save 30% on Messaging Costs Masterclass Updates First Name Email Sign Up for Masterclass"
+}

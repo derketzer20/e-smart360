@@ -11,7 +11,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { useI18n } from "@/components/i18n/i18n-provider";
 import { cn } from "@/lib/utils";
+import { PUBLIC_PLANS, toLocaleText } from "@/lib/pricing-data";
+import { formatCurrency } from "@/lib/format-currency";
 import {
   ArrowRight,
   BadgeCheck,
@@ -256,16 +259,13 @@ function AssetShowcase() {
 
 export function NfcDigitalCardsLanding() {
   const reduceMotion = useReducedMotion();
+  const { locale } = useI18n();
+  const digitalCardPlans = PUBLIC_PLANS.filter((plan) => plan.lineId === "digital-card").slice(0, 3);
 
   return (
     <div className="relative z-10">
       <div
-        className="pointer-events-none fixed inset-0 -z-10 opacity-[0.45]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, oklch(0.12 0.01 60 / 0.06) 1px, transparent 1px), linear-gradient(to bottom, oklch(0.12 0.01 60 / 0.06) 1px, transparent 1px)",
-          backgroundSize: "56px 56px",
-        }}
+        className="page-grid-bg pointer-events-none fixed inset-0 -z-10 opacity-[0.45]"
         aria-hidden
       />
 
@@ -525,6 +525,56 @@ export function NfcDigitalCardsLanding() {
             </AccordionItem>
           ))}
         </Accordion>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+        <div className="mb-8 text-center">
+          <p className="text-xs font-mono uppercase tracking-widest text-[var(--accent-meta,#0668E1)]">
+            Digital Card pricing
+          </p>
+          <h2 className="mt-3 font-display text-3xl text-foreground md:text-5xl">
+            Estructura de planes Digital Card
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+            Bloque inspirado en el pricing maestro para mantener coherencia de oferta y diseño.
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          {digitalCardPlans.map((plan, i) => (
+            <motion.article
+              key={plan.id}
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.06, duration: 0.4 }}
+              className={cn(
+                "rounded-3xl border bg-background/90 p-6 shadow-[var(--shadow-card-sm)]",
+                plan.highlight && "border-[var(--accent-meta,#0668E1)]/35 ring-1 ring-[var(--accent-meta,#0668E1)]/20",
+              )}
+            >
+              <h3 className="font-display text-xl text-foreground">{toLocaleText(locale, plan.name)}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{toLocaleText(locale, plan.tagline)}</p>
+              <p className="mt-6 font-display text-4xl text-foreground">
+                {plan.monthlyPriceMxn === 0
+                  ? "Trial"
+                  : formatCurrency(plan.annualPriceMxn ?? plan.monthlyPriceMxn, locale, "MXN")}
+              </p>
+              <p className="mt-1 text-xs text-muted-foreground">
+                {plan.monthlyPriceMxn === 0 ? "15 días" : "facturación anual sugerida"}
+              </p>
+              <ul className="mt-5 space-y-2">
+                {plan.features.map((feature) => (
+                  <li key={feature} className="text-sm text-muted-foreground">
+                    · {feature}
+                  </li>
+                ))}
+              </ul>
+              <Button className="mt-6 w-full rounded-full" variant={plan.highlight ? "default" : "outline"} asChild>
+                <a href="/precios">Ver pricing completo</a>
+              </Button>
+            </motion.article>
+          ))}
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-24 sm:px-6 lg:px-8">

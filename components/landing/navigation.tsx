@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useI18n } from "@/components/i18n/i18n-provider";
+import { LocaleSwitcher } from "@/components/i18n/locale-switcher";
 import {
   Menu,
   X,
@@ -31,44 +33,40 @@ import {
 /*  Data                                                               */
 /* ------------------------------------------------------------------ */
 
-const productItems = [
+const PRODUCT_DEFS = [
   {
+    id: "chatbots" as const,
     icon: MessageSquare,
-    label: "Chatbots Omnicanal",
-    description: "WhatsApp, Facebook, Instagram y más",
     href: "/plataforma/chatbots-omnicanal",
     featured: true,
   },
   {
+    id: "voice" as const,
     icon: Phone,
-    label: "Agentes de Voz IA",
-    description: "Llamadas telefónicas inteligentes 24/7",
     href: "/plataforma/agente-voz-ia",
     featured: true,
   },
   {
+    id: "virtual" as const,
     icon: Video,
-    label: "Oficina Virtual",
-    description: "Videollamadas y agendamiento integrado",
-    href: "#",
+    href: "/plataforma/oficina-virtual",
     featured: false,
   },
   {
+    id: "nfc" as const,
     icon: CreditCard,
-    label: "Tarjetas Digitales NFC",
-    description: "Networking profesional con IA",
     href: "/plataforma/tarjetas-digitales-nfc",
     featured: false,
   },
 ];
 
-const featureItems = [
-  { icon: Workflow, label: "Constructor de Flujos", href: "/plataforma/chatbots-omnicanal" },
-  { icon: Inbox, label: "Bandeja Omnicanal Unificada", href: "/plataforma/chatbots-omnicanal" },
-  { icon: Phone, label: "Embudos de Voz IA", href: "/plataforma/agente-voz-ia" },
-  { icon: Megaphone, label: "Campañas Masivas", href: "#features" },
-  { icon: Layers, label: "Análisis IQ con IA", href: "#features" },
-  { icon: Zap, label: "Webhooks e Integraciones", href: "#features" },
+const FEATURE_DEFS = [
+  { id: "flows" as const, icon: Workflow, href: "/plataforma/chatbots-omnicanal" },
+  { id: "inbox" as const, icon: Inbox, href: "/plataforma/chatbots-omnicanal" },
+  { id: "voiceFunnels" as const, icon: Phone, href: "/plataforma/agente-voz-ia" },
+  { id: "campaigns" as const, icon: Megaphone, href: "#features" },
+  { id: "iq" as const, icon: Layers, href: "#features" },
+  { id: "webhooks" as const, icon: Zap, href: "#features" },
 ];
 
 type CasoDeUso = { title: string; slug: string };
@@ -93,20 +91,36 @@ const INDUSTRY_ICON_BY_SLUG: Record<
   "professional-services": Building2,
 };
 
-const integrationItems = [
-  { label: "WhatsApp / Meta", href: "#" },
-  { label: "Shopify & WooCommerce", href: "#" },
-  { label: "Google Sheets & Calendar", href: "#" },
-  { label: "Stripe & PayPal", href: "#" },
-  { label: "Zapier & Make (n8n)", href: "#" },
-  { label: "Twilio SMS", href: "#" },
+const INTEGRATION_DEFS = [
+  { id: "wa" as const, href: "#" },
+  { id: "shop" as const, href: "#" },
+  { id: "sheets" as const, href: "#" },
+  { id: "pay" as const, href: "#" },
+  { id: "zap" as const, href: "#" },
+  { id: "twilio" as const, href: "#" },
 ];
 
-const resourceItems = [
-  { icon: BookOpen, label: "Documentación", href: "#" },
-  { icon: FileText, label: "Blog", href: "#" },
-  { icon: Handshake, label: "Programa de Agencias", href: "#" },
+const RESOURCE_DEFS = [
+  { id: "docs" as const, icon: BookOpen, href: "/docs" },
+  { id: "blog" as const, icon: FileText, href: "#" },
+  {
+    id: "agency" as const,
+    icon: Handshake,
+    href: "https://www.e-smart360.com/precios-pro",
+  },
 ];
+
+/**
+ * Enlaces a wireframes `/previsualizar/*`:
+ * - `next run dev`: visibles por defecto (para que no dependan de .env).
+ * - `next build` + producción: ocultos salvo `NEXT_PUBLIC_SHOW_WIREFRAMES=true`.
+ * - Forzar ocultar en local: `NEXT_PUBLIC_SHOW_WIREFRAMES=false`.
+ */
+function showWireframeNav(): boolean {
+  if (process.env.NEXT_PUBLIC_SHOW_WIREFRAMES === "false") return false;
+  if (process.env.NEXT_PUBLIC_SHOW_WIREFRAMES === "true") return true;
+  return process.env.NODE_ENV === "development";
+}
 
 /* ------------------------------------------------------------------ */
 /*  Mega-dropdown component                                            */
@@ -139,6 +153,56 @@ export function Navigation({
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [mobileSections, setMobileSections] = useState<Record<string, boolean>>({});
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const { t } = useI18n();
+
+  const productItems = useMemo(
+    () =>
+      PRODUCT_DEFS.map((d) => ({
+        ...d,
+        label: t(`products.${d.id}.label`),
+        description: t(`products.${d.id}.description`),
+      })),
+    [t],
+  );
+
+  const featureItems = useMemo(
+    () =>
+      FEATURE_DEFS.map((f) => ({
+        ...f,
+        label: t(`features.${f.id}`),
+      })),
+    [t],
+  );
+
+  const integrationItems = useMemo(
+    () =>
+      INTEGRATION_DEFS.map((i) => ({
+        href: i.href,
+        label: t(`integrations.${i.id}`),
+      })),
+    [t],
+  );
+
+  const resourceItems = useMemo(
+    () =>
+      RESOURCE_DEFS.map((r) => ({
+        icon: r.icon,
+        href: r.href,
+        label: t(`resources.${r.id}`),
+      })),
+    [t],
+  );
+
+  const navItems = useMemo(
+    () => [
+      { key: "plataforma", label: t("nav.platform") },
+      { key: "caracteristicas", label: t("nav.features") },
+      { key: "casos", label: t("nav.cases") },
+      { key: "integraciones", label: t("nav.integrations") },
+      { key: "recursos", label: t("nav.resources") },
+    ],
+    [t],
+  );
 
   // Inyección de datos: los enlaces estáticos previos se reemplazan por
   // metadatos extraídos en build-time desde `content/casos-de-uso/*.md`.
@@ -183,14 +247,6 @@ export function Navigation({
 
   const toggleMobileSection = (key: string) =>
     setMobileSections((prev) => ({ ...prev, [key]: !prev[key] }));
-
-  const navItems = [
-    { key: "plataforma", label: "Plataforma" },
-    { key: "caracteristicas", label: "Características" },
-    { key: "casos", label: "Casos de Uso" },
-    { key: "integraciones", label: "Integraciones" },
-    { key: "recursos", label: "Recursos" },
-  ];
 
   return (
     <header
@@ -250,12 +306,12 @@ export function Navigation({
                   <MegaDropdown>
                     <div className="p-6">
                       <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-4">
-                        Productos
+                        {t("dropdown.products")}
                       </p>
                       <div className="space-y-1">
                         {productItems.map((p) => (
                           <a
-                            key={p.label}
+                            key={p.id}
                             href={p.href}
                             className={`flex items-start gap-3 p-3 rounded-xl hover:bg-foreground/5 transition-colors group ${
                               p.featured ? "border border-foreground/10" : ""
@@ -275,7 +331,7 @@ export function Navigation({
                                 {p.label}
                                 {p.featured && (
                                   <span className="text-[10px] px-1.5 py-0.5 bg-foreground text-background font-mono rounded">
-                                    CORE
+                                    {t("nav.core")}
                                   </span>
                                 )}
                               </div>
@@ -295,7 +351,7 @@ export function Navigation({
                   <MegaDropdown>
                     <div className="p-6">
                       <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-4">
-                        Funciones clave
+                        {t("dropdown.featuresTitle")}
                       </p>
                       <div className="grid grid-cols-2 gap-1">
                         {featureItems.map((f) => (
@@ -321,7 +377,7 @@ export function Navigation({
                     <div className="p-6 grid grid-cols-2 gap-6">
                       <div>
                         <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-4">
-                          Por Departamento
+                          {t("dropdown.casesDept")}
                         </p>
                         <div className="space-y-1">
                           {useCasesDept.map((d) => (
@@ -340,7 +396,7 @@ export function Navigation({
                       </div>
                       <div>
                         <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-4">
-                          Por Industria
+                          {t("dropdown.casesIndustry")}
                         </p>
                         <div className="space-y-1">
                           {useCasesIndustry.map((ind) => (
@@ -366,7 +422,7 @@ export function Navigation({
                   <MegaDropdown>
                     <div className="p-6">
                       <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-4">
-                        Conecta tus herramientas
+                        {t("dropdown.integrationsTitle")}
                       </p>
                       <div className="grid grid-cols-2 gap-1">
                         {integrationItems.map((it) => (
@@ -391,7 +447,7 @@ export function Navigation({
                   <MegaDropdown>
                     <div className="p-6">
                       <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-4">
-                        Recursos
+                        {t("dropdown.resourcesTitle")}
                       </p>
                       <div className="space-y-1">
                         {resourceItems.map((r) => (
@@ -415,22 +471,43 @@ export function Navigation({
 
             {/* Precios - enlace directo */}
             <a
-              href="#pricing"
+              href="/precios"
               className="rounded-lg px-2 py-2 text-xs text-foreground/70 transition-colors hover:bg-foreground/5 hover:text-foreground xl:px-3 xl:text-sm"
             >
-              Precios
+              {t("nav.pricing")}
             </a>
+            {showWireframeNav() ? (
+              <div className="ml-1 flex items-center gap-1.5 border-l border-foreground/10 pl-2 xl:pl-3">
+                <span className="hidden text-[10px] font-mono uppercase tracking-wider text-amber-700 dark:text-amber-400 xl:inline">
+                  PREV
+                </span>
+                <a
+                  href="/previsualizar/panel-revendedor"
+                  className="rounded-lg px-2 py-2 text-xs text-foreground/80 transition-colors hover:bg-amber-500/10 hover:text-foreground xl:px-2.5 xl:text-sm"
+                >
+                  Revendedor
+                </a>
+                <span className="text-[10px] text-muted-foreground">|</span>
+                <a
+                  href="/previsualizar/panel-cliente"
+                  className="rounded-lg px-2 py-2 text-xs text-foreground/80 transition-colors hover:bg-amber-500/10 hover:text-foreground xl:px-2.5 xl:text-sm"
+                >
+                  Cliente
+                </a>
+              </div>
+            ) : null}
           </div>
 
           {/* Desktop CTAs */}
           <div className="hidden lg:flex items-center gap-2 xl:gap-3">
+            <LocaleSwitcher />
             <a
               href="https://app.e-smart360.com/login"
               className={`text-foreground/70 hover:text-foreground transition-all duration-300 ${
                 isScrolled ? "text-xs" : "text-xs xl:text-sm"
               }`}
             >
-              Iniciar Sesión
+              {t("nav.login")}
             </a>
             <Button
               size="sm"
@@ -441,7 +518,7 @@ export function Navigation({
               )}
               asChild
             >
-              <a href="https://www.e-smart360.com/demo">Comienza Gratis</a>
+              <a href="https://www.e-smart360.com/demo">{t("nav.cta")}</a>
             </Button>
           </div>
 
@@ -449,7 +526,7 @@ export function Navigation({
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 rounded-full hover:bg-foreground/5 transition-colors"
-            aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-label={isMobileMenuOpen ? t("nav.closeMenu") : t("nav.openMenu")}
             aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -477,20 +554,43 @@ export function Navigation({
             type="button"
             onClick={() => setIsMobileMenuOpen(false)}
             className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-foreground/10 bg-background shadow-sm transition-all duration-300 hover:rotate-90 hover:bg-foreground hover:text-background"
-            aria-label="Cerrar menú"
+            aria-label={t("nav.closeMenu")}
           >
             <X className="h-5 w-5" />
           </button>
         </div>
 
-        <div className="px-6 pt-10 pb-12">
+        <div className="px-6 pt-6 pb-12">
+          <div className="mb-6 flex justify-end">
+            <LocaleSwitcher />
+          </div>
           {/* Sections */}
           {[
-            { key: "plataforma", label: "Plataforma", items: productItems.map((p) => ({ label: p.label, href: p.href })) },
-            { key: "caracteristicas", label: "Características", items: featureItems.map((f) => ({ label: f.label, href: f.href })) },
-            { key: "casos", label: "Casos de Uso", items: [...useCasesDept, ...useCasesIndustry].map((c) => ({ label: c.label, href: c.href })) },
-            { key: "integraciones", label: "Integraciones", items: integrationItems },
-            { key: "recursos", label: "Recursos", items: resourceItems.map((r) => ({ label: r.label, href: r.href })) },
+            {
+              key: "plataforma",
+              label: t("nav.platform"),
+              items: productItems.map((p) => ({ label: p.label, href: p.href })),
+            },
+            {
+              key: "caracteristicas",
+              label: t("nav.features"),
+              items: featureItems.map((f) => ({ label: f.label, href: f.href })),
+            },
+            {
+              key: "casos",
+              label: t("nav.cases"),
+              items: [...useCasesDept, ...useCasesIndustry].map((c) => ({ label: c.label, href: c.href })),
+            },
+            {
+              key: "integraciones",
+              label: t("nav.integrations"),
+              items: integrationItems,
+            },
+            {
+              key: "recursos",
+              label: t("nav.resources"),
+              items: resourceItems.map((r) => ({ label: r.label, href: r.href })),
+            },
           ].map((section, i) => (
             <div key={section.key} className="border-b border-foreground/10 py-4">
               <button
@@ -527,13 +627,35 @@ export function Navigation({
 
           <div className="border-b border-foreground/10 py-4">
             <a
-              href="#pricing"
+              href="/precios"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-xl font-display"
             >
-              Precios
+              {t("nav.pricing")}
             </a>
           </div>
+
+          {showWireframeNav() ? (
+            <div className="border-b border-foreground/10 py-4">
+              <p className="mb-2 text-xs font-mono uppercase tracking-widest text-amber-700 dark:text-amber-400">
+                PREV · Wireframes (temporal)
+              </p>
+              <a
+                href="/previsualizar/panel-revendedor"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-2 text-lg font-display text-foreground/90"
+              >
+                Panel revendedor
+              </a>
+              <a
+                href="/previsualizar/panel-cliente"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-2 text-lg font-display text-foreground/90"
+              >
+                Panel cliente
+              </a>
+            </div>
+          ) : null}
 
           {/* CTAs */}
           <div className="flex gap-4 pt-8">
@@ -543,14 +665,14 @@ export function Navigation({
               onClick={() => setIsMobileMenuOpen(false)}
               asChild
             >
-              <a href="https://app.e-smart360.com/login">Iniciar Sesión</a>
+              <a href="https://app.e-smart360.com/login">{t("nav.login")}</a>
             </Button>
             <Button
               className="flex-1 bg-foreground text-background rounded-full h-14 text-base"
               onClick={() => setIsMobileMenuOpen(false)}
               asChild
             >
-              <a href="https://www.e-smart360.com/demo">Comienza Gratis</a>
+              <a href="https://www.e-smart360.com/demo">{t("nav.cta")}</a>
             </Button>
           </div>
         </div>

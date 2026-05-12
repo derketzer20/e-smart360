@@ -517,11 +517,7 @@ export function VoiceAgentLanding() {
     <div className="relative z-10">
       {/* Rejilla suave (estilo sitio principal) */}
       <div
-        className="pointer-events-none fixed inset-0 -z-10 opacity-[0.45]"
-        style={{
-          backgroundImage: `linear-gradient(to right, oklch(0.12 0.01 60 / 0.06) 1px, transparent 1px), linear-gradient(to bottom, oklch(0.12 0.01 60 / 0.06) 1px, transparent 1px)`,
-          backgroundSize: "56px 56px",
-        }}
+        className="page-grid-bg pointer-events-none fixed inset-0 -z-10 opacity-[0.45]"
         aria-hidden
       />
       <div

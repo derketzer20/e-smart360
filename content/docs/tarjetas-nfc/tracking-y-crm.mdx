@@ -1,0 +1,85 @@
+---
+title: "Tracking, CRM y formularios"
+description: "Tracking, CRM y formularios dentro de la documentación operativa de E-SMART360."
+section: "tarjetas-nfc"
+order: 47
+audience: ["cliente", "soporte"]
+platform: ["nfc"]
+useCase: ["support"]
+source: "manual"
+canonicalGroup: "tarjetas-nfc-tracking-y-crm"
+tags: ["tarjetas-nfc", "nfc", "tarjetas", "tracking"]
+---
+
+Esta página cubre **Tracking, CRM y formularios**. Las tarjetas digitales NFC convierten el contacto presencial en flujo digital medible. Un perfil, QR o tap NFC puede abrir WhatsApp, agenda, landing, formulario o CRM, y cada interacción debe generar seguimiento.
+
+## Cuándo usar esta guía
+
+Usa esta guía cuando quieras implementar, vender, explicar o auditar esta capacidad dentro de E-SMART360. El contenido está pensado para clientes finales, agencias, ventas, soporte y perfiles técnicos. La regla central es que cada función debe estar conectada a un resultado: más citas, más ventas, menos ausencias, mejor soporte, mejor reputación de cuenta o integración más confiable.
+
+## Componentes involucrados
+
+- **Entrada:** WhatsApp, Instagram, Facebook, Telegram, webchat, widget web, llamada, QR, NFC o formulario.
+- **Lógica:** flujo visual, IA, segmentación, plantilla, reglas de horario, handoff o webhook.
+- **Datos:** variables, etiquetas, contacto, pedido, cita, evento, historial y resultado.
+- **Salida:** respuesta, campaña, ticket, pedido, agenda, videollamada, llamada, CRM o reporte.
+- **Medición:** conversión, respuesta, entrega, satisfacción, error, abandono y acción humana.
+
+## Configuración recomendada
+
+1. **Define el objetivo operativo.** Establece si esta página se usará para vender, atender, confirmar citas, recuperar pedidos, calificar leads, crear comunidad o conectar sistemas. El objetivo evita flujos inflados y ayuda a medir resultados.
+2. **Identifica canales y responsables.** Decide qué canal inicia el proceso, qué equipo recibe excepciones y qué datos se guardan. En E-SMART360 conviene documentar propietario, horario, handoff y prioridad.
+3. **Prepara datos y permisos.** Reúne números, catálogos, plantillas, etiquetas, campos de CRM, calendario, credenciales o webhooks. La calidad del dato determina la calidad de la automatización.
+4. **Construye el flujo base.** Empieza con un recorrido corto: entrada, calificación, respuesta principal, confirmación y cierre. Después agrega ramificaciones para objeciones, errores y casos humanos.
+5. **Prueba con casos reales.** Valida desde móvil, escritorio y canal final. Revisa textos, botones, variables, permisos y escenarios donde el cliente no responde.
+6. **Publica con monitoreo.** Lanza por segmento, revisa métricas diariamente la primera semana y ajusta mensajes, tiempos, handoff y reglas de calidad.
+
+## Checklist de configuración
+
+- [ ] El objetivo de negocio está escrito en una frase y tiene métrica asociada.
+- [ ] La audiencia está segmentada por cliente nuevo, cliente activo, lead, paciente, alumno, comprador, agencia o developer.
+- [ ] Los canales conectados tienen permisos correctos y responsables claros.
+- [ ] Los mensajes usan tono E-SMART360: directo, útil, profesional y rebrandeado.
+- [ ] Las variables obligatorias tienen nombre, tipo, ejemplo y validación.
+- [ ] Existe handoff humano para excepciones, reclamos, urgencias o dudas sensibles.
+- [ ] La medición incluye conversión, tiempo de respuesta, errores, abandono y satisfacción.
+- [ ] Hay una prueba de extremo a extremo antes de activar campañas o tráfico real.
+
+## Ejemplo operativo
+
+Una empresa lanza esta capacidad con un segmento pequeño. Primero define el mensaje principal y el dato mínimo que necesita capturar. Después conecta el canal, prueba el flujo con usuarios internos y revisa si las variables se guardan correctamente. Cuando todo está validado, activa tráfico real y monitorea respuesta, errores, abandono y escalaciones. La mejora ocurre por ciclos: ajustar copy, simplificar pasos, agregar respuestas frecuentes, afinar etiquetas y conectar nuevos sistemas solo cuando el flujo base ya funciona.
+
+## Buenas prácticas
+
+- Empieza con un flujo corto y medible antes de construir automatizaciones complejas.
+- Nombra variables y etiquetas con un estándar fácil de leer por soporte y ventas.
+- No uses mensajes genéricos para todos los casos; segmenta por intención, canal y etapa.
+- Mantén una ruta humana clara para oportunidades importantes o problemas sensibles.
+- Documenta cambios: fecha, responsable, motivo, métrica esperada y resultado.
+- Revisa permisos y políticas de canal antes de enviar campañas o conectar integraciones.
+
+## Errores comunes y validación
+
+- **Flujos demasiado largos.** Si el usuario necesita más de tres decisiones para avanzar, separa el recorrido en módulos y mide abandono.
+- **Datos sin dueño.** Toda variable debe tener destino: CRM, hoja, etiqueta, evento, ticket, pedido o historial de conversación.
+- **Mensajes sin contexto.** Evita plantillas genéricas; usa datos del cliente, etapa y motivo de contacto.
+- **Handoff tardío.** Define condiciones claras para escalar cuando hay urgencia, intención alta, frustración o solicitud sensible.
+- **Métricas incompletas.** No basta saber cuántos mensajes se enviaron; mide respuesta, conversión, calidad y operación humana.
+
+La validación final debe incluir una prueba manual del recorrido, revisión de permisos, confirmación de eventos y lectura del historial para asegurar que el equipo entiende qué ocurrió y por qué.
+
+## Métricas que debes revisar
+
+| Métrica | Por qué importa | Acción si baja |
+| --- | --- | --- |
+| Tasa de respuesta | Indica si el mensaje abre conversación real | Ajustar copy, horario y segmento |
+| Conversión principal | Mide si el flujo logra venta, cita, registro o resolución | Simplificar pasos y mejorar CTA |
+| Tiempo de primera atención | Evalúa experiencia y carga operativa | Automatizar respuestas frecuentes o reforzar equipo |
+| Handoff a humano | Muestra complejidad y huecos del bot | Crear nuevas reglas, FAQs o etiquetas |
+| Errores o abandonos | Señala fricción técnica o de contenido | Probar variables, botones, permisos y enlaces |
+
+## Rutas relacionadas
+
+- [Introducción a tarjetas digitales NFC](/docs/tarjetas-nfc/intro)
+- [Perfiles, QR y NFC](/docs/tarjetas-nfc/perfiles-y-qr)
+- [Casos de uso de tarjetas NFC](/docs/tarjetas-nfc/casos-de-uso)

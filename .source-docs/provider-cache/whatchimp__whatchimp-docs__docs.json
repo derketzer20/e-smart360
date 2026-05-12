@@ -1,0 +1,23 @@
+{
+  "id": "whatchimp-docs",
+  "provider": "whatchimp",
+  "url": "https://help.whatchimp.com/docs",
+  "kind": "docs",
+  "platforms": [
+    "chatbots",
+    "integrations",
+    "sectors"
+  ],
+  "sections": [
+    "primeros-pasos",
+    "sectores",
+    "integracion"
+  ],
+  "fetchedAt": "2026-05-12T07:18:46.688Z",
+  "cachedFile": ".source-docs/provider-cache/whatchimp__whatchimp-docs__docs.json",
+  "status": 200,
+  "ok": true,
+  "headings": [],
+  "links": [],
+  "text": "WhatChimp Documentation"
+}
