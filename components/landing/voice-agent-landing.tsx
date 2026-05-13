@@ -20,7 +20,10 @@ import {
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 import { DEMO_HREF } from "@/lib/demo-href";
-import { VoiceSpectrumBars, VoiceSpectrumHeroDecor } from "@/components/landing/voice-spectrum";
+import {
+  VoiceHeroBackdrop,
+  type VoiceHeroBackdropVariant,
+} from "@/components/landing/voice-hero-backdrop";
 import {
   BarChart3,
   Building2,
@@ -39,6 +42,9 @@ import {
 } from "lucide-react";
 
 const accent = "#0070f3";
+
+/** Espectro hero: `prism` (3D DOM) · `chromatic` (bloom canvas) · `field` (ondas + barras). También: NEXT_PUBLIC_VOICE_HERO_VARIANT */
+const VOICE_HERO_VARIANT: VoiceHeroBackdropVariant = "field";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -317,7 +323,8 @@ function agentCardId(agent: AgentMarquee) {
   return `${agent.name}-${agent.role}`;
 }
 
-function AgentCard({
+/** Píldora compacta (banderas flagcdn + play / TTS). Sombras ligeras, estilo carrusel home. */
+function AgentLanguagePill({
   agent,
   activeVoiceId,
   voicePaused,
@@ -327,7 +334,6 @@ function AgentCard({
   agent: AgentMarquee;
   activeVoiceId: string | null;
   voicePaused: boolean;
-  /** true cuando el utterance ya disparó onstart (audio en curso o listo para pausar) */
   voiceSynthStarted: boolean;
   onVoicePress: (agent: AgentMarquee) => void;
 }) {
@@ -337,68 +343,61 @@ function AgentCard({
   return (
     <div
       className={cn(
-        "grid min-w-[300px] shrink-0 grid-cols-[1fr_auto] grid-rows-[auto_auto] gap-x-3 gap-y-1 rounded-2xl border border-border/80 bg-background p-4",
-        "shadow-[0_8px_30px_-12px_rgba(15,23,42,0.12),0_0_0_1px_rgba(0,112,243,0.06)]",
+        "inline-flex max-w-[min(100vw-2rem,280px)] shrink-0 items-center gap-2 rounded-full border border-border/45 bg-background/95 py-1.5 pl-1.5 pr-1 shadow-[0_1px_6px_-2px_rgba(15,23,42,0.05)] backdrop-blur-sm",
+        "transition-[box-shadow,border-color] duration-200 hover:border-foreground/15 hover:shadow-[0_2px_10px_-3px_rgba(15,23,42,0.07)]",
       )}
     >
-      <p className="self-start text-sm font-medium leading-snug text-foreground">{agent.role}</p>
-      <div className="flex flex-col items-center gap-0.5">
-        <div className="relative h-11 w-11 overflow-hidden rounded-full ring-2 ring-[#0070f3]/20">
-          <Image
-            src={agent.avatar}
-            alt={`Retrato de ${agent.name}`}
-            width={44}
-            height={44}
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-        <span className="text-[11px] text-muted-foreground">{agent.name}</span>
+      <div className="relative h-7 w-7 shrink-0 overflow-hidden rounded-full border border-border/35">
+        <Image
+          src={agent.avatar}
+          alt={`Retrato de ${agent.name}`}
+          width={28}
+          height={28}
+          className="object-cover"
+          unoptimized
+        />
       </div>
-      <div className="col-span-2 mt-3 flex items-center justify-between border-t border-border/60 pt-3">
-        <div className="flex items-center gap-2">
-          <div className="relative h-7 w-7 overflow-hidden rounded-full border border-border shadow-sm">
+      <div className="min-w-0 flex-1 text-left">
+        <p className="truncate text-[11px] font-medium leading-tight text-foreground">{agent.role}</p>
+        <div className="mt-0.5 flex items-center gap-1.5">
+          <div className="relative h-4 w-4 shrink-0 overflow-hidden rounded-full border border-border/30">
             <Image
-              src={`https://flagcdn.com/w80/${agent.flagCode}.png`}
+              src={`https://flagcdn.com/w40/${agent.flagCode}.png`}
               alt={`Bandera ${agent.lang}`}
-              width={28}
-              height={28}
+              width={16}
+              height={16}
               className="h-full w-full object-cover"
               unoptimized
             />
           </div>
-          <span className="text-xs text-muted-foreground">{agent.lang}</span>
+          <span className="text-[10px] text-muted-foreground">{agent.lang}</span>
         </div>
-        <button
-          type="button"
-          onClick={() => onVoicePress(agent)}
-          className={cn(
-            "relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-colors",
-            showPauseIcon
-              ? "border-[#0070f3] bg-[#0070f3] text-white"
-              : "border-border bg-background text-foreground shadow-sm hover:border-[#0070f3]/40",
-          )}
-          aria-label={
-            showPauseIcon
-              ? `Pausar muestra de voz de ${agent.name}`
-              : isThisCard && voicePaused
-                ? `Reanudar muestra de voz de ${agent.name}`
-                : `Reproducir muestra de atención al cliente en ${agent.lang}`
-          }
-        >
-          {/* Contenedor fijo: mismo centro para play y pausa (evita salto / desfase visual) */}
-          <span
-            className="pointer-events-none absolute inset-0 flex items-center justify-center"
-            aria-hidden
-          >
-            {showPauseIcon ? (
-              <Pause className="size-[15px] shrink-0 stroke-[2.75] stroke-current" />
-            ) : (
-              <Play className="size-[15px] shrink-0 translate-x-[2px] stroke-[2.75] stroke-current fill-none" />
-            )}
-          </span>
-        </button>
       </div>
+      <button
+        type="button"
+        onClick={() => onVoicePress(agent)}
+        className={cn(
+          "relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border transition-colors",
+          showPauseIcon
+            ? "border-[#0070f3] bg-[#0070f3] text-white"
+            : "border-border/60 bg-background text-foreground hover:border-[#0070f3]/35",
+        )}
+        aria-label={
+          showPauseIcon
+            ? `Pausar muestra de voz de ${agent.name}`
+            : isThisCard && voicePaused
+              ? `Reanudar muestra de voz de ${agent.name}`
+              : `Reproducir muestra de atención al cliente en ${agent.lang}`
+        }
+      >
+        <span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden>
+          {showPauseIcon ? (
+            <Pause className="size-3 shrink-0 stroke-[2.5] stroke-current" />
+          ) : (
+            <Play className="size-3 shrink-0 translate-x-[0.5px] stroke-[2.5] stroke-current fill-none" />
+          )}
+        </span>
+      </button>
     </div>
   );
 }
@@ -511,8 +510,8 @@ export function VoiceAgentLanding() {
     [activeVoiceId, voicePaused, voiceSynthStarted],
   );
 
-  const rowTopDup = useMemo(() => [...agentsRowTop, ...agentsRowTop], []);
-  const rowBottomDup = useMemo(() => [...agentsRowBottom, ...agentsRowBottom], []);
+  const heroLanguageStrip = useMemo(() => [...agentsRowTop, ...agentsRowBottom], []);
+  const heroLanguageStripDup = useMemo(() => [...heroLanguageStrip, ...heroLanguageStrip], [heroLanguageStrip]);
 
   return (
     <div className="relative z-10">
@@ -530,7 +529,7 @@ export function VoiceAgentLanding() {
       <div className="relative mx-auto max-w-6xl px-4 pt-28 pb-6 sm:px-6 lg:px-8 lg:pt-32">
         {/* Hero */}
         <section id="producto" className="relative text-center">
-          <VoiceSpectrumHeroDecor />
+          <VoiceHeroBackdrop variant={VOICE_HERO_VARIANT} />
 
           <motion.p
             initial="hidden"
@@ -588,42 +587,42 @@ export function VoiceAgentLanding() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 32 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.35, duration: 0.6 }}
-            className="relative mx-auto mt-16 max-w-4xl"
+            initial="hidden"
+            animate="show"
+            variants={fadeUp}
+            custom={4}
+            className="mx-auto mt-14 max-w-2xl md:mt-16"
           >
-            <div
-              className="rounded-2xl border border-border/80 bg-background/90 p-6 shadow-[0_24px_60px_-20px_rgba(15,23,42,0.12),0_0_0_1px_rgba(0,0,0,0.04)] backdrop-blur-md"
-            >
-              <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
-                <div className="flex items-center gap-2 text-sm text-foreground/85">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-40" />
-                    <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
-                  </span>
-                  Llamada en curso · Agente E-SMART360
-                </div>
-                <span className="rounded-full bg-muted px-3 py-1 text-xs text-muted-foreground">
-                  Transcripción en vivo
-                </span>
-              </div>
-              <div className="relative px-2">
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-foreground/10 to-transparent" />
-                <VoiceSpectrumBars
-                  bars={52}
-                  maxHeightClass="h-44 sm:h-52"
-                  density="airy"
-                  minPx={36}
-                  maxPx={172}
-                  className="py-2"
-                />
-              </div>
-              <p className="mt-4 text-center text-xs text-muted-foreground">
-                Vista ilustrativa del panel · Listo para desplegar en Vercel
-              </p>
-            </div>
+            <p className="inline-flex items-center justify-center gap-2 rounded-full border border-border/40 bg-background/80 px-3 py-1.5 text-[11px] font-mono uppercase tracking-[0.2em] text-muted-foreground shadow-[0_1px_6px_-2px_rgba(15,23,42,0.05)] backdrop-blur-sm">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500/80" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              </span>
+              API oficial de Meta
+            </p>
           </motion.div>
+        </section>
+
+        <section
+          className="relative mt-8 overflow-hidden py-3 md:mt-10 md:py-4"
+          aria-label="Muestras de voz en varios idiomas"
+        >
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-background to-transparent md:w-16" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-background to-transparent md:w-16" />
+          <div className="voice-marquee-row">
+            <div className="voice-marquee-track-right flex gap-2.5 pr-2.5 md:gap-3 md:pr-3">
+              {heroLanguageStripDup.map((agent, i) => (
+                <AgentLanguagePill
+                  key={`hero-lang-${i}-${agentCardId(agent)}`}
+                  agent={agent}
+                  activeVoiceId={activeVoiceId}
+                  voicePaused={voicePaused}
+                  voiceSynthStarted={voiceSynthStarted}
+                  onVoicePress={onVoicePress}
+                />
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Confianza */}
@@ -1042,40 +1041,10 @@ export function VoiceAgentLanding() {
               <span className="font-semibold text-foreground">cualquier idioma</span>
             </h2>
             <p className="max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
-              Biblioteca de voces con matices regionales. Pulsa play para escuchar una frase de atención al cliente en
-              cada idioma; puedes pausar y reanudar. La voz usa el sintetizador de tu navegador.
+              Biblioteca de voces con matices regionales. En la fila bajo el hero, pulsa play para escuchar una frase
+              de atención al cliente en cada idioma; puedes pausar y reanudar. La voz usa el sintetizador de tu
+              navegador.
             </p>
-          </div>
-
-          <div className="mt-10 space-y-5">
-            <div className="voice-marquee-row">
-              <div className="voice-marquee-track-left gap-4 pr-4">
-                {rowTopDup.map((agent, i) => (
-                  <AgentCard
-                    key={`t-${i}-${agent.name}`}
-                    agent={agent}
-                    activeVoiceId={activeVoiceId}
-                    voicePaused={voicePaused}
-                    voiceSynthStarted={voiceSynthStarted}
-                    onVoicePress={onVoicePress}
-                  />
-                ))}
-              </div>
-            </div>
-            <div className="voice-marquee-row">
-              <div className="voice-marquee-track-right gap-4 pr-4">
-                {rowBottomDup.map((agent, i) => (
-                  <AgentCard
-                    key={`b-${i}-${agent.name}`}
-                    agent={agent}
-                    activeVoiceId={activeVoiceId}
-                    voicePaused={voicePaused}
-                    voiceSynthStarted={voiceSynthStarted}
-                    onVoicePress={onVoicePress}
-                  />
-                ))}
-              </div>
-            </div>
           </div>
         </section>
 

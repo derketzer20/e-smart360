@@ -48,15 +48,15 @@ const PRODUCT_DEFS = [
     featured: true,
   },
   {
-    id: "virtual" as const,
-    icon: Video,
-    href: "/plataforma/oficina-virtual",
-    featured: false,
-  },
-  {
     id: "nfc" as const,
     icon: CreditCard,
     href: "/plataforma/tarjetas-digitales-nfc",
+    featured: true,
+  },
+  {
+    id: "virtual" as const,
+    icon: Video,
+    href: "/plataforma/oficina-virtual",
     featured: false,
   },
 ];

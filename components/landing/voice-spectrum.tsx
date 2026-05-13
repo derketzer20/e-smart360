@@ -5,7 +5,7 @@ import { useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 /** Envolvente estática por barra (forma general del espectro). */
-function barPattern(i: number, total: number) {
+export function barPattern(i: number, total: number) {
   const t = i / Math.max(1, total - 1);
   const wave =
     Math.sin(t * Math.PI * 5 + 0.4) * 0.35 +
@@ -18,7 +18,7 @@ function barPattern(i: number, total: number) {
  * Movimiento tipo “voz hablando”: varias sinusoides desfasadas en el tiempo
  * y en el índice (misma idea fluida que la esfera del inicio, con time incremental).
  */
-function speechLevel(t: number, index: number, norm: number): number {
+export function speechLevel(t: number, index: number, norm: number): number {
   const i = index;
   const wobble =
     Math.sin(t * 2.6 + i * 0.42) * 0.42 +

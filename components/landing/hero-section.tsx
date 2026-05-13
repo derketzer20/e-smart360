@@ -146,7 +146,7 @@ export function HeroSection() {
 
         {/* Trust badges */}
         <div
-          className={`mt-16 flex flex-wrap items-center gap-6 transition-all duration-700 delay-400 ${
+          className={`mt-16 flex flex-wrap items-center gap-6 pb-10 md:pb-14 transition-all duration-700 delay-400 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
@@ -165,9 +165,9 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Stats marquee */}
+      {/* Stats marquee — más abajo en el viewport para separar de la fila de confianza */}
       <div
-        className={`absolute bottom-20 left-0 right-0 transition-all duration-700 delay-500 ${
+        className={`absolute bottom-6 left-0 right-0 sm:bottom-8 transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
