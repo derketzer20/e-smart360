@@ -5,7 +5,11 @@ type PricingEventName =
   | "pricing_cta_click"
   | "pricing_calculator_update"
   | "pricing_compare_toggle"
-  | "pricing_topup_select";
+  | "pricing_compare_section_toggle"
+  | "pricing_topup_select"
+  | "pricing_competitor_select"
+  | "pricing_calc_focus_toggle"
+  | "pricing_bundle_row_hover";
 
 type Payload = Record<string, string | number | boolean | null | undefined>;
 

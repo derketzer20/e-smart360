@@ -50,7 +50,7 @@ export function DocsSearch({ items }: { items: DocsSearchItem[] }) {
         <Button
           type="button"
           variant="outline"
-          className="relative h-9 w-full min-w-[180px] max-w-sm justify-start rounded-full border-border/80 bg-background/80 text-sm text-muted-foreground shadow-sm sm:min-w-[220px]"
+          className="relative h-9 w-full min-w-0 justify-start rounded-full border-border/80 bg-background/80 text-sm text-muted-foreground shadow-sm"
         >
           <Search className="mr-2 h-4 w-4 shrink-0 opacity-60" aria-hidden />
           <span className="truncate">Buscar en la documentación…</span>

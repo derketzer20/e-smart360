@@ -39,11 +39,16 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   /* Meta-inspired accents + soft pastels (additive; base tokens unchanged) */
+  /* Meta Conversations–style palette (sampled from brand UI refs, 2026-05): FB blue, accent pink, WA green */
   --accent-meta: #0668e1;
+  --accent-fb-blue: #0668e1;
+  --accent-meta-pink: #e11d74;
+  --accent-whatsapp-green: #25d366;
   --pastel-mint: oklch(0.82 0.09 175);
   --pastel-lavender: oklch(0.88 0.06 295);
   --pastel-rose: oklch(0.9 0.05 340);
   --shadow-card-sm: 0 8px 30px -12px rgba(15, 23, 42, 0.12);
+  --shadow-card-md: 0 16px 48px -20px rgba(15, 23, 42, 0.18);
   --shadow-card-xl: 0 30px 90px -40px rgba(15, 23, 42, 0.35);
 }
 
@@ -295,6 +300,37 @@
   @media (prefers-reduced-motion: reduce) {
     .omni-marquee-track-left,
     .omni-marquee-track-right {
+      animation: none;
+    }
+  }
+
+  /* Trust / payment logo strip: soft edge fade (opaque sides) */
+  .trust-marquee-mask {
+    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  }
+
+  @keyframes trust-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .trust-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: trust-marquee 40s linear infinite;
+  }
+
+  .trust-marquee-row:hover .trust-marquee-track {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .trust-marquee-track {
       animation: none;
     }
   }

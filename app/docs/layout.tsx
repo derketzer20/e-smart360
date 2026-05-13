@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github } from "lucide-react";
+import { Github, Home } from "lucide-react";
 import { FooterSection } from "@/components/landing/footer-section";
 import { getDocsNavGroups, getAllDocSummaries, DOC_SECTION_LABELS } from "@/lib/docs";
 import { DocsSidebar } from "@/components/docs/docs-sidebar";
@@ -30,20 +30,24 @@ export default async function DocsLayout({
 
       {/* Barra superior estilo documentación (OpenClaw-like) */}
       <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-3 px-4 py-3 sm:px-6 lg:gap-4 lg:px-8">
-          <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-5">
-            <Link href="/" className="shrink-0 font-display text-lg tracking-tight text-foreground">
-              E-SMART360
+        <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-3 px-4 py-3 sm:px-6 lg:flex-nowrap lg:gap-4 lg:px-8">
+          <div className="flex shrink-0 items-center gap-2">
+            <Link
+              href="/"
+              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border/80 text-muted-foreground transition-colors hover:bg-foreground/5 hover:text-foreground"
+              title="Inicio"
+              aria-label="Ir al inicio"
+            >
+              <Home className="h-4 w-4" aria-hidden />
             </Link>
-            <span className="text-muted-foreground">/</span>
-            <Link href="/docs" className="shrink-0 text-sm font-medium text-foreground">
+            <Link href="/docs" className="text-sm font-medium text-foreground hover:text-[var(--accent-meta)]">
               Documentación
             </Link>
           </div>
-          <div className="flex w-full flex-1 justify-center lg:max-w-md">
+          <div className="min-w-0 flex-1 basis-full lg:basis-auto lg:px-4">
             <DocsSearch items={searchItems} />
           </div>
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="ml-auto flex shrink-0 items-center gap-2 lg:ml-0">
             <a
               href="https://github.com/YEIGLESLY/fulldoc"
               target="_blank"

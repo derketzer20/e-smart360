@@ -63,6 +63,9 @@ export type ConciergePackage = {
   tagline: LocalizedText;
   included: LocalizedText[];
   ctaType: PlanCtaType;
+  /** When true, UI shows “detail pending from stakeholder” instead of fixed price. */
+  detailPending?: boolean;
+  stakeholderNote?: LocalizedText;
 };
 
 export type ComparisonRow = {
@@ -70,6 +73,49 @@ export type ComparisonRow = {
   label: LocalizedText;
   tooltip: LocalizedText;
   values: Record<string, string>;
+};
+
+/** Grouped comparison tables (Consolto-style): fewer columns per view, clearer scan. */
+export type PlanComparisonSection = {
+  id: string;
+  lineId: ProductLineId;
+  title: LocalizedText;
+  planIds: string[];
+  rows: ComparisonRow[];
+};
+
+/**
+ * Palette note (Meta Conversations–style marketing UI): sampled blues/pinks/greens
+ * aligned with globals.css — keep in sync when rebranding.
+ */
+export const PRICING_DESIGN_PALETTE_NOTE =
+  "Accent tokens: --accent-fb-blue / --accent-meta, --accent-meta-pink, --accent-whatsapp-green (see globals.css :root).";
+
+export type CompetitorRegion = "global" | "mx";
+
+export type CompetitorProfile = {
+  id: string;
+  name: string;
+  region: CompetitorRegion;
+  /** Illustrative % markup on Meta conversation pass-through (public positioning; verify before legal). */
+  illustrativeMarkupPercent: number | null;
+  officialMetaApi: boolean;
+  shortNote: LocalizedText;
+};
+
+/** Desk research snippets (non-binding; verify before paid claims). */
+export const PRICING_DESK_RESEARCH = {
+  manychatModel:
+    "ManyChat: subscription tiers by active contacts plus WhatsApp template / Meta conversation costs billed per Meta rules — see manychat.com/pricing and help center WhatsApp pricing guide.",
+} as const;
+
+
+export type BspComparisonRow = {
+  id: string;
+  label: LocalizedText;
+  tooltip: LocalizedText;
+  self: LocalizedText;
+  byCompetitorId: Record<string, LocalizedText>;
 };
 
 export const USD_PER_MXN = 0.058;
@@ -341,7 +387,6 @@ export const BUNDLE_PLANS: BundlePlan[] = [
     ctaType: "checkout",
     monthlyPriceMxn: 3990,
     annualPriceMxn: 39900,
-    highlight: true,
   },
   {
     id: "bundle-signature",
@@ -360,6 +405,11 @@ export const AGENCY_CONCIERGE_PACKAGE: ConciergePackage = {
   tagline: {
     es: "Implementación especializada para clínicas: voz + WhatsApp + agenda inteligente.",
     en: "Specialized clinic implementation: voice + WhatsApp + smart scheduling.",
+  },
+  detailPending: true,
+  stakeholderNote: {
+    es: "Precio final, SLA y alcance de implementación se confirman con ventas según tu operación.",
+    en: "Final pricing, SLA, and implementation scope are confirmed with sales for your operation.",
   },
   included: [
     {
@@ -388,88 +438,390 @@ export const VOICE_TOPUP_PRESETS_MXN = [
   { id: "voice-topup-500", mxn: 500, credits: 50000, estimatedMinutes: 500 },
 ];
 
-export const COMPARISON_ROWS: ComparisonRow[] = [
+export const PLAN_COMPARISON_SECTIONS: PlanComparisonSection[] = [
   {
-    id: "channel-access",
-    label: { es: "Canales incluidos", en: "Included channels" },
-    tooltip: {
-      es: "Compara el alcance por canal según plan.",
-      en: "Compare channel coverage by plan.",
-    },
-    values: {
-      "msg-spark-free": "WhatsApp",
-      "msg-whatsapp": "WhatsApp",
-      "msg-growth": "WhatsApp + Instagram",
-      "msg-orbit": "Todos",
-      "voice-core": "N/A",
-      "voice-pro": "N/A",
-      "voice-scale": "N/A",
-      "card-trial": "1 card",
-      "card-business": "1 card",
-      "card-team": "25 cards",
+    id: "sec-messaging",
+    lineId: "messaging",
+    title: { es: "Mensajería y omnicanal", en: "Messaging & omnichannel" },
+    planIds: ["msg-spark-free", "msg-whatsapp", "msg-growth", "msg-orbit"],
+    rows: [
+      {
+        id: "ch-m-channels",
+        label: { es: "Canales", en: "Channels" },
+        tooltip: {
+          es: "Canales Meta y extras disponibles por plan.",
+          en: "Meta channels and extras available per plan.",
+        },
+        values: {
+          "msg-spark-free": "WhatsApp",
+          "msg-whatsapp": "WhatsApp API",
+          "msg-growth": "WA + Instagram",
+          "msg-orbit": "Meta + Telegram + Webchat",
+        },
+      },
+      {
+        id: "ch-m-contacts",
+        label: { es: "Contactos / suscriptores (ref.)", en: "Contacts (ref.)" },
+        tooltip: {
+          es: "Referencia de capacidad; políticas de canal aplican.",
+          en: "Capacity reference; channel policies apply.",
+        },
+        values: {
+          "msg-spark-free": "300",
+          "msg-whatsapp": "5,000",
+          "msg-growth": "25,000",
+          "msg-orbit": "80,000",
+        },
+      },
+      {
+        id: "ch-m-campaigns",
+        label: { es: "Campañas / broadcast", en: "Campaigns" },
+        tooltip: {
+          es: "Broadcast y automatización respetando políticas Meta.",
+          en: "Broadcast and automation respecting Meta policies.",
+        },
+        values: {
+          "msg-spark-free": "No",
+          "msg-whatsapp": "5 / mes",
+          "msg-growth": "20 / mes",
+          "msg-orbit": "Ilimitadas*",
+        },
+      },
+      {
+        id: "ch-m-seats",
+        label: { es: "Asientos de equipo", en: "Team seats" },
+        tooltip: {
+          es: "Usuarios con acceso a bandeja y automatización.",
+          en: "Users with inbox and automation access.",
+        },
+        values: {
+          "msg-spark-free": "1",
+          "msg-whatsapp": "2",
+          "msg-growth": "5",
+          "msg-orbit": "12",
+        },
+      },
+      {
+        id: "ch-m-ai",
+        label: { es: "IA operativa", en: "Operational AI" },
+        tooltip: {
+          es: "IA con política de uso justo en todos los planes de pago.",
+          en: "AI with fair-use policy on all paid plans.",
+        },
+        values: {
+          "msg-spark-free": "Uso justo",
+          "msg-whatsapp": "Uso justo",
+          "msg-growth": "Uso justo",
+          "msg-orbit": "Uso justo",
+        },
+      },
+    ],
+  },
+  {
+    id: "sec-voice",
+    lineId: "voice",
+    title: { es: "Voz IA", en: "AI voice" },
+    planIds: ["voice-core", "voice-pro", "voice-scale"],
+    rows: [
+      {
+        id: "ch-v-min",
+        label: { es: "Minutos / mes", en: "Minutes / mo" },
+        tooltip: {
+          es: "Sin plan gratuito; top-ups disponibles.",
+          en: "No free tier; top-ups available.",
+        },
+        values: {
+          "voice-core": "150",
+          "voice-pro": "250",
+          "voice-scale": "500",
+        },
+      },
+      {
+        id: "ch-v-camp",
+        label: { es: "Campañas de voz", en: "Voice campaigns" },
+        tooltip: {
+          es: "Secuencias y llamadas salientes según plan.",
+          en: "Outbound sequences per plan.",
+        },
+        values: {
+          "voice-core": "No",
+          "voice-pro": "Sí",
+          "voice-scale": "Sí",
+        },
+      },
+      {
+        id: "ch-v-seats",
+        label: { es: "Asientos", en: "Seats" },
+        tooltip: { es: "Agentes en plataforma de voz.", en: "Agents on voice platform." },
+        values: {
+          "voice-core": "2",
+          "voice-pro": "5",
+          "voice-scale": "10",
+        },
+      },
+    ],
+  },
+  {
+    id: "sec-card",
+    lineId: "digital-card",
+    title: { es: "Digital Card / NFC", en: "Digital Card / NFC" },
+    planIds: ["card-trial", "card-business", "card-team"],
+    rows: [
+      {
+        id: "ch-c-cards",
+        label: { es: "Tarjetas activas", en: "Active cards" },
+        tooltip: { es: "Perfiles NFC y enlaces.", en: "NFC profiles and links." },
+        values: {
+          "card-trial": "1 (trial)",
+          "card-business": "1",
+          "card-team": "25",
+        },
+      },
+      {
+        id: "ch-c-analytics",
+        label: { es: "Analítica", en: "Analytics" },
+        tooltip: { es: "Profundidad de métricas.", en: "Analytics depth." },
+        values: {
+          "card-trial": "Básica",
+          "card-business": "Avanzada",
+          "card-team": "Equipo",
+        },
+      },
+      {
+        id: "ch-c-seats",
+        label: { es: "Asientos", en: "Seats" },
+        tooltip: { es: "Usuarios para gestión de tarjetas.", en: "Users managing cards." },
+        values: {
+          "card-trial": "1",
+          "card-business": "1",
+          "card-team": "5",
+        },
+      },
+    ],
+  },
+  {
+    id: "sec-virtual",
+    lineId: "virtual-office",
+    title: { es: "Oficina virtual (Consolto)", en: "Virtual office (Consolto)" },
+    planIds: ["virtual-consulto-core", "virtual-consulto-clinic"],
+    rows: [
+      {
+        id: "ch-vo-seats",
+        label: { es: "Asientos", en: "Seats" },
+        tooltip: { es: "Producto con marca partner.", en: "Partner-branded product." },
+        values: {
+          "virtual-consulto-core": "2",
+          "virtual-consulto-clinic": "8",
+        },
+      },
+      {
+        id: "ch-vo-cal",
+        label: { es: "Agenda / calendario", en: "Scheduling" },
+        tooltip: { es: "Citas y recordatorios.", en: "Appointments and reminders." },
+        values: {
+          "virtual-consulto-core": "Sí",
+          "virtual-consulto-clinic": "Sí",
+        },
+      },
+      {
+        id: "ch-vo-wait",
+        label: { es: "Sala de espera", en: "Waiting room" },
+        tooltip: { es: "Flujo clínico.", en: "Clinic flow." },
+        values: {
+          "virtual-consulto-core": "—",
+          "virtual-consulto-clinic": "Sí",
+        },
+      },
+    ],
+  },
+];
+
+const C_MARKUP = {
+  es: "Markup ilustrativo sobre conversaciones Meta (referencias públicas; verificar antes de publicidad pagada).",
+  en: "Illustrative markup on Meta conversations (public references; verify before paid ads).",
+};
+
+/** Last desk review of competitor positioning (update when changing numbers). */
+export const PRICING_BENCHMARK_REVISION = "2026-05-12";
+
+export const BSP_COMPETITORS: CompetitorProfile[] = [
+  {
+    id: "wati",
+    name: "Wati",
+    region: "global",
+    illustrativeMarkupPercent: 20,
+    officialMetaApi: true,
+    shortNote: {
+      es: "BSP popular en India/MENA; precios en USD.",
+      en: "Popular BSP in India/MENA; USD-first pricing.",
     },
   },
   {
-    id: "voice-quota",
-    label: { es: "Minutos de voz", en: "Voice minutes" },
-    tooltip: {
-      es: "La plataforma de voz no tiene plan gratis; usa top-up cuando superas cupo.",
-      en: "Voice platform has no free plan; use top-up after quota.",
-    },
-    values: {
-      "msg-spark-free": "—",
-      "msg-whatsapp": "—",
-      "msg-growth": "150 (bundle sugerido)",
-      "msg-orbit": "250 (bundle sugerido)",
-      "voice-core": "150",
-      "voice-pro": "250",
-      "voice-scale": "500",
-      "card-trial": "—",
-      "card-business": "—",
-      "card-team": "—",
+    id: "interakt",
+    name: "Interakt",
+    region: "global",
+    illustrativeMarkupPercent: 15,
+    officialMetaApi: true,
+    shortNote: {
+      es: "Enfoque e-commerce y CRM ligero.",
+      en: "E-commerce and lightweight CRM angle.",
     },
   },
   {
-    id: "campaigns",
-    label: { es: "Campañas", en: "Campaigns" },
-    tooltip: {
-      es: "Capacidad de broadcast y secuencias automáticas.",
-      en: "Broadcast and automated sequence capacity.",
-    },
-    values: {
-      "msg-spark-free": "No",
-      "msg-whatsapp": "5 / mes",
-      "msg-growth": "20 / mes",
-      "msg-orbit": "Ilimitadas*",
-      "voice-core": "No",
-      "voice-pro": "Sí",
-      "voice-scale": "Sí",
-      "card-trial": "No",
-      "card-business": "No",
-      "card-team": "Sí",
+    id: "aisensy",
+    name: "AiSensy",
+    region: "global",
+    illustrativeMarkupPercent: 18,
+    officialMetaApi: true,
+    shortNote: {
+      es: "Fuerte en PyME India; bundles de mensajes.",
+      en: "Strong SMB India positioning; message bundles.",
     },
   },
   {
-    id: "team",
-    label: { es: "Usuarios de equipo", en: "Team seats" },
-    tooltip: {
-      es: "Número de usuarios con acceso operativo.",
-      en: "Number of users with operational access.",
+    id: "manychat",
+    name: "ManyChat",
+    region: "mx",
+    illustrativeMarkupPercent: null,
+    officialMetaApi: true,
+    shortNote: {
+      es: "Muy adoptado en MX/LatAm para automatización + anuncios Click-to-WhatsApp.",
+      en: "Widely adopted in MX/LatAm for automation + Click-to-WA ads.",
     },
-    values: {
-      "msg-spark-free": "1",
-      "msg-whatsapp": "2",
-      "msg-growth": "5",
-      "msg-orbit": "12",
-      "voice-core": "2",
-      "voice-pro": "5",
-      "voice-scale": "10",
-      "card-trial": "1",
-      "card-business": "1",
-      "card-team": "5",
+  },
+  {
+    id: "respond_io",
+    name: "Respond.io",
+    region: "mx",
+    illustrativeMarkupPercent: 12,
+    officialMetaApi: true,
+    shortNote: {
+      es: "Omnicanal regional; revisar add-ons por canal.",
+      en: "Regional omnichannel; check per-channel add-ons.",
+    },
+  },
+  {
+    id: "dialog360",
+    name: "360dialog",
+    region: "mx",
+    illustrativeMarkupPercent: 0,
+    officialMetaApi: true,
+    shortNote: {
+      es: "BSP técnico (API); sin suite completa — suele requerir stack propio.",
+      en: "Technical BSP (API); not a full suite — often needs your own stack.",
     },
   },
 ];
+
+export const BSP_COMPARISON_ROWS: BspComparisonRow[] = [
+  {
+    id: "bsp-markup",
+    label: { es: "Markup sobre Meta (referencia)", en: "Markup on Meta (reference)" },
+    tooltip: C_MARKUP,
+    self: {
+      es: "0% markup en plataforma (Meta factura conversaciones aparte).",
+      en: "0% platform markup (Meta bills conversations separately).",
+    },
+    byCompetitorId: {
+      wati: { es: "~20% (referencias de mercado)", en: "~20% (market references)" },
+      interakt: { es: "~15% (referencias de mercado)", en: "~15% (market references)" },
+      aisensy: { es: "~18% (referencias de mercado)", en: "~18% (market references)" },
+      manychat: {
+        es: "Suscripción por contactos activos + costos de plantillas Meta (ver calculadora Manychat).",
+        en: "Active-contact subscription + Meta template costs (see Manychat calculator).",
+      },
+      respond_io: { es: "~12% (referencias de mercado)", en: "~12% (market references)" },
+      dialog360: { es: "0% BSP; hosting y soporte aparte", en: "0% BSP; hosting/support separate" },
+    },
+  },
+  {
+    id: "bsp-suite",
+    label: { es: "Suite conversacional + voz + tarjeta", en: "Messaging + voice + card suite" },
+    tooltip: {
+      es: "Qué tan integrado está el stack comercial en un solo proveedor.",
+      en: "How integrated the commercial stack is with one vendor.",
+    },
+    self: {
+      es: "Bundles unificados E-SMART360 (mensajería, voz, Digital Card, oficina virtual).",
+      en: "Unified E-SMART360 bundles (messaging, voice, Digital Card, virtual office).",
+    },
+    byCompetitorId: {
+      wati: { es: "Mensajería / CRM; voz y NFC no nativos", en: "Messaging/CRM; voice & NFC not native" },
+      interakt: { es: "Mensajería + e-commerce; voz limitada", en: "Messaging + e-commerce; limited voice" },
+      aisensy: { es: "Mensajería + campañas; voz vía terceros", en: "Messaging + campaigns; voice via third parties" },
+      manychat: { es: "Automatización fuerte; API Meta aparte", en: "Strong automation; Meta API separate" },
+      respond_io: { es: "Omnicanal; voz según integración", en: "Omnichannel; voice depends on integration" },
+      dialog360: { es: "Solo capa API; tú armas producto", en: "API layer only; you assemble product" },
+    },
+  },
+  {
+    id: "bsp-compliance",
+    label: { es: "Riesgo / compliance API oficial", en: "Official API compliance" },
+    tooltip: {
+      es: "Uso de Cloud API y políticas Meta.",
+      en: "Cloud API use and Meta policies.",
+    },
+    self: {
+      es: "Cloud API + políticas de uso y anti-spam integradas en el producto.",
+      en: "Cloud API plus product-level fair-use and anti-spam guidance.",
+    },
+    byCompetitorId: {
+      wati: { es: "API oficial", en: "Official API" },
+      interakt: { es: "API oficial", en: "Official API" },
+      aisensy: { es: "API oficial", en: "Official API" },
+      manychat: { es: "API oficial (según canal conectado)", en: "Official API (per connected channel)" },
+      respond_io: { es: "API oficial", en: "Official API" },
+      dialog360: { es: "API oficial", en: "Official API" },
+    },
+  },
+  {
+    id: "bsp-coexist",
+    label: { es: "Coexistencia / número de negocio", en: "Coexistence / business number" },
+    tooltip: {
+      es: "Soporte a número WhatsApp Business coexistence según implementación.",
+      en: "WhatsApp Business coexistence depends on implementation.",
+    },
+    self: {
+      es: "Documentado en guías E-SMART360; onboarding guiado.",
+      en: "Documented in E-SMART360 guides; guided onboarding.",
+    },
+    byCompetitorId: {
+      wati: { es: "Soportado (verificar región)", en: "Supported (verify region)" },
+      interakt: { es: "Soportado (verificar región)", en: "Supported (verify region)" },
+      aisensy: { es: "Soportado (verificar región)", en: "Supported (verify region)" },
+      manychat: { es: "Flujos WA; revisar límites por tipo de cuenta", en: "WA flows; check account-type limits" },
+      respond_io: { es: "Soportado (verificar región)", en: "Supported (verify region)" },
+      dialog360: { es: "Técnico; depende de tu hosting BSP", en: "Technical; depends on your BSP hosting" },
+    },
+  },
+];
+
+export function bundleListPriceMxn(bundle: BundlePlan, cycle: BillingCycle): number {
+  return bundle.includesPlans.reduce((sum, planId) => {
+    const plan = publicPlanById(planId);
+    if (!plan) return sum;
+    const part =
+      cycle === "annual" ? (plan.annualPriceMxn ?? plan.monthlyPriceMxn * 12) : plan.monthlyPriceMxn;
+    return sum + part;
+  }, 0);
+}
+
+export function bundlePriceMxn(bundle: BundlePlan, cycle: BillingCycle): number {
+  return cycle === "annual"
+    ? (bundle.annualPriceMxn ?? bundle.monthlyPriceMxn * 12)
+    : bundle.monthlyPriceMxn;
+}
+
+export function bundleSavingsMxn(bundle: BundlePlan, cycle: BillingCycle): number {
+  return Math.max(0, bundleListPriceMxn(bundle, cycle) - bundlePriceMxn(bundle, cycle));
+}
+
+export function annualSavingsPercentApprox(bundle: BundlePlan): number {
+  const annualList = bundleListPriceMxn(bundle, "annual");
+  const annualBundle = bundlePriceMxn(bundle, "annual");
+  if (annualList <= 0) return 0;
+  return Math.round(((annualList - annualBundle) / annualList) * 100);
+}
 
 export function toLocaleText(locale: Locale, text: LocalizedText): string {
   return locale === "en" ? text.en : text.es;
